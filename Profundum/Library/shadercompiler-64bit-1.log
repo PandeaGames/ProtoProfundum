@@ -1,7 +1,49 @@
 Base path: C:/Program Files/Unity/Editor/Data
-Pipe name: \\.\pipe\UnityShaderCompiler-64bit-1-5784
+Pipe name: \\.\pipe\UnityShaderCompiler-64bit-1-5180
 Cmd: getPlatforms
-Unhandled exception: Readfile from pipe failed. GLE=The pipe has been ended.
-
-
-Quitting shader compiler process
+Cmd: preprocess
+  insize=1493 outsize=490 ok=1
+Cmd: compileSnippet
+  api=4 type=0 insize=1305 outsize=1323 kw= ok=1
+Cmd: compileSnippet
+  api=4 type=1 insize=1305 outsize=1282 kw= ok=1
+Cmd: preprocess
+  insize=1162 outsize=351 ok=1
+Cmd: compileSnippet
+  api=4 type=0 insize=1113 outsize=1323 kw= ok=1
+Cmd: compileSnippet
+  api=4 type=1 insize=1113 outsize=1030 kw= ok=1
+Cmd: preprocess
+  insize=9137 outsize=4164 ok=1
+Cmd: compileSnippet
+  api=4 type=0 insize=13323 outsize=11926 kw=DIRECTIONAL SHADOWS_OFF LIGHTMAP_OFF DIRLIGHTMAP_OFF DYNAMICLIGHTMAP_OFF ok=1
+Cmd: compileSnippet
+  api=4 type=1 insize=13323 outsize=9846 kw=DIRECTIONAL SHADOWS_OFF LIGHTMAP_OFF DIRLIGHTMAP_OFF DYNAMICLIGHTMAP_OFF ok=1
+Cmd: compileSnippet
+  api=4 type=0 insize=10102 outsize=11170 kw=POINT ok=1
+Cmd: compileSnippet
+  api=4 type=1 insize=10102 outsize=10244 kw=POINT ok=1
+Cmd: compileSnippet
+  api=4 type=0 insize=9088 outsize=10918 kw= ok=1
+Cmd: compileSnippet
+  api=4 type=1 insize=9088 outsize=746 kw= ok=1
+Cmd: compileSnippet
+  api=4 type=0 insize=12451 outsize=12519 kw=LIGHTMAP_OFF DIRLIGHTMAP_OFF DYNAMICLIGHTMAP_OFF HDR_LIGHT_PREPASS_OFF ok=1
+Cmd: compileSnippet
+  api=4 type=1 insize=12451 outsize=9513 kw=LIGHTMAP_OFF DIRLIGHTMAP_OFF DYNAMICLIGHTMAP_OFF HDR_LIGHT_PREPASS_OFF ok=1
+Cmd: compileSnippet
+  api=4 type=0 insize=12383 outsize=11926 kw=LIGHTMAP_OFF DIRLIGHTMAP_OFF DYNAMICLIGHTMAP_OFF HDR_LIGHT_PREPASS_OFF ok=1
+Cmd: compileSnippet
+  api=4 type=1 insize=12383 outsize=10163 kw=LIGHTMAP_OFF DIRLIGHTMAP_OFF DYNAMICLIGHTMAP_OFF HDR_LIGHT_PREPASS_OFF ok=1
+Cmd: compileSnippet
+  api=4 type=0 insize=9451 outsize=10926 kw= ok=1
+Cmd: compileSnippet
+  api=4 type=1 insize=9451 outsize=9464 kw= ok=1
+Cmd: compileSnippet
+  api=4 type=0 insize=10102 outsize=11170 kw=DIRECTIONAL ok=1
+Cmd: compileSnippet
+  api=4 type=1 insize=10102 outsize=9318 kw=DIRECTIONAL ok=1
+Cmd: compileSnippet
+  api=4 type=0 insize=541 outsize=1420 kw=SHADOWS_CUBE ok=1
+Cmd: compileSnippet
+  api=4 type=1 insize=541 outsize=697 kw=SHADOWS_CUBE ok=1

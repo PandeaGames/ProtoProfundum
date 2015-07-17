@@ -8,6 +8,7 @@ public class CameraAnchorControl : MonoBehaviour {
 	public int pitchCeiling = 45;
 	public int pitchFloor = -20;
 	public float damp = 20;
+	public float mouseDamp = 30;
 
 	private float _pitch;
 	private float _yaw;
@@ -34,9 +35,9 @@ public class CameraAnchorControl : MonoBehaviour {
 			(float)(target.transform.position.y + .25 + _r * Mathf.Sin(p)),
 			(float)(target.transform.position.z+ _r *Mathf.Cos(p) * Mathf.Sin(_yaw)));
 		transform.position = pos;
-		_pitch += Input.GetAxis("JoystickRightVertical") / damp;
-		_yaw -= Input.GetAxis("JoystickRightHorizontal") / damp;
-		
+		_pitch += (Input.GetAxis("JoystickRightVertical") / damp) + (Input.GetAxis("MouseVertical") / mouseDamp);
+		_yaw -= (Input.GetAxis("JoystickRightHorizontal") / damp) + (Input.GetAxis("MouseHorizontal") / mouseDamp);
+
 		if(_pitch > pitchCeiling *(Mathf.PI/180))
 		{
 			_pitch = pitchCeiling *(Mathf.PI/180);

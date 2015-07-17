@@ -1,160 +1,88 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="Project" SchemaVersion="69">
+<WwiseDocument Type="Project" SchemaVersion="70">
 	<ProjectInfo>
 		<Project Name="ProfundumWwise" ID="{DA662231-DBEB-4A0B-AEAE-355F9474913E}">
+			<Platforms>
+				<Platform Name="Android" ReferencePlatform="Android" ID="{A2D401DE-B8B6-4FEB-8142-137C34D507CB}" />
+				<Platform Name="iOS" ReferencePlatform="iOS" ID="{ECE03DB4-F948-462D-B2BB-A9173012B1F9}" />
+				<Platform Name="Linux" ReferencePlatform="Linux" ID="{BD0BDF13-3125-454F-8BFD-319537169F82}" />
+				<Platform Name="Mac" ReferencePlatform="Mac" ID="{9C6217D5-DD11-4795-87C1-6CE02853C541}" />
+				<Platform Name="Windows" ReferencePlatform="Windows" ID="{6E0CB257-C6C8-4C5C-8366-2740DFC441EC}" />
+				<Platform Name="WindowsPhone" ReferencePlatform="WindowsPhone" ID="{869AD233-43F2-4C0F-9126-79F44C15E1DA}" />
+			</Platforms>
 			<PropertyList>
 				<Property Name="DefaultLanguage" Type="int32" Value="12" />
 				<Property Name="ExternalSourcesInputPath" Type="string">
 					<ValueList>
 						<Value Platform="Linux"></Value>
 						<Value Platform="WindowsPhone"></Value>
-						<Value Platform="XboxOne"></Value>
-						<Value Platform="VitaSW"></Value>
 						<Value Platform="Windows"></Value>
-						<Value Platform="Wii"></Value>
-						<Value Platform="WiiUSW"></Value>
-						<Value Platform="Xbox360"></Value>
-						<Value Platform="3DS"></Value>
-						<Value Platform="PS3"></Value>
 						<Value Platform="iOS"></Value>
-						<Value Platform="PS4"></Value>
 						<Value Platform="Mac"></Value>
 						<Value Platform="Android"></Value>
-						<Value Platform="VitaHW"></Value>
 					</ValueList>
 				</Property>
 				<Property Name="ExternalSourcesOutputPath" Type="string">
 					<ValueList>
 						<Value Platform="Linux">GeneratedSoundBanks\Linux</Value>
 						<Value Platform="WindowsPhone">GeneratedSoundBanks\WindowsPhone</Value>
-						<Value Platform="XboxOne">GeneratedSoundBanks\XboxOne</Value>
-						<Value Platform="VitaSW">GeneratedSoundBanks\VitaSW</Value>
 						<Value Platform="Windows">GeneratedSoundBanks\Windows</Value>
-						<Value Platform="Wii">GeneratedSoundBanks\Wii</Value>
-						<Value Platform="WiiUSW">GeneratedSoundBanks\WiiUSW</Value>
-						<Value Platform="Xbox360">GeneratedSoundBanks\XBox360</Value>
-						<Value Platform="3DS">GeneratedSoundBanks\3DS</Value>
-						<Value Platform="PS3">GeneratedSoundBanks\PS3</Value>
 						<Value Platform="iOS">GeneratedSoundBanks\iOS</Value>
-						<Value Platform="PS4">GeneratedSoundBanks\PS4</Value>
 						<Value Platform="Mac">GeneratedSoundBanks\Mac</Value>
 						<Value Platform="Android">GeneratedSoundBanks\Android</Value>
-						<Value Platform="VitaHW">GeneratedSoundBanks\VitaHW</Value>
 					</ValueList>
 				</Property>
-				<Property Name="IsPlatformDisplayed" Type="bool">
-					<ValueList>
-						<Value Platform="Linux">True</Value>
-						<Value Platform="WindowsPhone">True</Value>
-						<Value Platform="XboxOne">False</Value>
-						<Value Platform="VitaSW">False</Value>
-						<Value Platform="Windows">True</Value>
-						<Value Platform="Wii">False</Value>
-						<Value Platform="WiiUSW">False</Value>
-						<Value Platform="Xbox360">False</Value>
-						<Value Platform="3DS">False</Value>
-						<Value Platform="PS3">False</Value>
-						<Value Platform="iOS">True</Value>
-						<Value Platform="PS4">False</Value>
-						<Value Platform="Mac">True</Value>
-						<Value Platform="Android">True</Value>
-						<Value Platform="VitaHW">False</Value>
-					</ValueList>
-				</Property>
-				<Property Name="SoundBankGenerateHeaderFile" Type="bool" Value="True" /><Property Name="SoundBankGenerateMaxAttenuationInfo" Type="bool" Value="True" /><Property Name="SoundBankHeaderFilePath" Type="string" Value="C:\Users\Colin\ProtoProfundum\Profundum\Assets\StreamingAssets\Audio\GeneratedSoundBanks" />
+				<Property Name="SoundBankGenerateHeaderFile" Type="bool" Value="True" />
+				<Property Name="SoundBankGenerateMaxAttenuationInfo" Type="bool" Value="True" />
+				<Property Name="SoundBankHeaderFilePath" Type="string" Value="D:\Unity Games\New Unity Project\Assets\StreamingAssets\Audio\GeneratedSoundBanks" />
 				<Property Name="SoundBankPaths" Type="string">
 					<ValueList>
 						<Value Platform="Linux">GeneratedSoundBanks\Linux\</Value>
 						<Value Platform="WindowsPhone">GeneratedSoundBanks\WindowsPhone\</Value>
-						<Value Platform="XboxOne">GeneratedSoundBanks\XboxOne\</Value>
-						<Value Platform="VitaSW">GeneratedSoundBanks\VitaSW\</Value>
 						<Value Platform="Windows">GeneratedSoundBanks\Windows\</Value>
-						<Value Platform="Wii">GeneratedSoundBanks\Wii\</Value>
-						<Value Platform="WiiUSW">GeneratedSoundBanks\WiiUSW\</Value>
-						<Value Platform="Xbox360">GeneratedSoundBanks\XBox360\</Value>
-						<Value Platform="3DS">GeneratedSoundBanks\3DS\</Value>
-						<Value Platform="PS3">GeneratedSoundBanks\PS3\</Value>
 						<Value Platform="iOS">GeneratedSoundBanks\iOS\</Value>
-						<Value Platform="PS4">GeneratedSoundBanks\PS4\</Value>
 						<Value Platform="Mac">GeneratedSoundBanks\Mac\</Value>
 						<Value Platform="Android">GeneratedSoundBanks\Android\</Value>
-						<Value Platform="VitaHW">GeneratedSoundBanks\VitaHW\</Value>
 					</ValueList>
 				</Property>
 				<Property Name="SoundBankPostGenerateCustomCmdDescription" Type="string">
 					<ValueList>
 						<Value Platform="Linux">Copy Streamed Files</Value>
 						<Value Platform="WindowsPhone">Copy Streamed Files</Value>
-						<Value Platform="XboxOne">Copy Streamed Files</Value>
-						<Value Platform="VitaSW">Copy Streamed Files</Value>
 						<Value Platform="Windows">Copy Streamed Files</Value>
-						<Value Platform="Wii">Copy Streamed Files</Value>
-						<Value Platform="WiiUSW">Copy Streamed Files</Value>
-						<Value Platform="Xbox360">Copy Streamed Files</Value>
-						<Value Platform="3DS">Copy Streamed Files</Value>
-						<Value Platform="PS3">Copy Streamed Files</Value>
 						<Value Platform="iOS">Copy Streamed Files</Value>
-						<Value Platform="PS4">Copy Streamed Files</Value>
 						<Value Platform="Mac">Copy Streamed Files</Value>
 						<Value Platform="Android">Copy Streamed Files</Value>
-						<Value Platform="VitaHW">Copy Streamed Files</Value>
 					</ValueList>
 				</Property>
 				<Property Name="SoundBankPostGenerateCustomCmdLines" Type="string">
 					<ValueList>
 						<Value Platform="Linux">"$(WwiseExePath)\CopyStreamedFiles.exe" -info "$(InfoFilePath)" -outputpath "$(SoundBankPath)" -banks "$(SoundBankListAsTextFile)" -languages "$(LanguageList)"</Value>
 						<Value Platform="WindowsPhone">"$(WwiseExePath)\CopyStreamedFiles.exe" -info "$(InfoFilePath)" -outputpath "$(SoundBankPath)" -banks "$(SoundBankListAsTextFile)" -languages "$(LanguageList)"</Value>
-						<Value Platform="XboxOne">"$(WwiseExePath)\CopyStreamedFiles.exe" -info "$(InfoFilePath)" -outputpath "$(SoundBankPath)" -banks "$(SoundBankListAsTextFile)" -languages "$(LanguageList)"</Value>
-						<Value Platform="VitaSW">"$(WwiseExePath)\CopyStreamedFiles.exe" -info "$(InfoFilePath)" -outputpath "$(SoundBankPath)" -banks "$(SoundBankListAsTextFile)" -languages "$(LanguageList)"</Value>
 						<Value Platform="Windows">"$(WwiseExePath)\CopyStreamedFiles.exe" -info "$(InfoFilePath)" -outputpath "$(SoundBankPath)" -banks "$(SoundBankListAsTextFile)" -languages "$(LanguageList)"</Value>
-						<Value Platform="Wii">"$(WwiseExePath)\CopyStreamedFiles.exe" -info "$(InfoFilePath)" -outputpath "$(SoundBankPath)" -banks "$(SoundBankListAsTextFile)" -languages "$(LanguageList)"</Value>
-						<Value Platform="WiiUSW">"$(WwiseExePath)\CopyStreamedFiles.exe" -info "$(InfoFilePath)" -outputpath "$(SoundBankPath)" -banks "$(SoundBankListAsTextFile)" -languages "$(LanguageList)"</Value>
-						<Value Platform="Xbox360">"$(WwiseExePath)\CopyStreamedFiles.exe" -info "$(InfoFilePath)" -outputpath "$(SoundBankPath)" -banks "$(SoundBankListAsTextFile)" -languages "$(LanguageList)"</Value>
-						<Value Platform="3DS">"$(WwiseExePath)\CopyStreamedFiles.exe" -info "$(InfoFilePath)" -outputpath "$(SoundBankPath)" -banks "$(SoundBankListAsTextFile)" -languages "$(LanguageList)"</Value>
-						<Value Platform="PS3">"$(WwiseExePath)\CopyStreamedFiles.exe" -info "$(InfoFilePath)" -outputpath "$(SoundBankPath)" -banks "$(SoundBankListAsTextFile)" -languages "$(LanguageList)"</Value>
 						<Value Platform="iOS">"$(WwiseExePath)\CopyStreamedFiles.exe" -info "$(InfoFilePath)" -outputpath "$(SoundBankPath)" -banks "$(SoundBankListAsTextFile)" -languages "$(LanguageList)"</Value>
-						<Value Platform="PS4">"$(WwiseExePath)\CopyStreamedFiles.exe" -info "$(InfoFilePath)" -outputpath "$(SoundBankPath)" -banks "$(SoundBankListAsTextFile)" -languages "$(LanguageList)"</Value>
 						<Value Platform="Mac">"$(WwiseExePath)\CopyStreamedFiles.exe" -info "$(InfoFilePath)" -outputpath "$(SoundBankPath)" -banks "$(SoundBankListAsTextFile)" -languages "$(LanguageList)"</Value>
 						<Value Platform="Android">"$(WwiseExePath)\CopyStreamedFiles.exe" -info "$(InfoFilePath)" -outputpath "$(SoundBankPath)" -banks "$(SoundBankListAsTextFile)" -languages "$(LanguageList)"</Value>
-						<Value Platform="VitaHW">"$(WwiseExePath)\CopyStreamedFiles.exe" -info "$(InfoFilePath)" -outputpath "$(SoundBankPath)" -banks "$(SoundBankListAsTextFile)" -languages "$(LanguageList)"</Value>
 					</ValueList>
 				</Property>
 				<Property Name="SoundBankPreGenerateCustomCmdDescription" Type="string">
 					<ValueList>
 						<Value Platform="Linux"></Value>
 						<Value Platform="WindowsPhone"></Value>
-						<Value Platform="XboxOne"></Value>
-						<Value Platform="VitaSW"></Value>
 						<Value Platform="Windows"></Value>
-						<Value Platform="Wii"></Value>
-						<Value Platform="WiiUSW"></Value>
-						<Value Platform="Xbox360"></Value>
-						<Value Platform="3DS"></Value>
-						<Value Platform="PS3"></Value>
 						<Value Platform="iOS"></Value>
-						<Value Platform="PS4"></Value>
 						<Value Platform="Mac"></Value>
 						<Value Platform="Android"></Value>
-						<Value Platform="VitaHW"></Value>
 					</ValueList>
 				</Property>
 				<Property Name="SoundBankPreGenerateCustomCmdLines" Type="string">
 					<ValueList>
 						<Value Platform="Linux"></Value>
 						<Value Platform="WindowsPhone"></Value>
-						<Value Platform="XboxOne"></Value>
-						<Value Platform="VitaSW"></Value>
 						<Value Platform="Windows"></Value>
-						<Value Platform="Wii"></Value>
-						<Value Platform="WiiUSW"></Value>
-						<Value Platform="Xbox360"></Value>
-						<Value Platform="3DS"></Value>
-						<Value Platform="PS3"></Value>
 						<Value Platform="iOS"></Value>
-						<Value Platform="PS4"></Value>
 						<Value Platform="Mac"></Value>
 						<Value Platform="Android"></Value>
-						<Value Platform="VitaHW"></Value>
 					</ValueList>
 				</Property>
 				<Property Name="WwiseVersionWhenCreated" Type="string" Value="Branch=wwise_v2014.1|Build=5282|VersionName=v2014.1.5|Config=Release" />
@@ -924,6 +852,21 @@
 								<Value>0</Value>
 							</ValueList>
 						</Property>
+						<Property Name="EventActionNamePosition" Type="int16">
+							<ValueList>
+								<Value>0</Value>
+							</ValueList>
+						</Property>
+						<Property Name="EventNameCaseType" Type="int16">
+							<ValueList>
+								<Value>0</Value>
+							</ValueList>
+						</Property>
+						<Property Name="EventNameModifyCase" Type="bool">
+							<ValueList>
+								<Value>False</Value>
+							</ValueList>
+						</Property>
 						<Property Name="ExternalSourcesInputPath" Type="string">
 							<ValueList>
 								<Value></Value>
@@ -964,11 +907,6 @@
 								<Value>256</Value>
 							</ValueList>
 						</Property>
-						<Property Name="IsPlatformDisplayed" Type="bool">
-							<ValueList>
-								<Value>False</Value>
-							</ValueList>
-						</Property>
 						<Property Name="LicenseKey" Type="string">
 							<ValueList>
 								<Value></Value>
@@ -980,11 +918,6 @@
 							</ValueList>
 						</Property>
 						<Property Name="SoundBankAllowExceedingSB" Type="bool">
-							<ValueList>
-								<Value>False</Value>
-							</ValueList>
-						</Property>
-						<Property Name="SoundBankCalcPrefetchForAllStreams" Type="bool">
 							<ValueList>
 								<Value>False</Value>
 							</ValueList>
@@ -1057,6 +990,11 @@
 						<Property Name="SoundBankUpdateAudioFiles" Type="bool">
 							<ValueList>
 								<Value>False</Value>
+							</ValueList>
+						</Property>
+						<Property Name="UseActionNameForEvent" Type="bool">
+							<ValueList>
+								<Value>True</Value>
 							</ValueList>
 						</Property>
 						<Property Name="UseDefaultLanguage" Type="bool">
@@ -6255,6 +6193,26 @@
 								<Value>0</Value>
 							</ValueList>
 						</Property>
+						<Property Name="EventActionNamePosition" Type="int16">
+							<ValueList>
+								<Value>0</Value>
+							</ValueList>
+						</Property>
+						<Property Name="EventCreationSettingsOverride" Type="bool">
+							<ValueList>
+								<Value>False</Value>
+							</ValueList>
+						</Property>
+						<Property Name="EventNameCaseType" Type="int16">
+							<ValueList>
+								<Value>0</Value>
+							</ValueList>
+						</Property>
+						<Property Name="EventNameModifyCase" Type="bool">
+							<ValueList>
+								<Value>False</Value>
+							</ValueList>
+						</Property>
 						<Property Name="ExternalSourcesInputPath" Type="string">
 							<ValueList>
 								<Value></Value>
@@ -6316,11 +6274,6 @@
 							</ValueList>
 						</Property>
 						<Property Name="SoundBankAllowExceedingSB" Type="bool">
-							<ValueList>
-								<Value>False</Value>
-							</ValueList>
-						</Property>
-						<Property Name="SoundBankCalcPrefetchForAllStreams" Type="bool">
 							<ValueList>
 								<Value>False</Value>
 							</ValueList>
@@ -6400,6 +6353,11 @@
 								<Value>False</Value>
 							</ValueList>
 						</Property>
+						<Property Name="UseActionNameForEvent" Type="bool">
+							<ValueList>
+								<Value>True</Value>
+							</ValueList>
+						</Property>
 					</PropertyList>
 				</SharedPropertyList>
 				<SharedPropertyList ClassName="MixingSession" PluginType="0" CompanyID="1" PluginID="53" />
@@ -6414,12 +6372,27 @@
 				</SharedPropertyList>
 				<SharedPropertyList ClassName="Conversion" PluginType="0" CompanyID="1" PluginID="55">
 					<PropertyList>
+						<Property Name="AllowChannelUpmix" Type="bool">
+							<ValueList>
+								<Value>True</Value>
+							</ValueList>
+						</Property>
 						<Property Name="Channels" Type="int32">
 							<ValueList>
 								<Value>4</Value>
 							</ValueList>
 						</Property>
 						<Property Name="LRMix" Type="Real64">
+							<ValueList>
+								<Value>0</Value>
+							</ValueList>
+						</Property>
+						<Property Name="MaxSampleRate" Type="int32">
+							<ValueList>
+								<Value>0</Value>
+							</ValueList>
+						</Property>
+						<Property Name="MinSampleRate" Type="int32">
 							<ValueList>
 								<Value>0</Value>
 							</ValueList>
@@ -6819,6 +6792,7 @@
 						</Property>
 					</PropertyList>
 				</SharedPropertyList>
+				<SharedPropertyList ClassName="Platform" PluginType="0" CompanyID="1" PluginID="69" />
 				<SharedPropertyList ClassName="Wwise Sine" PluginType="2" CompanyID="0" PluginID="100">
 					<PropertyList>
 						<Property Name="ChannelMask" Type="int32">
@@ -9505,6 +9479,95 @@
 						<Property Name="VolumeSmoothness" Type="Real32">
 							<ValueList>
 								<Value>6</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+				</SharedPropertyList>
+				<SharedPropertyList ClassName="BatchRenameSettings" PluginType="0" CompanyID="0" PluginID="992">
+					<PropertyList>
+						<Property Name="ApplyOn" Type="int16">
+							<ValueList>
+								<Value>0</Value>
+							</ValueList>
+						</Property>
+						<Property Name="EnableInsert" Type="bool">
+							<ValueList>
+								<Value>False</Value>
+							</ValueList>
+						</Property>
+						<Property Name="EnableRemove" Type="bool">
+							<ValueList>
+								<Value>False</Value>
+							</ValueList>
+						</Property>
+						<Property Name="EnableReplace" Type="bool">
+							<ValueList>
+								<Value>True</Value>
+							</ValueList>
+						</Property>
+						<Property Name="InsertAtPosition" Type="int32">
+							<ValueList>
+								<Value>0</Value>
+							</ValueList>
+						</Property>
+						<Property Name="InsertStartAt" Type="int32">
+							<ValueList>
+								<Value>0</Value>
+							</ValueList>
+						</Property>
+						<Property Name="InsertToInsert" Type="string">
+							<ValueList>
+								<Value></Value>
+							</ValueList>
+						</Property>
+						<Property Name="InsertWhat" Type="int16">
+							<ValueList>
+								<Value>0</Value>
+							</ValueList>
+						</Property>
+						<Property Name="RemoveAtPosition" Type="int32">
+							<ValueList>
+								<Value>0</Value>
+							</ValueList>
+						</Property>
+						<Property Name="RemoveCount" Type="int32">
+							<ValueList>
+								<Value>0</Value>
+							</ValueList>
+						</Property>
+						<Property Name="RemoveFrom" Type="int16">
+							<ValueList>
+								<Value>0</Value>
+							</ValueList>
+						</Property>
+						<Property Name="ReplaceEnableMatchCase" Type="bool">
+							<ValueList>
+								<Value>False</Value>
+							</ValueList>
+						</Property>
+						<Property Name="ReplaceEnableReplaceAllInstances" Type="int16">
+							<ValueList>
+								<Value>2</Value>
+							</ValueList>
+						</Property>
+						<Property Name="ReplaceEnableUseRegularExpression" Type="bool">
+							<ValueList>
+								<Value>False</Value>
+							</ValueList>
+						</Property>
+						<Property Name="ReplaceFindWhat" Type="string">
+							<ValueList>
+								<Value></Value>
+							</ValueList>
+						</Property>
+						<Property Name="ReplaceReplaceWith" Type="string">
+							<ValueList>
+								<Value></Value>
+							</ValueList>
+						</Property>
+						<Property Name="insertFrom" Type="int16">
+							<ValueList>
+								<Value>1</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>

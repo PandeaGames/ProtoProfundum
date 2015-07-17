@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="10" SoundbankVersion="113">
+	<RootPaths>
+		<ProjectRoot>D:\Airemon Sound\Cove Games\Profundum\ProfundumWwise\</ProjectRoot>
+		<SourceFilesRoot>D:\Airemon Sound\Cove Games\Profundum\ProfundumWwise\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>D:\Airemon Sound\Cove Games\Profundum\ProfundumWwise\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>D:\Airemon Sound\Cove Games\Profundum\ProfundumWwise\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX">
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="4154996803" Language="SFX">
+			<ShortName>Test_SoundBank</ShortName>
+			<Path>Test_SoundBank.bnk</Path>
+			<IncludedEvents>
+				<Event Id="2666809638" Name="Day_Night"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="995167410" Language="SFX">
+					<ShortName>Ambiences\amb_forest_day_background_loop.wav</ShortName>
+					<Path>SFX\Ambiences\amb_forest_day_background_loop_9E69E797.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>

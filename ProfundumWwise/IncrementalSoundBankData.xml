@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<IncrementalBankBuild Version="4" Flags="878078161">
+	<Platform GUID="{BD0BDF13-3125-454F-8BFD-319537169F82}">
+		<Language ID="0">
+			<Bank Name="Init" Hash="2237516267" StreamHash="157587662" Timestamp="130815753477468111"/>
+			<Bank Name="Test_SoundBank" Hash="3325704741" StreamHash="157587662" Timestamp="130815753477408107"/>
+		</Language>
+	</Platform>
+	<Platform GUID="{869AD233-43F2-4C0F-9126-79F44C15E1DA}">
+		<Language ID="0">
+			<Bank Name="Init" Hash="2237516267" StreamHash="157587662" Timestamp="130815753490638864"/>
+			<Bank Name="Test_SoundBank" Hash="3325704741" StreamHash="157587662" Timestamp="130815753490538858"/>
+		</Language>
+	</Platform>
+	<Platform GUID="{6E0CB257-C6C8-4C5C-8366-2740DFC441EC}">
+		<Language ID="0">
+			<Bank Name="Init" Hash="2237516267" StreamHash="157587662" Timestamp="130815767908603524"/>
+			<Bank Name="Test_SoundBank" Hash="3325704741" StreamHash="157587662" Timestamp="130815767908543521"/>
+		</Language>
+	</Platform>
+	<Platform GUID="{ECE03DB4-F948-462D-B2BB-A9173012B1F9}">
+		<Language ID="0">
+			<Bank Name="Init" Hash="2237516267" StreamHash="157587662" Timestamp="130815753472987854"/>
+			<Bank Name="Test_SoundBank" Hash="3325704741" StreamHash="157587662" Timestamp="130815753472927851"/>
+		</Language>
+	</Platform>
+	<Platform GUID="{9C6217D5-DD11-4795-87C1-6CE02853C541}">
+		<Language ID="0">
+			<Bank Name="Init" Hash="2237516267" StreamHash="157587662" Timestamp="130815753481358333"/>
+			<Bank Name="Test_SoundBank" Hash="3325704741" StreamHash="157587662" Timestamp="130815753481298330"/>
+		</Language>
+	</Platform>
+	<Platform GUID="{A2D401DE-B8B6-4FEB-8142-137C34D507CB}">
+		<Language ID="0">
+			<Bank Name="Init" Hash="2237516267" StreamHash="157587662" Timestamp="130815753465857446"/>
+			<Bank Name="Test_SoundBank" Hash="3325704741" StreamHash="157587662" Timestamp="130815753465797443"/>
+		</Language>
+	</Platform>
+</IncrementalBankBuild>

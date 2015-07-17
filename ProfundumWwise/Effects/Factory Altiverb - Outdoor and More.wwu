@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{C0E78DAA-768A-438F-8F7B-3701395185C3}" SchemaVersion="69">
+<WwiseDocument Type="WorkUnit" ID="{C0E78DAA-768A-438F-8F7B-3701395185C3}" SchemaVersion="70">
 	<Effects>
 		<WorkUnit Name="Factory Altiverb - Outdoor and More" ID="{C0E78DAA-768A-438F-8F7B-3701395185C3}" PersistMode="Standalone">
 			<ChildrenList>

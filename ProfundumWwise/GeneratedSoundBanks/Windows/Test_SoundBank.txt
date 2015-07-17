@@ -1,0 +1,6 @@
+Event	ID	Name			Wwise Object Path	Notes
+	2666809638	Day_Night			\Default Work Unit\Day_Night	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	995167410	amb_forest_day_background_loop	D:\Airemon Sound\Cove Games\Profundum\ProfundumWwise\.cache\Windows\SFX\Ambiences\amb_forest_day_background_loop_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\amb_forest_day_background_loop		9327980
+

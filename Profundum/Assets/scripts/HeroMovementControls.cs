@@ -50,10 +50,10 @@ public class HeroMovementControls : StateBehaviour
 		_x_move = Input.GetAxis("JoystickLeftHorizontal"); 
 		_y_move = Input.GetAxis("JoystickLeftVertical"); 
 
-		_y_move += Input.GetKey ("up") ? -1 : 0;
-		_y_move += Input.GetKey ("down") ? 1 : 0;
-		_x_move += Input.GetKey ("right") ? 1 : 0;
-		_x_move += Input.GetKey ("left") ? -1 : 0;
+		_y_move += Input.GetKey ("up") || Input.GetKey (KeyCode.W) ? -1 : 0;
+		_y_move += Input.GetKey ("down")|| Input.GetKey (KeyCode.S)  ? 1 : 0;
+		_x_move += Input.GetKey ("right") || Input.GetKey (KeyCode.D) ? 1 : 0;
+		_x_move += Input.GetKey ("left")|| Input.GetKey (KeyCode.A)  ? -1 : 0;
 		
 		float cam_delta_x = cam.transform.position.x - GetComponent<Rigidbody>().transform.position.x;
 		float cam_delta_z = cam.transform.position.z - GetComponent<Rigidbody>().transform.position.z;

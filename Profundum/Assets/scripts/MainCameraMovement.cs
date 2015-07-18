@@ -2,6 +2,8 @@
 using System.Collections;
 
 public class MainCameraMovement : MonoBehaviour {
+	public static string MESSAGE_CHANGE_TARGET = "ChangeTarget";
+
 	public GameObject target;
 	public float speed = 1f;
 	public float damp = 10;

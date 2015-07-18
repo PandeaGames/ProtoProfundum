@@ -1,11 +1,11 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\scripts\HeroMovementControls.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\HeroShooter.cs">
     <Files>
-      <File FileName="Assets\scripts\HeroMovementControls.cs" Line="51" Column="52" />
-      <File FileName="Assets\scripts\MainCameraMovement.cs" Line="21" Column="18" />
-      <File FileName="Assets\scripts\HeroStateMachine.cs" Line="1" Column="1" />
-      <File FileName="Assets\CameraAnchorControl.cs" Line="37" Column="28" />
+      <File FileName="Assets\scripts\MainCameraMovement.cs" Line="4" Column="32" />
+      <File FileName="Assets\Shooter.cs" Line="25" Column="79" />
+      <File FileName="Assets\Projectile.cs" Line="16" Column="23" />
+      <File FileName="Assets\HeroShooter.cs" Line="22" Column="4" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -51,6 +51,7 @@ public class AkWwiseWWUBuilder
 		if (s_populateNow) 
 		{
 			AkWwisePicker.treeView.SaveExpansionStatus();
+            AkWwisePlatformBuilder.BuildPlatformArray();
 			AutoPopulate();
 			AkWwisePicker.PopulateTreeview();
 			s_populateNow = false;
@@ -294,10 +295,13 @@ public class AkWwiseWWUBuilder
 			{
 				currentPathInProj = currentPathInProj.Remove(0, 1);
 			}
+
 			foreach (FileInfo StandaloneWorkUnit in StandaloneWorkUnits)
 			{
-				bool bSuccess = RecurseWorkUnit(in_type, StandaloneWorkUnit, currentPathInProj, in_currentPath, in_pathAndIcons);
-				in_pathAndIcons.Clear();
+                // Use a copy of the current path structure to pass the WorkUnit, so that we save our position, and are able
+                // to reset after the WorkUnit is done parsing.
+                LinkedList<AkWwiseProjectData.PathElement> PathAndIconsCopy = new LinkedList<AkWwiseProjectData.PathElement>(in_pathAndIcons);
+                bool bSuccess = RecurseWorkUnit(in_type, StandaloneWorkUnit, currentPathInProj, in_currentPath, PathAndIconsCopy);
 				if (!bSuccess)
 				{
 					return bSuccess;
@@ -600,7 +604,7 @@ public class AkWwiseWWUBuilder
 			AkWwiseProjectData.Event valueToAdd = new AkWwiseProjectData.Event();
 			
 			valueToAdd.Name = in_reader.GetAttribute("Name");
-			valueToAdd.Guid = new System.Guid(in_reader.GetAttribute("ID")).ToByteArray();
+			valueToAdd.Guid = new Guid(in_reader.GetAttribute("ID")).ToByteArray();
 			valueToAdd.ID = (int)AkUtilities.ShortIDGenerator.Compute(valueToAdd.Name);
 			valueToAdd.Path = in_type.RootDirectoryName == "Master-Mixer Hierarchy" ? in_currentPathInProj : Path.Combine(in_currentPathInProj, valueToAdd.Name);
 			valueToAdd.PathAndIcons = new List<AkWwiseProjectData.PathElement>(in_pathAndIcons);
@@ -629,7 +633,7 @@ public class AkWwiseWWUBuilder
 			AkWwiseProjectData.GroupValue valueToAdd = new AkWwiseProjectData.GroupValue();
 			AkWwiseProjectData.WwiseObjectType SubElemIcon;
 			valueToAdd.Name = XmlElement.Attribute("Name").Value;
-			valueToAdd.Guid = new System.Guid(XmlElement.Attribute("ID").Value).ToByteArray();
+			valueToAdd.Guid = new Guid(XmlElement.Attribute("ID").Value).ToByteArray();
 			valueToAdd.ID = (int)AkUtilities.ShortIDGenerator.Compute(valueToAdd.Name);
 			valueToAdd.Path = Path.Combine(in_currentPathInProj, valueToAdd.Name);
 			valueToAdd.PathAndIcons = new List<AkWwiseProjectData.PathElement>(in_pathAndIcons);
@@ -657,7 +661,7 @@ public class AkWwiseWWUBuilder
 					{
 						string elementName = element.Attribute("Name").Value;
 						valueToAdd.values.Add(elementName);
-						valueToAdd.ValueGuids.Add(new AkWwiseProjectData.ByteArrayWrapper( new System.Guid(element.Attribute("ID").Value).ToByteArray()));
+						valueToAdd.ValueGuids.Add(new AkWwiseProjectData.ByteArrayWrapper( new Guid(element.Attribute("ID").Value).ToByteArray()));
 						valueToAdd.valueIDs.Add((int)AkUtilities.ShortIDGenerator.Compute(elementName));
 						valueToAdd.ValueIcons.Add(new AkWwiseProjectData.PathElement(elementName, SubElemIcon));
 					}

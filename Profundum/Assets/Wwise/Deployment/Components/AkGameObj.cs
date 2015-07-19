@@ -20,12 +20,16 @@ using System.Collections.Generic;
 [ExecuteInEditMode] //ExecuteInEditMode necessary to maintain proper state of isStaticObject.
 public class AkGameObj : MonoBehaviour 
 {
+	const int ALL_LISTENER_MASK = (1<<AkSoundEngine.AK_NUM_LISTENERS)-1;
+
 	/// When not set to null, the emitter position will be offset relative to the Game Object position by the Position Offset
 	public AkGameObjPosOffsetData m_posOffsetData = null;
 	
 	/// Is this object affected by Environment changes?  Set to false if not affected in order to save some useless calls.  Default is true.
     public bool isEnvironmentAware = true;
 	public AkGameObjEnvironmentData m_envData = null;
+
+	public int listenerMask = ALL_LISTENER_MASK;
 
 	/// Maintains and persists the Static setting of the gameobject, which is available only in the editor.
 	[SerializeField]
@@ -48,10 +52,10 @@ public class AkGameObj : MonoBehaviour
 		if(!isStaticObject)
 		{
 			m_posData = new AkGameObjPositionData();
-		}
-			
+		}		
+	
         //Register a Game Object in the sound engine, with its name.		
-        AkSoundEngine.RegisterGameObj(gameObject, gameObject.name);
+        AkSoundEngine.RegisterGameObj(gameObject, gameObject.name, (uint)(listenerMask & ALL_LISTENER_MASK));
 	
 		// Get position with offset
 		Vector3 position = GetPosition();
@@ -64,8 +68,8 @@ public class AkGameObj : MonoBehaviour
 			position.z,
 			transform.forward.x,
 			transform.forward.y,
-			transform.forward.z);
-
+			transform.forward.z);	
+			
 		if(isEnvironmentAware)
 		{
 			m_envData = new AkGameObjEnvironmentData();
@@ -91,17 +95,17 @@ public class AkGameObj : MonoBehaviour
 				handler.DoDestroy();
 			}
 		}
-		
+
 #if UNITY_EDITOR	
 		if (UnityEditor.EditorApplication.isPlaying)
 #endif
-		{
-		
-			if (AkSoundEngine.IsInitialized())
-			{
-				AkSoundEngine.UnregisterGameObj(gameObject);
-			}
-		}
+        {
+
+            if (AkSoundEngine.IsInitialized())
+            {
+                AkSoundEngine.UnregisterGameObj(gameObject);
+            }
+        }
     }
 
     void Update()

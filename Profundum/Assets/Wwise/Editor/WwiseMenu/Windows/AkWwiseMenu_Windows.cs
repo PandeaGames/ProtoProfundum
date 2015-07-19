@@ -46,12 +46,10 @@ public class AkWwiseMenu_Windows : MonoBehaviour {
 	}
 #endif
 
-    [MenuItem("Help/Wwise Help/Windows", false, (int)AkWwiseHelpOrder.WwiseHelpOrder)]
+    [MenuItem("Help/Wwise Help/Windows Common", false, (int)AkWwiseHelpOrder.WwiseHelpOrder)]
     public static void OpenDocWindows () 
     {
-        string docPath = string.Format("{0}/Wwise/Documentation/WindowsCommon/en/WwiseUnityIntegrationHelp_en.chm", Application.dataPath);
-        
-        AkDocHelper.OpenDoc(docPath);
+        AkDocHelper.OpenDoc("Windows");
     }
     
 //	[MenuItem("Assets/Wwise/Rebuild Integration/Windows/Win32/Debug")]

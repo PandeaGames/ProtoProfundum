@@ -41,7 +41,7 @@ public class AkSwitchInspector : AkBaseInspector
 	{
 		if(Event.current.type == EventType.DragExited && m_isInDropArea && DragAndDrop.paths.Length >= 4 && DragAndDrop.paths[3].Equals(m_typeName))
 		{
-			AkUtilities.SetByteArrayProperty(m_guidProperty[1], new System.Guid(DragAndDrop.paths[4]).ToByteArray());
+			AkUtilities.SetByteArrayProperty(m_guidProperty[1], new Guid(DragAndDrop.paths[4]).ToByteArray());
 		}
 		
 		base.OnInspectorGUI ();
@@ -56,12 +56,12 @@ public class AkSwitchInspector : AkBaseInspector
 		serializedObject.ApplyModifiedProperties ();
 	}
 	
-	public override string UpdateIds (System.Guid[] in_guid)
+	public override string UpdateIds (Guid[] in_guid)
 	{
 		string switchName = String.Empty;
 		for(int i = 0; i < AkWwiseProjectInfo.GetData().SwitchWwu.Count; i++)
 		{
-			AkWwiseProjectData.GroupValue switchGroup = AkWwiseProjectInfo.GetData().SwitchWwu[i].List.Find(x => new System.Guid(x.Guid).Equals(in_guid[1]));
+			AkWwiseProjectData.GroupValue switchGroup = AkWwiseProjectInfo.GetData().SwitchWwu[i].List.Find(x => new Guid(x.Guid).Equals(in_guid[1]));
 			
 			if(switchGroup != null)
 			{
@@ -70,7 +70,7 @@ public class AkSwitchInspector : AkBaseInspector
 				switchName = switchGroup.Name + "/";
 				m_groupID.intValue = switchGroup.ID;
 				
-				int index = switchGroup.ValueGuids.FindIndex(x => new System.Guid(x.bytes).Equals(in_guid[0]));
+				int index = switchGroup.ValueGuids.FindIndex(x => new Guid(x.bytes).Equals(in_guid[0]));
 				m_valueID.intValue = switchGroup.valueIDs[index];
 
 				serializedObject.ApplyModifiedProperties();

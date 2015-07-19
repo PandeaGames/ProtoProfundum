@@ -20,8 +20,11 @@ public class WwiseUpdateSettings : WwiseSetupWindow
 		// Get existing open window or if none, make a new one:
 		EditorWindow window = EditorWindow.GetWindow(typeof (WwiseUpdateSettings));
 		window.position = new Rect(100, 100, 850, 200);
-		window.title = "Wwise Settings";
-
+#if !UNITY_5 || UNITY_5_0
+		window.title ="Wwise Settings";
+#else
+		window.titleContent = new GUIContent("Wwise Settings");
+#endif
         m_oldCreateWwiseGlobal = WwiseSetupWizard.Settings.CreateWwiseGlobal;
         m_oldCreateWwiseListener = WwiseSetupWizard.Settings.CreateWwiseListener;
 

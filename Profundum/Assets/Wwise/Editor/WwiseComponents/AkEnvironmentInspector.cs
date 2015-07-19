@@ -72,11 +72,11 @@ public class AkEnvironmentInspector : AkBaseInspector
 		serializedObject.ApplyModifiedProperties ();
 	}
 	
-	public override string UpdateIds (System.Guid[] in_guid)
+	public override string UpdateIds (Guid[] in_guid)
 	{
 		for(int i = 0; i < AkWwiseProjectInfo.GetData().AuxBusWwu.Count; i++)
 		{
-			AkWwiseProjectData.AkInformation akInfo = AkWwiseProjectInfo.GetData().AuxBusWwu[i].List.Find(x => new System.Guid(x.Guid).Equals(in_guid[0]));
+			AkWwiseProjectData.AkInformation akInfo = AkWwiseProjectInfo.GetData().AuxBusWwu[i].List.Find(x => new Guid(x.Guid).Equals(in_guid[0]));
 			
 			if(akInfo != null)
 			{

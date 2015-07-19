@@ -74,7 +74,7 @@ public class AkWwiseComponentPicker : EditorWindow
 			}
 
 
-			TreeViewItem item = s_componentPicker.m_treeView.GetItemByGuid(new System.Guid(AkUtilities.GetByteArrayProperty( in_guid[0])));
+			TreeViewItem item = s_componentPicker.m_treeView.GetItemByGuid(new Guid(AkUtilities.GetByteArrayProperty( in_guid[0])));
 			if(item != null)
 			{
 				item.ParentControl.SelectedItem = item;

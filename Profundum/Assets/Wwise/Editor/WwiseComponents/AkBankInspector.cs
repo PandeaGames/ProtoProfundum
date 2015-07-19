@@ -54,11 +54,11 @@ public class AkBankInspector : AkBaseInspector
 		serializedObject.ApplyModifiedProperties ();
 	}
 	
-	public override string UpdateIds (System.Guid[] in_guid)
+	public override string UpdateIds (Guid[] in_guid)
 	{
 		for(int i = 0; i < AkWwiseProjectInfo.GetData().BankWwu.Count; i++)
 		{
-			AkWwiseProjectData.AkInformation bank = AkWwiseProjectInfo.GetData().BankWwu[i].List.Find(x => new System.Guid(x.Guid).Equals(in_guid[0]));
+			AkWwiseProjectData.AkInformation bank = AkWwiseProjectInfo.GetData().BankWwu[i].List.Find(x => new Guid(x.Guid).Equals(in_guid[0]));
 			
 			if(bank != null)
 			{

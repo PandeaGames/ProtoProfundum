@@ -76,7 +76,7 @@ public class AkDragDropHelper : MonoBehaviour
         bool found = false;
         for (int i = 0; i < akEnvironments.Length; i++)
         {
-			if (new System.Guid(akEnvironments[i].valueGuid) == new System.Guid(componentGuid))
+			if (new Guid(akEnvironments[i].valueGuid) == new Guid(componentGuid))
 			{
 				found = true;
                 break;
@@ -88,7 +88,7 @@ public class AkDragDropHelper : MonoBehaviour
 			AkEnvironment akEnvironment = Undo.AddComponent<AkEnvironment>(gameObject);
 			if (akEnvironment != null)
             {
-				akEnvironment.valueGuid = new System.Guid(componentGuid).ToByteArray();
+				akEnvironment.valueGuid = new Guid(componentGuid).ToByteArray();
 				akEnvironment.SetAuxBusID(ID);
 			}
 		}
@@ -100,7 +100,7 @@ public class AkDragDropHelper : MonoBehaviour
 
         if (ambient != null)
         {
-			ambient.valueGuid = new System.Guid(componentGuid).ToByteArray();
+			ambient.valueGuid = new Guid(componentGuid).ToByteArray();
             ambient.eventID = ID;
         }
     }
@@ -111,7 +111,7 @@ public class AkDragDropHelper : MonoBehaviour
 
 		if (bank != null)
         {
-			bank.valueGuid = new System.Guid(componentGuid).ToByteArray();
+			bank.valueGuid = new Guid(componentGuid).ToByteArray();
 			bank.bankName = name;
         }
     }
@@ -122,9 +122,9 @@ public class AkDragDropHelper : MonoBehaviour
 		
 		if (akState != null)
         {
-			akState.groupGuid = new System.Guid(groupGuid).ToByteArray();
+			akState.groupGuid = new Guid(groupGuid).ToByteArray();
 			akState.groupID = groupID;
-            akState.valueGuid = new System.Guid(componentGuid).ToByteArray();
+            akState.valueGuid = new Guid(componentGuid).ToByteArray();
             akState.valueID = ID;
         }
     }
@@ -135,9 +135,9 @@ public class AkDragDropHelper : MonoBehaviour
 		
 		if (akSwitch != null)
         {
-			akSwitch.groupGuid = new System.Guid(groupGuid).ToByteArray();
+			akSwitch.groupGuid = new Guid(groupGuid).ToByteArray();
 			akSwitch.groupID = groupID;
-			akSwitch.valueGuid = new System.Guid(componentGuid).ToByteArray();
+			akSwitch.valueGuid = new Guid(componentGuid).ToByteArray();
 			akSwitch.valueID = ID;
         }
     }

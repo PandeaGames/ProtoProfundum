@@ -33,9 +33,10 @@ public class AkMultiPosEvent
 /// @brief Use this component to attach a Wwise Event to any object in a scene.
 /// The sound can be started at various moments, dependent on the selected Unity trigger.  This component is more useful for ambient sounds (sounds related to scene-bound objects) but could also be used for other purposes.
 /// \sa
-/// - \ref soundengine_events
+/// - \ref unity_use_AkEvent_AkAmbient
 /// - \ref AkGameObj
 /// - \ref AkEvent
+/// - \ref soundengine_events
 [RequireComponent (typeof(AkGameObj))]
 public class AkAmbient : AkEvent
 {
@@ -149,23 +150,7 @@ public class AkAmbient : AkEvent
 				                         );
 		}
 	}
-	
-	
-	protected override void OnDestroy()
-	{
-#if UNITY_EDITOR	
-		if (UnityEditor.EditorApplication.isPlaying)
-#endif
-		{
-			base.OnDestroy ();
-	
-			if (AkSoundEngine.IsInitialized())
-			{
-				AkSoundEngine.UnregisterGameObj(gameObject);
-			}
-		}
-	}
-	
+			
 	public void OnDrawGizmosSelected()
 	{
 		Gizmos.DrawIcon(transform.position, "WwiseAudioSpeaker.png", false);

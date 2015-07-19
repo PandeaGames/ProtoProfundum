@@ -39,11 +39,7 @@ public class AkAudioListener : MonoBehaviour
             transform.position.x, 
             transform.position.y, 
             transform.position.z,
-#if UNITY_PS3 && !UNITY_EDITOR
-            (ulong)listenerId);
-#else
             (uint)listenerId);
-#endif // #if UNITY_PS3
     }
 }
 #endif // #if ! (UNITY_DASHBOARD_WIDGET || UNITY_WEBPLAYER || UNITY_WII || UNITY_NACL || UNITY_FLASH || UNITY_BLACKBERRY) // Disable under unsupported platforms.

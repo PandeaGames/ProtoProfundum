@@ -23,22 +23,22 @@
 //@{
 
 /// Wwise SDK major version
-#define AK_WWISESDK_VERSION_MAJOR				2014
+#define AK_WWISESDK_VERSION_MAJOR				2015
 
 /// Wwise SDK minor version
 #define AK_WWISESDK_VERSION_MINOR				1
 
 /// Wwise SDK sub-minor version
-#define AK_WWISESDK_VERSION_SUBMINOR			5
+#define AK_WWISESDK_VERSION_SUBMINOR			0
 
 /// Wwise SDK build number
-#define AK_WWISESDK_VERSION_BUILD				5282
+#define AK_WWISESDK_VERSION_BUILD				5418
 
 /// Wwise SDK build date (year)
 #define AK_WWISESDK_BUILD_YEAR					2015
 
 /// Wwise SDK build date (month)
-#define AK_WWISESDK_BUILD_MONTH					5
+#define AK_WWISESDK_BUILD_MONTH					7
 
 /// Wwise SDK build date (day)
 #define AK_WWISESDK_BUILD_DAY					14
@@ -76,6 +76,9 @@
 											AK_WWISESDK_VERSION_SUBMINOR_POSTFIX \
 											AK_WWISESDK_VERSION_NICKNAME_POSTFIX
 
+/// Wwise SDK branch
+#define AK_WWISESDK_BRANCH					"wwise_v2015.1"
+
 /// @name Wwise SDK Copyright Notice
 
 //@{
@@ -85,10 +88,10 @@
 	// with the microsoft compiler...
 	
 	/// Wwise SDK copyright notice
-	#define AK_WWISESDK_COPYRIGHT 				"\xA9 Audiokinetic Inc. 2006-2015. All rights reserved."
+	#define AK_WWISESDK_COPYRIGHT 				"\xA9 2006-2015. Audiokinetic Inc. All rights reserved."
 #endif
 	/// Wwise SDK copyright notice
-	#define AK_WWISESDK_COPYRIGHT_CONSOLE 		"(C) Audiokinetic Inc. 2006-2015. All rights reserved."
+	#define AK_WWISESDK_COPYRIGHT_CONSOLE 		"(C) 2006-2015. Audiokinetic Inc. All rights reserved."
 //@}
 
 #endif // _AKWWISESDKVERSION_H_

@@ -61,7 +61,7 @@ public class AkWwiseTreeView : TreeViewControl
             {
                 if (i != AkInfo.PathAndIcons.Count - 1)
                 {
-					childItem = parentItem.AddItem(PathElem.ElementName, new AkTreeInfo(0, System.Guid.Empty.ToByteArray(), PathElem.ObjectType), GetExpansionStatus(path));
+					childItem = parentItem.AddItem(PathElem.ElementName, new AkTreeInfo(0, Guid.Empty.ToByteArray(), PathElem.ObjectType), GetExpansionStatus(path));
 				}
 				else
                 {
@@ -227,14 +227,14 @@ public class AkWwiseTreeView : TreeViewControl
                 {
                     AkTreeInfo ParentTreeInfo = (AkTreeInfo)item.Parent.DataContext;
                     paths = new string[6];
-					paths[4] = new System.Guid( ParentTreeInfo.Guid).ToString();
+					paths[4] = new Guid( ParentTreeInfo.Guid).ToString();
                     paths[5] = ParentTreeInfo.ID.ToString();
                 }
                 else
                 {
                     paths = new string[4];
                 }
-				paths[1] = new System.Guid(treeInfo.Guid).ToString();
+				paths[1] = new Guid(treeInfo.Guid).ToString();
                 paths[2] = treeInfo.ID.ToString();
                 paths[3] = objType;
             }
@@ -631,14 +631,14 @@ public class AkWwiseTreeView : TreeViewControl
 		return item;
 	}
 
-	public TreeViewItem GetItemByGuid(System.Guid in_guid)
+	public TreeViewItem GetItemByGuid(Guid in_guid)
 	{
 		return GetItemByGuid (RootItem, in_guid);
 	}
 
-	public TreeViewItem GetItemByGuid(TreeViewItem in_item, System.Guid in_guid)
+	public TreeViewItem GetItemByGuid(TreeViewItem in_item, Guid in_guid)
 	{
-		System.Guid itemGuid = new System.Guid ((in_item.DataContext as AkWwiseTreeView.AkTreeInfo).Guid);
+		Guid itemGuid = new Guid ((in_item.DataContext as AkWwiseTreeView.AkTreeInfo).Guid);
 
 		if(itemGuid.Equals(in_guid))
 			return in_item;

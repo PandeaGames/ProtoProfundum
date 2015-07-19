@@ -17,6 +17,7 @@ using System.IO;
 /// Unity usecases:
 /// - A BuildPipeline user context uses POSIX path convention for all platforms, including Windows and Xbox360.
 /// - Other usecases (runtime) use platform-specific path conventions.
+[System.Obsolete("The Base path functionality has been moved to AkInitializer. Please refer to the release notes in the Wwise help file for more information")]
 public class AkBankPathUtil
 {
 

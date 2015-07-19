@@ -14,7 +14,18 @@ using System.Reflection;
 [InitializeOnLoad]
 public class AkWwisePostImportCallback
 {
+    static AkWwisePostImportCallback()
+    {
+		PostImportFunction();
+    }
+
 	[DidReloadScripts(100000000)]
+	static void RefreshCallback()
+	{
+		PostImportFunction();
+		RefreshPlugins();
+	}
+	
 	static void  PostImportFunction()
     {				
 		// Do nothing in batch mode
@@ -36,21 +47,11 @@ public class AkWwisePostImportCallback
 			{
 				WwiseSetupWizard.Settings = WwiseSettings.LoadSettings();
 				AkWwiseProjectInfo.GetData();
-
-#if !UNITY_5
-				// Check if there are some new platforms to install.
-				InstallNewPlatforms();
-#else
-				if( string.IsNullOrEmpty(AkWwiseProjectInfo.GetData().CurrentPluginConfig) )
-				{
-					AkWwiseProjectInfo.GetData().CurrentPluginConfig = AkPluginActivator.CONFIG_PROFILE;
-				}
-				AkPluginActivator.RefreshPlugins();
-#endif
 			}
 
 			if( !string.IsNullOrEmpty(WwiseSetupWizard.Settings.WwiseProjectPath))
 			{
+				AkWwiseProjectInfo.Populate();
 				AkWwisePicker.PopulateTreeview();
 				if (AkWwiseProjectInfo.GetData().autoPopulateEnabled )
 				{
@@ -72,6 +73,20 @@ public class AkWwisePostImportCallback
 		{
 			EditorApplication.delayCall += DeletePopPicker;
 		}
+	}
+	
+	static void RefreshPlugins()
+	{
+#if !UNITY_5
+		// Check if there are some new platforms to install.
+		InstallNewPlatforms();
+#else
+		if( string.IsNullOrEmpty(AkWwiseProjectInfo.GetData().CurrentPluginConfig) )
+		{
+			AkWwiseProjectInfo.GetData().CurrentPluginConfig = AkPluginActivator.CONFIG_PROFILE;
+		}
+		AkPluginActivator.RefreshPlugins();
+#endif
 	}
 	
 	static void DeletePopPicker()
@@ -221,11 +236,7 @@ public class AkWwisePostImportCallback
             {
                 if (settings.CreateWwiseListener == false)
                 {
-					AkAudioListener akListener = Camera.main.gameObject.GetComponent<AkAudioListener>();
-					if (akListener != null)
-					{
-						Component.DestroyImmediate(akListener);
-					}
+                    Component.DestroyImmediate(akAudioListeners[0]);
                 }
             }
 

@@ -40,7 +40,7 @@ public class AkStateInspector : AkBaseInspector
 	{
 		if(Event.current.type == EventType.DragExited && m_isInDropArea && DragAndDrop.paths.Length >= 4 && DragAndDrop.paths[3].Equals(m_typeName))
 		{
-			AkUtilities.SetByteArrayProperty(m_guidProperty[1], new System.Guid(DragAndDrop.paths[4]).ToByteArray());
+			AkUtilities.SetByteArrayProperty(m_guidProperty[1], new Guid(DragAndDrop.paths[4]).ToByteArray());
 		}
 
 		base.OnInspectorGUI ();
@@ -55,12 +55,12 @@ public class AkStateInspector : AkBaseInspector
 		serializedObject.ApplyModifiedProperties ();
 	}
 	
-	public override string UpdateIds (System.Guid[] in_guid)
+	public override string UpdateIds (Guid[] in_guid)
 	{
 		string stateName = string.Empty;
 		for(int i = 0; i < AkWwiseProjectInfo.GetData().StateWwu.Count; i++)
 		{
-			AkWwiseProjectData.GroupValue stateGroup = AkWwiseProjectInfo.GetData().StateWwu[i].List.Find(x => new System.Guid(x.Guid).Equals(in_guid[1]));
+			AkWwiseProjectData.GroupValue stateGroup = AkWwiseProjectInfo.GetData().StateWwu[i].List.Find(x => new Guid(x.Guid).Equals(in_guid[1]));
 			
 			if(stateGroup != null)
 			{
@@ -69,7 +69,7 @@ public class AkStateInspector : AkBaseInspector
 				stateName = stateGroup.Name + "/";
 				m_groupID.intValue = stateGroup.ID;
 				
-				int index = stateGroup.ValueGuids.FindIndex(x => new System.Guid(x.bytes).Equals(in_guid[0]));
+				int index = stateGroup.ValueGuids.FindIndex(x => new Guid(x.bytes).Equals(in_guid[0]));
 				m_valueID.intValue = stateGroup.valueIDs[index];
 
 				serializedObject.ApplyModifiedProperties();

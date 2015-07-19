@@ -46,6 +46,31 @@ public class AkSoundEngine {
     } 
   }
 
+
+	public static AKRESULT RegisterGameObj(UnityEngine.GameObject in_gameObjectID) {
+		return RegisterGameObjInternal((int)in_gameObjectID.GetInstanceID());
+	}
+
+
+	public static AKRESULT RegisterGameObj(UnityEngine.GameObject in_gameObjectID, uint in_uListenerMask) {
+		return RegisterGameObjInternal_WithMask((int)in_gameObjectID.GetInstanceID(), (uint)in_uListenerMask);
+	}
+
+
+	public static AKRESULT RegisterGameObj(UnityEngine.GameObject in_gameObjectID, string in_pszObjName) {
+		return RegisterGameObjInternal_WithName((int)in_gameObjectID.GetInstanceID(), in_gameObjectID.name);
+	}
+
+
+	public static AKRESULT RegisterGameObj(UnityEngine.GameObject in_gameObjectID, string in_pszObjName, uint in_uListenerMask) {
+		return RegisterGameObjInternal_WithName_WithMask((int)in_gameObjectID.GetInstanceID(), in_gameObjectID.name, (uint)in_uListenerMask);
+	}
+
+	public static AKRESULT UnregisterGameObj(UnityEngine.GameObject in_gameObjectID) {
+		return UnregisterGameObjInternal((int)in_gameObjectID.GetInstanceID());
+	}
+
+ 
   public static ushort AK_INT {
     get {
       ushort ret = AkSoundEnginePINVOKE.CSharp_AK_INT_get();
@@ -97,16 +122,26 @@ public class AkSoundEngine {
 
   public static uint DynamicSequenceOpen(UnityEngine.GameObject in_gameObjectID, uint in_uFlags, AkCallbackManager.EventCallback in_pfnCallback, object in_pCookie, DynamicSequenceType in_eDynamicSequenceType) {
     
+		AkAutoObject tempObj = null;   
 		uint tempin_gameObjectID;
-		if ( in_gameObjectID != null && in_gameObjectID.activeInHierarchy )
+		if ( in_gameObjectID != null )
 		{
 			tempin_gameObjectID = (uint)in_gameObjectID.GetInstanceID();
-			// Note: if AkGameObjectTracker is already attached, the following code will be bypassed.
-			if (in_gameObjectID.GetComponent<AkGameObj>() == null)
+			if (in_gameObjectID.activeInHierarchy)
 			{
-				in_gameObjectID.AddComponent<AkGameObj>();
+				if (in_gameObjectID.GetComponent<AkGameObj>() == null)
+				{
+					in_gameObjectID.AddComponent<AkGameObj>();
+				}
 			}
-		}
+			else
+			{
+				//Object not active. AkGameObj will not work.  Use a temporary game object.  
+				//This will automatically unregister at the end of this scope.
+				tempObj = new AkAutoObject(in_gameObjectID);
+				tempin_gameObjectID = (uint)tempObj.m_id;	//Silence warning
+			}
+		}		
 		else
 		{
 			tempin_gameObjectID = unchecked((uint)-1);
@@ -123,16 +158,26 @@ public class AkSoundEngine {
 
   public static uint DynamicSequenceOpen(UnityEngine.GameObject in_gameObjectID, uint in_uFlags, AkCallbackManager.EventCallback in_pfnCallback, object in_pCookie) {
     
+		AkAutoObject tempObj = null;   
 		uint tempin_gameObjectID;
-		if ( in_gameObjectID != null && in_gameObjectID.activeInHierarchy )
+		if ( in_gameObjectID != null )
 		{
 			tempin_gameObjectID = (uint)in_gameObjectID.GetInstanceID();
-			// Note: if AkGameObjectTracker is already attached, the following code will be bypassed.
-			if (in_gameObjectID.GetComponent<AkGameObj>() == null)
+			if (in_gameObjectID.activeInHierarchy)
 			{
-				in_gameObjectID.AddComponent<AkGameObj>();
+				if (in_gameObjectID.GetComponent<AkGameObj>() == null)
+				{
+					in_gameObjectID.AddComponent<AkGameObj>();
+				}
 			}
-		}
+			else
+			{
+				//Object not active. AkGameObj will not work.  Use a temporary game object.  
+				//This will automatically unregister at the end of this scope.
+				tempObj = new AkAutoObject(in_gameObjectID);
+				tempin_gameObjectID = (uint)tempObj.m_id;	//Silence warning
+			}
+		}		
 		else
 		{
 			tempin_gameObjectID = unchecked((uint)-1);
@@ -149,16 +194,26 @@ public class AkSoundEngine {
 
   public static uint DynamicSequenceOpen(UnityEngine.GameObject in_gameObjectID, uint in_uFlags) {
     
+		AkAutoObject tempObj = null;   
 		uint tempin_gameObjectID;
-		if ( in_gameObjectID != null && in_gameObjectID.activeInHierarchy )
+		if ( in_gameObjectID != null )
 		{
 			tempin_gameObjectID = (uint)in_gameObjectID.GetInstanceID();
-			// Note: if AkGameObjectTracker is already attached, the following code will be bypassed.
-			if (in_gameObjectID.GetComponent<AkGameObj>() == null)
+			if (in_gameObjectID.activeInHierarchy)
 			{
-				in_gameObjectID.AddComponent<AkGameObj>();
+				if (in_gameObjectID.GetComponent<AkGameObj>() == null)
+				{
+					in_gameObjectID.AddComponent<AkGameObj>();
+				}
 			}
-		}
+			else
+			{
+				//Object not active. AkGameObj will not work.  Use a temporary game object.  
+				//This will automatically unregister at the end of this scope.
+				tempObj = new AkAutoObject(in_gameObjectID);
+				tempin_gameObjectID = (uint)tempObj.m_id;	//Silence warning
+			}
+		}		
 		else
 		{
 			tempin_gameObjectID = unchecked((uint)-1);
@@ -174,16 +229,26 @@ public class AkSoundEngine {
 
   public static uint DynamicSequenceOpen(UnityEngine.GameObject in_gameObjectID) {
     
+		AkAutoObject tempObj = null;   
 		uint tempin_gameObjectID;
-		if ( in_gameObjectID != null && in_gameObjectID.activeInHierarchy )
+		if ( in_gameObjectID != null )
 		{
 			tempin_gameObjectID = (uint)in_gameObjectID.GetInstanceID();
-			// Note: if AkGameObjectTracker is already attached, the following code will be bypassed.
-			if (in_gameObjectID.GetComponent<AkGameObj>() == null)
+			if (in_gameObjectID.activeInHierarchy)
 			{
-				in_gameObjectID.AddComponent<AkGameObj>();
+				if (in_gameObjectID.GetComponent<AkGameObj>() == null)
+				{
+					in_gameObjectID.AddComponent<AkGameObj>();
+				}
 			}
-		}
+			else
+			{
+				//Object not active. AkGameObj will not work.  Use a temporary game object.  
+				//This will automatically unregister at the end of this scope.
+				tempObj = new AkAutoObject(in_gameObjectID);
+				tempin_gameObjectID = (uint)tempObj.m_id;	//Silence warning
+			}
+		}		
 		else
 		{
 			tempin_gameObjectID = unchecked((uint)-1);
@@ -410,16 +475,26 @@ public class AkSoundEngine {
 
   public static uint PostEvent(uint in_eventID, UnityEngine.GameObject in_gameObjectID, uint in_uFlags, AkCallbackManager.EventCallback in_pfnCallback, object in_pCookie, uint in_cExternals, AkExternalSourceInfo in_pExternalSources, uint in_PlayingID) {
     
+		AkAutoObject tempObj = null;   
 		uint tempin_gameObjectID;
-		if ( in_gameObjectID != null && in_gameObjectID.activeInHierarchy )
+		if ( in_gameObjectID != null )
 		{
 			tempin_gameObjectID = (uint)in_gameObjectID.GetInstanceID();
-			// Note: if AkGameObjectTracker is already attached, the following code will be bypassed.
-			if (in_gameObjectID.GetComponent<AkGameObj>() == null)
+			if (in_gameObjectID.activeInHierarchy)
 			{
-				in_gameObjectID.AddComponent<AkGameObj>();
+				if (in_gameObjectID.GetComponent<AkGameObj>() == null)
+				{
+					in_gameObjectID.AddComponent<AkGameObj>();
+				}
 			}
-		}
+			else
+			{
+				//Object not active. AkGameObj will not work.  Use a temporary game object.  
+				//This will automatically unregister at the end of this scope.
+				tempObj = new AkAutoObject(in_gameObjectID);
+				tempin_gameObjectID = (uint)tempObj.m_id;	//Silence warning
+			}
+		}		
 		else
 		{
 			tempin_gameObjectID = unchecked((uint)-1);
@@ -436,16 +511,26 @@ public class AkSoundEngine {
 
   public static uint PostEvent(uint in_eventID, UnityEngine.GameObject in_gameObjectID, uint in_uFlags, AkCallbackManager.EventCallback in_pfnCallback, object in_pCookie, uint in_cExternals, AkExternalSourceInfo in_pExternalSources) {
     
+		AkAutoObject tempObj = null;   
 		uint tempin_gameObjectID;
-		if ( in_gameObjectID != null && in_gameObjectID.activeInHierarchy )
+		if ( in_gameObjectID != null )
 		{
 			tempin_gameObjectID = (uint)in_gameObjectID.GetInstanceID();
-			// Note: if AkGameObjectTracker is already attached, the following code will be bypassed.
-			if (in_gameObjectID.GetComponent<AkGameObj>() == null)
+			if (in_gameObjectID.activeInHierarchy)
 			{
-				in_gameObjectID.AddComponent<AkGameObj>();
+				if (in_gameObjectID.GetComponent<AkGameObj>() == null)
+				{
+					in_gameObjectID.AddComponent<AkGameObj>();
+				}
 			}
-		}
+			else
+			{
+				//Object not active. AkGameObj will not work.  Use a temporary game object.  
+				//This will automatically unregister at the end of this scope.
+				tempObj = new AkAutoObject(in_gameObjectID);
+				tempin_gameObjectID = (uint)tempObj.m_id;	//Silence warning
+			}
+		}		
 		else
 		{
 			tempin_gameObjectID = unchecked((uint)-1);
@@ -462,16 +547,26 @@ public class AkSoundEngine {
 
   public static uint PostEvent(uint in_eventID, UnityEngine.GameObject in_gameObjectID, uint in_uFlags, AkCallbackManager.EventCallback in_pfnCallback, object in_pCookie, uint in_cExternals) {
     
+		AkAutoObject tempObj = null;   
 		uint tempin_gameObjectID;
-		if ( in_gameObjectID != null && in_gameObjectID.activeInHierarchy )
+		if ( in_gameObjectID != null )
 		{
 			tempin_gameObjectID = (uint)in_gameObjectID.GetInstanceID();
-			// Note: if AkGameObjectTracker is already attached, the following code will be bypassed.
-			if (in_gameObjectID.GetComponent<AkGameObj>() == null)
+			if (in_gameObjectID.activeInHierarchy)
 			{
-				in_gameObjectID.AddComponent<AkGameObj>();
+				if (in_gameObjectID.GetComponent<AkGameObj>() == null)
+				{
+					in_gameObjectID.AddComponent<AkGameObj>();
+				}
 			}
-		}
+			else
+			{
+				//Object not active. AkGameObj will not work.  Use a temporary game object.  
+				//This will automatically unregister at the end of this scope.
+				tempObj = new AkAutoObject(in_gameObjectID);
+				tempin_gameObjectID = (uint)tempObj.m_id;	//Silence warning
+			}
+		}		
 		else
 		{
 			tempin_gameObjectID = unchecked((uint)-1);
@@ -488,16 +583,26 @@ public class AkSoundEngine {
 
   public static uint PostEvent(uint in_eventID, UnityEngine.GameObject in_gameObjectID, uint in_uFlags, AkCallbackManager.EventCallback in_pfnCallback, object in_pCookie) {
     
+		AkAutoObject tempObj = null;   
 		uint tempin_gameObjectID;
-		if ( in_gameObjectID != null && in_gameObjectID.activeInHierarchy )
+		if ( in_gameObjectID != null )
 		{
 			tempin_gameObjectID = (uint)in_gameObjectID.GetInstanceID();
-			// Note: if AkGameObjectTracker is already attached, the following code will be bypassed.
-			if (in_gameObjectID.GetComponent<AkGameObj>() == null)
+			if (in_gameObjectID.activeInHierarchy)
 			{
-				in_gameObjectID.AddComponent<AkGameObj>();
+				if (in_gameObjectID.GetComponent<AkGameObj>() == null)
+				{
+					in_gameObjectID.AddComponent<AkGameObj>();
+				}
 			}
-		}
+			else
+			{
+				//Object not active. AkGameObj will not work.  Use a temporary game object.  
+				//This will automatically unregister at the end of this scope.
+				tempObj = new AkAutoObject(in_gameObjectID);
+				tempin_gameObjectID = (uint)tempObj.m_id;	//Silence warning
+			}
+		}		
 		else
 		{
 			tempin_gameObjectID = unchecked((uint)-1);
@@ -514,16 +619,26 @@ public class AkSoundEngine {
 
   public static uint PostEvent(uint in_eventID, UnityEngine.GameObject in_gameObjectID, uint in_uFlags) {
     
+		AkAutoObject tempObj = null;   
 		uint tempin_gameObjectID;
-		if ( in_gameObjectID != null && in_gameObjectID.activeInHierarchy )
+		if ( in_gameObjectID != null )
 		{
 			tempin_gameObjectID = (uint)in_gameObjectID.GetInstanceID();
-			// Note: if AkGameObjectTracker is already attached, the following code will be bypassed.
-			if (in_gameObjectID.GetComponent<AkGameObj>() == null)
+			if (in_gameObjectID.activeInHierarchy)
 			{
-				in_gameObjectID.AddComponent<AkGameObj>();
+				if (in_gameObjectID.GetComponent<AkGameObj>() == null)
+				{
+					in_gameObjectID.AddComponent<AkGameObj>();
+				}
 			}
-		}
+			else
+			{
+				//Object not active. AkGameObj will not work.  Use a temporary game object.  
+				//This will automatically unregister at the end of this scope.
+				tempObj = new AkAutoObject(in_gameObjectID);
+				tempin_gameObjectID = (uint)tempObj.m_id;	//Silence warning
+			}
+		}		
 		else
 		{
 			tempin_gameObjectID = unchecked((uint)-1);
@@ -539,16 +654,26 @@ public class AkSoundEngine {
 
   public static uint PostEvent(uint in_eventID, UnityEngine.GameObject in_gameObjectID) {
     
+		AkAutoObject tempObj = null;   
 		uint tempin_gameObjectID;
-		if ( in_gameObjectID != null && in_gameObjectID.activeInHierarchy )
+		if ( in_gameObjectID != null )
 		{
 			tempin_gameObjectID = (uint)in_gameObjectID.GetInstanceID();
-			// Note: if AkGameObjectTracker is already attached, the following code will be bypassed.
-			if (in_gameObjectID.GetComponent<AkGameObj>() == null)
+			if (in_gameObjectID.activeInHierarchy)
 			{
-				in_gameObjectID.AddComponent<AkGameObj>();
+				if (in_gameObjectID.GetComponent<AkGameObj>() == null)
+				{
+					in_gameObjectID.AddComponent<AkGameObj>();
+				}
 			}
-		}
+			else
+			{
+				//Object not active. AkGameObj will not work.  Use a temporary game object.  
+				//This will automatically unregister at the end of this scope.
+				tempObj = new AkAutoObject(in_gameObjectID);
+				tempin_gameObjectID = (uint)tempObj.m_id;	//Silence warning
+			}
+		}		
 		else
 		{
 			tempin_gameObjectID = unchecked((uint)-1);
@@ -564,16 +689,26 @@ public class AkSoundEngine {
 
   public static uint PostEvent(string in_pszEventName, UnityEngine.GameObject in_gameObjectID, uint in_uFlags, AkCallbackManager.EventCallback in_pfnCallback, object in_pCookie, uint in_cExternals, AkExternalSourceInfo in_pExternalSources, uint in_PlayingID) {
     
+		AkAutoObject tempObj = null;   
 		uint tempin_gameObjectID;
-		if ( in_gameObjectID != null && in_gameObjectID.activeInHierarchy )
+		if ( in_gameObjectID != null )
 		{
 			tempin_gameObjectID = (uint)in_gameObjectID.GetInstanceID();
-			// Note: if AkGameObjectTracker is already attached, the following code will be bypassed.
-			if (in_gameObjectID.GetComponent<AkGameObj>() == null)
+			if (in_gameObjectID.activeInHierarchy)
 			{
-				in_gameObjectID.AddComponent<AkGameObj>();
+				if (in_gameObjectID.GetComponent<AkGameObj>() == null)
+				{
+					in_gameObjectID.AddComponent<AkGameObj>();
+				}
 			}
-		}
+			else
+			{
+				//Object not active. AkGameObj will not work.  Use a temporary game object.  
+				//This will automatically unregister at the end of this scope.
+				tempObj = new AkAutoObject(in_gameObjectID);
+				tempin_gameObjectID = (uint)tempObj.m_id;	//Silence warning
+			}
+		}		
 		else
 		{
 			tempin_gameObjectID = unchecked((uint)-1);
@@ -590,16 +725,26 @@ public class AkSoundEngine {
 
   public static uint PostEvent(string in_pszEventName, UnityEngine.GameObject in_gameObjectID, uint in_uFlags, AkCallbackManager.EventCallback in_pfnCallback, object in_pCookie, uint in_cExternals, AkExternalSourceInfo in_pExternalSources) {
     
+		AkAutoObject tempObj = null;   
 		uint tempin_gameObjectID;
-		if ( in_gameObjectID != null && in_gameObjectID.activeInHierarchy )
+		if ( in_gameObjectID != null )
 		{
 			tempin_gameObjectID = (uint)in_gameObjectID.GetInstanceID();
-			// Note: if AkGameObjectTracker is already attached, the following code will be bypassed.
-			if (in_gameObjectID.GetComponent<AkGameObj>() == null)
+			if (in_gameObjectID.activeInHierarchy)
 			{
-				in_gameObjectID.AddComponent<AkGameObj>();
+				if (in_gameObjectID.GetComponent<AkGameObj>() == null)
+				{
+					in_gameObjectID.AddComponent<AkGameObj>();
+				}
 			}
-		}
+			else
+			{
+				//Object not active. AkGameObj will not work.  Use a temporary game object.  
+				//This will automatically unregister at the end of this scope.
+				tempObj = new AkAutoObject(in_gameObjectID);
+				tempin_gameObjectID = (uint)tempObj.m_id;	//Silence warning
+			}
+		}		
 		else
 		{
 			tempin_gameObjectID = unchecked((uint)-1);
@@ -616,16 +761,26 @@ public class AkSoundEngine {
 
   public static uint PostEvent(string in_pszEventName, UnityEngine.GameObject in_gameObjectID, uint in_uFlags, AkCallbackManager.EventCallback in_pfnCallback, object in_pCookie, uint in_cExternals) {
     
+		AkAutoObject tempObj = null;   
 		uint tempin_gameObjectID;
-		if ( in_gameObjectID != null && in_gameObjectID.activeInHierarchy )
+		if ( in_gameObjectID != null )
 		{
 			tempin_gameObjectID = (uint)in_gameObjectID.GetInstanceID();
-			// Note: if AkGameObjectTracker is already attached, the following code will be bypassed.
-			if (in_gameObjectID.GetComponent<AkGameObj>() == null)
+			if (in_gameObjectID.activeInHierarchy)
 			{
-				in_gameObjectID.AddComponent<AkGameObj>();
+				if (in_gameObjectID.GetComponent<AkGameObj>() == null)
+				{
+					in_gameObjectID.AddComponent<AkGameObj>();
+				}
 			}
-		}
+			else
+			{
+				//Object not active. AkGameObj will not work.  Use a temporary game object.  
+				//This will automatically unregister at the end of this scope.
+				tempObj = new AkAutoObject(in_gameObjectID);
+				tempin_gameObjectID = (uint)tempObj.m_id;	//Silence warning
+			}
+		}		
 		else
 		{
 			tempin_gameObjectID = unchecked((uint)-1);
@@ -642,16 +797,26 @@ public class AkSoundEngine {
 
   public static uint PostEvent(string in_pszEventName, UnityEngine.GameObject in_gameObjectID, uint in_uFlags, AkCallbackManager.EventCallback in_pfnCallback, object in_pCookie) {
     
+		AkAutoObject tempObj = null;   
 		uint tempin_gameObjectID;
-		if ( in_gameObjectID != null && in_gameObjectID.activeInHierarchy )
+		if ( in_gameObjectID != null )
 		{
 			tempin_gameObjectID = (uint)in_gameObjectID.GetInstanceID();
-			// Note: if AkGameObjectTracker is already attached, the following code will be bypassed.
-			if (in_gameObjectID.GetComponent<AkGameObj>() == null)
+			if (in_gameObjectID.activeInHierarchy)
 			{
-				in_gameObjectID.AddComponent<AkGameObj>();
+				if (in_gameObjectID.GetComponent<AkGameObj>() == null)
+				{
+					in_gameObjectID.AddComponent<AkGameObj>();
+				}
 			}
-		}
+			else
+			{
+				//Object not active. AkGameObj will not work.  Use a temporary game object.  
+				//This will automatically unregister at the end of this scope.
+				tempObj = new AkAutoObject(in_gameObjectID);
+				tempin_gameObjectID = (uint)tempObj.m_id;	//Silence warning
+			}
+		}		
 		else
 		{
 			tempin_gameObjectID = unchecked((uint)-1);
@@ -668,16 +833,26 @@ public class AkSoundEngine {
 
   public static uint PostEvent(string in_pszEventName, UnityEngine.GameObject in_gameObjectID, uint in_uFlags) {
     
+		AkAutoObject tempObj = null;   
 		uint tempin_gameObjectID;
-		if ( in_gameObjectID != null && in_gameObjectID.activeInHierarchy )
+		if ( in_gameObjectID != null )
 		{
 			tempin_gameObjectID = (uint)in_gameObjectID.GetInstanceID();
-			// Note: if AkGameObjectTracker is already attached, the following code will be bypassed.
-			if (in_gameObjectID.GetComponent<AkGameObj>() == null)
+			if (in_gameObjectID.activeInHierarchy)
 			{
-				in_gameObjectID.AddComponent<AkGameObj>();
+				if (in_gameObjectID.GetComponent<AkGameObj>() == null)
+				{
+					in_gameObjectID.AddComponent<AkGameObj>();
+				}
 			}
-		}
+			else
+			{
+				//Object not active. AkGameObj will not work.  Use a temporary game object.  
+				//This will automatically unregister at the end of this scope.
+				tempObj = new AkAutoObject(in_gameObjectID);
+				tempin_gameObjectID = (uint)tempObj.m_id;	//Silence warning
+			}
+		}		
 		else
 		{
 			tempin_gameObjectID = unchecked((uint)-1);
@@ -693,16 +868,26 @@ public class AkSoundEngine {
 
   public static uint PostEvent(string in_pszEventName, UnityEngine.GameObject in_gameObjectID) {
     
+		AkAutoObject tempObj = null;   
 		uint tempin_gameObjectID;
-		if ( in_gameObjectID != null && in_gameObjectID.activeInHierarchy )
+		if ( in_gameObjectID != null )
 		{
 			tempin_gameObjectID = (uint)in_gameObjectID.GetInstanceID();
-			// Note: if AkGameObjectTracker is already attached, the following code will be bypassed.
-			if (in_gameObjectID.GetComponent<AkGameObj>() == null)
+			if (in_gameObjectID.activeInHierarchy)
 			{
-				in_gameObjectID.AddComponent<AkGameObj>();
+				if (in_gameObjectID.GetComponent<AkGameObj>() == null)
+				{
+					in_gameObjectID.AddComponent<AkGameObj>();
+				}
 			}
-		}
+			else
+			{
+				//Object not active. AkGameObj will not work.  Use a temporary game object.  
+				//This will automatically unregister at the end of this scope.
+				tempObj = new AkAutoObject(in_gameObjectID);
+				tempin_gameObjectID = (uint)tempObj.m_id;	//Silence warning
+			}
+		}		
 		else
 		{
 			tempin_gameObjectID = unchecked((uint)-1);
@@ -718,16 +903,26 @@ public class AkSoundEngine {
 
   public static AKRESULT ExecuteActionOnEvent(uint in_eventID, AkActionOnEventType in_ActionType, UnityEngine.GameObject in_gameObjectID, int in_uTransitionDuration, AkCurveInterpolation in_eFadeCurve, uint in_PlayingID) {
     
+		AkAutoObject tempObj = null;   
 		uint tempin_gameObjectID;
-		if ( in_gameObjectID != null && in_gameObjectID.activeInHierarchy )
+		if ( in_gameObjectID != null )
 		{
 			tempin_gameObjectID = (uint)in_gameObjectID.GetInstanceID();
-			// Note: if AkGameObjectTracker is already attached, the following code will be bypassed.
-			if (in_gameObjectID.GetComponent<AkGameObj>() == null)
+			if (in_gameObjectID.activeInHierarchy)
 			{
-				in_gameObjectID.AddComponent<AkGameObj>();
+				if (in_gameObjectID.GetComponent<AkGameObj>() == null)
+				{
+					in_gameObjectID.AddComponent<AkGameObj>();
+				}
 			}
-		}
+			else
+			{
+				//Object not active. AkGameObj will not work.  Use a temporary game object.  
+				//This will automatically unregister at the end of this scope.
+				tempObj = new AkAutoObject(in_gameObjectID);
+				tempin_gameObjectID = (uint)tempObj.m_id;	//Silence warning
+			}
+		}		
 		else
 		{
 			tempin_gameObjectID = unchecked((uint)-1);
@@ -743,16 +938,26 @@ public class AkSoundEngine {
 
   public static AKRESULT ExecuteActionOnEvent(uint in_eventID, AkActionOnEventType in_ActionType, UnityEngine.GameObject in_gameObjectID, int in_uTransitionDuration, AkCurveInterpolation in_eFadeCurve) {
     
+		AkAutoObject tempObj = null;   
 		uint tempin_gameObjectID;
-		if ( in_gameObjectID != null && in_gameObjectID.activeInHierarchy )
+		if ( in_gameObjectID != null )
 		{
 			tempin_gameObjectID = (uint)in_gameObjectID.GetInstanceID();
-			// Note: if AkGameObjectTracker is already attached, the following code will be bypassed.
-			if (in_gameObjectID.GetComponent<AkGameObj>() == null)
+			if (in_gameObjectID.activeInHierarchy)
 			{
-				in_gameObjectID.AddComponent<AkGameObj>();
+				if (in_gameObjectID.GetComponent<AkGameObj>() == null)
+				{
+					in_gameObjectID.AddComponent<AkGameObj>();
+				}
 			}
-		}
+			else
+			{
+				//Object not active. AkGameObj will not work.  Use a temporary game object.  
+				//This will automatically unregister at the end of this scope.
+				tempObj = new AkAutoObject(in_gameObjectID);
+				tempin_gameObjectID = (uint)tempObj.m_id;	//Silence warning
+			}
+		}		
 		else
 		{
 			tempin_gameObjectID = unchecked((uint)-1);
@@ -768,16 +973,26 @@ public class AkSoundEngine {
 
   public static AKRESULT ExecuteActionOnEvent(uint in_eventID, AkActionOnEventType in_ActionType, UnityEngine.GameObject in_gameObjectID, int in_uTransitionDuration) {
     
+		AkAutoObject tempObj = null;   
 		uint tempin_gameObjectID;
-		if ( in_gameObjectID != null && in_gameObjectID.activeInHierarchy )
+		if ( in_gameObjectID != null )
 		{
 			tempin_gameObjectID = (uint)in_gameObjectID.GetInstanceID();
-			// Note: if AkGameObjectTracker is already attached, the following code will be bypassed.
-			if (in_gameObjectID.GetComponent<AkGameObj>() == null)
+			if (in_gameObjectID.activeInHierarchy)
 			{
-				in_gameObjectID.AddComponent<AkGameObj>();
+				if (in_gameObjectID.GetComponent<AkGameObj>() == null)
+				{
+					in_gameObjectID.AddComponent<AkGameObj>();
+				}
 			}
-		}
+			else
+			{
+				//Object not active. AkGameObj will not work.  Use a temporary game object.  
+				//This will automatically unregister at the end of this scope.
+				tempObj = new AkAutoObject(in_gameObjectID);
+				tempin_gameObjectID = (uint)tempObj.m_id;	//Silence warning
+			}
+		}		
 		else
 		{
 			tempin_gameObjectID = unchecked((uint)-1);
@@ -793,16 +1008,26 @@ public class AkSoundEngine {
 
   public static AKRESULT ExecuteActionOnEvent(uint in_eventID, AkActionOnEventType in_ActionType, UnityEngine.GameObject in_gameObjectID) {
     
+		AkAutoObject tempObj = null;   
 		uint tempin_gameObjectID;
-		if ( in_gameObjectID != null && in_gameObjectID.activeInHierarchy )
+		if ( in_gameObjectID != null )
 		{
 			tempin_gameObjectID = (uint)in_gameObjectID.GetInstanceID();
-			// Note: if AkGameObjectTracker is already attached, the following code will be bypassed.
-			if (in_gameObjectID.GetComponent<AkGameObj>() == null)
+			if (in_gameObjectID.activeInHierarchy)
 			{
-				in_gameObjectID.AddComponent<AkGameObj>();
+				if (in_gameObjectID.GetComponent<AkGameObj>() == null)
+				{
+					in_gameObjectID.AddComponent<AkGameObj>();
+				}
 			}
-		}
+			else
+			{
+				//Object not active. AkGameObj will not work.  Use a temporary game object.  
+				//This will automatically unregister at the end of this scope.
+				tempObj = new AkAutoObject(in_gameObjectID);
+				tempin_gameObjectID = (uint)tempObj.m_id;	//Silence warning
+			}
+		}		
 		else
 		{
 			tempin_gameObjectID = unchecked((uint)-1);
@@ -824,16 +1049,26 @@ public class AkSoundEngine {
 
   public static AKRESULT ExecuteActionOnEvent(string in_pszEventName, AkActionOnEventType in_ActionType, UnityEngine.GameObject in_gameObjectID, int in_uTransitionDuration, AkCurveInterpolation in_eFadeCurve, uint in_PlayingID) {
     
+		AkAutoObject tempObj = null;   
 		uint tempin_gameObjectID;
-		if ( in_gameObjectID != null && in_gameObjectID.activeInHierarchy )
+		if ( in_gameObjectID != null )
 		{
 			tempin_gameObjectID = (uint)in_gameObjectID.GetInstanceID();
-			// Note: if AkGameObjectTracker is already attached, the following code will be bypassed.
-			if (in_gameObjectID.GetComponent<AkGameObj>() == null)
+			if (in_gameObjectID.activeInHierarchy)
 			{
-				in_gameObjectID.AddComponent<AkGameObj>();
+				if (in_gameObjectID.GetComponent<AkGameObj>() == null)
+				{
+					in_gameObjectID.AddComponent<AkGameObj>();
+				}
 			}
-		}
+			else
+			{
+				//Object not active. AkGameObj will not work.  Use a temporary game object.  
+				//This will automatically unregister at the end of this scope.
+				tempObj = new AkAutoObject(in_gameObjectID);
+				tempin_gameObjectID = (uint)tempObj.m_id;	//Silence warning
+			}
+		}		
 		else
 		{
 			tempin_gameObjectID = unchecked((uint)-1);
@@ -849,16 +1084,26 @@ public class AkSoundEngine {
 
   public static AKRESULT ExecuteActionOnEvent(string in_pszEventName, AkActionOnEventType in_ActionType, UnityEngine.GameObject in_gameObjectID, int in_uTransitionDuration, AkCurveInterpolation in_eFadeCurve) {
     
+		AkAutoObject tempObj = null;   
 		uint tempin_gameObjectID;
-		if ( in_gameObjectID != null && in_gameObjectID.activeInHierarchy )
+		if ( in_gameObjectID != null )
 		{
 			tempin_gameObjectID = (uint)in_gameObjectID.GetInstanceID();
-			// Note: if AkGameObjectTracker is already attached, the following code will be bypassed.
-			if (in_gameObjectID.GetComponent<AkGameObj>() == null)
+			if (in_gameObjectID.activeInHierarchy)
 			{
-				in_gameObjectID.AddComponent<AkGameObj>();
+				if (in_gameObjectID.GetComponent<AkGameObj>() == null)
+				{
+					in_gameObjectID.AddComponent<AkGameObj>();
+				}
 			}
-		}
+			else
+			{
+				//Object not active. AkGameObj will not work.  Use a temporary game object.  
+				//This will automatically unregister at the end of this scope.
+				tempObj = new AkAutoObject(in_gameObjectID);
+				tempin_gameObjectID = (uint)tempObj.m_id;	//Silence warning
+			}
+		}		
 		else
 		{
 			tempin_gameObjectID = unchecked((uint)-1);
@@ -874,16 +1119,26 @@ public class AkSoundEngine {
 
   public static AKRESULT ExecuteActionOnEvent(string in_pszEventName, AkActionOnEventType in_ActionType, UnityEngine.GameObject in_gameObjectID, int in_uTransitionDuration) {
     
+		AkAutoObject tempObj = null;   
 		uint tempin_gameObjectID;
-		if ( in_gameObjectID != null && in_gameObjectID.activeInHierarchy )
+		if ( in_gameObjectID != null )
 		{
 			tempin_gameObjectID = (uint)in_gameObjectID.GetInstanceID();
-			// Note: if AkGameObjectTracker is already attached, the following code will be bypassed.
-			if (in_gameObjectID.GetComponent<AkGameObj>() == null)
+			if (in_gameObjectID.activeInHierarchy)
 			{
-				in_gameObjectID.AddComponent<AkGameObj>();
+				if (in_gameObjectID.GetComponent<AkGameObj>() == null)
+				{
+					in_gameObjectID.AddComponent<AkGameObj>();
+				}
 			}
-		}
+			else
+			{
+				//Object not active. AkGameObj will not work.  Use a temporary game object.  
+				//This will automatically unregister at the end of this scope.
+				tempObj = new AkAutoObject(in_gameObjectID);
+				tempin_gameObjectID = (uint)tempObj.m_id;	//Silence warning
+			}
+		}		
 		else
 		{
 			tempin_gameObjectID = unchecked((uint)-1);
@@ -899,16 +1154,26 @@ public class AkSoundEngine {
 
   public static AKRESULT ExecuteActionOnEvent(string in_pszEventName, AkActionOnEventType in_ActionType, UnityEngine.GameObject in_gameObjectID) {
     
+		AkAutoObject tempObj = null;   
 		uint tempin_gameObjectID;
-		if ( in_gameObjectID != null && in_gameObjectID.activeInHierarchy )
+		if ( in_gameObjectID != null )
 		{
 			tempin_gameObjectID = (uint)in_gameObjectID.GetInstanceID();
-			// Note: if AkGameObjectTracker is already attached, the following code will be bypassed.
-			if (in_gameObjectID.GetComponent<AkGameObj>() == null)
+			if (in_gameObjectID.activeInHierarchy)
 			{
-				in_gameObjectID.AddComponent<AkGameObj>();
+				if (in_gameObjectID.GetComponent<AkGameObj>() == null)
+				{
+					in_gameObjectID.AddComponent<AkGameObj>();
+				}
 			}
-		}
+			else
+			{
+				//Object not active. AkGameObj will not work.  Use a temporary game object.  
+				//This will automatically unregister at the end of this scope.
+				tempObj = new AkAutoObject(in_gameObjectID);
+				tempin_gameObjectID = (uint)tempObj.m_id;	//Silence warning
+			}
+		}		
 		else
 		{
 			tempin_gameObjectID = unchecked((uint)-1);
@@ -928,18 +1193,64 @@ public class AkSoundEngine {
     return ret;
   }
 
+  public static AKRESULT PinEventInStreamCache(uint in_eventID, char in_uActivePriority, char in_uInactivePriority) {
+    AKRESULT ret = (AKRESULT)AkSoundEnginePINVOKE.CSharp_PinEventInStreamCache__SWIG_0(in_eventID, in_uActivePriority, in_uInactivePriority);
+
+    return ret;
+  }
+
+  public static AKRESULT PinEventInStreamCache(string in_pszEventName, char in_uActivePriority, char in_uInactivePriority) {
+    AKRESULT ret = (AKRESULT)AkSoundEnginePINVOKE.CSharp_PinEventInStreamCache__SWIG_1(in_pszEventName, in_uActivePriority, in_uInactivePriority);
+
+    return ret;
+  }
+
+  public static AKRESULT UnpinEventInStreamCache(uint in_eventID) {
+    AKRESULT ret = (AKRESULT)AkSoundEnginePINVOKE.CSharp_UnpinEventInStreamCache__SWIG_0(in_eventID);
+
+    return ret;
+  }
+
+  public static AKRESULT UnpinEventInStreamCache(string in_pszEventName) {
+    AKRESULT ret = (AKRESULT)AkSoundEnginePINVOKE.CSharp_UnpinEventInStreamCache__SWIG_1(in_pszEventName);
+
+    return ret;
+  }
+
+  public static AKRESULT GetBufferStatusForPinnedEvent(uint in_eventID, out float out_fPercentBuffered, out int out_bCachePinnedMemoryFull) {
+    AKRESULT ret = (AKRESULT)AkSoundEnginePINVOKE.CSharp_GetBufferStatusForPinnedEvent__SWIG_0(in_eventID, out out_fPercentBuffered, out out_bCachePinnedMemoryFull);
+
+    return ret;
+  }
+
+  public static AKRESULT GetBufferStatusForPinnedEvent(string in_pszEventName, out float out_fPercentBuffered, out int out_bCachePinnedMemoryFull) {
+    AKRESULT ret = (AKRESULT)AkSoundEnginePINVOKE.CSharp_GetBufferStatusForPinnedEvent__SWIG_1(in_pszEventName, out out_fPercentBuffered, out out_bCachePinnedMemoryFull);
+
+    return ret;
+  }
+
   public static AKRESULT SeekOnEvent(uint in_eventID, UnityEngine.GameObject in_gameObjectID, int in_iPosition, bool in_bSeekToNearestMarker, uint in_PlayingID) {
     
+		AkAutoObject tempObj = null;   
 		uint tempin_gameObjectID;
-		if ( in_gameObjectID != null && in_gameObjectID.activeInHierarchy )
+		if ( in_gameObjectID != null )
 		{
 			tempin_gameObjectID = (uint)in_gameObjectID.GetInstanceID();
-			// Note: if AkGameObjectTracker is already attached, the following code will be bypassed.
-			if (in_gameObjectID.GetComponent<AkGameObj>() == null)
+			if (in_gameObjectID.activeInHierarchy)
 			{
-				in_gameObjectID.AddComponent<AkGameObj>();
+				if (in_gameObjectID.GetComponent<AkGameObj>() == null)
+				{
+					in_gameObjectID.AddComponent<AkGameObj>();
+				}
 			}
-		}
+			else
+			{
+				//Object not active. AkGameObj will not work.  Use a temporary game object.  
+				//This will automatically unregister at the end of this scope.
+				tempObj = new AkAutoObject(in_gameObjectID);
+				tempin_gameObjectID = (uint)tempObj.m_id;	//Silence warning
+			}
+		}		
 		else
 		{
 			tempin_gameObjectID = unchecked((uint)-1);
@@ -955,16 +1266,26 @@ public class AkSoundEngine {
 
   public static AKRESULT SeekOnEvent(uint in_eventID, UnityEngine.GameObject in_gameObjectID, int in_iPosition, bool in_bSeekToNearestMarker) {
     
+		AkAutoObject tempObj = null;   
 		uint tempin_gameObjectID;
-		if ( in_gameObjectID != null && in_gameObjectID.activeInHierarchy )
+		if ( in_gameObjectID != null )
 		{
 			tempin_gameObjectID = (uint)in_gameObjectID.GetInstanceID();
-			// Note: if AkGameObjectTracker is already attached, the following code will be bypassed.
-			if (in_gameObjectID.GetComponent<AkGameObj>() == null)
+			if (in_gameObjectID.activeInHierarchy)
 			{
-				in_gameObjectID.AddComponent<AkGameObj>();
+				if (in_gameObjectID.GetComponent<AkGameObj>() == null)
+				{
+					in_gameObjectID.AddComponent<AkGameObj>();
+				}
 			}
-		}
+			else
+			{
+				//Object not active. AkGameObj will not work.  Use a temporary game object.  
+				//This will automatically unregister at the end of this scope.
+				tempObj = new AkAutoObject(in_gameObjectID);
+				tempin_gameObjectID = (uint)tempObj.m_id;	//Silence warning
+			}
+		}		
 		else
 		{
 			tempin_gameObjectID = unchecked((uint)-1);
@@ -980,16 +1301,26 @@ public class AkSoundEngine {
 
   public static AKRESULT SeekOnEvent(uint in_eventID, UnityEngine.GameObject in_gameObjectID, int in_iPosition) {
     
+		AkAutoObject tempObj = null;   
 		uint tempin_gameObjectID;
-		if ( in_gameObjectID != null && in_gameObjectID.activeInHierarchy )
+		if ( in_gameObjectID != null )
 		{
 			tempin_gameObjectID = (uint)in_gameObjectID.GetInstanceID();
-			// Note: if AkGameObjectTracker is already attached, the following code will be bypassed.
-			if (in_gameObjectID.GetComponent<AkGameObj>() == null)
+			if (in_gameObjectID.activeInHierarchy)
 			{
-				in_gameObjectID.AddComponent<AkGameObj>();
+				if (in_gameObjectID.GetComponent<AkGameObj>() == null)
+				{
+					in_gameObjectID.AddComponent<AkGameObj>();
+				}
 			}
-		}
+			else
+			{
+				//Object not active. AkGameObj will not work.  Use a temporary game object.  
+				//This will automatically unregister at the end of this scope.
+				tempObj = new AkAutoObject(in_gameObjectID);
+				tempin_gameObjectID = (uint)tempObj.m_id;	//Silence warning
+			}
+		}		
 		else
 		{
 			tempin_gameObjectID = unchecked((uint)-1);
@@ -1005,16 +1336,26 @@ public class AkSoundEngine {
 
   public static AKRESULT SeekOnEvent(string in_pszEventName, UnityEngine.GameObject in_gameObjectID, int in_iPosition, bool in_bSeekToNearestMarker, uint in_PlayingID) {
     
+		AkAutoObject tempObj = null;   
 		uint tempin_gameObjectID;
-		if ( in_gameObjectID != null && in_gameObjectID.activeInHierarchy )
+		if ( in_gameObjectID != null )
 		{
 			tempin_gameObjectID = (uint)in_gameObjectID.GetInstanceID();
-			// Note: if AkGameObjectTracker is already attached, the following code will be bypassed.
-			if (in_gameObjectID.GetComponent<AkGameObj>() == null)
+			if (in_gameObjectID.activeInHierarchy)
 			{
-				in_gameObjectID.AddComponent<AkGameObj>();
+				if (in_gameObjectID.GetComponent<AkGameObj>() == null)
+				{
+					in_gameObjectID.AddComponent<AkGameObj>();
+				}
 			}
-		}
+			else
+			{
+				//Object not active. AkGameObj will not work.  Use a temporary game object.  
+				//This will automatically unregister at the end of this scope.
+				tempObj = new AkAutoObject(in_gameObjectID);
+				tempin_gameObjectID = (uint)tempObj.m_id;	//Silence warning
+			}
+		}		
 		else
 		{
 			tempin_gameObjectID = unchecked((uint)-1);
@@ -1030,16 +1371,26 @@ public class AkSoundEngine {
 
   public static AKRESULT SeekOnEvent(string in_pszEventName, UnityEngine.GameObject in_gameObjectID, int in_iPosition, bool in_bSeekToNearestMarker) {
     
+		AkAutoObject tempObj = null;   
 		uint tempin_gameObjectID;
-		if ( in_gameObjectID != null && in_gameObjectID.activeInHierarchy )
+		if ( in_gameObjectID != null )
 		{
 			tempin_gameObjectID = (uint)in_gameObjectID.GetInstanceID();
-			// Note: if AkGameObjectTracker is already attached, the following code will be bypassed.
-			if (in_gameObjectID.GetComponent<AkGameObj>() == null)
+			if (in_gameObjectID.activeInHierarchy)
 			{
-				in_gameObjectID.AddComponent<AkGameObj>();
+				if (in_gameObjectID.GetComponent<AkGameObj>() == null)
+				{
+					in_gameObjectID.AddComponent<AkGameObj>();
+				}
 			}
-		}
+			else
+			{
+				//Object not active. AkGameObj will not work.  Use a temporary game object.  
+				//This will automatically unregister at the end of this scope.
+				tempObj = new AkAutoObject(in_gameObjectID);
+				tempin_gameObjectID = (uint)tempObj.m_id;	//Silence warning
+			}
+		}		
 		else
 		{
 			tempin_gameObjectID = unchecked((uint)-1);
@@ -1055,16 +1406,26 @@ public class AkSoundEngine {
 
   public static AKRESULT SeekOnEvent(string in_pszEventName, UnityEngine.GameObject in_gameObjectID, int in_iPosition) {
     
+		AkAutoObject tempObj = null;   
 		uint tempin_gameObjectID;
-		if ( in_gameObjectID != null && in_gameObjectID.activeInHierarchy )
+		if ( in_gameObjectID != null )
 		{
 			tempin_gameObjectID = (uint)in_gameObjectID.GetInstanceID();
-			// Note: if AkGameObjectTracker is already attached, the following code will be bypassed.
-			if (in_gameObjectID.GetComponent<AkGameObj>() == null)
+			if (in_gameObjectID.activeInHierarchy)
 			{
-				in_gameObjectID.AddComponent<AkGameObj>();
+				if (in_gameObjectID.GetComponent<AkGameObj>() == null)
+				{
+					in_gameObjectID.AddComponent<AkGameObj>();
+				}
 			}
-		}
+			else
+			{
+				//Object not active. AkGameObj will not work.  Use a temporary game object.  
+				//This will automatically unregister at the end of this scope.
+				tempObj = new AkAutoObject(in_gameObjectID);
+				tempin_gameObjectID = (uint)tempObj.m_id;	//Silence warning
+			}
+		}		
 		else
 		{
 			tempin_gameObjectID = unchecked((uint)-1);
@@ -1080,16 +1441,26 @@ public class AkSoundEngine {
 
   public static AKRESULT SeekOnEvent(uint in_eventID, UnityEngine.GameObject in_gameObjectID, float in_fPercent, bool in_bSeekToNearestMarker, uint in_PlayingID) {
     
+		AkAutoObject tempObj = null;   
 		uint tempin_gameObjectID;
-		if ( in_gameObjectID != null && in_gameObjectID.activeInHierarchy )
+		if ( in_gameObjectID != null )
 		{
 			tempin_gameObjectID = (uint)in_gameObjectID.GetInstanceID();
-			// Note: if AkGameObjectTracker is already attached, the following code will be bypassed.
-			if (in_gameObjectID.GetComponent<AkGameObj>() == null)
+			if (in_gameObjectID.activeInHierarchy)
 			{
-				in_gameObjectID.AddComponent<AkGameObj>();
+				if (in_gameObjectID.GetComponent<AkGameObj>() == null)
+				{
+					in_gameObjectID.AddComponent<AkGameObj>();
+				}
 			}
-		}
+			else
+			{
+				//Object not active. AkGameObj will not work.  Use a temporary game object.  
+				//This will automatically unregister at the end of this scope.
+				tempObj = new AkAutoObject(in_gameObjectID);
+				tempin_gameObjectID = (uint)tempObj.m_id;	//Silence warning
+			}
+		}		
 		else
 		{
 			tempin_gameObjectID = unchecked((uint)-1);
@@ -1105,16 +1476,26 @@ public class AkSoundEngine {
 
   public static AKRESULT SeekOnEvent(uint in_eventID, UnityEngine.GameObject in_gameObjectID, float in_fPercent, bool in_bSeekToNearestMarker) {
     
+		AkAutoObject tempObj = null;   
 		uint tempin_gameObjectID;
-		if ( in_gameObjectID != null && in_gameObjectID.activeInHierarchy )
+		if ( in_gameObjectID != null )
 		{
 			tempin_gameObjectID = (uint)in_gameObjectID.GetInstanceID();
-			// Note: if AkGameObjectTracker is already attached, the following code will be bypassed.
-			if (in_gameObjectID.GetComponent<AkGameObj>() == null)
+			if (in_gameObjectID.activeInHierarchy)
 			{
-				in_gameObjectID.AddComponent<AkGameObj>();
+				if (in_gameObjectID.GetComponent<AkGameObj>() == null)
+				{
+					in_gameObjectID.AddComponent<AkGameObj>();
+				}
 			}
-		}
+			else
+			{
+				//Object not active. AkGameObj will not work.  Use a temporary game object.  
+				//This will automatically unregister at the end of this scope.
+				tempObj = new AkAutoObject(in_gameObjectID);
+				tempin_gameObjectID = (uint)tempObj.m_id;	//Silence warning
+			}
+		}		
 		else
 		{
 			tempin_gameObjectID = unchecked((uint)-1);
@@ -1130,16 +1511,26 @@ public class AkSoundEngine {
 
   public static AKRESULT SeekOnEvent(uint in_eventID, UnityEngine.GameObject in_gameObjectID, float in_fPercent) {
     
+		AkAutoObject tempObj = null;   
 		uint tempin_gameObjectID;
-		if ( in_gameObjectID != null && in_gameObjectID.activeInHierarchy )
+		if ( in_gameObjectID != null )
 		{
 			tempin_gameObjectID = (uint)in_gameObjectID.GetInstanceID();
-			// Note: if AkGameObjectTracker is already attached, the following code will be bypassed.
-			if (in_gameObjectID.GetComponent<AkGameObj>() == null)
+			if (in_gameObjectID.activeInHierarchy)
 			{
-				in_gameObjectID.AddComponent<AkGameObj>();
+				if (in_gameObjectID.GetComponent<AkGameObj>() == null)
+				{
+					in_gameObjectID.AddComponent<AkGameObj>();
+				}
 			}
-		}
+			else
+			{
+				//Object not active. AkGameObj will not work.  Use a temporary game object.  
+				//This will automatically unregister at the end of this scope.
+				tempObj = new AkAutoObject(in_gameObjectID);
+				tempin_gameObjectID = (uint)tempObj.m_id;	//Silence warning
+			}
+		}		
 		else
 		{
 			tempin_gameObjectID = unchecked((uint)-1);
@@ -1155,16 +1546,26 @@ public class AkSoundEngine {
 
   public static AKRESULT SeekOnEvent(string in_pszEventName, UnityEngine.GameObject in_gameObjectID, float in_fPercent, bool in_bSeekToNearestMarker, uint in_PlayingID) {
     
+		AkAutoObject tempObj = null;   
 		uint tempin_gameObjectID;
-		if ( in_gameObjectID != null && in_gameObjectID.activeInHierarchy )
+		if ( in_gameObjectID != null )
 		{
 			tempin_gameObjectID = (uint)in_gameObjectID.GetInstanceID();
-			// Note: if AkGameObjectTracker is already attached, the following code will be bypassed.
-			if (in_gameObjectID.GetComponent<AkGameObj>() == null)
+			if (in_gameObjectID.activeInHierarchy)
 			{
-				in_gameObjectID.AddComponent<AkGameObj>();
+				if (in_gameObjectID.GetComponent<AkGameObj>() == null)
+				{
+					in_gameObjectID.AddComponent<AkGameObj>();
+				}
 			}
-		}
+			else
+			{
+				//Object not active. AkGameObj will not work.  Use a temporary game object.  
+				//This will automatically unregister at the end of this scope.
+				tempObj = new AkAutoObject(in_gameObjectID);
+				tempin_gameObjectID = (uint)tempObj.m_id;	//Silence warning
+			}
+		}		
 		else
 		{
 			tempin_gameObjectID = unchecked((uint)-1);
@@ -1180,16 +1581,26 @@ public class AkSoundEngine {
 
   public static AKRESULT SeekOnEvent(string in_pszEventName, UnityEngine.GameObject in_gameObjectID, float in_fPercent, bool in_bSeekToNearestMarker) {
     
+		AkAutoObject tempObj = null;   
 		uint tempin_gameObjectID;
-		if ( in_gameObjectID != null && in_gameObjectID.activeInHierarchy )
+		if ( in_gameObjectID != null )
 		{
 			tempin_gameObjectID = (uint)in_gameObjectID.GetInstanceID();
-			// Note: if AkGameObjectTracker is already attached, the following code will be bypassed.
-			if (in_gameObjectID.GetComponent<AkGameObj>() == null)
+			if (in_gameObjectID.activeInHierarchy)
 			{
-				in_gameObjectID.AddComponent<AkGameObj>();
+				if (in_gameObjectID.GetComponent<AkGameObj>() == null)
+				{
+					in_gameObjectID.AddComponent<AkGameObj>();
+				}
 			}
-		}
+			else
+			{
+				//Object not active. AkGameObj will not work.  Use a temporary game object.  
+				//This will automatically unregister at the end of this scope.
+				tempObj = new AkAutoObject(in_gameObjectID);
+				tempin_gameObjectID = (uint)tempObj.m_id;	//Silence warning
+			}
+		}		
 		else
 		{
 			tempin_gameObjectID = unchecked((uint)-1);
@@ -1205,16 +1616,26 @@ public class AkSoundEngine {
 
   public static AKRESULT SeekOnEvent(string in_pszEventName, UnityEngine.GameObject in_gameObjectID, float in_fPercent) {
     
+		AkAutoObject tempObj = null;   
 		uint tempin_gameObjectID;
-		if ( in_gameObjectID != null && in_gameObjectID.activeInHierarchy )
+		if ( in_gameObjectID != null )
 		{
 			tempin_gameObjectID = (uint)in_gameObjectID.GetInstanceID();
-			// Note: if AkGameObjectTracker is already attached, the following code will be bypassed.
-			if (in_gameObjectID.GetComponent<AkGameObj>() == null)
+			if (in_gameObjectID.activeInHierarchy)
 			{
-				in_gameObjectID.AddComponent<AkGameObj>();
+				if (in_gameObjectID.GetComponent<AkGameObj>() == null)
+				{
+					in_gameObjectID.AddComponent<AkGameObj>();
+				}
 			}
-		}
+			else
+			{
+				//Object not active. AkGameObj will not work.  Use a temporary game object.  
+				//This will automatically unregister at the end of this scope.
+				tempObj = new AkAutoObject(in_gameObjectID);
+				tempin_gameObjectID = (uint)tempObj.m_id;	//Silence warning
+			}
+		}		
 		else
 		{
 			tempin_gameObjectID = unchecked((uint)-1);
@@ -1261,16 +1682,26 @@ public class AkSoundEngine {
 
   public static void StopAll(UnityEngine.GameObject in_gameObjectID) {
     
+		AkAutoObject tempObj = null;   
 		uint tempin_gameObjectID;
-		if ( in_gameObjectID != null && in_gameObjectID.activeInHierarchy )
+		if ( in_gameObjectID != null )
 		{
 			tempin_gameObjectID = (uint)in_gameObjectID.GetInstanceID();
-			// Note: if AkGameObjectTracker is already attached, the following code will be bypassed.
-			if (in_gameObjectID.GetComponent<AkGameObj>() == null)
+			if (in_gameObjectID.activeInHierarchy)
 			{
-				in_gameObjectID.AddComponent<AkGameObj>();
+				if (in_gameObjectID.GetComponent<AkGameObj>() == null)
+				{
+					in_gameObjectID.AddComponent<AkGameObj>();
+				}
 			}
-		}
+			else
+			{
+				//Object not active. AkGameObj will not work.  Use a temporary game object.  
+				//This will automatically unregister at the end of this scope.
+				tempObj = new AkAutoObject(in_gameObjectID);
+				tempin_gameObjectID = (uint)tempObj.m_id;	//Silence warning
+			}
+		}		
 		else
 		{
 			tempin_gameObjectID = unchecked((uint)-1);
@@ -1313,131 +1744,6 @@ public class AkSoundEngine {
 
   }
 
-  public static AKRESULT RegisterGameObj(UnityEngine.GameObject in_gameObjectID, uint in_uListenerMask) {
-    
-		uint tempin_gameObjectID;
-		if ( in_gameObjectID != null && in_gameObjectID.activeInHierarchy )
-		{
-			tempin_gameObjectID = (uint)in_gameObjectID.GetInstanceID();
-			// Note: if AkGameObjectTracker is already attached, the following code will be bypassed.
-			if (in_gameObjectID.GetComponent<AkGameObj>() == null)
-			{
-				in_gameObjectID.AddComponent<AkGameObj>();
-			}
-		}
-		else
-		{
-			tempin_gameObjectID = unchecked((uint)-1);
-		}
-		
-		
-    {
-      AKRESULT ret = (AKRESULT)AkSoundEnginePINVOKE.CSharp_RegisterGameObj__SWIG_0(tempin_gameObjectID, in_uListenerMask);
-
-      return ret;
-    }
-  }
-
-  public static AKRESULT RegisterGameObj(UnityEngine.GameObject in_gameObjectID) {
-    
-		uint tempin_gameObjectID;
-		if ( in_gameObjectID != null && in_gameObjectID.activeInHierarchy )
-		{
-			tempin_gameObjectID = (uint)in_gameObjectID.GetInstanceID();
-			// Note: if AkGameObjectTracker is already attached, the following code will be bypassed.
-			if (in_gameObjectID.GetComponent<AkGameObj>() == null)
-			{
-				in_gameObjectID.AddComponent<AkGameObj>();
-			}
-		}
-		else
-		{
-			tempin_gameObjectID = unchecked((uint)-1);
-		}
-		
-		
-    {
-      AKRESULT ret = (AKRESULT)AkSoundEnginePINVOKE.CSharp_RegisterGameObj__SWIG_1(tempin_gameObjectID);
-
-      return ret;
-    }
-  }
-
-  public static AKRESULT RegisterGameObj(UnityEngine.GameObject in_gameObjectID, string in_pszObjName, uint in_uListenerMask) {
-    
-		uint tempin_gameObjectID;
-		if ( in_gameObjectID != null && in_gameObjectID.activeInHierarchy )
-		{
-			tempin_gameObjectID = (uint)in_gameObjectID.GetInstanceID();
-			// Note: if AkGameObjectTracker is already attached, the following code will be bypassed.
-			if (in_gameObjectID.GetComponent<AkGameObj>() == null)
-			{
-				in_gameObjectID.AddComponent<AkGameObj>();
-			}
-		}
-		else
-		{
-			tempin_gameObjectID = unchecked((uint)-1);
-		}
-		
-		
-    {
-      AKRESULT ret = (AKRESULT)AkSoundEnginePINVOKE.CSharp_RegisterGameObj__SWIG_2(tempin_gameObjectID, in_pszObjName, in_uListenerMask);
-
-      return ret;
-    }
-  }
-
-  public static AKRESULT RegisterGameObj(UnityEngine.GameObject in_gameObjectID, string in_pszObjName) {
-    
-		uint tempin_gameObjectID;
-		if ( in_gameObjectID != null && in_gameObjectID.activeInHierarchy )
-		{
-			tempin_gameObjectID = (uint)in_gameObjectID.GetInstanceID();
-			// Note: if AkGameObjectTracker is already attached, the following code will be bypassed.
-			if (in_gameObjectID.GetComponent<AkGameObj>() == null)
-			{
-				in_gameObjectID.AddComponent<AkGameObj>();
-			}
-		}
-		else
-		{
-			tempin_gameObjectID = unchecked((uint)-1);
-		}
-		
-		
-    {
-      AKRESULT ret = (AKRESULT)AkSoundEnginePINVOKE.CSharp_RegisterGameObj__SWIG_3(tempin_gameObjectID, in_pszObjName);
-
-      return ret;
-    }
-  }
-
-  public static AKRESULT UnregisterGameObj(UnityEngine.GameObject in_gameObjectID) {
-    
-		uint tempin_gameObjectID;
-		if ( in_gameObjectID != null && in_gameObjectID.activeInHierarchy )
-		{
-			tempin_gameObjectID = (uint)in_gameObjectID.GetInstanceID();
-			// Note: if AkGameObjectTracker is already attached, the following code will be bypassed.
-			if (in_gameObjectID.GetComponent<AkGameObj>() == null)
-			{
-				in_gameObjectID.AddComponent<AkGameObj>();
-			}
-		}
-		else
-		{
-			tempin_gameObjectID = unchecked((uint)-1);
-		}
-		
-		
-    {
-      AKRESULT ret = (AKRESULT)AkSoundEnginePINVOKE.CSharp_UnregisterGameObj(tempin_gameObjectID);
-
-      return ret;
-    }
-  }
-
   public static AKRESULT UnregisterAllGameObj() {
     AKRESULT ret = (AKRESULT)AkSoundEnginePINVOKE.CSharp_UnregisterAllGameObj();
 
@@ -1446,16 +1752,26 @@ public class AkSoundEngine {
 
   public static AKRESULT SetMultiplePositions(UnityEngine.GameObject in_GameObjectID, AkPositionArray in_pPositions, ushort in_NumPositions, MultiPositionType in_eMultiPositionType) {
     
+		AkAutoObject tempObj = null;   
 		uint tempin_GameObjectID;
-		if ( in_GameObjectID != null && in_GameObjectID.activeInHierarchy )
+		if ( in_GameObjectID != null )
 		{
 			tempin_GameObjectID = (uint)in_GameObjectID.GetInstanceID();
-			// Note: if AkGameObjectTracker is already attached, the following code will be bypassed.
-			if (in_GameObjectID.GetComponent<AkGameObj>() == null)
+			if (in_GameObjectID.activeInHierarchy)
 			{
-				in_GameObjectID.AddComponent<AkGameObj>();
+				if (in_GameObjectID.GetComponent<AkGameObj>() == null)
+				{
+					in_GameObjectID.AddComponent<AkGameObj>();
+				}
 			}
-		}
+			else
+			{
+				//Object not active. AkGameObj will not work.  Use a temporary game object.  
+				//This will automatically unregister at the end of this scope.
+				tempObj = new AkAutoObject(in_GameObjectID);
+				tempin_GameObjectID = (uint)tempObj.m_id;	//Silence warning
+			}
+		}		
 		else
 		{
 			tempin_GameObjectID = unchecked((uint)-1);
@@ -1471,16 +1787,26 @@ public class AkSoundEngine {
 
   public static AKRESULT SetMultiplePositions(UnityEngine.GameObject in_GameObjectID, AkPositionArray in_pPositions, ushort in_NumPositions) {
     
+		AkAutoObject tempObj = null;   
 		uint tempin_GameObjectID;
-		if ( in_GameObjectID != null && in_GameObjectID.activeInHierarchy )
+		if ( in_GameObjectID != null )
 		{
 			tempin_GameObjectID = (uint)in_GameObjectID.GetInstanceID();
-			// Note: if AkGameObjectTracker is already attached, the following code will be bypassed.
-			if (in_GameObjectID.GetComponent<AkGameObj>() == null)
+			if (in_GameObjectID.activeInHierarchy)
 			{
-				in_GameObjectID.AddComponent<AkGameObj>();
+				if (in_GameObjectID.GetComponent<AkGameObj>() == null)
+				{
+					in_GameObjectID.AddComponent<AkGameObj>();
+				}
 			}
-		}
+			else
+			{
+				//Object not active. AkGameObj will not work.  Use a temporary game object.  
+				//This will automatically unregister at the end of this scope.
+				tempObj = new AkAutoObject(in_GameObjectID);
+				tempin_GameObjectID = (uint)tempObj.m_id;	//Silence warning
+			}
+		}		
 		else
 		{
 			tempin_GameObjectID = unchecked((uint)-1);
@@ -1496,16 +1822,26 @@ public class AkSoundEngine {
 
   public static AKRESULT SetAttenuationScalingFactor(UnityEngine.GameObject in_GameObjectID, float in_fAttenuationScalingFactor) {
     
+		AkAutoObject tempObj = null;   
 		uint tempin_GameObjectID;
-		if ( in_GameObjectID != null && in_GameObjectID.activeInHierarchy )
+		if ( in_GameObjectID != null )
 		{
 			tempin_GameObjectID = (uint)in_GameObjectID.GetInstanceID();
-			// Note: if AkGameObjectTracker is already attached, the following code will be bypassed.
-			if (in_GameObjectID.GetComponent<AkGameObj>() == null)
+			if (in_GameObjectID.activeInHierarchy)
 			{
-				in_GameObjectID.AddComponent<AkGameObj>();
+				if (in_GameObjectID.GetComponent<AkGameObj>() == null)
+				{
+					in_GameObjectID.AddComponent<AkGameObj>();
+				}
 			}
-		}
+			else
+			{
+				//Object not active. AkGameObj will not work.  Use a temporary game object.  
+				//This will automatically unregister at the end of this scope.
+				tempObj = new AkAutoObject(in_GameObjectID);
+				tempin_GameObjectID = (uint)tempObj.m_id;	//Silence warning
+			}
+		}		
 		else
 		{
 			tempin_GameObjectID = unchecked((uint)-1);
@@ -1887,16 +2223,26 @@ public class AkSoundEngine {
 
   public static AKRESULT SetActiveListeners(UnityEngine.GameObject in_GameObjectID, uint in_uListenerMask) {
     
+		AkAutoObject tempObj = null;   
 		uint tempin_GameObjectID;
-		if ( in_GameObjectID != null && in_GameObjectID.activeInHierarchy )
+		if ( in_GameObjectID != null )
 		{
 			tempin_GameObjectID = (uint)in_GameObjectID.GetInstanceID();
-			// Note: if AkGameObjectTracker is already attached, the following code will be bypassed.
-			if (in_GameObjectID.GetComponent<AkGameObj>() == null)
+			if (in_GameObjectID.activeInHierarchy)
 			{
-				in_GameObjectID.AddComponent<AkGameObj>();
+				if (in_GameObjectID.GetComponent<AkGameObj>() == null)
+				{
+					in_GameObjectID.AddComponent<AkGameObj>();
+				}
 			}
-		}
+			else
+			{
+				//Object not active. AkGameObj will not work.  Use a temporary game object.  
+				//This will automatically unregister at the end of this scope.
+				tempObj = new AkAutoObject(in_GameObjectID);
+				tempin_GameObjectID = (uint)tempObj.m_id;	//Silence warning
+			}
+		}		
 		else
 		{
 			tempin_GameObjectID = unchecked((uint)-1);
@@ -1930,16 +2276,26 @@ public class AkSoundEngine {
 
   public static AKRESULT SetRTPCValue(uint in_rtpcID, float in_value, UnityEngine.GameObject in_gameObjectID, int in_uValueChangeDuration, AkCurveInterpolation in_eFadeCurve, bool in_bBypassInternalValueInterpolation) {
     
+		AkAutoObject tempObj = null;   
 		uint tempin_gameObjectID;
-		if ( in_gameObjectID != null && in_gameObjectID.activeInHierarchy )
+		if ( in_gameObjectID != null )
 		{
 			tempin_gameObjectID = (uint)in_gameObjectID.GetInstanceID();
-			// Note: if AkGameObjectTracker is already attached, the following code will be bypassed.
-			if (in_gameObjectID.GetComponent<AkGameObj>() == null)
+			if (in_gameObjectID.activeInHierarchy)
 			{
-				in_gameObjectID.AddComponent<AkGameObj>();
+				if (in_gameObjectID.GetComponent<AkGameObj>() == null)
+				{
+					in_gameObjectID.AddComponent<AkGameObj>();
+				}
 			}
-		}
+			else
+			{
+				//Object not active. AkGameObj will not work.  Use a temporary game object.  
+				//This will automatically unregister at the end of this scope.
+				tempObj = new AkAutoObject(in_gameObjectID);
+				tempin_gameObjectID = (uint)tempObj.m_id;	//Silence warning
+			}
+		}		
 		else
 		{
 			tempin_gameObjectID = unchecked((uint)-1);
@@ -1955,16 +2311,26 @@ public class AkSoundEngine {
 
   public static AKRESULT SetRTPCValue(uint in_rtpcID, float in_value, UnityEngine.GameObject in_gameObjectID, int in_uValueChangeDuration, AkCurveInterpolation in_eFadeCurve) {
     
+		AkAutoObject tempObj = null;   
 		uint tempin_gameObjectID;
-		if ( in_gameObjectID != null && in_gameObjectID.activeInHierarchy )
+		if ( in_gameObjectID != null )
 		{
 			tempin_gameObjectID = (uint)in_gameObjectID.GetInstanceID();
-			// Note: if AkGameObjectTracker is already attached, the following code will be bypassed.
-			if (in_gameObjectID.GetComponent<AkGameObj>() == null)
+			if (in_gameObjectID.activeInHierarchy)
 			{
-				in_gameObjectID.AddComponent<AkGameObj>();
+				if (in_gameObjectID.GetComponent<AkGameObj>() == null)
+				{
+					in_gameObjectID.AddComponent<AkGameObj>();
+				}
 			}
-		}
+			else
+			{
+				//Object not active. AkGameObj will not work.  Use a temporary game object.  
+				//This will automatically unregister at the end of this scope.
+				tempObj = new AkAutoObject(in_gameObjectID);
+				tempin_gameObjectID = (uint)tempObj.m_id;	//Silence warning
+			}
+		}		
 		else
 		{
 			tempin_gameObjectID = unchecked((uint)-1);
@@ -1980,16 +2346,26 @@ public class AkSoundEngine {
 
   public static AKRESULT SetRTPCValue(uint in_rtpcID, float in_value, UnityEngine.GameObject in_gameObjectID, int in_uValueChangeDuration) {
     
+		AkAutoObject tempObj = null;   
 		uint tempin_gameObjectID;
-		if ( in_gameObjectID != null && in_gameObjectID.activeInHierarchy )
+		if ( in_gameObjectID != null )
 		{
 			tempin_gameObjectID = (uint)in_gameObjectID.GetInstanceID();
-			// Note: if AkGameObjectTracker is already attached, the following code will be bypassed.
-			if (in_gameObjectID.GetComponent<AkGameObj>() == null)
+			if (in_gameObjectID.activeInHierarchy)
 			{
-				in_gameObjectID.AddComponent<AkGameObj>();
+				if (in_gameObjectID.GetComponent<AkGameObj>() == null)
+				{
+					in_gameObjectID.AddComponent<AkGameObj>();
+				}
 			}
-		}
+			else
+			{
+				//Object not active. AkGameObj will not work.  Use a temporary game object.  
+				//This will automatically unregister at the end of this scope.
+				tempObj = new AkAutoObject(in_gameObjectID);
+				tempin_gameObjectID = (uint)tempObj.m_id;	//Silence warning
+			}
+		}		
 		else
 		{
 			tempin_gameObjectID = unchecked((uint)-1);
@@ -2005,16 +2381,26 @@ public class AkSoundEngine {
 
   public static AKRESULT SetRTPCValue(uint in_rtpcID, float in_value, UnityEngine.GameObject in_gameObjectID) {
     
+		AkAutoObject tempObj = null;   
 		uint tempin_gameObjectID;
-		if ( in_gameObjectID != null && in_gameObjectID.activeInHierarchy )
+		if ( in_gameObjectID != null )
 		{
 			tempin_gameObjectID = (uint)in_gameObjectID.GetInstanceID();
-			// Note: if AkGameObjectTracker is already attached, the following code will be bypassed.
-			if (in_gameObjectID.GetComponent<AkGameObj>() == null)
+			if (in_gameObjectID.activeInHierarchy)
 			{
-				in_gameObjectID.AddComponent<AkGameObj>();
+				if (in_gameObjectID.GetComponent<AkGameObj>() == null)
+				{
+					in_gameObjectID.AddComponent<AkGameObj>();
+				}
 			}
-		}
+			else
+			{
+				//Object not active. AkGameObj will not work.  Use a temporary game object.  
+				//This will automatically unregister at the end of this scope.
+				tempObj = new AkAutoObject(in_gameObjectID);
+				tempin_gameObjectID = (uint)tempObj.m_id;	//Silence warning
+			}
+		}		
 		else
 		{
 			tempin_gameObjectID = unchecked((uint)-1);
@@ -2036,16 +2422,26 @@ public class AkSoundEngine {
 
   public static AKRESULT SetRTPCValue(string in_pszRtpcName, float in_value, UnityEngine.GameObject in_gameObjectID, int in_uValueChangeDuration, AkCurveInterpolation in_eFadeCurve, bool in_bBypassInternalValueInterpolation) {
     
+		AkAutoObject tempObj = null;   
 		uint tempin_gameObjectID;
-		if ( in_gameObjectID != null && in_gameObjectID.activeInHierarchy )
+		if ( in_gameObjectID != null )
 		{
 			tempin_gameObjectID = (uint)in_gameObjectID.GetInstanceID();
-			// Note: if AkGameObjectTracker is already attached, the following code will be bypassed.
-			if (in_gameObjectID.GetComponent<AkGameObj>() == null)
+			if (in_gameObjectID.activeInHierarchy)
 			{
-				in_gameObjectID.AddComponent<AkGameObj>();
+				if (in_gameObjectID.GetComponent<AkGameObj>() == null)
+				{
+					in_gameObjectID.AddComponent<AkGameObj>();
+				}
 			}
-		}
+			else
+			{
+				//Object not active. AkGameObj will not work.  Use a temporary game object.  
+				//This will automatically unregister at the end of this scope.
+				tempObj = new AkAutoObject(in_gameObjectID);
+				tempin_gameObjectID = (uint)tempObj.m_id;	//Silence warning
+			}
+		}		
 		else
 		{
 			tempin_gameObjectID = unchecked((uint)-1);
@@ -2061,16 +2457,26 @@ public class AkSoundEngine {
 
   public static AKRESULT SetRTPCValue(string in_pszRtpcName, float in_value, UnityEngine.GameObject in_gameObjectID, int in_uValueChangeDuration, AkCurveInterpolation in_eFadeCurve) {
     
+		AkAutoObject tempObj = null;   
 		uint tempin_gameObjectID;
-		if ( in_gameObjectID != null && in_gameObjectID.activeInHierarchy )
+		if ( in_gameObjectID != null )
 		{
 			tempin_gameObjectID = (uint)in_gameObjectID.GetInstanceID();
-			// Note: if AkGameObjectTracker is already attached, the following code will be bypassed.
-			if (in_gameObjectID.GetComponent<AkGameObj>() == null)
+			if (in_gameObjectID.activeInHierarchy)
 			{
-				in_gameObjectID.AddComponent<AkGameObj>();
+				if (in_gameObjectID.GetComponent<AkGameObj>() == null)
+				{
+					in_gameObjectID.AddComponent<AkGameObj>();
+				}
 			}
-		}
+			else
+			{
+				//Object not active. AkGameObj will not work.  Use a temporary game object.  
+				//This will automatically unregister at the end of this scope.
+				tempObj = new AkAutoObject(in_gameObjectID);
+				tempin_gameObjectID = (uint)tempObj.m_id;	//Silence warning
+			}
+		}		
 		else
 		{
 			tempin_gameObjectID = unchecked((uint)-1);
@@ -2086,16 +2492,26 @@ public class AkSoundEngine {
 
   public static AKRESULT SetRTPCValue(string in_pszRtpcName, float in_value, UnityEngine.GameObject in_gameObjectID, int in_uValueChangeDuration) {
     
+		AkAutoObject tempObj = null;   
 		uint tempin_gameObjectID;
-		if ( in_gameObjectID != null && in_gameObjectID.activeInHierarchy )
+		if ( in_gameObjectID != null )
 		{
 			tempin_gameObjectID = (uint)in_gameObjectID.GetInstanceID();
-			// Note: if AkGameObjectTracker is already attached, the following code will be bypassed.
-			if (in_gameObjectID.GetComponent<AkGameObj>() == null)
+			if (in_gameObjectID.activeInHierarchy)
 			{
-				in_gameObjectID.AddComponent<AkGameObj>();
+				if (in_gameObjectID.GetComponent<AkGameObj>() == null)
+				{
+					in_gameObjectID.AddComponent<AkGameObj>();
+				}
 			}
-		}
+			else
+			{
+				//Object not active. AkGameObj will not work.  Use a temporary game object.  
+				//This will automatically unregister at the end of this scope.
+				tempObj = new AkAutoObject(in_gameObjectID);
+				tempin_gameObjectID = (uint)tempObj.m_id;	//Silence warning
+			}
+		}		
 		else
 		{
 			tempin_gameObjectID = unchecked((uint)-1);
@@ -2111,16 +2527,26 @@ public class AkSoundEngine {
 
   public static AKRESULT SetRTPCValue(string in_pszRtpcName, float in_value, UnityEngine.GameObject in_gameObjectID) {
     
+		AkAutoObject tempObj = null;   
 		uint tempin_gameObjectID;
-		if ( in_gameObjectID != null && in_gameObjectID.activeInHierarchy )
+		if ( in_gameObjectID != null )
 		{
 			tempin_gameObjectID = (uint)in_gameObjectID.GetInstanceID();
-			// Note: if AkGameObjectTracker is already attached, the following code will be bypassed.
-			if (in_gameObjectID.GetComponent<AkGameObj>() == null)
+			if (in_gameObjectID.activeInHierarchy)
 			{
-				in_gameObjectID.AddComponent<AkGameObj>();
+				if (in_gameObjectID.GetComponent<AkGameObj>() == null)
+				{
+					in_gameObjectID.AddComponent<AkGameObj>();
+				}
 			}
-		}
+			else
+			{
+				//Object not active. AkGameObj will not work.  Use a temporary game object.  
+				//This will automatically unregister at the end of this scope.
+				tempObj = new AkAutoObject(in_gameObjectID);
+				tempin_gameObjectID = (uint)tempObj.m_id;	//Silence warning
+			}
+		}		
 		else
 		{
 			tempin_gameObjectID = unchecked((uint)-1);
@@ -2190,16 +2616,26 @@ public class AkSoundEngine {
 
   public static AKRESULT ResetRTPCValue(uint in_rtpcID, UnityEngine.GameObject in_gameObjectID, int in_uValueChangeDuration, AkCurveInterpolation in_eFadeCurve, bool in_bBypassInternalValueInterpolation) {
     
+		AkAutoObject tempObj = null;   
 		uint tempin_gameObjectID;
-		if ( in_gameObjectID != null && in_gameObjectID.activeInHierarchy )
+		if ( in_gameObjectID != null )
 		{
 			tempin_gameObjectID = (uint)in_gameObjectID.GetInstanceID();
-			// Note: if AkGameObjectTracker is already attached, the following code will be bypassed.
-			if (in_gameObjectID.GetComponent<AkGameObj>() == null)
+			if (in_gameObjectID.activeInHierarchy)
 			{
-				in_gameObjectID.AddComponent<AkGameObj>();
+				if (in_gameObjectID.GetComponent<AkGameObj>() == null)
+				{
+					in_gameObjectID.AddComponent<AkGameObj>();
+				}
 			}
-		}
+			else
+			{
+				//Object not active. AkGameObj will not work.  Use a temporary game object.  
+				//This will automatically unregister at the end of this scope.
+				tempObj = new AkAutoObject(in_gameObjectID);
+				tempin_gameObjectID = (uint)tempObj.m_id;	//Silence warning
+			}
+		}		
 		else
 		{
 			tempin_gameObjectID = unchecked((uint)-1);
@@ -2215,16 +2651,26 @@ public class AkSoundEngine {
 
   public static AKRESULT ResetRTPCValue(uint in_rtpcID, UnityEngine.GameObject in_gameObjectID, int in_uValueChangeDuration, AkCurveInterpolation in_eFadeCurve) {
     
+		AkAutoObject tempObj = null;   
 		uint tempin_gameObjectID;
-		if ( in_gameObjectID != null && in_gameObjectID.activeInHierarchy )
+		if ( in_gameObjectID != null )
 		{
 			tempin_gameObjectID = (uint)in_gameObjectID.GetInstanceID();
-			// Note: if AkGameObjectTracker is already attached, the following code will be bypassed.
-			if (in_gameObjectID.GetComponent<AkGameObj>() == null)
+			if (in_gameObjectID.activeInHierarchy)
 			{
-				in_gameObjectID.AddComponent<AkGameObj>();
+				if (in_gameObjectID.GetComponent<AkGameObj>() == null)
+				{
+					in_gameObjectID.AddComponent<AkGameObj>();
+				}
 			}
-		}
+			else
+			{
+				//Object not active. AkGameObj will not work.  Use a temporary game object.  
+				//This will automatically unregister at the end of this scope.
+				tempObj = new AkAutoObject(in_gameObjectID);
+				tempin_gameObjectID = (uint)tempObj.m_id;	//Silence warning
+			}
+		}		
 		else
 		{
 			tempin_gameObjectID = unchecked((uint)-1);
@@ -2240,16 +2686,26 @@ public class AkSoundEngine {
 
   public static AKRESULT ResetRTPCValue(uint in_rtpcID, UnityEngine.GameObject in_gameObjectID, int in_uValueChangeDuration) {
     
+		AkAutoObject tempObj = null;   
 		uint tempin_gameObjectID;
-		if ( in_gameObjectID != null && in_gameObjectID.activeInHierarchy )
+		if ( in_gameObjectID != null )
 		{
 			tempin_gameObjectID = (uint)in_gameObjectID.GetInstanceID();
-			// Note: if AkGameObjectTracker is already attached, the following code will be bypassed.
-			if (in_gameObjectID.GetComponent<AkGameObj>() == null)
+			if (in_gameObjectID.activeInHierarchy)
 			{
-				in_gameObjectID.AddComponent<AkGameObj>();
+				if (in_gameObjectID.GetComponent<AkGameObj>() == null)
+				{
+					in_gameObjectID.AddComponent<AkGameObj>();
+				}
 			}
-		}
+			else
+			{
+				//Object not active. AkGameObj will not work.  Use a temporary game object.  
+				//This will automatically unregister at the end of this scope.
+				tempObj = new AkAutoObject(in_gameObjectID);
+				tempin_gameObjectID = (uint)tempObj.m_id;	//Silence warning
+			}
+		}		
 		else
 		{
 			tempin_gameObjectID = unchecked((uint)-1);
@@ -2265,16 +2721,26 @@ public class AkSoundEngine {
 
   public static AKRESULT ResetRTPCValue(uint in_rtpcID, UnityEngine.GameObject in_gameObjectID) {
     
+		AkAutoObject tempObj = null;   
 		uint tempin_gameObjectID;
-		if ( in_gameObjectID != null && in_gameObjectID.activeInHierarchy )
+		if ( in_gameObjectID != null )
 		{
 			tempin_gameObjectID = (uint)in_gameObjectID.GetInstanceID();
-			// Note: if AkGameObjectTracker is already attached, the following code will be bypassed.
-			if (in_gameObjectID.GetComponent<AkGameObj>() == null)
+			if (in_gameObjectID.activeInHierarchy)
 			{
-				in_gameObjectID.AddComponent<AkGameObj>();
+				if (in_gameObjectID.GetComponent<AkGameObj>() == null)
+				{
+					in_gameObjectID.AddComponent<AkGameObj>();
+				}
 			}
-		}
+			else
+			{
+				//Object not active. AkGameObj will not work.  Use a temporary game object.  
+				//This will automatically unregister at the end of this scope.
+				tempObj = new AkAutoObject(in_gameObjectID);
+				tempin_gameObjectID = (uint)tempObj.m_id;	//Silence warning
+			}
+		}		
 		else
 		{
 			tempin_gameObjectID = unchecked((uint)-1);
@@ -2296,16 +2762,26 @@ public class AkSoundEngine {
 
   public static AKRESULT ResetRTPCValue(string in_pszRtpcName, UnityEngine.GameObject in_gameObjectID, int in_uValueChangeDuration, AkCurveInterpolation in_eFadeCurve, bool in_bBypassInternalValueInterpolation) {
     
+		AkAutoObject tempObj = null;   
 		uint tempin_gameObjectID;
-		if ( in_gameObjectID != null && in_gameObjectID.activeInHierarchy )
+		if ( in_gameObjectID != null )
 		{
 			tempin_gameObjectID = (uint)in_gameObjectID.GetInstanceID();
-			// Note: if AkGameObjectTracker is already attached, the following code will be bypassed.
-			if (in_gameObjectID.GetComponent<AkGameObj>() == null)
+			if (in_gameObjectID.activeInHierarchy)
 			{
-				in_gameObjectID.AddComponent<AkGameObj>();
+				if (in_gameObjectID.GetComponent<AkGameObj>() == null)
+				{
+					in_gameObjectID.AddComponent<AkGameObj>();
+				}
 			}
-		}
+			else
+			{
+				//Object not active. AkGameObj will not work.  Use a temporary game object.  
+				//This will automatically unregister at the end of this scope.
+				tempObj = new AkAutoObject(in_gameObjectID);
+				tempin_gameObjectID = (uint)tempObj.m_id;	//Silence warning
+			}
+		}		
 		else
 		{
 			tempin_gameObjectID = unchecked((uint)-1);
@@ -2321,16 +2797,26 @@ public class AkSoundEngine {
 
   public static AKRESULT ResetRTPCValue(string in_pszRtpcName, UnityEngine.GameObject in_gameObjectID, int in_uValueChangeDuration, AkCurveInterpolation in_eFadeCurve) {
     
+		AkAutoObject tempObj = null;   
 		uint tempin_gameObjectID;
-		if ( in_gameObjectID != null && in_gameObjectID.activeInHierarchy )
+		if ( in_gameObjectID != null )
 		{
 			tempin_gameObjectID = (uint)in_gameObjectID.GetInstanceID();
-			// Note: if AkGameObjectTracker is already attached, the following code will be bypassed.
-			if (in_gameObjectID.GetComponent<AkGameObj>() == null)
+			if (in_gameObjectID.activeInHierarchy)
 			{
-				in_gameObjectID.AddComponent<AkGameObj>();
+				if (in_gameObjectID.GetComponent<AkGameObj>() == null)
+				{
+					in_gameObjectID.AddComponent<AkGameObj>();
+				}
 			}
-		}
+			else
+			{
+				//Object not active. AkGameObj will not work.  Use a temporary game object.  
+				//This will automatically unregister at the end of this scope.
+				tempObj = new AkAutoObject(in_gameObjectID);
+				tempin_gameObjectID = (uint)tempObj.m_id;	//Silence warning
+			}
+		}		
 		else
 		{
 			tempin_gameObjectID = unchecked((uint)-1);
@@ -2346,16 +2832,26 @@ public class AkSoundEngine {
 
   public static AKRESULT ResetRTPCValue(string in_pszRtpcName, UnityEngine.GameObject in_gameObjectID, int in_uValueChangeDuration) {
     
+		AkAutoObject tempObj = null;   
 		uint tempin_gameObjectID;
-		if ( in_gameObjectID != null && in_gameObjectID.activeInHierarchy )
+		if ( in_gameObjectID != null )
 		{
 			tempin_gameObjectID = (uint)in_gameObjectID.GetInstanceID();
-			// Note: if AkGameObjectTracker is already attached, the following code will be bypassed.
-			if (in_gameObjectID.GetComponent<AkGameObj>() == null)
+			if (in_gameObjectID.activeInHierarchy)
 			{
-				in_gameObjectID.AddComponent<AkGameObj>();
+				if (in_gameObjectID.GetComponent<AkGameObj>() == null)
+				{
+					in_gameObjectID.AddComponent<AkGameObj>();
+				}
 			}
-		}
+			else
+			{
+				//Object not active. AkGameObj will not work.  Use a temporary game object.  
+				//This will automatically unregister at the end of this scope.
+				tempObj = new AkAutoObject(in_gameObjectID);
+				tempin_gameObjectID = (uint)tempObj.m_id;	//Silence warning
+			}
+		}		
 		else
 		{
 			tempin_gameObjectID = unchecked((uint)-1);
@@ -2371,16 +2867,26 @@ public class AkSoundEngine {
 
   public static AKRESULT ResetRTPCValue(string in_pszRtpcName, UnityEngine.GameObject in_gameObjectID) {
     
+		AkAutoObject tempObj = null;   
 		uint tempin_gameObjectID;
-		if ( in_gameObjectID != null && in_gameObjectID.activeInHierarchy )
+		if ( in_gameObjectID != null )
 		{
 			tempin_gameObjectID = (uint)in_gameObjectID.GetInstanceID();
-			// Note: if AkGameObjectTracker is already attached, the following code will be bypassed.
-			if (in_gameObjectID.GetComponent<AkGameObj>() == null)
+			if (in_gameObjectID.activeInHierarchy)
 			{
-				in_gameObjectID.AddComponent<AkGameObj>();
+				if (in_gameObjectID.GetComponent<AkGameObj>() == null)
+				{
+					in_gameObjectID.AddComponent<AkGameObj>();
+				}
 			}
-		}
+			else
+			{
+				//Object not active. AkGameObj will not work.  Use a temporary game object.  
+				//This will automatically unregister at the end of this scope.
+				tempObj = new AkAutoObject(in_gameObjectID);
+				tempin_gameObjectID = (uint)tempObj.m_id;	//Silence warning
+			}
+		}		
 		else
 		{
 			tempin_gameObjectID = unchecked((uint)-1);
@@ -2402,16 +2908,26 @@ public class AkSoundEngine {
 
   public static AKRESULT SetSwitch(uint in_switchGroup, uint in_switchState, UnityEngine.GameObject in_gameObjectID) {
     
+		AkAutoObject tempObj = null;   
 		uint tempin_gameObjectID;
-		if ( in_gameObjectID != null && in_gameObjectID.activeInHierarchy )
+		if ( in_gameObjectID != null )
 		{
 			tempin_gameObjectID = (uint)in_gameObjectID.GetInstanceID();
-			// Note: if AkGameObjectTracker is already attached, the following code will be bypassed.
-			if (in_gameObjectID.GetComponent<AkGameObj>() == null)
+			if (in_gameObjectID.activeInHierarchy)
 			{
-				in_gameObjectID.AddComponent<AkGameObj>();
+				if (in_gameObjectID.GetComponent<AkGameObj>() == null)
+				{
+					in_gameObjectID.AddComponent<AkGameObj>();
+				}
 			}
-		}
+			else
+			{
+				//Object not active. AkGameObj will not work.  Use a temporary game object.  
+				//This will automatically unregister at the end of this scope.
+				tempObj = new AkAutoObject(in_gameObjectID);
+				tempin_gameObjectID = (uint)tempObj.m_id;	//Silence warning
+			}
+		}		
 		else
 		{
 			tempin_gameObjectID = unchecked((uint)-1);
@@ -2427,16 +2943,26 @@ public class AkSoundEngine {
 
   public static AKRESULT SetSwitch(string in_pszSwitchGroup, string in_pszSwitchState, UnityEngine.GameObject in_gameObjectID) {
     
+		AkAutoObject tempObj = null;   
 		uint tempin_gameObjectID;
-		if ( in_gameObjectID != null && in_gameObjectID.activeInHierarchy )
+		if ( in_gameObjectID != null )
 		{
 			tempin_gameObjectID = (uint)in_gameObjectID.GetInstanceID();
-			// Note: if AkGameObjectTracker is already attached, the following code will be bypassed.
-			if (in_gameObjectID.GetComponent<AkGameObj>() == null)
+			if (in_gameObjectID.activeInHierarchy)
 			{
-				in_gameObjectID.AddComponent<AkGameObj>();
+				if (in_gameObjectID.GetComponent<AkGameObj>() == null)
+				{
+					in_gameObjectID.AddComponent<AkGameObj>();
+				}
 			}
-		}
+			else
+			{
+				//Object not active. AkGameObj will not work.  Use a temporary game object.  
+				//This will automatically unregister at the end of this scope.
+				tempObj = new AkAutoObject(in_gameObjectID);
+				tempin_gameObjectID = (uint)tempObj.m_id;	//Silence warning
+			}
+		}		
 		else
 		{
 			tempin_gameObjectID = unchecked((uint)-1);
@@ -2452,16 +2978,26 @@ public class AkSoundEngine {
 
   public static AKRESULT PostTrigger(uint in_triggerID, UnityEngine.GameObject in_gameObjectID) {
     
+		AkAutoObject tempObj = null;   
 		uint tempin_gameObjectID;
-		if ( in_gameObjectID != null && in_gameObjectID.activeInHierarchy )
+		if ( in_gameObjectID != null )
 		{
 			tempin_gameObjectID = (uint)in_gameObjectID.GetInstanceID();
-			// Note: if AkGameObjectTracker is already attached, the following code will be bypassed.
-			if (in_gameObjectID.GetComponent<AkGameObj>() == null)
+			if (in_gameObjectID.activeInHierarchy)
 			{
-				in_gameObjectID.AddComponent<AkGameObj>();
+				if (in_gameObjectID.GetComponent<AkGameObj>() == null)
+				{
+					in_gameObjectID.AddComponent<AkGameObj>();
+				}
 			}
-		}
+			else
+			{
+				//Object not active. AkGameObj will not work.  Use a temporary game object.  
+				//This will automatically unregister at the end of this scope.
+				tempObj = new AkAutoObject(in_gameObjectID);
+				tempin_gameObjectID = (uint)tempObj.m_id;	//Silence warning
+			}
+		}		
 		else
 		{
 			tempin_gameObjectID = unchecked((uint)-1);
@@ -2477,16 +3013,26 @@ public class AkSoundEngine {
 
   public static AKRESULT PostTrigger(string in_pszTrigger, UnityEngine.GameObject in_gameObjectID) {
     
+		AkAutoObject tempObj = null;   
 		uint tempin_gameObjectID;
-		if ( in_gameObjectID != null && in_gameObjectID.activeInHierarchy )
+		if ( in_gameObjectID != null )
 		{
 			tempin_gameObjectID = (uint)in_gameObjectID.GetInstanceID();
-			// Note: if AkGameObjectTracker is already attached, the following code will be bypassed.
-			if (in_gameObjectID.GetComponent<AkGameObj>() == null)
+			if (in_gameObjectID.activeInHierarchy)
 			{
-				in_gameObjectID.AddComponent<AkGameObj>();
+				if (in_gameObjectID.GetComponent<AkGameObj>() == null)
+				{
+					in_gameObjectID.AddComponent<AkGameObj>();
+				}
 			}
-		}
+			else
+			{
+				//Object not active. AkGameObj will not work.  Use a temporary game object.  
+				//This will automatically unregister at the end of this scope.
+				tempObj = new AkAutoObject(in_gameObjectID);
+				tempin_gameObjectID = (uint)tempObj.m_id;	//Silence warning
+			}
+		}		
 		else
 		{
 			tempin_gameObjectID = unchecked((uint)-1);
@@ -2514,16 +3060,26 @@ public class AkSoundEngine {
 
   public static AKRESULT SetGameObjectAuxSendValues(UnityEngine.GameObject in_gameObjectID, AkAuxSendArray in_aAuxSendValues, uint in_uNumSendValues) {
     
+		AkAutoObject tempObj = null;   
 		uint tempin_gameObjectID;
-		if ( in_gameObjectID != null && in_gameObjectID.activeInHierarchy )
+		if ( in_gameObjectID != null )
 		{
 			tempin_gameObjectID = (uint)in_gameObjectID.GetInstanceID();
-			// Note: if AkGameObjectTracker is already attached, the following code will be bypassed.
-			if (in_gameObjectID.GetComponent<AkGameObj>() == null)
+			if (in_gameObjectID.activeInHierarchy)
 			{
-				in_gameObjectID.AddComponent<AkGameObj>();
+				if (in_gameObjectID.GetComponent<AkGameObj>() == null)
+				{
+					in_gameObjectID.AddComponent<AkGameObj>();
+				}
 			}
-		}
+			else
+			{
+				//Object not active. AkGameObj will not work.  Use a temporary game object.  
+				//This will automatically unregister at the end of this scope.
+				tempObj = new AkAutoObject(in_gameObjectID);
+				tempin_gameObjectID = (uint)tempObj.m_id;	//Silence warning
+			}
+		}		
 		else
 		{
 			tempin_gameObjectID = unchecked((uint)-1);
@@ -2539,16 +3095,26 @@ public class AkSoundEngine {
 
   public static AKRESULT SetGameObjectOutputBusVolume(UnityEngine.GameObject in_gameObjectID, float in_fControlValue) {
     
+		AkAutoObject tempObj = null;   
 		uint tempin_gameObjectID;
-		if ( in_gameObjectID != null && in_gameObjectID.activeInHierarchy )
+		if ( in_gameObjectID != null )
 		{
 			tempin_gameObjectID = (uint)in_gameObjectID.GetInstanceID();
-			// Note: if AkGameObjectTracker is already attached, the following code will be bypassed.
-			if (in_gameObjectID.GetComponent<AkGameObj>() == null)
+			if (in_gameObjectID.activeInHierarchy)
 			{
-				in_gameObjectID.AddComponent<AkGameObj>();
+				if (in_gameObjectID.GetComponent<AkGameObj>() == null)
+				{
+					in_gameObjectID.AddComponent<AkGameObj>();
+				}
 			}
-		}
+			else
+			{
+				//Object not active. AkGameObj will not work.  Use a temporary game object.  
+				//This will automatically unregister at the end of this scope.
+				tempObj = new AkAutoObject(in_gameObjectID);
+				tempin_gameObjectID = (uint)tempObj.m_id;	//Silence warning
+			}
+		}		
 		else
 		{
 			tempin_gameObjectID = unchecked((uint)-1);
@@ -2594,16 +3160,26 @@ public class AkSoundEngine {
 
   public static AKRESULT SetObjectObstructionAndOcclusion(UnityEngine.GameObject in_ObjectID, uint in_uListener, float in_fObstructionLevel, float in_fOcclusionLevel) {
     
+		AkAutoObject tempObj = null;   
 		uint tempin_ObjectID;
-		if ( in_ObjectID != null && in_ObjectID.activeInHierarchy )
+		if ( in_ObjectID != null )
 		{
 			tempin_ObjectID = (uint)in_ObjectID.GetInstanceID();
-			// Note: if AkGameObjectTracker is already attached, the following code will be bypassed.
-			if (in_ObjectID.GetComponent<AkGameObj>() == null)
+			if (in_ObjectID.activeInHierarchy)
 			{
-				in_ObjectID.AddComponent<AkGameObj>();
+				if (in_ObjectID.GetComponent<AkGameObj>() == null)
+				{
+					in_ObjectID.AddComponent<AkGameObj>();
+				}
 			}
-		}
+			else
+			{
+				//Object not active. AkGameObj will not work.  Use a temporary game object.  
+				//This will automatically unregister at the end of this scope.
+				tempObj = new AkAutoObject(in_ObjectID);
+				tempin_ObjectID = (uint)tempObj.m_id;	//Silence warning
+			}
+		}		
 		else
 		{
 			tempin_ObjectID = unchecked((uint)-1);
@@ -2749,16 +3325,26 @@ public class AkSoundEngine {
 
   public static AKRESULT GetPosition(UnityEngine.GameObject in_GameObjectID, AkSoundPosition out_rPosition) {
     
+		AkAutoObject tempObj = null;   
 		uint tempin_GameObjectID;
-		if ( in_GameObjectID != null && in_GameObjectID.activeInHierarchy )
+		if ( in_GameObjectID != null )
 		{
 			tempin_GameObjectID = (uint)in_GameObjectID.GetInstanceID();
-			// Note: if AkGameObjectTracker is already attached, the following code will be bypassed.
-			if (in_GameObjectID.GetComponent<AkGameObj>() == null)
+			if (in_GameObjectID.activeInHierarchy)
 			{
-				in_GameObjectID.AddComponent<AkGameObj>();
+				if (in_GameObjectID.GetComponent<AkGameObj>() == null)
+				{
+					in_GameObjectID.AddComponent<AkGameObj>();
+				}
 			}
-		}
+			else
+			{
+				//Object not active. AkGameObj will not work.  Use a temporary game object.  
+				//This will automatically unregister at the end of this scope.
+				tempObj = new AkAutoObject(in_GameObjectID);
+				tempin_GameObjectID = (uint)tempObj.m_id;	//Silence warning
+			}
+		}		
 		else
 		{
 			tempin_GameObjectID = unchecked((uint)-1);
@@ -2774,16 +3360,26 @@ public class AkSoundEngine {
 
   public static AKRESULT GetActiveListeners(UnityEngine.GameObject in_GameObjectID, out uint out_ruListenerMask) {
     
+		AkAutoObject tempObj = null;   
 		uint tempin_GameObjectID;
-		if ( in_GameObjectID != null && in_GameObjectID.activeInHierarchy )
+		if ( in_GameObjectID != null )
 		{
 			tempin_GameObjectID = (uint)in_GameObjectID.GetInstanceID();
-			// Note: if AkGameObjectTracker is already attached, the following code will be bypassed.
-			if (in_GameObjectID.GetComponent<AkGameObj>() == null)
+			if (in_GameObjectID.activeInHierarchy)
 			{
-				in_GameObjectID.AddComponent<AkGameObj>();
+				if (in_GameObjectID.GetComponent<AkGameObj>() == null)
+				{
+					in_GameObjectID.AddComponent<AkGameObj>();
+				}
 			}
-		}
+			else
+			{
+				//Object not active. AkGameObj will not work.  Use a temporary game object.  
+				//This will automatically unregister at the end of this scope.
+				tempObj = new AkAutoObject(in_GameObjectID);
+				tempin_GameObjectID = (uint)tempObj.m_id;	//Silence warning
+			}
+		}		
 		else
 		{
 			tempin_GameObjectID = unchecked((uint)-1);
@@ -2805,16 +3401,26 @@ public class AkSoundEngine {
 
   public static AKRESULT GetRTPCValue(uint in_rtpcID, UnityEngine.GameObject in_gameObjectID, out float out_rValue, ref int io_rValueType) {
     
+		AkAutoObject tempObj = null;   
 		uint tempin_gameObjectID;
-		if ( in_gameObjectID != null && in_gameObjectID.activeInHierarchy )
+		if ( in_gameObjectID != null )
 		{
 			tempin_gameObjectID = (uint)in_gameObjectID.GetInstanceID();
-			// Note: if AkGameObjectTracker is already attached, the following code will be bypassed.
-			if (in_gameObjectID.GetComponent<AkGameObj>() == null)
+			if (in_gameObjectID.activeInHierarchy)
 			{
-				in_gameObjectID.AddComponent<AkGameObj>();
+				if (in_gameObjectID.GetComponent<AkGameObj>() == null)
+				{
+					in_gameObjectID.AddComponent<AkGameObj>();
+				}
 			}
-		}
+			else
+			{
+				//Object not active. AkGameObj will not work.  Use a temporary game object.  
+				//This will automatically unregister at the end of this scope.
+				tempObj = new AkAutoObject(in_gameObjectID);
+				tempin_gameObjectID = (uint)tempObj.m_id;	//Silence warning
+			}
+		}		
 		else
 		{
 			tempin_gameObjectID = unchecked((uint)-1);
@@ -2830,16 +3436,26 @@ public class AkSoundEngine {
 
   public static AKRESULT GetRTPCValue(string in_pszRtpcName, UnityEngine.GameObject in_gameObjectID, out float out_rValue, ref int io_rValueType) {
     
+		AkAutoObject tempObj = null;   
 		uint tempin_gameObjectID;
-		if ( in_gameObjectID != null && in_gameObjectID.activeInHierarchy )
+		if ( in_gameObjectID != null )
 		{
 			tempin_gameObjectID = (uint)in_gameObjectID.GetInstanceID();
-			// Note: if AkGameObjectTracker is already attached, the following code will be bypassed.
-			if (in_gameObjectID.GetComponent<AkGameObj>() == null)
+			if (in_gameObjectID.activeInHierarchy)
 			{
-				in_gameObjectID.AddComponent<AkGameObj>();
+				if (in_gameObjectID.GetComponent<AkGameObj>() == null)
+				{
+					in_gameObjectID.AddComponent<AkGameObj>();
+				}
 			}
-		}
+			else
+			{
+				//Object not active. AkGameObj will not work.  Use a temporary game object.  
+				//This will automatically unregister at the end of this scope.
+				tempObj = new AkAutoObject(in_gameObjectID);
+				tempin_gameObjectID = (uint)tempObj.m_id;	//Silence warning
+			}
+		}		
 		else
 		{
 			tempin_gameObjectID = unchecked((uint)-1);
@@ -2855,16 +3471,26 @@ public class AkSoundEngine {
 
   public static AKRESULT GetSwitch(uint in_switchGroup, UnityEngine.GameObject in_gameObjectID, out uint out_rSwitchState) {
     
+		AkAutoObject tempObj = null;   
 		uint tempin_gameObjectID;
-		if ( in_gameObjectID != null && in_gameObjectID.activeInHierarchy )
+		if ( in_gameObjectID != null )
 		{
 			tempin_gameObjectID = (uint)in_gameObjectID.GetInstanceID();
-			// Note: if AkGameObjectTracker is already attached, the following code will be bypassed.
-			if (in_gameObjectID.GetComponent<AkGameObj>() == null)
+			if (in_gameObjectID.activeInHierarchy)
 			{
-				in_gameObjectID.AddComponent<AkGameObj>();
+				if (in_gameObjectID.GetComponent<AkGameObj>() == null)
+				{
+					in_gameObjectID.AddComponent<AkGameObj>();
+				}
 			}
-		}
+			else
+			{
+				//Object not active. AkGameObj will not work.  Use a temporary game object.  
+				//This will automatically unregister at the end of this scope.
+				tempObj = new AkAutoObject(in_gameObjectID);
+				tempin_gameObjectID = (uint)tempObj.m_id;	//Silence warning
+			}
+		}		
 		else
 		{
 			tempin_gameObjectID = unchecked((uint)-1);
@@ -2880,16 +3506,26 @@ public class AkSoundEngine {
 
   public static AKRESULT GetSwitch(string in_pstrSwitchGroupName, UnityEngine.GameObject in_GameObj, out uint out_rSwitchState) {
     
+		AkAutoObject tempObj = null;   
 		uint tempin_GameObj;
-		if ( in_GameObj != null && in_GameObj.activeInHierarchy )
+		if ( in_GameObj != null )
 		{
 			tempin_GameObj = (uint)in_GameObj.GetInstanceID();
-			// Note: if AkGameObjectTracker is already attached, the following code will be bypassed.
-			if (in_GameObj.GetComponent<AkGameObj>() == null)
+			if (in_GameObj.activeInHierarchy)
 			{
-				in_GameObj.AddComponent<AkGameObj>();
+				if (in_GameObj.GetComponent<AkGameObj>() == null)
+				{
+					in_GameObj.AddComponent<AkGameObj>();
+				}
 			}
-		}
+			else
+			{
+				//Object not active. AkGameObj will not work.  Use a temporary game object.  
+				//This will automatically unregister at the end of this scope.
+				tempObj = new AkAutoObject(in_GameObj);
+				tempin_GameObj = (uint)tempObj.m_id;	//Silence warning
+			}
+		}		
 		else
 		{
 			tempin_GameObj = unchecked((uint)-1);
@@ -2917,16 +3553,26 @@ public class AkSoundEngine {
 
   public static AKRESULT GetGameObjectAuxSendValues(UnityEngine.GameObject in_gameObjectID, AkAuxSendArray out_paAuxSendValues, ref uint io_ruNumSendValues) {
     
+		AkAutoObject tempObj = null;   
 		uint tempin_gameObjectID;
-		if ( in_gameObjectID != null && in_gameObjectID.activeInHierarchy )
+		if ( in_gameObjectID != null )
 		{
 			tempin_gameObjectID = (uint)in_gameObjectID.GetInstanceID();
-			// Note: if AkGameObjectTracker is already attached, the following code will be bypassed.
-			if (in_gameObjectID.GetComponent<AkGameObj>() == null)
+			if (in_gameObjectID.activeInHierarchy)
 			{
-				in_gameObjectID.AddComponent<AkGameObj>();
+				if (in_gameObjectID.GetComponent<AkGameObj>() == null)
+				{
+					in_gameObjectID.AddComponent<AkGameObj>();
+				}
 			}
-		}
+			else
+			{
+				//Object not active. AkGameObj will not work.  Use a temporary game object.  
+				//This will automatically unregister at the end of this scope.
+				tempObj = new AkAutoObject(in_gameObjectID);
+				tempin_gameObjectID = (uint)tempObj.m_id;	//Silence warning
+			}
+		}		
 		else
 		{
 			tempin_gameObjectID = unchecked((uint)-1);
@@ -2942,16 +3588,26 @@ public class AkSoundEngine {
 
   public static AKRESULT GetGameObjectDryLevelValue(UnityEngine.GameObject in_gameObjectID, out float out_rfControlValue) {
     
+		AkAutoObject tempObj = null;   
 		uint tempin_gameObjectID;
-		if ( in_gameObjectID != null && in_gameObjectID.activeInHierarchy )
+		if ( in_gameObjectID != null )
 		{
 			tempin_gameObjectID = (uint)in_gameObjectID.GetInstanceID();
-			// Note: if AkGameObjectTracker is already attached, the following code will be bypassed.
-			if (in_gameObjectID.GetComponent<AkGameObj>() == null)
+			if (in_gameObjectID.activeInHierarchy)
 			{
-				in_gameObjectID.AddComponent<AkGameObj>();
+				if (in_gameObjectID.GetComponent<AkGameObj>() == null)
+				{
+					in_gameObjectID.AddComponent<AkGameObj>();
+				}
 			}
-		}
+			else
+			{
+				//Object not active. AkGameObj will not work.  Use a temporary game object.  
+				//This will automatically unregister at the end of this scope.
+				tempObj = new AkAutoObject(in_gameObjectID);
+				tempin_gameObjectID = (uint)tempObj.m_id;	//Silence warning
+			}
+		}		
 		else
 		{
 			tempin_gameObjectID = unchecked((uint)-1);
@@ -2967,16 +3623,26 @@ public class AkSoundEngine {
 
   public static AKRESULT GetObjectObstructionAndOcclusion(UnityEngine.GameObject in_ObjectID, uint in_uListener, out float out_rfObstructionLevel, out float out_rfOcclusionLevel) {
     
+		AkAutoObject tempObj = null;   
 		uint tempin_ObjectID;
-		if ( in_ObjectID != null && in_ObjectID.activeInHierarchy )
+		if ( in_ObjectID != null )
 		{
 			tempin_ObjectID = (uint)in_ObjectID.GetInstanceID();
-			// Note: if AkGameObjectTracker is already attached, the following code will be bypassed.
-			if (in_ObjectID.GetComponent<AkGameObj>() == null)
+			if (in_ObjectID.activeInHierarchy)
 			{
-				in_ObjectID.AddComponent<AkGameObj>();
+				if (in_ObjectID.GetComponent<AkGameObj>() == null)
+				{
+					in_ObjectID.AddComponent<AkGameObj>();
+				}
 			}
-		}
+			else
+			{
+				//Object not active. AkGameObj will not work.  Use a temporary game object.  
+				//This will automatically unregister at the end of this scope.
+				tempObj = new AkAutoObject(in_ObjectID);
+				tempin_ObjectID = (uint)tempObj.m_id;	//Silence warning
+			}
+		}		
 		else
 		{
 			tempin_ObjectID = unchecked((uint)-1);
@@ -3010,16 +3676,26 @@ public class AkSoundEngine {
 
   public static bool GetIsGameObjectActive(UnityEngine.GameObject in_GameObjId) {
     
+		AkAutoObject tempObj = null;   
 		uint tempin_GameObjId;
-		if ( in_GameObjId != null && in_GameObjId.activeInHierarchy )
+		if ( in_GameObjId != null )
 		{
 			tempin_GameObjId = (uint)in_GameObjId.GetInstanceID();
-			// Note: if AkGameObjectTracker is already attached, the following code will be bypassed.
-			if (in_GameObjId.GetComponent<AkGameObj>() == null)
+			if (in_GameObjId.activeInHierarchy)
 			{
-				in_GameObjId.AddComponent<AkGameObj>();
+				if (in_GameObjId.GetComponent<AkGameObj>() == null)
+				{
+					in_GameObjId.AddComponent<AkGameObj>();
+				}
 			}
-		}
+			else
+			{
+				//Object not active. AkGameObj will not work.  Use a temporary game object.  
+				//This will automatically unregister at the end of this scope.
+				tempObj = new AkAutoObject(in_GameObjId);
+				tempin_GameObjId = (uint)tempObj.m_id;	//Silence warning
+			}
+		}		
 		else
 		{
 			tempin_GameObjId = unchecked((uint)-1);
@@ -3035,16 +3711,26 @@ public class AkSoundEngine {
 
   public static float GetMaxRadius(UnityEngine.GameObject in_GameObjId) {
     
+		AkAutoObject tempObj = null;   
 		uint tempin_GameObjId;
-		if ( in_GameObjId != null && in_GameObjId.activeInHierarchy )
+		if ( in_GameObjId != null )
 		{
 			tempin_GameObjId = (uint)in_GameObjId.GetInstanceID();
-			// Note: if AkGameObjectTracker is already attached, the following code will be bypassed.
-			if (in_GameObjId.GetComponent<AkGameObj>() == null)
+			if (in_GameObjId.activeInHierarchy)
 			{
-				in_GameObjId.AddComponent<AkGameObj>();
+				if (in_GameObjId.GetComponent<AkGameObj>() == null)
+				{
+					in_GameObjId.AddComponent<AkGameObj>();
+				}
 			}
-		}
+			else
+			{
+				//Object not active. AkGameObj will not work.  Use a temporary game object.  
+				//This will automatically unregister at the end of this scope.
+				tempObj = new AkAutoObject(in_GameObjId);
+				tempin_GameObjId = (uint)tempObj.m_id;	//Silence warning
+			}
+		}		
 		else
 		{
 			tempin_GameObjId = unchecked((uint)-1);
@@ -3068,16 +3754,26 @@ public class AkSoundEngine {
 
   public static AKRESULT GetPlayingIDsFromGameObject(UnityEngine.GameObject in_GameObjId, ref uint io_ruNumIDs, uint[] out_aPlayingIDs) {
     
+		AkAutoObject tempObj = null;   
 		uint tempin_GameObjId;
-		if ( in_GameObjId != null && in_GameObjId.activeInHierarchy )
+		if ( in_GameObjId != null )
 		{
 			tempin_GameObjId = (uint)in_GameObjId.GetInstanceID();
-			// Note: if AkGameObjectTracker is already attached, the following code will be bypassed.
-			if (in_GameObjId.GetComponent<AkGameObj>() == null)
+			if (in_GameObjId.activeInHierarchy)
 			{
-				in_GameObjId.AddComponent<AkGameObj>();
+				if (in_GameObjId.GetComponent<AkGameObj>() == null)
+				{
+					in_GameObjId.AddComponent<AkGameObj>();
+				}
 			}
-		}
+			else
+			{
+				//Object not active. AkGameObj will not work.  Use a temporary game object.  
+				//This will automatically unregister at the end of this scope.
+				tempObj = new AkAutoObject(in_GameObjId);
+				tempin_GameObjId = (uint)tempObj.m_id;	//Silence warning
+			}
+		}		
 		else
 		{
 			tempin_GameObjId = unchecked((uint)-1);
@@ -3187,6 +3883,12 @@ public class AkSoundEngine {
 
   }
 
+  public static uint GetDeviceIDFromName(string in_szToken) {
+    uint ret = AkSoundEnginePINVOKE.CSharp_GetDeviceIDFromName(in_szToken);
+
+    return ret;
+  }
+
   public static void Term() {
     AkSoundEnginePINVOKE.CSharp_Term();
 
@@ -3235,6 +3937,30 @@ public class AkSoundEngine {
     return ret;
   }
 
+  public static AKRESULT RegisterGameObjInternal(int in_GameObj) {
+    AKRESULT ret = (AKRESULT)AkSoundEnginePINVOKE.CSharp_RegisterGameObjInternal(in_GameObj);
+
+    return ret;
+  }
+
+  public static AKRESULT RegisterGameObjInternal_WithMask(int in_GameObj, uint in_ulListenerMask) {
+    AKRESULT ret = (AKRESULT)AkSoundEnginePINVOKE.CSharp_RegisterGameObjInternal_WithMask(in_GameObj, in_ulListenerMask);
+
+    return ret;
+  }
+
+  public static AKRESULT RegisterGameObjInternal_WithName(int in_GameObj, string in_pszObjName) {
+    AKRESULT ret = (AKRESULT)AkSoundEnginePINVOKE.CSharp_RegisterGameObjInternal_WithName(in_GameObj, in_pszObjName);
+
+    return ret;
+  }
+
+  public static AKRESULT RegisterGameObjInternal_WithName_WithMask(int in_GameObj, string in_pszObjName, uint in_ulListenerMask) {
+    AKRESULT ret = (AKRESULT)AkSoundEnginePINVOKE.CSharp_RegisterGameObjInternal_WithName_WithMask(in_GameObj, in_pszObjName, in_ulListenerMask);
+
+    return ret;
+  }
+
   public static AKRESULT SetBasePath(string in_pszBasePath) {
     AKRESULT ret = (AKRESULT)AkSoundEnginePINVOKE.CSharp_SetBasePath(in_pszBasePath);
 
@@ -3259,6 +3985,12 @@ public class AkSoundEngine {
     return ret;
   }
 
+  public static uint SetGameName(string in_GameName) {
+    uint ret = AkSoundEnginePINVOKE.CSharp_SetGameName(in_GameName);
+
+    return ret;
+  }
+
   public static AKRESULT UnloadFilePackage(uint in_uPackageID) {
     AKRESULT ret = (AKRESULT)AkSoundEnginePINVOKE.CSharp_UnloadFilePackage(in_uPackageID);
 
@@ -3271,18 +4003,34 @@ public class AkSoundEngine {
     return ret;
   }
 
+  public static AKRESULT UnregisterGameObjInternal(int in_GameObj) {
+    AKRESULT ret = (AKRESULT)AkSoundEnginePINVOKE.CSharp_UnregisterGameObjInternal(in_GameObj);
+
+    return ret;
+  }
+
   public static AKRESULT SetObjectPosition(UnityEngine.GameObject in_GameObjectID, float PosX, float PosY, float PosZ, float OrientationX, float OrientationY, float OrientationZ) {
     
+		AkAutoObject tempObj = null;   
 		uint tempin_GameObjectID;
-		if ( in_GameObjectID != null && in_GameObjectID.activeInHierarchy )
+		if ( in_GameObjectID != null )
 		{
 			tempin_GameObjectID = (uint)in_GameObjectID.GetInstanceID();
-			// Note: if AkGameObjectTracker is already attached, the following code will be bypassed.
-			if (in_GameObjectID.GetComponent<AkGameObj>() == null)
+			if (in_GameObjectID.activeInHierarchy)
 			{
-				in_GameObjectID.AddComponent<AkGameObj>();
+				if (in_GameObjectID.GetComponent<AkGameObj>() == null)
+				{
+					in_GameObjectID.AddComponent<AkGameObj>();
+				}
 			}
-		}
+			else
+			{
+				//Object not active. AkGameObj will not work.  Use a temporary game object.  
+				//This will automatically unregister at the end of this scope.
+				tempObj = new AkAutoObject(in_GameObjectID);
+				tempin_GameObjectID = (uint)tempObj.m_id;	//Silence warning
+			}
+		}		
 		else
 		{
 			tempin_GameObjectID = unchecked((uint)-1);

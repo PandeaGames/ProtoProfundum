@@ -25,7 +25,7 @@ public abstract class AkBaseInspector : Editor
 	Rect			m_pickerPos = new Rect();
 
 	public abstract void	OnChildInspectorGUI ();
-	public abstract string	UpdateIds(System.Guid[] in_guid);	//set object properties and return its name
+	public abstract string	UpdateIds(Guid[] in_guid);	//set object properties and return its name
 
 	public override void OnInspectorGUI()
 	{
@@ -46,7 +46,7 @@ public abstract class AkBaseInspector : Editor
 			}
 			if(Event.current.type == EventType.DragExited && m_isInDropArea) 
 			{
-				AkUtilities.SetByteArrayProperty(m_guidProperty[0], new System.Guid(DragAndDrop.paths[1]).ToByteArray());
+				AkUtilities.SetByteArrayProperty(m_guidProperty[0], new Guid(DragAndDrop.paths[1]).ToByteArray());
 
 				//needed for the undo operation to work
 				GUIUtility.hotControl = 0;
@@ -59,11 +59,11 @@ public abstract class AkBaseInspector : Editor
 
 
 		/************************************************Update Properties**************************************************/
-		System.Guid[] componentGuid = new System.Guid[m_guidProperty.Length];
+		Guid[] componentGuid = new Guid[m_guidProperty.Length];
 		for(int i = 0; i < componentGuid.Length; i++)
 		{
 			byte[] guidBytes = AkUtilities.GetByteArrayProperty (m_guidProperty[i]);
-			componentGuid[i] = guidBytes == null ? System.Guid.Empty : new System.Guid(guidBytes); 
+			componentGuid[i] = guidBytes == null ? Guid.Empty : new Guid(guidBytes); 
 		}
 
 		string componentName = UpdateIds (componentGuid);

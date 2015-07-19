@@ -225,6 +225,18 @@ public class AkInitSettings : IDisposable {
     } 
   }
 
+  public bool bUseLEngineThread {
+    set {
+      AkSoundEnginePINVOKE.CSharp_AkInitSettings_bUseLEngineThread_set(swigCPtr, value);
+
+    } 
+    get {
+      bool ret = AkSoundEnginePINVOKE.CSharp_AkInitSettings_bUseLEngineThread_get(swigCPtr);
+
+      return ret;
+    } 
+  }
+
   public AkInitSettings() : this(AkSoundEnginePINVOKE.CSharp_new_AkInitSettings(), true) {
 
   }

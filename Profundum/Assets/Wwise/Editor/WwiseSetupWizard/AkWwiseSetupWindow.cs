@@ -56,8 +56,8 @@ public class WwiseSetupWindow : EditorWindow
 
         GUILayout.Label("Wwise Project", EditorStyles.boldLabel);
 		GUILayout.BeginHorizontal("box");
-        description = "Wwise Project Path* (relative to Assets folder):";
-        tooltip = "Location of the Wwise project associated with this game. It is recommended to put it in the Unity Project root folder. This path is relative to the game's Assets folder";
+        description = "Wwise Project Path*:";
+        tooltip = "Location of the Wwise project associated with this game. It is recommended to put it in the Unity Project root folder, outside the Assets folder.";
         GUILayout.Label(new GUIContent(description, tooltip), GUILayout.Width(330));
 		EditorGUILayout.SelectableLabel(WwiseSetupWizard.Settings.WwiseProjectPath, "textfield", GUILayout.Height (17));
 		if(GUILayout.Button("...", GUILayout.Width(30)))
@@ -92,6 +92,9 @@ public class WwiseSetupWindow : EditorWindow
         description = "SoundBank Path* (relative to StreamingAssets folder):";
         tooltip = "Location of the SoundBanks are for the game. This has to reside within the StreamingAssets folder.";
 		GUILayout.Label(new GUIContent(description, tooltip), GUILayout.Width(330));
+#if UNITY_EDITOR_OSX
+		WwiseSetupWizard.Settings.SoundbankPath = WwiseSetupWizard.Settings.SoundbankPath.Replace('\\', '/');
+#endif		
 		EditorGUILayout.SelectableLabel(WwiseSetupWizard.Settings.SoundbankPath, "textfield", GUILayout.Height(17));
 		if(GUILayout.Button("...", GUILayout.Width(30)))
 		{

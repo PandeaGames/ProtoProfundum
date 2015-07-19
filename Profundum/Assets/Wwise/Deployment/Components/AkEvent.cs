@@ -36,6 +36,7 @@ public struct AkEventCallbackMsg
 [AddComponentMenu("Wwise/AkEvent")]
 /// @brief Helper class that knows a Wwise Event and when to trigger it in Unity.
 /// \sa
+/// - \ref unity_use_AkEvent_AkAmbient
 /// - \ref soundengine_events
 public class AkEvent : AkUnityEventHandler 
 {

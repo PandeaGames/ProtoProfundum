@@ -126,6 +126,12 @@ public class AkGameObjectInspector : Editor
 		
 		GUILayout.Space (3);
 
+		string [] maskLabels = new string[AkSoundEngine.AK_NUM_LISTENERS];
+		for(int i = 0; i < AkSoundEngine.AK_NUM_LISTENERS; i++)
+		{
+			maskLabels[i] = "L" + i;
+		}
+		m_AkGameObject.listenerMask = EditorGUILayout.MaskField("Listeners", m_AkGameObject.listenerMask, maskLabels); 
 
         if (GUI.changed)
         {

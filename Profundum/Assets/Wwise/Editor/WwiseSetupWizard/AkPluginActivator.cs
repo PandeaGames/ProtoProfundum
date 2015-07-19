@@ -315,7 +315,10 @@ public class AkPluginActivator
 				break;
 			case "WiiU": // todo: wiiu not in buildtarget...
 			default:
-				Debug.Log ("Unknown platform: " + pluginPlatform);
+				if(!pluginPlatform.Contains("_new"))
+				{
+					Debug.Log ("Unknown platform: " + pluginPlatform);
+				}
 				continue;
 			}
 			

@@ -27,9 +27,21 @@ public static class AkWwiseProjectInfo
 				string[] arguments = Environment.GetCommandLineArgs();
 				if (m_Data == null && Array.IndexOf(arguments, "-batchmode") == -1)
 				{
-					m_Data = ScriptableObject.CreateInstance<AkWwiseProjectData>();
-					string assetPathAndName = AssetDatabase.GenerateUniqueAssetPath("Assets/Wwise/Editor/ProjectData/AkWwiseProjectData.asset");
-					AssetDatabase.CreateAsset(m_Data, assetPathAndName);
+                    if (!Directory.Exists(Path.Combine(Application.dataPath, "Wwise/Editor/ProjectData")))
+                    {
+                        Directory.CreateDirectory(Path.Combine(Application.dataPath, "Wwise/Editor/ProjectData"));
+                    }
+
+					if( !File.Exists(Application.dataPath + "/Wwise/Editor/ProjectData/AkWwiseProjectData.asset"))
+					{
+						m_Data = ScriptableObject.CreateInstance<AkWwiseProjectData>();
+						string assetPathAndName = AssetDatabase.GenerateUniqueAssetPath("Assets/Wwise/Editor/ProjectData/AkWwiseProjectData.asset");
+						AssetDatabase.CreateAsset(m_Data, assetPathAndName);
+					}
+					else
+					{
+						return null;
+					}
 				}
 			}
 			catch( Exception e )
@@ -44,10 +56,12 @@ public static class AkWwiseProjectInfo
 
     public static void Populate()
     {
+        AkWwisePlatformBuilder.BuildPlatformArray();
+
         AkWwiseWWUBuilder.Populate();
 
         AkWwiseXMLBuilder.Populate();
-        
+
         if( AkWwisePicker.WwiseProjectFound )
         {
 			EditorUtility.SetDirty(AkWwiseProjectInfo.GetData ());

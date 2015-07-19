@@ -47,14 +47,14 @@ public class AkMemBankLoader : MonoBehaviour
 	/// Load a sound bank from WWW object 
 	public void LoadNonLocalizedBank(string in_bankFilename)
 	{
-		string bankPath = "file://" + Path.Combine(AkBankPathUtil.GetPlatformBasePath(), in_bankFilename);
+        string bankPath = "file://" + Path.Combine(AkInitializer.GetPlatformBasePath(), in_bankFilename);
 		DoLoadBank(bankPath);
 	}
 	
 	/// Load a language-specific bank from WWW object
 	public void LoadLocalizedBank(string in_bankFilename)
 	{
-		string bankPath = "file://" + Path.Combine(Path.Combine (AkBankPathUtil.GetPlatformBasePath(), AkInitializer.GetCurrentLanguage()), in_bankFilename);
+        string bankPath = "file://" + Path.Combine(Path.Combine(AkInitializer.GetPlatformBasePath(), AkInitializer.GetCurrentLanguage()), in_bankFilename);
 		DoLoadBank(bankPath);
 	}
 

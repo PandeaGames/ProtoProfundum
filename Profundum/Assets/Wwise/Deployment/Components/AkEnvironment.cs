@@ -15,6 +15,7 @@ using System.Collections.Generic;
 /// The reverb parameters will be defined in the Wwise project, by the sound designer.  All AkGameObj that are 
 /// "environement"-aware will receive a send value when entering the attached collider.
 /// \sa
+/// - \ref unity_use_AkEvironment_AkEvironmentPortal
 /// - \ref integrating_elements_environments
 /// - \ref AK::SoundEngine::SetGameObjectAuxSendValues
 [RequireComponent (typeof(Rigidbody))]

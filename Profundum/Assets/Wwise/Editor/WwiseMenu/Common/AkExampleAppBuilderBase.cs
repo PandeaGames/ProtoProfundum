@@ -38,33 +38,38 @@ public class AkExampleAppBuilderBase : MonoBehaviour
 			return false;
 		}
 
-		//get Wwise project file (.wproj) path
-		string wwiseProjFile = Path.Combine (Application.dataPath, WwiseSetupWizard.Settings.WwiseProjectPath).Replace('/', '\\');
-
-		//get Wwise project root folder path
-		string wwiseProjectFolder = wwiseProjFile.Remove (wwiseProjFile.LastIndexOf(Path.DirectorySeparatorChar));
-
 		//get Wwise platform string (the string isn't the same as unity for some platforms)
-		string wwisePlatformString = UnityToWwisePlatformString (EditorUserBuildSettings.activeBuildTarget.ToString());
+		RuntimePlatform PlatformToBuild = BuildTargetToRuntimePlatform(EditorUserBuildSettings.activeBuildTarget);
 
 		//get soundbank location in the Wwise project for the current platform target
-		string sourceSoundBankFolder = Path.Combine( wwiseProjectFolder, AkUtilities.GetWwiseSoundBankDestinationFolder (wwisePlatformString, wwiseProjFile));
+        List<string> platformNames = AkInitializer.GetInstance().BankDestinationFolders[(int)PlatformToBuild].Folders;
+        List<string> DestinationFolders = new List<string>();
+        foreach (string platformName in platformNames)
+        {
+            string sourceSoundBankFolder = AkWwisePlatformBuilder.GetGeneratedBankDirectory(platformName);
 
-		//get soundbank destination in the Unity project for the current platform target
-		string destinationSoundBankFolder = Path.Combine	(	Application.dataPath + "\\StreamingAssets", 								//Soundbank must be inside the StreamingAssets folder
-		                                                  		Path.Combine(WwiseSetupWizard.Settings.SoundbankPath, wwisePlatformString)	
-		                                                  	);
+            //get soundbank destination in the Unity project for the current platform target
+			string PathInStreamingAssets = Path.Combine(WwiseSetupWizard.Settings.SoundbankPath, platformName);
+#if UNITY_EDITOR_OSX
+			PathInStreamingAssets = PathInStreamingAssets.Replace('\\', '/');
+#endif			
+            string destinationSoundBankFolder = Path.Combine(Application.streamingAssetsPath, 								//Soundbank must be inside the StreamingAssets folder
+                                                            PathInStreamingAssets
+                                                                );
 
-		//Copy the soundbank from the Wwise project to the unity project (Inside the StreamingAssets folder as defined in Window->Wwise Settings)
-		if(	!AkUtilities.DirectoryCopy 	(	sourceSoundBankFolder, 		//source folder
-		                          			destinationSoundBankFolder, //destination
-		                          			true						//copy subfolders
-										)
-		   )
-		{
-			UnityEngine.Debug.LogError("Wwise: The soundbank folder for the " + wwisePlatformString + " platform doesn't exist. Make sure it was generated in your Wwise project");
-			return false;
-		}
+            DestinationFolders.Add(destinationSoundBankFolder);
+
+            //Copy the soundbank from the Wwise project to the unity project (Inside the StreamingAssets folder as defined in Window->Wwise Settings)
+            if (!AkUtilities.DirectoryCopy(sourceSoundBankFolder, 		//source folder
+                                                destinationSoundBankFolder, //destination
+                                                true						//copy subfolders
+                                            )
+               )
+            {
+                UnityEngine.Debug.LogError("Wwise: The soundbank folder for the " + platformName + " platform doesn't exist. Make sure it was generated in your Wwise project");
+                return false;
+            }
+        }
 
 		//Get all the scenes to build as defined in File->Build Settings
 		string[] scenes = new string[EditorBuildSettings.scenes.Length]; 		
@@ -81,40 +86,66 @@ public class AkExampleAppBuilderBase : MonoBehaviour
 		                           	);
 		
 		//Delete the soundbank from the unity project so they dont get copied in the game folder of fututre builds
-		Directory.Delete (destinationSoundBankFolder, true); 
+        foreach (string destinationSoundBankFolder in DestinationFolders)
+        {
+		    Directory.Delete (destinationSoundBankFolder, true); 
+        }
 		
 		return true;
 	}
 
 
-	private static string UnityToWwisePlatformString( string unityPlatormString)
+    private static RuntimePlatform BuildTargetToRuntimePlatform(BuildTarget TargetToBuild)
 	{
-		if(	unityPlatormString == BuildTarget.StandaloneWindows.ToString()
-		   	||
-		   	unityPlatormString == BuildTarget.StandaloneWindows64.ToString()
-		   )
-			return "Windows";
-
-		else if(	unityPlatormString == BuildTarget.StandaloneOSXIntel.ToString() 
-		        	|| 
-		        	unityPlatormString == BuildTarget.StandaloneOSXIntel64.ToString()
-		        	||
-		        	unityPlatormString == BuildTarget.StandaloneOSXUniversal.ToString()
-		        )
-			return "Mac";
-
+        switch (TargetToBuild)
+        {
+            case BuildTarget.Android:
+                return RuntimePlatform.Android;
 #if UNITY_5
-		else if(unityPlatormString == BuildTarget.iOS.ToString())
-#else
-		else if(unityPlatormString == BuildTarget.iPhone.ToString())
+            case BuildTarget.iOS:
+                return RuntimePlatform.IPhonePlayer;
 #endif
-			return "iOS";
-
-		else if(unityPlatormString == BuildTarget.XBOX360.ToString())
-			return "Xbox360";
-
-		//Android, PS3 and Wii have the correct strings in Wwise v2013.2.7 and Unity version 4.3.4
-		return unityPlatormString;
+#if !UNITY_5
+            case BuildTarget.iPhone:
+                return RuntimePlatform.IPhonePlayer;
+#endif
+#if !UNITY_5
+            case BuildTarget.MetroPlayer:
+                // There are multiple RuntimePlatforms for Metro, but they will all contain the same info in the platform array.
+                return RuntimePlatform.MetroPlayerARM;
+#endif
+            case BuildTarget.PS3:
+                return RuntimePlatform.PS3;
+            case BuildTarget.PS4:
+                return RuntimePlatform.PS4;
+            case BuildTarget.PSP2:
+                return RuntimePlatform.PSP2;
+            case BuildTarget.StandaloneLinux:
+            case BuildTarget.StandaloneLinux64:
+            case BuildTarget.StandaloneLinuxUniversal:
+                return RuntimePlatform.LinuxPlayer;
+            case BuildTarget.StandaloneOSXIntel:
+            case BuildTarget.StandaloneOSXIntel64:
+            case BuildTarget.StandaloneOSXUniversal:
+                return RuntimePlatform.OSXPlayer;
+            case BuildTarget.StandaloneWindows:
+            case BuildTarget.StandaloneWindows64:
+                return RuntimePlatform.WindowsPlayer;
+            case BuildTarget.WP8Player:
+                return RuntimePlatform.WP8Player;
+#if UNITY_5
+            case BuildTarget.WSAPlayer:
+                // There are multiple RuntimePlatforms for WSA, but they will all contain the same info in the platform array.
+                return RuntimePlatform.WSAPlayerARM;
+#endif
+            case BuildTarget.XBOX360:
+                return RuntimePlatform.XBOX360;
+            case BuildTarget.XboxOne:
+                return RuntimePlatform.XboxOne;
+            default:
+                UnityEngine.Debug.LogError("Wwise Build: Build Target " + TargetToBuild.ToString() + " is not compatible with the Wwise integration");
+                return (RuntimePlatform)(-1);
+        }
 	}
 
 	private static string getPlatFormExtension()

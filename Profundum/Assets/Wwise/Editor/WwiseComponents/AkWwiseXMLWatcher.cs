@@ -35,7 +35,7 @@ public class AkWwiseXMLWatcher
 	private AkWwiseXMLWatcher()
 	{
 		XmlWatcher 			= new FileSystemWatcher ();
-		SoundBankFolder 	= AkBankPathUtil.GetPlatformBasePath();
+		SoundBankFolder 	= AkInitializer.GetPlatformBasePath();
 		
 		try
 		{

@@ -745,7 +745,7 @@ static public class AkCallbackManager
 
         // Callbacks without packages are always valid.
         if (commonCB.eType == AkCallbackType.AK_AudioInterruption || commonCB.eType == AkCallbackType.AK_AudioSourceChange ||
-            commonCB.eType == AkCallbackType.AK_Monitoring)
+            commonCB.eType == AkCallbackType.AK_Monitoring )
         {
             return true;
         }

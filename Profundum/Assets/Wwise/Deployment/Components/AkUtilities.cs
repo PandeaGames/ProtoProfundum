@@ -85,8 +85,8 @@ public class WwiseSettings
 					// relative path.
 					Settings.WwiseProjectPath = AkUtilities.MakeRelativePath(Application.dataPath + "/fake_depth", foundWwiseProjects[0]);
 				}
-				
-				Settings.SoundbankPath = AkBankPathUtil.GetDefaultPath();
+
+                Settings.SoundbankPath = AkInitializer.c_DefaultBasePath;
 			}
 			
 			s_Instance = Settings;
@@ -103,6 +103,7 @@ public class WwiseSettings
 public partial class AkUtilities
 {
 	// Parses the .wproj to find out where soundbanks are generated for the given path
+	[System.Obsolete("Please use AkInitializer.GetPlatformBasePath to get the SoundBanks folder.")]
 	public static string GetWwiseSoundBankDestinationFolder(string Platform, string WwiseProjectPath)
 	{
 		try
@@ -137,8 +138,7 @@ public partial class AkUtilities
 			return "";
 		}
 	}
-	
-	// Set soundbank-related bool settings in the wproj file.
+		// Set soundbank-related bool settings in the wproj file.
 	public static bool EnableBoolSoundbankSettingInWproj(string SettingName, string WwiseProjectPath)
 	{
 		try

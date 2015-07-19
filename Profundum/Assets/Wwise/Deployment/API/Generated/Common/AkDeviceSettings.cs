@@ -136,13 +136,13 @@ public class AkDeviceSettings : IDisposable {
     } 
   }
 
-  public float fMaxCacheRatio {
+  public bool bUseStreamCache {
     set {
-      AkSoundEnginePINVOKE.CSharp_AkDeviceSettings_fMaxCacheRatio_set(swigCPtr, value);
+      AkSoundEnginePINVOKE.CSharp_AkDeviceSettings_bUseStreamCache_set(swigCPtr, value);
 
     } 
     get {
-      float ret = AkSoundEnginePINVOKE.CSharp_AkDeviceSettings_fMaxCacheRatio_get(swigCPtr);
+      bool ret = AkSoundEnginePINVOKE.CSharp_AkDeviceSettings_bUseStreamCache_get(swigCPtr);
 
       return ret;
     } 

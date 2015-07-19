@@ -23,7 +23,7 @@ public class AkWwiseWWUWatcher
 #endif
 
 	private string WwiseProjectFolder;
-	private System.Threading.Timer CallbackTimer;
+	private Timer CallbackTimer;
 	
 	private static AkWwiseWWUWatcher Instance = null;
 	
@@ -45,7 +45,7 @@ public class AkWwiseWWUWatcher
 #else
 		WwuWatcher 			= new OSX.IO.FileSystemWatcher.FileSystemWatcher();
 #endif
-		CallbackTimer 		= new System.Threading.Timer (RaisePopulateFlag);
+		CallbackTimer 		= new Timer (RaisePopulateFlag);
 		WwiseProjectFolder 	= Path.GetDirectoryName(AkUtilities.GetFullPath(Application.dataPath, WwiseSetupWizard.Settings.WwiseProjectPath));
 		
 		try
@@ -60,7 +60,7 @@ public class AkWwiseWWUWatcher
 			WwuWatcher.Deleted += new FileSystemEventHandler(WWUWatcher_EventHandler);
 			// Wwise does not seem to "rename" files. It creates a new file and deletes the old. We don't need to set the "Renamed" event.
 			
-			WwuWatcher.Filter = "*.wwu";
+			WwuWatcher.Filter = "*.w*";
 			WwuWatcher.IncludeSubdirectories = true;
 			AkWwisePicker.WwiseProjectFound = true;
 		}
@@ -86,26 +86,30 @@ public class AkWwiseWWUWatcher
 	}
 	
 	void WWUWatcher_EventHandler(object sender, FileSystemEventArgs e)
-	{ 
-		if (!e.FullPath.Contains (".wwu")) 
+	{
+		if (!e.FullPath.EndsWith(".wproj") && !e.FullPath.EndsWith(".wwu") )
 		{
-			return;
+            // Do nothing for files other than .wwu and .wproj
+            return;
+		}
+		
+        if (e.FullPath.EndsWith(".wwu")) 
+		{
+		    if (e.ChangeType == WatcherChangeTypes.Deleted)
+		    {
+			    AkWwiseWWUBuilder.s_deletedWwu.Add(e.FullPath);
+		    }
+		    else if(e.ChangeType == WatcherChangeTypes.Created)
+		    {
+			    AkWwiseWWUBuilder.s_createdWwu.Add(e.FullPath);
+		    }
+		    else
+		    {
+			    AkWwiseWWUBuilder.s_changedWwu.Add(e.FullPath);
+		    }
 		}
 
-		if (e.ChangeType == WatcherChangeTypes.Deleted)
-		{
-			AkWwiseWWUBuilder.s_deletedWwu.Add(e.FullPath);
-		}
-		else if(e.ChangeType == WatcherChangeTypes.Created)
-		{
-			AkWwiseWWUBuilder.s_createdWwu.Add(e.FullPath);
-		}
-		else
-		{
-			AkWwiseWWUBuilder.s_changedWwu.Add(e.FullPath);
-		}
-
-		//Raise flag after 2 secondes. Timer will be reset to 2 secondes if another event is detected before it reaches zero
+		//Raise flag after 2 seconds. Timer will be reset to 2 seconds if another event is detected before it reaches zero
 		CallbackTimer.Change ( 2000, Timeout.Infinite);
 	}
 	
@@ -113,7 +117,7 @@ public class AkWwiseWWUWatcher
 	{
 		//Stop Timer callback
 		CallbackTimer.Change ( Timeout.Infinite, Timeout.Infinite);
-	
+
 		// Signal the main thread it's time to populate (cannot run populate somewhere else than on main thread)
 		AkWwiseWWUBuilder.s_populateNow = true;
 	}

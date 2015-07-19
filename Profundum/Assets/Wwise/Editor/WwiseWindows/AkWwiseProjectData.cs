@@ -349,40 +349,41 @@ public class AkWwiseProjectData : ScriptableObject
 	//This data is a copy of the AkInitializer parameters.  
 	//We need it to reapply the same values to copies of the object in different scenes
 	//It sits in this object so it is serialized in the same "asset" file
-	public string basePath = AkBankPathUtil.GetDefaultPath();
+	public string basePath = AkInitializer.c_DefaultBasePath;
 	public string language = AkInitializer.c_Language;
 	public int defaultPoolSize = AkInitializer.c_DefaultPoolSize;
 	public int lowerPoolSize = AkInitializer.c_LowerPoolSize;
 	public int streamingPoolSize = AkInitializer.c_StreamingPoolSize;
-	public float memoryCutoffThreshold = AkInitializer.c_MemoryCutoffThreshold;	
-
-
+	public float memoryCutoffThreshold = AkInitializer.c_MemoryCutoffThreshold;
+    public AkInitializer.PlatformFolderContainer[] BankDestinationFolders = new AkInitializer.PlatformFolderContainer[AkInitializer.HighestRuntimePlatformNumber];
 
 	public void SaveInitSettings(AkInitializer in_AkInit)
 	{
 		if (!CompareInitSettings(in_AkInit))
 		{
-			basePath =				in_AkInit.basePath;
+            basePath = in_AkInit.basePath;
 			language =              in_AkInit.language;
 			defaultPoolSize =       in_AkInit.defaultPoolSize;
 			lowerPoolSize =         in_AkInit.lowerPoolSize;
 			streamingPoolSize =     in_AkInit.streamingPoolSize;
-			memoryCutoffThreshold = in_AkInit.memoryCutoffThreshold;
-			EditorUtility.SetDirty(this);
+            memoryCutoffThreshold = in_AkInit.memoryCutoffThreshold;
+            BankDestinationFolders = in_AkInit.BankDestinationFolders;
+            EditorUtility.SetDirty(this);
 		}
 	}
 	
 	public void CopyInitSettings(AkInitializer in_AkInit)
 	{
 		if (!CompareInitSettings(in_AkInit))
-		{			
+		{
 			in_AkInit.basePath = 				basePath;				
 			in_AkInit.language =                language;              
 			in_AkInit.defaultPoolSize =         defaultPoolSize;
 			in_AkInit.lowerPoolSize =           lowerPoolSize;        
 			in_AkInit.streamingPoolSize =       streamingPoolSize;
-			in_AkInit.memoryCutoffThreshold =   memoryCutoffThreshold;
-			EditorUtility.SetDirty(in_AkInit);
+            in_AkInit.memoryCutoffThreshold = memoryCutoffThreshold;
+            in_AkInit.BankDestinationFolders = BankDestinationFolders;
+            EditorUtility.SetDirty(in_AkInit);
 		}
 	}
 
@@ -393,7 +394,8 @@ public class AkWwiseProjectData : ScriptableObject
 			defaultPoolSize ==       in_AkInit.defaultPoolSize &&
 			lowerPoolSize ==         in_AkInit.lowerPoolSize &&
 			streamingPoolSize ==     in_AkInit.streamingPoolSize &&
-			memoryCutoffThreshold == in_AkInit.memoryCutoffThreshold;
+			memoryCutoffThreshold == in_AkInit.memoryCutoffThreshold &&
+            BankDestinationFolders == in_AkInit.BankDestinationFolders;
 	}
 
 

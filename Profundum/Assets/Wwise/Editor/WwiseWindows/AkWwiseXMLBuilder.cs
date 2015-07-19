@@ -23,12 +23,15 @@ public class AkWwiseXMLBuilder
         }
 
         // Try getting the SoundbanksInfo.xml file for Windows or Mac first, then try to find any other available platform.
-        string FullSoundbankPath = AkBankPathUtil.GetPlatformBasePath();
+        string FullSoundbankPath = AkInitializer.GetPlatformBasePath();
         string filename = Path.Combine(FullSoundbankPath, "SoundbanksInfo.xml");
 
         if (!File.Exists(filename))
         {
             FullSoundbankPath = Path.Combine(Application.streamingAssetsPath, WwiseSetupWizard.Settings.SoundbankPath);
+#if UNITY_EDITOR_OSX
+			FullSoundbankPath = FullSoundbankPath.Replace('\\', '/');
+#endif
             string[] foundFiles = Directory.GetFiles(FullSoundbankPath, "SoundbanksInfo.xml", SearchOption.AllDirectories);
             if (foundFiles.Length > 0)
             {

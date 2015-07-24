@@ -2,7 +2,8 @@
 using System.Collections;
 
 public class CollisionDelegate : MonoBehaviour {
-	public string agroTag = "Player";
+	public string tag = "Player";
+	public Collider col;
 	// Use this for initialization
 	void Start () {
 	
@@ -19,6 +20,8 @@ public class CollisionDelegate : MonoBehaviour {
 	// Checking a reference to a collider is better than using strings. 
 	public Collider playerCollider;
 	
-	void OnTriggerEnter (Collider collider) { if (collider.tag == agroTag) CollideWithPlayer(); }
-	void OnTriggerExit (Collider collider) { if (collider.tag == agroTag) ExitPlayerCollision(); }
+	void OnTriggerEnter (Collider collider) { if (collider.tag == tag)
+			col = collider;CollideWithPlayer(); }
+	void OnTriggerExit (Collider collider) { if (collider.tag == tag) 
+		col = collider;ExitPlayerCollision(); }
 }

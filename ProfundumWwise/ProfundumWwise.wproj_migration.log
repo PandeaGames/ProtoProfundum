@@ -1,0 +1,2 @@
+Project migration to XML Schema (XSD) version 70 is completed.
+Properties related to Platform(s) "'3DS, PS3, PS4, VitaHW, VitaSW, Wii, WiiUSW, Xbox360, XboxOne'" were detected and removed from project as they were unreferenced. This could happen if you migrated a project from a previous version where some platforms were disabled. Disabled platforms are unavailable as they are being replaced by custom platforms. If you wanted to keep information relative to disabled platforms, enable them before performing migration.

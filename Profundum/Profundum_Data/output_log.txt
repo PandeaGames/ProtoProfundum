@@ -1,0 +1,1853 @@
+Mono path[0] = 'C:/Users/Colin/ProtoProfundum/Profundum/Profundum_Data/Managed'
+Mono path[1] = 'C:/Users/Colin/ProtoProfundum/Profundum/Profundum_Data/Mono'
+Mono config path = 'C:/Users/Colin/ProtoProfundum/Profundum/Profundum_Data/Mono/etc'
+PlayerConnection initialized from C:/Users/Colin/ProtoProfundum/Profundum/Profundum_Data (debug = 0)
+PlayerConnection initialized network socket : 0.0.0.0 55005
+Multi-casting "[IP] 142.58.209.138 [Port] 55005 [Flags] 2 [Guid] 872227933 [EditorId] 3659519299 [Version] 1048832 [Id] WindowsPlayer(Colin-Surface) [Debug] 0" to [225.0.0.222:54997]...
+PlayerConnection already initialized - listening to [142.58.209.138:55005]
+Initialize engine version: 5.1.1f1 (2046fc06d4d8)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: Intel(R) HD Graphics Family (ID=0xa16)
+    Vendor:   Intel
+    VRAM:     896 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Colin\ProtoProfundum\Profundum\Profundum_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Colin\ProtoProfundum\Profundum\Profundum_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Colin\ProtoProfundum\Profundum\Profundum_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading C:\Users\Colin\ProtoProfundum\Profundum\Profundum_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: C:\Users\Colin\ProtoProfundum\Profundum\Profundum_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Colin\ProtoProfundum\Profundum\Profundum_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Colin\ProtoProfundum\Profundum\Profundum_Data\Managed\Assembly-UnityScript.dll (this message is harmless)
+Loading C:\Users\Colin\ProtoProfundum\Profundum\Profundum_Data\Managed\Assembly-UnityScript.dll into Unity Child Domain
+Platform assembly: C:\Users\Colin\ProtoProfundum\Profundum\Profundum_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Colin\ProtoProfundum\Profundum\Profundum_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\Colin\ProtoProfundum\Profundum\Profundum_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\Colin\ProtoProfundum\Profundum\Profundum_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\Colin\ProtoProfundum\Profundum\Profundum_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
+Loading C:\Users\Colin\ProtoProfundum\Profundum\Profundum_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
+- Completed reload, in  0.211 seconds
+desktop: 2160x1440 59Hz; virtual: 2160x1440 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+Platform assembly: C:\Users\Colin\ProtoProfundum\Profundum\Profundum_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\Colin\ProtoProfundum\Profundum\Profundum_Data\Managed\System.dll (this message is harmless)
+WwiseUnity: Initialize sound engine ...
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+AkInitializer:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\Wwise\Deployment\Components\AkInitializer.cs:114)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/Wwise/Deployment/Components/AkInitializer.cs Line: 114)
+
+WwiseUnity: Could not locate the SoundBanks. Did you make sure to copy them to the StreamingAssets folder?
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+AkInitializer:ValidateAndSetBasePath() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\Wwise\Deployment\Components\AkInitializer.cs:279)
+AkInitializer:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\Wwise\Deployment\Components\AkInitializer.cs:158)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/Wwise/Deployment/Components/AkInitializer.cs Line: 279)
+
+Method with name <Awake>m__6 could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__7 could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__8 could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__9 could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__A could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__B could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__C could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__D could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__6 could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__7 could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__8 could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__9 could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__A could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__B could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__C could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__D could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__6 could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__7 could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__8 could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__9 could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__A could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__B could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__C could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__D could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__6 could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__7 could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__8 could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__9 could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__A could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__B could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__C could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__D could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__6 could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__7 could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__8 could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__9 could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__A could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__B could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__C could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__D could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__6 could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__7 could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__8 could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__9 could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__A could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__B could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__C could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__D could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__6 could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__7 could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__8 could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__9 could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__A could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__B could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__C could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__D could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__6 could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__7 could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__8 could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__9 could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__A could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__B could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__C could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__D could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__6 could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__7 could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__8 could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__9 could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__A could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__B could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__C could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__D could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__6 could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__7 could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__8 could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__9 could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__A could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__B could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__C could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__D could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__6 could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__7 could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__8 could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__9 could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__A could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__B could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__C could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__D could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__6 could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__7 could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__8 could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__9 could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__A could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__B could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__C could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__D could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__6 could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__7 could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__8 could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__9 could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__A could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__B could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__C could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__D could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__6 could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__7 could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__8 could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__9 could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__A could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__B could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__C could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__D could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__6 could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__7 could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__8 could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__9 could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__A could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__B could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__C could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__D could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__6 could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__7 could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__8 could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__9 could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__A could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__B could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__C could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__D could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__6 could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__7 could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__8 could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__9 could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__A could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__B could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__C could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__D could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__6 could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__7 could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__8 could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__9 could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__A could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__B could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__C could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__D could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__6 could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__7 could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__8 could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__9 could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__A could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__B could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__C could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__D could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__6 could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__7 could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__8 could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__9 could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__A could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__B could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__C could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__D could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__6 could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__7 could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__8 could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__9 could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__A could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__B could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__C could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__D could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__6 could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__7 could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__8 could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__9 could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__A could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__B could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__C could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__D could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__6 could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__7 could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__8 could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__9 could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__A could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__B could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__C could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__D could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__6 could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__7 could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__8 could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__9 could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__A could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__B could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__C could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__D could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__6 could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__7 could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__8 could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__9 could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__A could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__B could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__C could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__D could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:37)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Setting up 1 worker threads for Enlighten.
+  Thread -> id: 44c -> priority: 1 

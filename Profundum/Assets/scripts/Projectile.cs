@@ -19,4 +19,9 @@ public class Projectile : MonoBehaviour {
 			Destroy (gameObject);
 		}
 	}
+	void Contact(GameObject other)
+	{
+		Destroy (gameObject);
+	}
+
 }

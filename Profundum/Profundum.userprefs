@@ -1,14 +1,19 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\scripts\GrupperStateMachine.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\SmoothLookAtCamera.js">
     <Files>
-      <File FileName="Assets\scripts\GrupperStateMachine.cs" Line="63" Column="71" />
-      <File FileName="Assets\MonsterLove\StateMachine\StateBehaviour.cs" Line="36" Column="4" />
-      <File FileName="Assets\MonsterLove\StateMachine\StateEngine.cs" Line="37" Column="41" />
-      <File FileName="Assets\CollisionDelegate.cs" Line="24" Column="41" />
-      <File FileName="Assets\GrupperStateTests.cs" Line="16" Column="29" />
-      <File FileName="Assets\scripts\Shooter.cs" Line="19" Column="32" />
-      <File FileName="Assets\scripts\Projectile.cs" Line="9" Column="32" />
+      <File FileName="Assets\SmoothLookAtCamera.js" Line="5" Column="53" />
+      <File FileName="Assets\DomeCrystal.cs" Line="9" Column="3" />
+      <File FileName="Assets\GameSettings.cs" Line="1" Column="1" />
+      <File FileName="Assets\scripts\GrupperStateMachine.cs" Line="1" Column="1" />
+      <File FileName="Assets\MonsterLove\StateMachine\StateBehaviour.cs" Line="1" Column="1" />
+      <File FileName="Assets\MonsterLove\StateMachine\StateEngine.cs" Line="1" Column="1" />
+      <File FileName="Assets\CollisionDelegate.cs" Line="1" Column="1" />
+      <File FileName="Assets\GrupperStateTests.cs" Line="1" Column="1" />
+      <File FileName="Assets\scripts\Shooter.cs" Line="1" Column="1" />
+      <File FileName="Assets\scripts\Projectile.cs" Line="1" Column="1" />
+      <File FileName="Assets\LightBubble.cs" Line="1" Column="1" />
+      <File FileName="Assets\scripts\SmoothLookAt.js" Line="1" Column="11" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

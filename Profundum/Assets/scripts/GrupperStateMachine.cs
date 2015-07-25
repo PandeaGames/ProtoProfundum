@@ -11,12 +11,15 @@ public class GrupperStateMachine : StateBehaviour {
 		Agro, 
 		Feeding, 
 		Idle, 
+		Scared,
 		Searching
 	}
 
 	public GameObject agroRangeObj;
 	public GameObject closeRangeObj;
 
+	private SphereCollider _agroCollider;
+	private Vector3 _agroColliderRange;
 	private Collider lightAgroCol;
 	private GameObject _player;
 	private bool agro = false;
@@ -26,6 +29,7 @@ public class GrupperStateMachine : StateBehaviour {
 	private float _acc = 0.01f;
 	private float _speed = 0f;
 	private Rigidbody rb;
+
 	private CollisionDelegate lightAgroRange, lightCloseRange, closeRange, agroRange;
 
 	// Use this for initialization
@@ -37,7 +41,9 @@ public class GrupperStateMachine : StateBehaviour {
 
 		agroRange = agroRangeObj.AddComponent <CollisionDelegate>();
 		agroRange.CollideWithPlayer += () => agro = true;   
-		agroRange.ExitPlayerCollision += () => agro = false;   
+		agroRange.ExitPlayerCollision += () => agro = false; 
+		_agroCollider = agroRangeObj.GetComponent<SphereCollider> ();
+		_agroColliderRange = new Vector3 (_agroCollider.radius, _agroCollider.radius, _agroCollider.radius);
 		
 		closeRange = closeRangeObj.AddComponent <CollisionDelegate>();
 		closeRange.CollideWithPlayer += () => close = true;   
@@ -57,16 +63,53 @@ public class GrupperStateMachine : StateBehaviour {
 	}
 	void Update()
 	{
-		if (lightAgro) 
-		{
-			lightAgroCol = lightAgroRange.col;
-			transform.LookAt(lightAgroRange.col.gameObject.transform.position);
-			//transform.transform.Translate(Vector3.back * _speed);
-			//float dist =  Vector3.Distance(transform.position, lightAgroCol.gameObject.transform.position);
-			rb.AddForce((transform.position -  lightAgroCol.gameObject.transform.position) / 10, ForceMode.Impulse);
+	}
+
+	void Scared_Update()
+	{
+		lightAgroCol = lightAgroRange.col;
+
+		if (!lightAgroCol) {
+			return;
+		}
+
+		if (!lightAgro || lightAgroCol.gameObject == null) {
+			ChangeState(GrupperStates.Searching);
+			return;
+		}
+
+		transform.LookAt(lightAgroCol.gameObject.transform.position);
+
+		if(Vector3.Distance(transform.position, lightAgroCol.gameObject.transform.position) < _agroColliderRange.x) {
+			Vector3 force = (transform.position -  lightAgroCol.gameObject.transform.position);
+			
+			force.x = force.x < 0 ? (force.x + _agroColliderRange.x) * -1:_agroColliderRange.x - force.x;
+			force.y = force.y < 0 ? (force.y + _agroColliderRange.y) * -1:_agroColliderRange.y - force.y;
+			force.z = force.z < 0 ? (force.z + _agroColliderRange.z) * -1:_agroColliderRange.z - force.z;
+			
+			force /= 20;
+			
+			force.y = force.y/3;
+			
+			if(force.y<0)
+			{
+				force.y = force.y*-1;
+			}
+			
+			rb.AddForce(force, ForceMode.Impulse);
+		}
+
+	
+	}
+
+	void Searching_Update()
+	{
+		if (lightAgro) {
+			ChangeState(GrupperStates.Scared);
 		}
 	}
-	void Searching_Update()
+
+	void Feeding_Update()
 	{
 	}
 }

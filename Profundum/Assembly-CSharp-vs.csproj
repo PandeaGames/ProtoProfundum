@@ -47,9 +47,12 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\CollisionDelegate.cs" />
+     <Compile Include="Assets\DomeCrystal.cs" />
+     <Compile Include="Assets\GameSettings.cs" />
      <Compile Include="Assets\GrupperAudiController.cs" />
      <Compile Include="Assets\GrupperStateTests.cs" />
      <Compile Include="Assets\Lava_Flowing_Shader\Scripts\ScrollingUVs_Layers.cs" />
+     <Compile Include="Assets\LightBubble.cs" />
      <Compile Include="Assets\MonsterLove\StateMachine\StateBehaviour.cs" />
      <Compile Include="Assets\MonsterLove\StateMachine\StateEngine.cs" />
      <Compile Include="Assets\Wwise\Deployment\API\Generated\Common\AKRESULT.cs" />

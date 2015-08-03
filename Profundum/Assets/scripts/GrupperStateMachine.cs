@@ -12,7 +12,8 @@ public class GrupperStateMachine : StateBehaviour {
 		Feeding, 
 		Idle, 
 		Scared,
-		Searching
+		Searching, 
+		AttackRecovering
 	}
 
 	public GameObject agroRangeObj;
@@ -21,7 +22,8 @@ public class GrupperStateMachine : StateBehaviour {
 	public float attackHeight = 8;
 	public float searchHeight = 3;
 	public Vector3 searchRotation = new Vector3 (0, 1, 0);
-
+	public LayerMask mask;
+	public float attackRecoverTime = 3;
 
 	private SphereCollider _agroCollider;
 	private Vector3 _agroColliderRange;
@@ -38,7 +40,10 @@ public class GrupperStateMachine : StateBehaviour {
 	private Vector3 _impulseSpeed = new Vector3 (0.1f, 0.03f, 0.1f);
 	private Vector3 _riseSpeed = new Vector3 (0.1f, 0.4f, 0.1f);
 	private Vector3 _searchRotation = new Vector3 (0, 1, 0);
-
+	private Vector3 _agroDeltaDamp = new Vector3 (-0.1f, -0.1f, -0.1f);
+	private Vector3 _attackDeltaDamp = new Vector3 (-0.5f, -0.5f, -0.5f);
+	private Vector3 _attackPosition;
+	private float _recoverStartTime;
 	private CollisionDelegate lightAgroRange, lightCloseRange, closeRange, agroRange, attackRange;
 
 	// Use this for initialization
@@ -79,13 +84,63 @@ public class GrupperStateMachine : StateBehaviour {
 	{
 	}
 
+
+
 	void DoAttack()
 	{
 		Debug.Log ("DoAttack");
 	}
 
+	void AttackRecovering_Update()
+	{
+		if (Time.time - _recoverStartTime > attackRecoverTime) 
+		{
+			ChangeState(GrupperStates.Searching);
+		}
+	}
+
+	void AttackRecovering_Exit()
+	{
+		transform.eulerAngles = new Vector3 (transform.eulerAngles.x, 0, transform.eulerAngles.z);
+	}
+
+	void AttackRecovering_Enter()
+	{
+		_recoverStartTime = Time.time;
+	}
+
+	void Attacking_Update()
+	{
+		Vector3 delta = transform.position - _attackPosition;
+		rb.AddForce (Vector3.Scale (delta, _attackDeltaDamp), ForceMode.Impulse);
+
+		if (Vector3.Distance (transform.position, _attackPosition) < 2) 
+		{
+			ChangeState(GrupperStates.AttackRecovering);
+		}
+	}
+
+	void Attacking_Enter()
+	{
+		_attackPosition = new Vector3 (attackRange.transform.position.x, attackRange.transform.position.y, attackRange.transform.position.z);
+	}
+
+	void Agro_Enter()
+	{
+		transform.LookAt(agroRange.col.gameObject.transform.position);
+	}
+
 	void Agro_Update()
 	{
+		//rotate
+		Vector3 delta = attackRange.transform.position - agroRange.col.gameObject.transform.position;
+
+		float a = Mathf.Atan2 (delta.x, delta.z);
+		transform.eulerAngles += new Vector3 (0, a, 0);
+
+		//psotion
+		delta = attackRange.transform.position - agroRange.col.gameObject.transform.position;
+		rb.AddForce (Vector3.Scale (delta, _agroDeltaDamp), ForceMode.Impulse);
 		if (canAttack) 
 		{
 			ChangeState(GrupperStates.Attacking);
@@ -138,8 +193,8 @@ public class GrupperStateMachine : StateBehaviour {
 		Ray closeRay = new Ray (transform.position + transform.forward * 1.5f + transform.up * 1.5f, Vector3.down);
 		rb.AddForce (Vector3.Scale (_impulseSpeed, transform.forward), ForceMode.Impulse);
 		transform.Rotate (searchRotation);
-		Physics.Raycast (closeRay, out closeHit, deploymentHeight);
-		if (Physics.Raycast (ray, out hit, deploymentHeight)) {
+		Physics.Raycast (closeRay, out closeHit, deploymentHeight,mask);
+		if (Physics.Raycast (ray, out hit, deploymentHeight, mask)) {
 			float distanceToGround = hit.distance;
 			if (distanceToGround > searchHeight) {
 				rb.AddForce (Vector3.Scale (_impulseSpeed, Vector3.down), ForceMode.Impulse);

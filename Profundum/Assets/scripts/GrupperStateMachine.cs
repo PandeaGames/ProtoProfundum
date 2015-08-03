@@ -17,6 +17,11 @@ public class GrupperStateMachine : StateBehaviour {
 
 	public GameObject agroRangeObj;
 	public GameObject closeRangeObj;
+	public GameObject attackAreaObj;
+	public float attackHeight = 8;
+	public float searchHeight = 3;
+	public Vector3 searchRotation = new Vector3 (0, 1, 0);
+
 
 	private SphereCollider _agroCollider;
 	private Vector3 _agroColliderRange;
@@ -26,11 +31,15 @@ public class GrupperStateMachine : StateBehaviour {
 	private bool close = false;
 	private bool lightAgro = false;
 	private bool lightClose = false;
+	private bool canAttack = false;
 	private float _acc = 0.01f;
 	private float _speed = 0f;
 	private Rigidbody rb;
+	private Vector3 _impulseSpeed = new Vector3 (0.1f, 0.03f, 0.1f);
+	private Vector3 _riseSpeed = new Vector3 (0.1f, 0.4f, 0.1f);
+	private Vector3 _searchRotation = new Vector3 (0, 1, 0);
 
-	private CollisionDelegate lightAgroRange, lightCloseRange, closeRange, agroRange;
+	private CollisionDelegate lightAgroRange, lightCloseRange, closeRange, agroRange, attackRange;
 
 	// Use this for initialization
 	void Awake () {
@@ -50,19 +59,37 @@ public class GrupperStateMachine : StateBehaviour {
 		closeRange.ExitPlayerCollision += () => close = false; 
 
 		lightCloseRange = closeRangeObj.AddComponent <CollisionDelegate>();
-		lightCloseRange.tag = "light";
+		lightCloseRange.tag = "Player";
 		lightCloseRange.CollideWithPlayer += () => lightClose = true;   
 		lightCloseRange.ExitPlayerCollision += () => lightClose = false; 
 
 		lightAgroRange = agroRangeObj.AddComponent <CollisionDelegate>();
-		lightAgroRange.tag = "light";
+		lightAgroRange.tag = "Player";
 		lightAgroRange.CollideWithPlayer += () => lightAgro = true;   
 		lightAgroRange.ExitPlayerCollision += () => lightAgro = false; 
+
+		attackRange = attackAreaObj.AddComponent <CollisionDelegate>();
+		attackRange.tag = "Player";
+		attackRange.CollideWithPlayer += () => canAttack = true;   
+		attackRange.ExitPlayerCollision += () => canAttack = false; 
 
 		rb = GetComponent<Rigidbody>();
 	}
 	void Update()
 	{
+	}
+
+	void DoAttack()
+	{
+		Debug.Log ("DoAttack");
+	}
+
+	void Agro_Update()
+	{
+		if (canAttack) 
+		{
+			ChangeState(GrupperStates.Attacking);
+		}
 	}
 
 	void Scared_Update()
@@ -95,17 +122,38 @@ public class GrupperStateMachine : StateBehaviour {
 			{
 				force.y = force.y*-1;
 			}
-			
 			rb.AddForce(force, ForceMode.Impulse);
 		}
-
-	
 	}
 
 	void Searching_Update()
 	{
-		if (lightAgro) {
-			ChangeState(GrupperStates.Scared);
+		if (lightAgro ==  true) {
+			ChangeState(GrupperStates.Agro);
+		}
+		RaycastHit hit = new RaycastHit ();
+		RaycastHit closeHit = new RaycastHit ();
+		float deploymentHeight = 10;
+		Ray ray = new Ray (transform.position + transform.forward * 3.0f + transform.up * 1.5f, Vector3.down);
+		Ray closeRay = new Ray (transform.position + transform.forward * 1.5f + transform.up * 1.5f, Vector3.down);
+		rb.AddForce (Vector3.Scale (_impulseSpeed, transform.forward), ForceMode.Impulse);
+		transform.Rotate (searchRotation);
+		Physics.Raycast (closeRay, out closeHit, deploymentHeight);
+		if (Physics.Raycast (ray, out hit, deploymentHeight)) {
+			float distanceToGround = hit.distance;
+			if (distanceToGround > searchHeight) {
+				rb.AddForce (Vector3.Scale (_impulseSpeed, Vector3.down), ForceMode.Impulse);
+			} else if (distanceToGround < searchHeight - .5) {
+				rb.AddForce (Vector3.Scale (_impulseSpeed, Vector3.up), ForceMode.Impulse);
+				if(distanceToGround < closeHit.distance - 0.5)
+				{
+					rb.AddForce (Vector3.Scale (_riseSpeed, Vector3.up), ForceMode.Impulse);
+				}
+			}
+			Debug.DrawRay (ray.origin, ray.direction * deploymentHeight, Color.green);
+		} else {
+			rb.AddForce (Vector3.Scale (_impulseSpeed, Vector3.down), ForceMode.Impulse);
+			Debug.DrawRay (ray.origin, ray.direction * deploymentHeight, Color.red);
 		}
 	}
 

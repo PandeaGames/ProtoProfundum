@@ -20,8 +20,12 @@ public class CollisionDelegate : MonoBehaviour {
 	// Checking a reference to a collider is better than using strings. 
 	public Collider playerCollider;
 	
-	void OnTriggerEnter (Collider collider) { if (collider.tag == tag)
-			col = collider;CollideWithPlayer(); }
-	void OnTriggerExit (Collider collider) { if (collider.tag == tag) 
-		col = collider;ExitPlayerCollision(); }
+	void OnTriggerEnter (Collider collider) { if (collider.tag == tag) {
+			col = collider;
+			CollideWithPlayer ();
+		} }
+	void OnTriggerExit (Collider collider) { if (collider.tag == tag) {
+			col = collider;
+			ExitPlayerCollision ();
+		}}
 }

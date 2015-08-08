@@ -25,6 +25,7 @@ public class GrupperStateMachine : StateBehaviour {
 	public LayerMask mask;
 	public float attackRecoverTime = 3;
 
+
 	private SphereCollider _agroCollider;
 	private Vector3 _agroColliderRange;
 	private Collider lightAgroCol;

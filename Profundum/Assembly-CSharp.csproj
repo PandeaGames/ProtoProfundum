@@ -55,6 +55,9 @@
      <Compile Include="Assets\LightBubble.cs" />
      <Compile Include="Assets\MonsterLove\StateMachine\StateBehaviour.cs" />
      <Compile Include="Assets\MonsterLove\StateMachine\StateEngine.cs" />
+     <Compile Include="Assets\RoachAI.cs" />
+     <Compile Include="Assets\RoachController.cs" />
+     <Compile Include="Assets\RoachLight.cs" />
      <Compile Include="Assets\Wwise\Deployment\API\Generated\Common\AKRESULT.cs" />
      <Compile Include="Assets\Wwise\Deployment\API\Generated\Common\AkActionOnEventType.cs" />
      <Compile Include="Assets\Wwise\Deployment\API\Generated\Common\AkAudioFormat.cs" />

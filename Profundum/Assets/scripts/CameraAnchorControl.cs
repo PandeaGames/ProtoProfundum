@@ -104,7 +104,6 @@ offset.z = offset.y * Mathf.Sin(theta_x) + offset.z * Mathf.Cos(theta_x);
 offset.z = offset.z * Mathf.Cos (theta_y) - offset.x * Mathf.Sin(theta_y);
 offset.x = offset.z * Mathf.Sin(theta_y) + offset.x * Mathf.Cos(theta_y);
 */
-Debug.Log (d);
 return new Vector3();
 return offset;
 	}

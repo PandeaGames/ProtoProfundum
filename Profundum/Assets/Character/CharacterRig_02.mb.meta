@@ -1,0 +1,243 @@
+fileFormatVersion: 2
+guid: 8111d033062510c4a952f00c1413468f
+timeCreated: 1442182362
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: rdmobj00_001
+    100004: rdmobj01
+    100006: rdmobj02
+    100008: rdmobj03
+    100010: rdmobj04
+    100012: rdmobj07_004
+    100014: group1
+    100016: joint1
+    100018: joint2
+    100020: joint3
+    100022: joint4
+    100024: ikHandle1
+    100026: ikHandle2
+    100028: ikHandle3
+    100030: ikHandle4
+    100032: joint10
+    100034: joint11
+    100036: joint12
+    100038: joint13
+    100040: joint14
+    100042: joint15
+    100044: joint16
+    100046: joint17
+    100048: joint18
+    100050: joint5
+    100052: joint6
+    100054: joint7
+    100056: joint8
+    100058: joint9
+    400000: //RootNode
+    400002: rdmobj00_001
+    400004: rdmobj01
+    400006: rdmobj02
+    400008: rdmobj03
+    400010: rdmobj04
+    400012: rdmobj07_004
+    400014: group1
+    400016: joint1
+    400018: joint2
+    400020: joint3
+    400022: joint4
+    400024: ikHandle1
+    400026: ikHandle2
+    400028: ikHandle3
+    400030: ikHandle4
+    400032: joint10
+    400034: joint11
+    400036: joint12
+    400038: joint13
+    400040: joint14
+    400042: joint15
+    400044: joint16
+    400046: joint17
+    400048: joint18
+    400050: joint5
+    400052: joint6
+    400054: joint7
+    400056: joint8
+    400058: joint9
+    2300000: rdmobj00_001
+    2300002: rdmobj01
+    2300004: rdmobj02
+    2300006: rdmobj03
+    2300008: rdmobj04
+    2300010: rdmobj07_004
+    3300000: rdmobj00_001
+    3300002: rdmobj01
+    3300004: rdmobj02
+    3300006: rdmobj03
+    3300008: rdmobj04
+    3300010: rdmobj07_004
+    4300000: rdmobj04
+    4300002: rdmobj00_001
+    4300004: rdmobj01
+    4300006: rdmobj02
+    4300008: rdmobj03
+    4300010: rdmobj07_004
+    7400000: Run
+    7400002: Idle
+    7400004: StartRun
+    9500000: //RootNode
+    13700000: rdmobj00_001
+    13700002: rdmobj01
+    13700004: rdmobj02
+    13700006: rdmobj03
+    13700008: rdmobj04
+    13700010: rdmobj07_004
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 1
+    optimizeGameObjects: 0
+    motionNodeName: joint9
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 3
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Idle
+      takeName: Take 001
+      firstFrame: 2
+      lastFrame: 20
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: group1
+        weight: 1
+      - path: group1/rdmobj00_001
+        weight: 1
+      - path: group1/rdmobj01
+        weight: 1
+      - path: group1/rdmobj02
+        weight: 1
+      - path: group1/rdmobj03
+        weight: 1
+      - path: group1/rdmobj04
+        weight: 1
+      - path: group1/rdmobj07_004
+        weight: 1
+      - path: ikHandle1
+        weight: 1
+      - path: ikHandle2
+        weight: 1
+      - path: ikHandle3
+        weight: 1
+      - path: ikHandle4
+        weight: 1
+      - path: joint9
+        weight: 1
+      - path: joint9/joint8
+        weight: 1
+      - path: joint9/joint8/joint1
+        weight: 1
+      - path: joint9/joint8/joint1/joint2
+        weight: 1
+      - path: joint9/joint8/joint1/joint2/joint3
+        weight: 1
+      - path: joint9/joint8/joint1/joint2/joint3/joint4
+        weight: 1
+      - path: joint9/joint8/joint1/joint5
+        weight: 1
+      - path: joint9/joint8/joint1/joint5/joint6
+        weight: 1
+      - path: joint9/joint8/joint1/joint5/joint6/joint7
+        weight: 1
+      - path: joint9/joint8/joint1/joint18
+        weight: 1
+      - path: joint9/joint10
+        weight: 1
+      - path: joint9/joint10/joint11
+        weight: 1
+      - path: joint9/joint10/joint11/joint12
+        weight: 1
+      - path: joint9/joint10/joint11/joint12/joint13
+        weight: 1
+      - path: joint9/joint14
+        weight: 1
+      - path: joint9/joint14/joint15
+        weight: 1
+      - path: joint9/joint14/joint15/joint16
+        weight: 1
+      - path: joint9/joint14/joint15/joint16/joint17
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: joint1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

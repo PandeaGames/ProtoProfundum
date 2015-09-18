@@ -72,6 +72,7 @@ ModelImporter:
     4300008: rdmobj03
     4300010: rdmobj07_004
     7400000: Idle
+    7400002: Run
     9500000: //RootNode
     13700000: rdmobj00_001
     13700002: rdmobj01
@@ -85,11 +86,17 @@ ModelImporter:
     materialSearch: 1
   animations:
     legacyGenerateAnimations: 4
-    bakeSimulation: 0
+    bakeSimulation: 1
     optimizeGameObjects: 0
     motionNodeName: Hips
     animationImportErrors: 
-    animationImportWarnings: 
+    animationImportWarnings: "MuscleClip 'CharacterRig_03_New RIG' conversion warning:
+      Bone length is different in avatar and animation\n\n     'joint8' : position
+      error = 46.552616 mm\n\nMuscleClip 'CharacterRig_03_New RIG'conversion warning:
+      'Hips/UpperLeg_RIght/LowerLeg_Right/Foot_Right/joint4' has translation animation.
+      It is not supported.\n\nMuscleClip 'CharacterRig_03_New RIG'conversion warning:
+      'Hips/UpperLeg_Left/LowerLeg_Left/Foot_Left/joint8' has translation animation.
+      It is not supported.\n\n"
     animationRetargetingWarnings: Retarget Quality is very good. No significant difference
       found
     animationDoRetargetingWarnings: 1
@@ -114,6 +121,92 @@ ModelImporter:
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 1
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: group1
+        weight: 0
+      - path: group1/rdmobj00_001
+        weight: 0
+      - path: group1/rdmobj01
+        weight: 0
+      - path: group1/rdmobj02
+        weight: 0
+      - path: group1/rdmobj03
+        weight: 0
+      - path: group1/rdmobj04
+        weight: 0
+      - path: group1/rdmobj07_004
+        weight: 0
+      - path: Hips
+        weight: 1
+      - path: Hips/Back
+        weight: 1
+      - path: Hips/Back/Neck
+        weight: 1
+      - path: Hips/Back/Neck/Head
+        weight: 1
+      - path: Hips/Back/Neck/UpperArm_Left
+        weight: 1
+      - path: Hips/Back/Neck/UpperArm_Left/LowerArm_Left
+        weight: 1
+      - path: Hips/Back/Neck/UpperArm_Left/LowerArm_Left/Hand_Left
+        weight: 1
+      - path: Hips/Back/Neck/UpperArm_Right
+        weight: 1
+      - path: Hips/Back/Neck/UpperArm_Right/LowerArm_Right
+        weight: 1
+      - path: Hips/Back/Neck/UpperArm_Right/LowerArm_Right/Hand_Right
+        weight: 1
+      - path: Hips/UpperLeg_Left
+        weight: 1
+      - path: Hips/UpperLeg_Left/LowerLeg_Left
+        weight: 1
+      - path: Hips/UpperLeg_Left/LowerLeg_Left/Foot_Left
+        weight: 1
+      - path: Hips/UpperLeg_Left/LowerLeg_Left/Foot_Left/joint8
+        weight: 1
+      - path: Hips/UpperLeg_RIght
+        weight: 1
+      - path: Hips/UpperLeg_RIght/LowerLeg_Right
+        weight: 1
+      - path: Hips/UpperLeg_RIght/LowerLeg_Right/Foot_Right
+        weight: 1
+      - path: Hips/UpperLeg_RIght/LowerLeg_Right/Foot_Right/joint4
+        weight: 1
+      - path: ikHandle1
+        weight: 0
+      - path: ikHandle2
+        weight: 0
+      - path: ikHandle4
+        weight: 0
+      - path: ikHandle5
+        weight: 0
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Run
+      takeName: Take 001
+      firstFrame: 41
+      lastFrame: 58
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
       loopBlendPositionXZ: 0
       keepOriginalOrientation: 0
       keepOriginalPositionY: 1

@@ -35,6 +35,13 @@ ModelImporter:
     100054: UpperArm_Right
     100056: UpperLeg_Left
     100058: UpperLeg_RIght
+    100060: group2
+    100062: group3
+    100064: nurbsCircle1
+    100066: nurbsCircle2
+    100068: group4
+    100070: ikHandle6
+    100072: ikHandle7
     400000: Back
     400002: //RootNode
     400004: Foot_Left
@@ -65,6 +72,13 @@ ModelImporter:
     400054: UpperArm_Right
     400056: UpperLeg_Left
     400058: UpperLeg_RIght
+    400060: group2
+    400062: group3
+    400064: nurbsCircle1
+    400066: nurbsCircle2
+    400068: group4
+    400070: ikHandle6
+    400072: ikHandle7
     4300000: rdmobj04
     4300002: rdmobj00_001
     4300004: rdmobj01
@@ -91,14 +105,56 @@ ModelImporter:
     motionNodeName: Hips
     animationImportErrors: 
     animationImportWarnings: "MuscleClip 'CharacterRig_03_New RIG' conversion warning:
-      Bone length is different in avatar and animation\n\n     'joint8' : position
-      error = 46.552616 mm\n\nMuscleClip 'CharacterRig_03_New RIG'conversion warning:
-      'Hips/UpperLeg_RIght/LowerLeg_Right/Foot_Right/joint4' has translation animation.
-      It is not supported.\n\nMuscleClip 'CharacterRig_03_New RIG'conversion warning:
-      'Hips/UpperLeg_Left/LowerLeg_Left/Foot_Left/joint8' has translation animation.
-      It is not supported.\n\n"
-    animationRetargetingWarnings: Retarget Quality is very good. No significant difference
-      found
+      Bone length is different in avatar and animation\n\n     'LowerLeg_Left' : position
+      error = 42.354279 mm\n\n     'Foot_Left' : position error = 49.483871 mm\n\nMuscleClip
+      'CharacterRig_03_New RIG'conversion warning: 'group3/Hips/UpperLeg_RIght/LowerLeg_Right/Foot_Right/joint4'
+      has translation animation. It is not supported.\n\nMuscleClip 'CharacterRig_03_New
+      RIG'conversion warning: 'group3/Hips/UpperLeg_Left/LowerLeg_Left/Foot_Left/joint8'
+      has translation animation. It is not supported.\n\nMuscleClip 'CharacterRig_03_New
+      RIG'conversion warning: 'group3/Hips/Back' has translation animation. It is
+      not supported.\n\n"
+    animationRetargetingWarnings: 'MuscleClip ''CharacterRig_03_New RIG''conversion
+      warning: LeftLowerLeg average position error 42.2 mm and maximum position error
+      42.2 mm at 30%
+
+
+      MuscleClip ''CharacterRig_03_New RIG''conversion warning: LeftFoot average position
+      error 8.1 mm and maximum position error 8.1 mm at 22%
+
+
+      MuscleClip ''CharacterRig_03_New RIG''conversion warning: RightFoot average
+      position error 28.5 mm and maximum position error 28.5 mm at 30%
+
+
+      MuscleClip ''CharacterRig_03_New RIG''conversion warning: LeftUpperArm average
+      position error 2644.8 mm and maximum position error 3774.7 mm at 39%
+
+
+      MuscleClip ''CharacterRig_03_New RIG''conversion warning: LeftLowerArm average
+      position error 2644.3 mm and maximum position error 3773.9 mm at 39%
+
+
+      MuscleClip ''CharacterRig_03_New RIG''conversion warning: LeftHand average position
+      error 2644.8 mm and maximum position error 3774.7 mm at 39%
+
+
+      MuscleClip ''CharacterRig_03_New RIG''conversion warning: RightUpperArm average
+      position error 2644.9 mm and maximum position error 3774.8 mm at 39%
+
+
+      MuscleClip ''CharacterRig_03_New RIG''conversion warning: RightLowerArm average
+      position error 2644.6 mm and maximum position error 3774.3 mm at 39%
+
+
+      MuscleClip ''CharacterRig_03_New RIG''conversion warning: RightHand average
+      position error 2644.9 mm and maximum position error 3774.7 mm at 39%
+
+
+      MuscleClip ''CharacterRig_03_New RIG''conversion warning: Head average position
+      error 2644.9 mm and maximum position error 3774.8 mm at 39%
+
+
+'
     animationDoRetargetingWarnings: 1
     animationCompression: 0
     animationRotationError: .5

@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: a7b22b54d4ae31243997cd4733138a78
-timeCreated: 1442546530
+timeCreated: 1442642010
 licenseType: Free
 ModelImporter:
   serializedVersion: 18
@@ -42,6 +42,7 @@ ModelImporter:
     100068: group4
     100070: ikHandle6
     100072: ikHandle7
+    100074: Feet
     400000: Back
     400002: //RootNode
     400004: Foot_Left
@@ -79,6 +80,7 @@ ModelImporter:
     400068: group4
     400070: ikHandle6
     400072: ikHandle7
+    400074: Feet
     4300000: rdmobj04
     4300002: rdmobj00_001
     4300004: rdmobj01
@@ -87,6 +89,8 @@ ModelImporter:
     4300010: rdmobj07_004
     7400000: Idle
     7400002: Run
+    7400004: StartRun
+    7400006: MyIdle
     9500000: //RootNode
     13700000: rdmobj00_001
     13700002: rdmobj01
@@ -102,56 +106,59 @@ ModelImporter:
     legacyGenerateAnimations: 4
     bakeSimulation: 1
     optimizeGameObjects: 0
-    motionNodeName: Hips
+    motionNodeName: group3/Hips
     animationImportErrors: 
     animationImportWarnings: "MuscleClip 'CharacterRig_03_New RIG' conversion warning:
       Bone length is different in avatar and animation\n\n     'LowerLeg_Left' : position
-      error = 42.354279 mm\n\n     'Foot_Left' : position error = 49.483871 mm\n\nMuscleClip
-      'CharacterRig_03_New RIG'conversion warning: 'group3/Hips/UpperLeg_RIght/LowerLeg_Right/Foot_Right/joint4'
+      error = 1473.283325 mm\n\n     'Foot_Left' : position error = 1721.284912 mm\n\n
+      \    'Back' : position error = 1337.767456 mm\n\n     'Head' : position error
+      = 480.072632 mm\n\nMuscleClip 'CharacterRig_03_New RIG'conversion warning: 'group3/Hips/Back'
       has translation animation. It is not supported.\n\nMuscleClip 'CharacterRig_03_New
-      RIG'conversion warning: 'group3/Hips/UpperLeg_Left/LowerLeg_Left/Foot_Left/joint8'
-      has translation animation. It is not supported.\n\nMuscleClip 'CharacterRig_03_New
-      RIG'conversion warning: 'group3/Hips/Back' has translation animation. It is
-      not supported.\n\n"
+      RIG'conversion warning: 'group3/Hips/Back/Neck/Head' has translation animation.
+      It is not supported.\n\n"
     animationRetargetingWarnings: 'MuscleClip ''CharacterRig_03_New RIG''conversion
-      warning: LeftLowerLeg average position error 42.2 mm and maximum position error
-      42.2 mm at 30%
+      warning: LeftLowerLeg average position error 1473.7 mm and maximum position
+      error 1479.6 mm at 18%
 
 
       MuscleClip ''CharacterRig_03_New RIG''conversion warning: LeftFoot average position
-      error 8.1 mm and maximum position error 8.1 mm at 22%
+      error 294.8 mm and maximum position error 832.2 mm at 17%
+
+
+      MuscleClip ''CharacterRig_03_New RIG''conversion warning: RightLowerLeg average
+      position error 7.2 mm and maximum position error 34.1 mm at 16%
 
 
       MuscleClip ''CharacterRig_03_New RIG''conversion warning: RightFoot average
-      position error 28.5 mm and maximum position error 28.5 mm at 30%
+      position error 989.9 mm and maximum position error 993.0 mm at 0%
 
 
       MuscleClip ''CharacterRig_03_New RIG''conversion warning: LeftUpperArm average
-      position error 2644.8 mm and maximum position error 3774.7 mm at 39%
+      position error 1347.5 mm and maximum position error 1998.9 mm at 1%
 
 
       MuscleClip ''CharacterRig_03_New RIG''conversion warning: LeftLowerArm average
-      position error 2644.3 mm and maximum position error 3773.9 mm at 39%
+      position error 1350.6 mm and maximum position error 2002.3 mm at 1%
 
 
       MuscleClip ''CharacterRig_03_New RIG''conversion warning: LeftHand average position
-      error 2644.8 mm and maximum position error 3774.7 mm at 39%
+      error 1350.6 mm and maximum position error 2002.5 mm at 1%
 
 
       MuscleClip ''CharacterRig_03_New RIG''conversion warning: RightUpperArm average
-      position error 2644.9 mm and maximum position error 3774.8 mm at 39%
+      position error 1347.3 mm and maximum position error 1998.5 mm at 1%
 
 
       MuscleClip ''CharacterRig_03_New RIG''conversion warning: RightLowerArm average
-      position error 2644.6 mm and maximum position error 3774.3 mm at 39%
+      position error 1351.4 mm and maximum position error 2001.7 mm at 1%
 
 
       MuscleClip ''CharacterRig_03_New RIG''conversion warning: RightHand average
-      position error 2644.9 mm and maximum position error 3774.7 mm at 39%
+      position error 1351.1 mm and maximum position error 2002.5 mm at 1%
 
 
       MuscleClip ''CharacterRig_03_New RIG''conversion warning: Head average position
-      error 2644.9 mm and maximum position error 3774.8 mm at 39%
+      error 1689.5 mm and maximum position error 2344.2 mm at 1%
 
 
 '
@@ -164,10 +171,10 @@ ModelImporter:
     extraExposedTransformPaths: []
     clipAnimations:
     - serializedVersion: 16
-      name: Idle
+      name: Run
       takeName: Take 001
-      firstFrame: 1
-      lastFrame: 40
+      firstFrame: 15
+      lastFrame: 36
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -175,8 +182,104 @@ ModelImporter:
       loop: 0
       loopTime: 1
       loopBlend: 0
-      loopBlendOrientation: 0
+      loopBlendOrientation: 1
       loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Feet
+        weight: 1
+      - path: Feet/ikHandle6
+        weight: 1
+      - path: Feet/ikHandle7
+        weight: 1
+      - path: group1
+        weight: 1
+      - path: group1/rdmobj00_001
+        weight: 1
+      - path: group1/rdmobj01
+        weight: 1
+      - path: group1/rdmobj02
+        weight: 1
+      - path: group1/rdmobj03
+        weight: 1
+      - path: group1/rdmobj04
+        weight: 1
+      - path: group1/rdmobj07_004
+        weight: 1
+      - path: group3
+        weight: 1
+      - path: group3/group4
+        weight: 1
+      - path: group3/group4/ikHandle4
+        weight: 1
+      - path: group3/group4/ikHandle5
+        weight: 1
+      - path: group3/Hips
+        weight: 1
+      - path: group3/Hips/Back
+        weight: 1
+      - path: group3/Hips/Back/Neck
+        weight: 1
+      - path: group3/Hips/Back/Neck/Head
+        weight: 1
+      - path: group3/Hips/Back/Neck/UpperArm_Left
+        weight: 1
+      - path: group3/Hips/Back/Neck/UpperArm_Left/LowerArm_Left
+        weight: 1
+      - path: group3/Hips/Back/Neck/UpperArm_Left/LowerArm_Left/Hand_Left
+        weight: 1
+      - path: group3/Hips/Back/Neck/UpperArm_Right
+        weight: 1
+      - path: group3/Hips/Back/Neck/UpperArm_Right/LowerArm_Right
+        weight: 1
+      - path: group3/Hips/Back/Neck/UpperArm_Right/LowerArm_Right/Hand_Right
+        weight: 1
+      - path: group3/Hips/UpperLeg_Left
+        weight: 1
+      - path: group3/Hips/UpperLeg_Left/LowerLeg_Left
+        weight: 1
+      - path: group3/Hips/UpperLeg_Left/LowerLeg_Left/Foot_Left
+        weight: 1
+      - path: group3/Hips/UpperLeg_Left/LowerLeg_Left/Foot_Left/joint8
+        weight: 1
+      - path: group3/Hips/UpperLeg_RIght
+        weight: 1
+      - path: group3/Hips/UpperLeg_RIght/LowerLeg_Right
+        weight: 1
+      - path: group3/Hips/UpperLeg_RIght/LowerLeg_Right/Foot_Right
+        weight: 1
+      - path: group3/Hips/UpperLeg_RIght/LowerLeg_Right/Foot_Right/joint4
+        weight: 1
+      - path: group3/nurbsCircle1
+        weight: 1
+      - path: nurbsCircle2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: StartRun
+      takeName: Take 001
+      firstFrame: 2
+      lastFrame: 15
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
       loopBlendPositionXZ: 0
       keepOriginalOrientation: 0
       keepOriginalPositionY: 1
@@ -189,6 +292,12 @@ ModelImporter:
       transformMask:
       - path: 
         weight: 1
+      - path: Feet
+        weight: 0
+      - path: Feet/ikHandle6
+        weight: 0
+      - path: Feet/ikHandle7
+        weight: 0
       - path: group1
         weight: 0
       - path: group1/rdmobj00_001
@@ -203,57 +312,61 @@ ModelImporter:
         weight: 0
       - path: group1/rdmobj07_004
         weight: 0
-      - path: Hips
+      - path: group3
         weight: 1
-      - path: Hips/Back
-        weight: 1
-      - path: Hips/Back/Neck
-        weight: 1
-      - path: Hips/Back/Neck/Head
-        weight: 1
-      - path: Hips/Back/Neck/UpperArm_Left
-        weight: 1
-      - path: Hips/Back/Neck/UpperArm_Left/LowerArm_Left
-        weight: 1
-      - path: Hips/Back/Neck/UpperArm_Left/LowerArm_Left/Hand_Left
-        weight: 1
-      - path: Hips/Back/Neck/UpperArm_Right
-        weight: 1
-      - path: Hips/Back/Neck/UpperArm_Right/LowerArm_Right
-        weight: 1
-      - path: Hips/Back/Neck/UpperArm_Right/LowerArm_Right/Hand_Right
-        weight: 1
-      - path: Hips/UpperLeg_Left
-        weight: 1
-      - path: Hips/UpperLeg_Left/LowerLeg_Left
-        weight: 1
-      - path: Hips/UpperLeg_Left/LowerLeg_Left/Foot_Left
-        weight: 1
-      - path: Hips/UpperLeg_Left/LowerLeg_Left/Foot_Left/joint8
-        weight: 1
-      - path: Hips/UpperLeg_RIght
-        weight: 1
-      - path: Hips/UpperLeg_RIght/LowerLeg_Right
-        weight: 1
-      - path: Hips/UpperLeg_RIght/LowerLeg_Right/Foot_Right
-        weight: 1
-      - path: Hips/UpperLeg_RIght/LowerLeg_Right/Foot_Right/joint4
-        weight: 1
-      - path: ikHandle1
+      - path: group3/group4
         weight: 0
-      - path: ikHandle2
+      - path: group3/group4/ikHandle4
         weight: 0
-      - path: ikHandle4
+      - path: group3/group4/ikHandle5
         weight: 0
-      - path: ikHandle5
+      - path: group3/Hips
+        weight: 1
+      - path: group3/Hips/Back
+        weight: 1
+      - path: group3/Hips/Back/Neck
+        weight: 1
+      - path: group3/Hips/Back/Neck/Head
+        weight: 1
+      - path: group3/Hips/Back/Neck/UpperArm_Left
+        weight: 1
+      - path: group3/Hips/Back/Neck/UpperArm_Left/LowerArm_Left
+        weight: 1
+      - path: group3/Hips/Back/Neck/UpperArm_Left/LowerArm_Left/Hand_Left
+        weight: 1
+      - path: group3/Hips/Back/Neck/UpperArm_Right
+        weight: 1
+      - path: group3/Hips/Back/Neck/UpperArm_Right/LowerArm_Right
+        weight: 1
+      - path: group3/Hips/Back/Neck/UpperArm_Right/LowerArm_Right/Hand_Right
+        weight: 1
+      - path: group3/Hips/UpperLeg_Left
+        weight: 1
+      - path: group3/Hips/UpperLeg_Left/LowerLeg_Left
+        weight: 1
+      - path: group3/Hips/UpperLeg_Left/LowerLeg_Left/Foot_Left
+        weight: 1
+      - path: group3/Hips/UpperLeg_Left/LowerLeg_Left/Foot_Left/joint8
+        weight: 1
+      - path: group3/Hips/UpperLeg_RIght
+        weight: 1
+      - path: group3/Hips/UpperLeg_RIght/LowerLeg_Right
+        weight: 1
+      - path: group3/Hips/UpperLeg_RIght/LowerLeg_Right/Foot_Right
+        weight: 1
+      - path: group3/Hips/UpperLeg_RIght/LowerLeg_Right/Foot_Right/joint4
+        weight: 1
+      - path: group3/nurbsCircle1
+        weight: 0
+      - path: nurbsCircle2
         weight: 0
       maskType: 0
       maskSource: {instanceID: 0}
     - serializedVersion: 16
-      name: Run
+      name: MyIdle
       takeName: Take 001
-      firstFrame: 41
-      lastFrame: 58
+      firstFrame: 2
+      lastFrame: 3
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -270,11 +383,33 @@ ModelImporter:
       heightFromFeet: 0
       mirror: 0
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
+      curves:
+      - name: Curve
+        curve:
+          serializedVersion: 2
+          curve:
+          - time: 0
+            value: 0
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+          - time: 1
+            value: 0
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+          preInfinity: 2
+          postInfinity: 2
       events: []
       transformMask:
       - path: 
         weight: 1
+      - path: Feet
+        weight: 0
+      - path: Feet/ikHandle6
+        weight: 0
+      - path: Feet/ikHandle7
+        weight: 0
       - path: group1
         weight: 0
       - path: group1/rdmobj00_001
@@ -289,49 +424,53 @@ ModelImporter:
         weight: 0
       - path: group1/rdmobj07_004
         weight: 0
-      - path: Hips
+      - path: group3
         weight: 1
-      - path: Hips/Back
-        weight: 1
-      - path: Hips/Back/Neck
-        weight: 1
-      - path: Hips/Back/Neck/Head
-        weight: 1
-      - path: Hips/Back/Neck/UpperArm_Left
-        weight: 1
-      - path: Hips/Back/Neck/UpperArm_Left/LowerArm_Left
-        weight: 1
-      - path: Hips/Back/Neck/UpperArm_Left/LowerArm_Left/Hand_Left
-        weight: 1
-      - path: Hips/Back/Neck/UpperArm_Right
-        weight: 1
-      - path: Hips/Back/Neck/UpperArm_Right/LowerArm_Right
-        weight: 1
-      - path: Hips/Back/Neck/UpperArm_Right/LowerArm_Right/Hand_Right
-        weight: 1
-      - path: Hips/UpperLeg_Left
-        weight: 1
-      - path: Hips/UpperLeg_Left/LowerLeg_Left
-        weight: 1
-      - path: Hips/UpperLeg_Left/LowerLeg_Left/Foot_Left
-        weight: 1
-      - path: Hips/UpperLeg_Left/LowerLeg_Left/Foot_Left/joint8
-        weight: 1
-      - path: Hips/UpperLeg_RIght
-        weight: 1
-      - path: Hips/UpperLeg_RIght/LowerLeg_Right
-        weight: 1
-      - path: Hips/UpperLeg_RIght/LowerLeg_Right/Foot_Right
-        weight: 1
-      - path: Hips/UpperLeg_RIght/LowerLeg_Right/Foot_Right/joint4
-        weight: 1
-      - path: ikHandle1
+      - path: group3/group4
         weight: 0
-      - path: ikHandle2
+      - path: group3/group4/ikHandle4
         weight: 0
-      - path: ikHandle4
+      - path: group3/group4/ikHandle5
         weight: 0
-      - path: ikHandle5
+      - path: group3/Hips
+        weight: 1
+      - path: group3/Hips/Back
+        weight: 1
+      - path: group3/Hips/Back/Neck
+        weight: 1
+      - path: group3/Hips/Back/Neck/Head
+        weight: 1
+      - path: group3/Hips/Back/Neck/UpperArm_Left
+        weight: 1
+      - path: group3/Hips/Back/Neck/UpperArm_Left/LowerArm_Left
+        weight: 1
+      - path: group3/Hips/Back/Neck/UpperArm_Left/LowerArm_Left/Hand_Left
+        weight: 1
+      - path: group3/Hips/Back/Neck/UpperArm_Right
+        weight: 1
+      - path: group3/Hips/Back/Neck/UpperArm_Right/LowerArm_Right
+        weight: 1
+      - path: group3/Hips/Back/Neck/UpperArm_Right/LowerArm_Right/Hand_Right
+        weight: 1
+      - path: group3/Hips/UpperLeg_Left
+        weight: 1
+      - path: group3/Hips/UpperLeg_Left/LowerLeg_Left
+        weight: 1
+      - path: group3/Hips/UpperLeg_Left/LowerLeg_Left/Foot_Left
+        weight: 1
+      - path: group3/Hips/UpperLeg_Left/LowerLeg_Left/Foot_Left/joint8
+        weight: 1
+      - path: group3/Hips/UpperLeg_RIght
+        weight: 1
+      - path: group3/Hips/UpperLeg_RIght/LowerLeg_Right
+        weight: 1
+      - path: group3/Hips/UpperLeg_RIght/LowerLeg_Right/Foot_Right
+        weight: 1
+      - path: group3/Hips/UpperLeg_RIght/LowerLeg_Right/Foot_Right/joint4
+        weight: 1
+      - path: group3/nurbsCircle1
+        weight: 0
+      - path: nurbsCircle2
         weight: 0
       maskType: 0
       maskSource: {instanceID: 0}
@@ -508,8 +647,23 @@ ModelImporter:
         modified: 0
     skeleton:
     - name: CharacterRig_03_New RIG(Clone)
-      position: {x: 0, y: 0, z: 0}
+      position: {x: 0, y: 0, z: .99000001}
       rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Feet
+      position: {x: 0, y: -.0729649439, z: 3.07256937}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: ikHandle6
+      position: {x: .107992277, y: .229841873, z: -.268283993}
+      rotation: {x: .298783779, y: -.0489524007, z: .00582804997, w: .953046679}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: ikHandle7
+      position: {x: -.125231683, y: .0550304949, z: .00849798694}
+      rotation: {x: -.029400643, y: -.014402329, z: .00405324111, w: .99945575}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: group1
@@ -547,14 +701,14 @@ ModelImporter:
       rotation: {x: 0, y: 0, z: 0, w: 1}
       scale: {x: .0291692205, y: .0291692205, z: .0291692205}
       transformModified: 1
-    - name: ikHandle1
-      position: {x: .139837101, y: .0383254923, z: -.0856450871}
+    - name: group3
+      position: {x: 0, y: -.0729649439, z: 3.07256937}
       rotation: {x: 0, y: 0, z: 0, w: 1}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
-    - name: ikHandle2
-      position: {x: -.132715732, y: .0449774787, z: -.0809386447}
-      rotation: {x: 0, y: 0, z: 0, w: 1}
+    - name: group4
+      position: {x: -.00959497597, y: 1.02999842, z: .0206845477}
+      rotation: {x: .114552259, y: -.0516339615, z: .00152001646, w: .992073298}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: ikHandle4
@@ -568,27 +722,52 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: Hips
-      position: {x: -.0101144016, y: 1.01165366, z: .0189510491}
+      position: {x: -0, y: 0, z: -2.30999994}
       rotation: {x: 1.71057508e-11, y: 1.79115811e-09, z: -1.14512455e-10, w: 1}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
-    - name: UpperLeg_RIght
-      position: {x: .208663836, y: -.210627183, z: .00666919164}
-      rotation: {x: -1.59641148e-10, y: -1.76905757e-09, z: -2.58075922e-10, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
-    - name: LowerLeg_Right
-      position: {x: -.0461631082, y: -.293312192, z: .0368006527}
+    - name: Back
+      position: {x: -.00113391713, y: .258130461, z: -.148597643}
       rotation: {x: 0, y: 0, z: 0, w: 1}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
-    - name: Foot_Right
-      position: {x: -.0226636343, y: -.469388843, z: -.148065984}
+    - name: Neck
+      position: {x: .00756301684, y: .415066212, z: .105558783}
       rotation: {x: 0, y: 0, z: 0, w: 1}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
-    - name: joint4
-      position: {x: .0148512283, y: -6.66133815e-16, z: .26502797}
+    - name: Head
+      position: {x: -.00812336989, y: .174640983, z: .0816129595}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: UpperArm_Left
+      position: {x: -.272729099, y: -.122623116, z: -.0275834296}
+      rotation: {x: -.0146116279, y: .0753566623, z: -.450899214, w: .8892681}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: LowerArm_Left
+      position: {x: -.201314479, y: -.298952132, z: -.0434387513}
+      rotation: {x: .121679477, y: -.0806172416, z: -.0571168587, w: .987639964}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Hand_Left
+      position: {x: -.151744336, y: -.285190225, z: .0792598724}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: UpperArm_Right
+      position: {x: .24532038, y: -.113118619, z: -.0385869108}
+      rotation: {x: .0145849772, y: -.0606609471, z: .450076848, w: .890807688}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: LowerArm_Right
+      position: {x: .184897467, y: -.276050329, z: -.0431975126}
+      rotation: {x: .128393486, y: .0863554776, z: .0441318154, w: .986970246}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Hand_Right
+      position: {x: .163007468, y: -.284848303, z: .0831401497}
       rotation: {x: 0, y: 0, z: 0, w: 1}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
@@ -612,48 +791,33 @@ ModelImporter:
       rotation: {x: 0, y: 0, z: 0, w: 1}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
-    - name: Back
-      position: {x: -.00113391713, y: .258130461, z: -.148597643}
+    - name: UpperLeg_RIght
+      position: {x: .208663836, y: -.210627183, z: .00666919164}
+      rotation: {x: -1.59641148e-10, y: -1.76905757e-09, z: -2.58075922e-10, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: LowerLeg_Right
+      position: {x: -.0461631082, y: -.293312192, z: .0368006527}
       rotation: {x: 0, y: 0, z: 0, w: 1}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
-    - name: Neck
-      position: {x: .00756301684, y: .415066212, z: .105558783}
+    - name: Foot_Right
+      position: {x: -.0226636343, y: -.469388843, z: -.148065984}
       rotation: {x: 0, y: 0, z: 0, w: 1}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
-    - name: UpperArm_Right
-      position: {x: .24532038, y: -.113118619, z: -.0385869108}
-      rotation: {x: .0145849772, y: -.0606609471, z: .450076848, w: .890807688}
-      scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
-    - name: LowerArm_Right
-      position: {x: .184897467, y: -.276050329, z: -.0431975126}
-      rotation: {x: .128393486, y: .0863554776, z: .0441318154, w: .986970246}
-      scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
-    - name: Hand_Right
-      position: {x: .163007468, y: -.284848303, z: .0831401497}
+    - name: joint4
+      position: {x: .0148512283, y: -6.66133815e-16, z: .26502797}
       rotation: {x: 0, y: 0, z: 0, w: 1}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
-    - name: UpperArm_Left
-      position: {x: -.272729099, y: -.122623116, z: -.0275834296}
-      rotation: {x: -.0146116279, y: .0753566623, z: -.450899214, w: .8892681}
+    - name: nurbsCircle1
+      position: {x: .0214386042, y: 1.23849368, z: .0526750423}
+      rotation: {x: .114552259, y: -.0516339615, z: .00152001646, w: .992073298}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
-    - name: LowerArm_Left
-      position: {x: -.201314479, y: -.298952132, z: -.0434387513}
-      rotation: {x: .121679477, y: -.0806172416, z: -.0571168587, w: .987639964}
-      scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
-    - name: Hand_Left
-      position: {x: -.151744336, y: -.285190225, z: .0792598724}
-      rotation: {x: 0, y: 0, z: 0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
-    - name: Head
-      position: {x: -.00812336989, y: .174640983, z: .0816129595}
+    - name: nurbsCircle2
+      position: {x: .0297838449, y: -.0729649439, z: 3.10145903}
       rotation: {x: 0, y: 0, z: 0, w: 1}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1

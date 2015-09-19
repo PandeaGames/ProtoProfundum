@@ -25,7 +25,7 @@ public class HeroMovementControls : StateBehaviour
 	private float _prev_control_vector_delta;
 	private float _control_angle;
 	private float _control_angle_delta;
-
+	private Animator animator;
 
 
 	public float maxRunSpeed = 5;
@@ -44,6 +44,7 @@ public class HeroMovementControls : StateBehaviour
 
 	void Start()
 	{
+		animator = GetComponent<Animator>();
 		cam = Camera.main.gameObject;
 	}
 
@@ -81,7 +82,7 @@ public class HeroMovementControls : StateBehaviour
 		_angleVector.Set(Mathf.Cos(angle), 0, Mathf.Sin(angle));
 		
 		float runRange = 1;
-		float walkRange = 0.25f;
+		float walkRange = 0f;
 		float turnRange = 0.03f;
 		
 		bool running = control_vector >= runRange ? true:false;
@@ -92,6 +93,9 @@ public class HeroMovementControls : StateBehaviour
 		float slerpSpeed = 0.0f;
 		_stride = false;
 		float vel = 0;
+
+		animator.SetBool ("Running", _x_move != 0 || _y_move != 0);
+
 		if(running)
 		{
 			//vel = control_vector/20;

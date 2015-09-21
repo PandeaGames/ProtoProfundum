@@ -3,9 +3,9 @@
 	<SoundBanks>
 		<WorkUnit Name="Default Work Unit" ID="{EB96FEE3-356B-431C-9ACC-91A628582262}" PersistMode="Standalone">
 			<ChildrenList>
-				<SoundBank Name="Test_SoundBank" ID="{D9E1D36D-CCEC-4C53-B234-D3FAA580DEA0}">
+				<SoundBank Name="Profundum" ID="{C6A5BB2D-430C-46C3-9AE9-6C751C331C3D}">
 					<ObjectInclusionList>
-						<ObjectRef Name="Day_Night" ID="{67245D18-8D84-40D8-87FF-8D080441BD0F}" WorkUnitID="{0243A6C9-E699-426D-B01C-6D18D3B15BB2}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Default Work Unit" ID="{3D261178-FC48-466F-BA87-23654FECF63A}" WorkUnitID="{3D261178-FC48-466F-BA87-23654FECF63A}" Filter="7" Origin="Manual"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

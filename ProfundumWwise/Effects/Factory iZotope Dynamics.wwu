@@ -89,6 +89,14 @@
 						<Property Name="CompressorThreshold" Type="Real32" Value="-6"/>
 					</PropertyList>
 				</Effect>
+				<Effect Name="New_Wwise_Compressor" ID="{D10B308A-210F-47FE-B76C-636BFA7CF9C6}" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3">
+					<PropertyList>
+						<Property Name="OutputGain" Type="Real32" Value="3"/>
+						<Property Name="Ratio" Type="Real32" Value="2.5"/>
+						<Property Name="ReleaseTime" Type="Real32" Value="0.5"/>
+						<Property Name="Threshold" Type="Real32" Value="-40"/>
+					</PropertyList>
+				</Effect>
 			</ChildrenList>
 		</WorkUnit>
 	</Effects>

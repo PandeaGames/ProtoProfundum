@@ -15,16 +15,209 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="4154996803" Language="SFX">
-			<ShortName>Test_SoundBank</ShortName>
-			<Path>Test_SoundBank.bnk</Path>
+		<SoundBank Id="3813075837" Language="SFX">
+			<ShortName>Profundum</ShortName>
+			<Path>Profundum.bnk</Path>
 			<IncludedEvents>
-				<Event Id="2666809638" Name="Day_Night"/>
+				<Event Id="3908818592" Name="Ambience_Start"/>
+				<Event Id="3166394572" Name="Ambience_Stop" MaxAttenuation="0.000000"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
-				<File Id="995167410" Language="SFX">
-					<ShortName>Ambiences\amb_forest_day_background_loop.wav</ShortName>
-					<Path>SFX\Ambiences\amb_forest_day_background_loop_9E69E797.wem</Path>
+				<File Id="7400365" Language="SFX">
+					<ShortName>Ambiences\Wind\Wind_Variation_12.wav</ShortName>
+					<Path>SFX\Ambiences\Wind\Wind_Variation_12_9E69E797.wem</Path>
+				</File>
+				<File Id="17121569" Language="SFX">
+					<ShortName>Ambiences\Creatures\Creature_Human_Vocal_Chords_13.wav</ShortName>
+					<Path>SFX\Ambiences\Creatures\Creature_Human_Vocal_Chords_13_9E69E797.wem</Path>
+				</File>
+				<File Id="24697835" Language="SFX">
+					<ShortName>Ambiences\Wind\Wind_Variation_08.wav</ShortName>
+					<Path>SFX\Ambiences\Wind\Wind_Variation_08_9E69E797.wem</Path>
+				</File>
+				<File Id="25605373" Language="SFX">
+					<ShortName>Ambiences\Wind\Wind_Base_01.wav</ShortName>
+					<Path>SFX\Ambiences\Wind\Wind_Base_01_9E69E797.wem</Path>
+				</File>
+				<File Id="31585862" Language="SFX">
+					<ShortName>Ambiences\Creatures\Unknown_Creature_07.wav</ShortName>
+					<Path>SFX\Ambiences\Creatures\Unknown_Creature_07_9E69E797.wem</Path>
+				</File>
+				<File Id="67279148" Language="SFX">
+					<ShortName>Ambiences\Drones\Drone_Tension_02.wav</ShortName>
+					<Path>SFX\Ambiences\Drones\Drone_Tension_02_4B8CC0C5.wem</Path>
+				</File>
+				<File Id="151276655" Language="SFX">
+					<ShortName>Ambiences\Wind\Wind_Variation_01.wav</ShortName>
+					<Path>SFX\Ambiences\Wind\Wind_Variation_01_9E69E797.wem</Path>
+				</File>
+				<File Id="163731274" Language="SFX">
+					<ShortName>Ambiences\Drones\Drone_Thunder.wav</ShortName>
+					<Path>SFX\Ambiences\Drones\Drone_Thunder_9E69E797.wem</Path>
+				</File>
+				<File Id="165450884" Language="SFX">
+					<ShortName>Ambiences\Creatures\Unknown_Creature_02.wav</ShortName>
+					<Path>SFX\Ambiences\Creatures\Unknown_Creature_02_9E69E797.wem</Path>
+				</File>
+				<File Id="175663883" Language="SFX">
+					<ShortName>Ambiences\Drones\Drone_Base.wav</ShortName>
+					<Path>SFX\Ambiences\Drones\Drone_Base_4B8CC0C5.wem</Path>
+				</File>
+				<File Id="235086266" Language="SFX">
+					<ShortName>Ambiences\Creatures\Creature_Human_Vocal_Chords_02.wav</ShortName>
+					<Path>SFX\Ambiences\Creatures\Creature_Human_Vocal_Chords_02_9E69E797.wem</Path>
+				</File>
+				<File Id="263944968" Language="SFX">
+					<ShortName>Ambiences\Drones\Drone_Tension_01.wav</ShortName>
+					<Path>SFX\Ambiences\Drones\Drone_Tension_01_4B8CC0C5.wem</Path>
+				</File>
+				<File Id="340213303" Language="SFX">
+					<ShortName>Ambiences\Creatures\Creature_Human_Vocal_Chords_01.wav</ShortName>
+					<Path>SFX\Ambiences\Creatures\Creature_Human_Vocal_Chords_01_9E69E797.wem</Path>
+				</File>
+				<File Id="345252552" Language="SFX">
+					<ShortName>Ambiences\Creatures\Distant_Scream_05.wav</ShortName>
+					<Path>SFX\Ambiences\Creatures\Distant_Scream_05_9E69E797.wem</Path>
+				</File>
+				<File Id="346145100" Language="SFX">
+					<ShortName>Ambiences\Creatures\Distant_Scream_08.wav</ShortName>
+					<Path>SFX\Ambiences\Creatures\Distant_Scream_08_9E69E797.wem</Path>
+				</File>
+				<File Id="381944453" Language="SFX">
+					<ShortName>Ambiences\Creatures\Distant_Scream_02.wav</ShortName>
+					<Path>SFX\Ambiences\Creatures\Distant_Scream_02_9E69E797.wem</Path>
+				</File>
+				<File Id="406496110" Language="SFX">
+					<ShortName>Ambiences\Creatures\Distant_Scream_06.wav</ShortName>
+					<Path>SFX\Ambiences\Creatures\Distant_Scream_06_9E69E797.wem</Path>
+				</File>
+				<File Id="445032196" Language="SFX">
+					<ShortName>Ambiences\Wind\Wind_Variation_02.wav</ShortName>
+					<Path>SFX\Ambiences\Wind\Wind_Variation_02_9E69E797.wem</Path>
+				</File>
+				<File Id="447864091" Language="SFX">
+					<ShortName>Ambiences\Wind\Wind_Variation_09.wav</ShortName>
+					<Path>SFX\Ambiences\Wind\Wind_Variation_09_9E69E797.wem</Path>
+				</File>
+				<File Id="458171556" Language="SFX">
+					<ShortName>Ambiences\Wind\Wind_Base_04.wav</ShortName>
+					<Path>SFX\Ambiences\Wind\Wind_Base_04_9E69E797.wem</Path>
+				</File>
+				<File Id="491644843" Language="SFX">
+					<ShortName>Ambiences\Creatures\Distant_Scream_07.wav</ShortName>
+					<Path>SFX\Ambiences\Creatures\Distant_Scream_07_9E69E797.wem</Path>
+				</File>
+				<File Id="506209338" Language="SFX">
+					<ShortName>Ambiences\Wind\Wind_Variation_06.wav</ShortName>
+					<Path>SFX\Ambiences\Wind\Wind_Variation_06_9E69E797.wem</Path>
+				</File>
+				<File Id="512970112" Language="SFX">
+					<ShortName>Ambiences\Creatures\Creature_Human_Vocal_Chords_03.wav</ShortName>
+					<Path>SFX\Ambiences\Creatures\Creature_Human_Vocal_Chords_03_9E69E797.wem</Path>
+				</File>
+				<File Id="570487326" Language="SFX">
+					<ShortName>Ambiences\Creatures\Creature_Human_Vocal_Chords_06.wav</ShortName>
+					<Path>SFX\Ambiences\Creatures\Creature_Human_Vocal_Chords_06_9E69E797.wem</Path>
+				</File>
+				<File Id="572368207" Language="SFX">
+					<ShortName>Ambiences\Creatures\Creature_Human_Vocal_Chords_10.wav</ShortName>
+					<Path>SFX\Ambiences\Creatures\Creature_Human_Vocal_Chords_10_9E69E797.wem</Path>
+				</File>
+				<File Id="623934891" Language="SFX">
+					<ShortName>Ambiences\Wind\Wind_Variation_04.wav</ShortName>
+					<Path>SFX\Ambiences\Wind\Wind_Variation_04_9E69E797.wem</Path>
+				</File>
+				<File Id="644954399" Language="SFX">
+					<ShortName>Ambiences\Creatures\Creature_Human_Vocal_Chords_11.wav</ShortName>
+					<Path>SFX\Ambiences\Creatures\Creature_Human_Vocal_Chords_11_9E69E797.wem</Path>
+				</File>
+				<File Id="645809835" Language="SFX">
+					<ShortName>Ambiences\Creatures\Unknown_Creature_01.wav</ShortName>
+					<Path>SFX\Ambiences\Creatures\Unknown_Creature_01_9E69E797.wem</Path>
+				</File>
+				<File Id="740034832" Language="SFX">
+					<ShortName>Ambiences\Creatures\Unknown_Creature_04.wav</ShortName>
+					<Path>SFX\Ambiences\Creatures\Unknown_Creature_04_9E69E797.wem</Path>
+				</File>
+				<File Id="773880054" Language="SFX">
+					<ShortName>Ambiences\Creatures\Creature_Human_Vocal_Chords_04.wav</ShortName>
+					<Path>SFX\Ambiences\Creatures\Creature_Human_Vocal_Chords_04_9E69E797.wem</Path>
+				</File>
+				<File Id="792136837" Language="SFX">
+					<ShortName>Ambiences\Creatures\Creature_Human_Vocal_Chords_09.wav</ShortName>
+					<Path>SFX\Ambiences\Creatures\Creature_Human_Vocal_Chords_09_9E69E797.wem</Path>
+				</File>
+				<File Id="799698791" Language="SFX">
+					<ShortName>Ambiences\Creatures\Unknown_Creature_05.wav</ShortName>
+					<Path>SFX\Ambiences\Creatures\Unknown_Creature_05_9E69E797.wem</Path>
+				</File>
+				<File Id="801956605" Language="SFX">
+					<ShortName>Ambiences\Creatures\Creature_Human_Vocal_Chords_12.wav</ShortName>
+					<Path>SFX\Ambiences\Creatures\Creature_Human_Vocal_Chords_12_9E69E797.wem</Path>
+				</File>
+				<File Id="809794084" Language="SFX">
+					<ShortName>Ambiences\Wind\Wind_Variation_03.wav</ShortName>
+					<Path>SFX\Ambiences\Wind\Wind_Variation_03_9E69E797.wem</Path>
+				</File>
+				<File Id="847725936" Language="SFX">
+					<ShortName>Ambiences\Creatures\Unknown_Creature_08.wav</ShortName>
+					<Path>SFX\Ambiences\Creatures\Unknown_Creature_08_9E69E797.wem</Path>
+				</File>
+				<File Id="857018469" Language="SFX">
+					<ShortName>Ambiences\Creatures\Distant_Scream_04.wav</ShortName>
+					<Path>SFX\Ambiences\Creatures\Distant_Scream_04_9E69E797.wem</Path>
+				</File>
+				<File Id="867711750" Language="SFX">
+					<ShortName>Ambiences\Creatures\Unknown_Creature_03.wav</ShortName>
+					<Path>SFX\Ambiences\Creatures\Unknown_Creature_03_9E69E797.wem</Path>
+				</File>
+				<File Id="868946917" Language="SFX">
+					<ShortName>Ambiences\Wind\Wind_Variation_05.wav</ShortName>
+					<Path>SFX\Ambiences\Wind\Wind_Variation_05_9E69E797.wem</Path>
+				</File>
+				<File Id="875979451" Language="SFX">
+					<ShortName>Ambiences\Wind\Wind_Variation_11.wav</ShortName>
+					<Path>SFX\Ambiences\Wind\Wind_Variation_11_9E69E797.wem</Path>
+				</File>
+				<File Id="876603022" Language="SFX">
+					<ShortName>Ambiences\Creatures\Distant_Scream_03.wav</ShortName>
+					<Path>SFX\Ambiences\Creatures\Distant_Scream_03_9E69E797.wem</Path>
+				</File>
+				<File Id="904244225" Language="SFX">
+					<ShortName>Ambiences\Creatures\Creature_Human_Vocal_Chords_07.wav</ShortName>
+					<Path>SFX\Ambiences\Creatures\Creature_Human_Vocal_Chords_07_9E69E797.wem</Path>
+				</File>
+				<File Id="934930352" Language="SFX">
+					<ShortName>Ambiences\Creatures\Creature_Human_Vocal_Chords_05.wav</ShortName>
+					<Path>SFX\Ambiences\Creatures\Creature_Human_Vocal_Chords_05_9E69E797.wem</Path>
+				</File>
+				<File Id="936149789" Language="SFX">
+					<ShortName>Ambiences\Wind\Wind_Base_02.wav</ShortName>
+					<Path>SFX\Ambiences\Wind\Wind_Base_02_9E69E797.wem</Path>
+				</File>
+				<File Id="963620898" Language="SFX">
+					<ShortName>Ambiences\Creatures\Creature_Human_Vocal_Chords_08.wav</ShortName>
+					<Path>SFX\Ambiences\Creatures\Creature_Human_Vocal_Chords_08_9E69E797.wem</Path>
+				</File>
+				<File Id="976243043" Language="SFX">
+					<ShortName>Ambiences\Creatures\Unknown_Creature_06.wav</ShortName>
+					<Path>SFX\Ambiences\Creatures\Unknown_Creature_06_9E69E797.wem</Path>
+				</File>
+				<File Id="1018724183" Language="SFX">
+					<ShortName>Ambiences\Creatures\Distant_Scream_01.wav</ShortName>
+					<Path>SFX\Ambiences\Creatures\Distant_Scream_01_9E69E797.wem</Path>
+				</File>
+				<File Id="1048145576" Language="SFX">
+					<ShortName>Ambiences\Wind\Wind_Variation_07.wav</ShortName>
+					<Path>SFX\Ambiences\Wind\Wind_Variation_07_9E69E797.wem</Path>
+				</File>
+				<File Id="1061251256" Language="SFX">
+					<ShortName>Ambiences\Wind\Wind_Base_03.wav</ShortName>
+					<Path>SFX\Ambiences\Wind\Wind_Base_03_9E69E797.wem</Path>
+				</File>
+				<File Id="1061458473" Language="SFX">
+					<ShortName>Ambiences\Wind\Wind_Variation_10.wav</ShortName>
+					<Path>SFX\Ambiences\Wind\Wind_Variation_10_9E69E797.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>

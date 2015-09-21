@@ -3,12 +3,23 @@
 	<Events>
 		<WorkUnit Name="Default Work Unit" ID="{0243A6C9-E699-426D-B01C-6D18D3B15BB2}" PersistMode="Standalone">
 			<ChildrenList>
-				<Event Name="Day_Night" ID="{67245D18-8D84-40D8-87FF-8D080441BD0F}">
+				<Event Name="Ambience_Start" ID="{CDEC75A1-A485-4985-9936-02CAB4C7EC56}">
 					<ChildrenList>
-						<Action Name="Play" ID="{A09F770D-41A7-4C58-A597-87D8B8774E7F}" ShortID="57562667" Type="Play" Scope="One" Global="false">
+						<Action Name="Play" ID="{2A2B1204-2DCA-4DE6-9CCE-6B764E3BD31D}" ShortID="285324893" Type="Play" Scope="One" Global="false">
 							<ElementList>
-								<Element ID="{BC03D284-53A4-48F6-8C2D-79438EBBCE52}" Global="false">
-									<ObjectRef Name="amb_forest_day_background_loop" ID="{2E373E0E-BE4A-4004-809A-0039D1E62D46}" WorkUnitID="{3D261178-FC48-466F-BA87-23654FECF63A}"/>
+								<Element ID="{22F5A93A-BE9E-42C4-B3B6-5A1962697FB9}" Global="false">
+									<ObjectRef Name="Ambience" ID="{1F54CBF5-4E22-4073-BC7D-1ACA44D6B3B3}" WorkUnitID="{3D261178-FC48-466F-BA87-23654FECF63A}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Ambience_Stop" ID="{19F19B45-1474-4620-9578-53B65485DDB5}">
+					<ChildrenList>
+						<Action Name="Stop" ID="{5B15ED56-D079-4BAF-8C11-0E95D844E4EA}" ShortID="763407660" Type="Stop" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{8E8A5CD9-E3C3-4E8E-86D1-5C0EEF868A61}" Global="false">
+									<ObjectRef Name="Ambience" ID="{1F54CBF5-4E22-4073-BC7D-1ACA44D6B3B3}" WorkUnitID="{3D261178-FC48-466F-BA87-23654FECF63A}"/>
 								</Element>
 							</ElementList>
 						</Action>

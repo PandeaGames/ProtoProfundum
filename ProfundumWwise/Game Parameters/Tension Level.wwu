@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{4AC9DFF9-F593-4971-AD00-DAAEAB75CBA5}" SchemaVersion="70">
+	<GameParameters>
+		<WorkUnit Name="Tension Level" ID="{4AC9DFF9-F593-4971-AD00-DAAEAB75CBA5}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="Tension" ID="{E4C10DC4-103A-4020-A835-A252D4A9174F}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="20"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
+	</GameParameters>
+</WwiseDocument>

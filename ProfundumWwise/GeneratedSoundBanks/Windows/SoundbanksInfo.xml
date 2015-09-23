@@ -43,33 +43,21 @@
 					<ShortName>Ambiences\Creatures\Unknown_Creature_07.wav</ShortName>
 					<Path>SFX\Ambiences\Creatures\Unknown_Creature_07_9E69E797.wem</Path>
 				</File>
-				<File Id="67279148" Language="SFX">
-					<ShortName>Ambiences\Drones\Drone_Tension_02.wav</ShortName>
-					<Path>SFX\Ambiences\Drones\Drone_Tension_02_4B8CC0C5.wem</Path>
-				</File>
 				<File Id="151276655" Language="SFX">
 					<ShortName>Ambiences\Wind\Wind_Variation_01.wav</ShortName>
 					<Path>SFX\Ambiences\Wind\Wind_Variation_01_9E69E797.wem</Path>
-				</File>
-				<File Id="163731274" Language="SFX">
-					<ShortName>Ambiences\Drones\Drone_Thunder.wav</ShortName>
-					<Path>SFX\Ambiences\Drones\Drone_Thunder_9E69E797.wem</Path>
 				</File>
 				<File Id="165450884" Language="SFX">
 					<ShortName>Ambiences\Creatures\Unknown_Creature_02.wav</ShortName>
 					<Path>SFX\Ambiences\Creatures\Unknown_Creature_02_9E69E797.wem</Path>
 				</File>
-				<File Id="175663883" Language="SFX">
-					<ShortName>Ambiences\Drones\Drone_Base.wav</ShortName>
-					<Path>SFX\Ambiences\Drones\Drone_Base_4B8CC0C5.wem</Path>
-				</File>
 				<File Id="235086266" Language="SFX">
 					<ShortName>Ambiences\Creatures\Creature_Human_Vocal_Chords_02.wav</ShortName>
 					<Path>SFX\Ambiences\Creatures\Creature_Human_Vocal_Chords_02_9E69E797.wem</Path>
 				</File>
-				<File Id="263944968" Language="SFX">
-					<ShortName>Ambiences\Drones\Drone_Tension_01.wav</ShortName>
-					<Path>SFX\Ambiences\Drones\Drone_Tension_01_4B8CC0C5.wem</Path>
+				<File Id="303063129" Language="SFX">
+					<ShortName>Ambiences\Drones\Drone_Tension_02.wav</ShortName>
+					<Path>SFX\Ambiences\Drones\Drone_Tension_02_4B8CC0C5.wem</Path>
 				</File>
 				<File Id="340213303" Language="SFX">
 					<ShortName>Ambiences\Creatures\Creature_Human_Vocal_Chords_01.wav</ShortName>
@@ -99,13 +87,13 @@
 					<ShortName>Ambiences\Wind\Wind_Variation_09.wav</ShortName>
 					<Path>SFX\Ambiences\Wind\Wind_Variation_09_9E69E797.wem</Path>
 				</File>
-				<File Id="458171556" Language="SFX">
-					<ShortName>Ambiences\Wind\Wind_Base_04.wav</ShortName>
-					<Path>SFX\Ambiences\Wind\Wind_Base_04_9E69E797.wem</Path>
-				</File>
 				<File Id="491644843" Language="SFX">
 					<ShortName>Ambiences\Creatures\Distant_Scream_07.wav</ShortName>
 					<Path>SFX\Ambiences\Creatures\Distant_Scream_07_9E69E797.wem</Path>
+				</File>
+				<File Id="493925102" Language="SFX">
+					<ShortName>Ambiences\Drones\Drone_Base.wav</ShortName>
+					<Path>SFX\Ambiences\Drones\Drone_Base_4B8CC0C5.wem</Path>
 				</File>
 				<File Id="506209338" Language="SFX">
 					<ShortName>Ambiences\Wind\Wind_Variation_06.wav</ShortName>
@@ -195,6 +183,10 @@
 					<ShortName>Ambiences\Wind\Wind_Base_02.wav</ShortName>
 					<Path>SFX\Ambiences\Wind\Wind_Base_02_9E69E797.wem</Path>
 				</File>
+				<File Id="959313562" Language="SFX">
+					<ShortName>Ambiences\Drones\Drone_Tension_01.wav</ShortName>
+					<Path>SFX\Ambiences\Drones\Drone_Tension_01_4B8CC0C5.wem</Path>
+				</File>
 				<File Id="963620898" Language="SFX">
 					<ShortName>Ambiences\Creatures\Creature_Human_Vocal_Chords_08.wav</ShortName>
 					<Path>SFX\Ambiences\Creatures\Creature_Human_Vocal_Chords_08_9E69E797.wem</Path>
@@ -211,9 +203,9 @@
 					<ShortName>Ambiences\Wind\Wind_Variation_07.wav</ShortName>
 					<Path>SFX\Ambiences\Wind\Wind_Variation_07_9E69E797.wem</Path>
 				</File>
-				<File Id="1061251256" Language="SFX">
-					<ShortName>Ambiences\Wind\Wind_Base_03.wav</ShortName>
-					<Path>SFX\Ambiences\Wind\Wind_Base_03_9E69E797.wem</Path>
+				<File Id="1059626769" Language="SFX">
+					<ShortName>Ambiences\Drones\Drone_Thunder.wav</ShortName>
+					<Path>SFX\Ambiences\Drones\Drone_Thunder_4B8CC0C5.wem</Path>
 				</File>
 				<File Id="1061458473" Language="SFX">
 					<ShortName>Ambiences\Wind\Wind_Variation_10.wav</ShortName>

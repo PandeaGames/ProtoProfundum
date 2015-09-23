@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{F96BEF70-7200-4CEA-A4BE-C1E543FA351A}" SchemaVersion="70">
+	<Switches>
+		<WorkUnit Name="Footsteps" ID="{F96BEF70-7200-4CEA-A4BE-C1E543FA351A}" PersistMode="Standalone">
+			<ChildrenList>
+				<SwitchGroup Name="Character_Type" ID="{F5EB2A3F-E375-42A8-9400-80E7FE2C6B34}">
+					<ChildrenList>
+						<Switch Name="Hero" ID="{45883342-7DFF-45A0-AA11-E2297E400390}"/>
+					</ChildrenList>
+				</SwitchGroup>
+				<SwitchGroup Name="Surface_Type" ID="{9F442A9E-A32E-49DD-A5ED-926A7DB57BDC}">
+					<ChildrenList>
+						<Switch Name="Icky" ID="{2E7C29AF-A91B-42D1-9C45-5EEC30FC8880}"/>
+					</ChildrenList>
+				</SwitchGroup>
+				<SwitchGroup Name="Step_Type" ID="{EBF5F6DF-8E3C-4B0D-A130-9A5ED5127C0D}">
+					<ChildrenList>
+						<Switch Name="Walk" ID="{4E1365A6-32CA-4833-AF01-34406C3DD11D}"/>
+					</ChildrenList>
+				</SwitchGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</Switches>
+</WwiseDocument>

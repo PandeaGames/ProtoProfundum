@@ -5,7 +5,7 @@
 			<ChildrenList>
 				<SoundBank Name="Profundum" ID="{C6A5BB2D-430C-46C3-9AE9-6C751C331C3D}">
 					<ObjectInclusionList>
-						<ObjectRef Name="Default Work Unit" ID="{3D261178-FC48-466F-BA87-23654FECF63A}" WorkUnitID="{3D261178-FC48-466F-BA87-23654FECF63A}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Ambience" ID="{1F54CBF5-4E22-4073-BC7D-1ACA44D6B3B3}" WorkUnitID="{3D261178-FC48-466F-BA87-23654FECF63A}" Filter="7" Origin="Manual"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

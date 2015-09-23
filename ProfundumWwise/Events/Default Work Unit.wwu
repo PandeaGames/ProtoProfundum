@@ -5,9 +5,9 @@
 			<ChildrenList>
 				<Event Name="Ambience_Start" ID="{CDEC75A1-A485-4985-9936-02CAB4C7EC56}">
 					<ChildrenList>
-						<Action Name="Play" ID="{2A2B1204-2DCA-4DE6-9CCE-6B764E3BD31D}" ShortID="285324893" Type="Play" Scope="One" Global="false">
+						<Action Name="Play" ID="{3E6E5257-957D-4450-B380-438EE218D937}" ShortID="493725578" Type="Play" Scope="One" Global="false">
 							<ElementList>
-								<Element ID="{22F5A93A-BE9E-42C4-B3B6-5A1962697FB9}" Global="false">
+								<Element ID="{8059D54E-25CA-4C5F-BA22-B59F659DBC5E}" Global="false">
 									<ObjectRef Name="Ambience" ID="{1F54CBF5-4E22-4073-BC7D-1ACA44D6B3B3}" WorkUnitID="{3D261178-FC48-466F-BA87-23654FECF63A}"/>
 								</Element>
 							</ElementList>

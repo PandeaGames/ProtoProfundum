@@ -29,7 +29,7 @@ public class RoachAI : MonoBehaviour {
 	{
 		if (lightClose) 
 		{
-			if(_agroRange.col.gameObject == null) return;
+			if(_agroRange.col != null && _agroRange.col.gameObject == null) return;
 
 			lightAgroCollider = _agroRange.col;
 			transform.LookAt (lightAgroCollider.gameObject.transform.position);  
@@ -50,7 +50,6 @@ public class RoachAI : MonoBehaviour {
 			}
 		}
 		if (Time.time - spawnTime > lifeTime) {
-			Debug.Log ("Destreoyed");
 			Destroy (gameObject);
 		}
 	}

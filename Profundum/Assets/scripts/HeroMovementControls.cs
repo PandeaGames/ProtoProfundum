@@ -13,6 +13,13 @@ using MonsterLove.StateMachine;
 
 public class HeroMovementControls : StateBehaviour 
 {
+	//Declare which states we'd like use
+	public enum HeroStates
+	{
+		Normal, 
+		Climbing
+	}
+
 	private float _x_move = 0;
 	private float _y_move = 0;
 	private bool _stride = false;
@@ -26,6 +33,7 @@ public class HeroMovementControls : StateBehaviour
 	private float _control_angle;
 	private float _control_angle_delta;
 	private Animator animator;
+	private float capsuleRadius;
 
 
 	public float maxRunSpeed = 5;
@@ -34,22 +42,34 @@ public class HeroMovementControls : StateBehaviour
 	public float stopFriction = 1.05f;
 	public GameObject cam;
 	public GameObject controlAngleAnchor;
+	public LayerMask mask;
+	public int climbingLayer;
+	public int normalLayer;
 	public HeroMovementControls ()
 	{
 	}
 
 	void Awake()
 	{
+		Initialize<HeroStates>();
+
+		//Change to our first state
+		ChangeState(HeroStates.Normal);
 	}
 
 	void Start()
 	{
+		climbingLayer = LayerMask.NameToLayer ("HeroAlt");
+		normalLayer = gameObject.layer;
 		animator = GetComponent<Animator>();
 		cam = Camera.main.gameObject;
+		capsuleRadius = GetComponent<CapsuleCollider> ().radius;
 	}
 
-	void Update()
+	void Normal_Update()
 	{
+
+
 		_x_move = Input.GetAxis("JoystickLeftHorizontal"); 
 		_y_move = Input.GetAxis("JoystickLeftVertical"); 
 
@@ -172,6 +192,58 @@ public class HeroMovementControls : StateBehaviour
 		newVel.y = GetComponent<Rigidbody>().velocity.y;//retain gravity values
 		GetComponent<Rigidbody>().velocity =  newVel;
 		GetComponent<Rigidbody>().transform.rotation = Quaternion.AngleAxis(Mathf.Atan2(_bodyAngle.z, _bodyAngle.x)/(Mathf.PI/180)+180, Vector3.up);
+
+
+		CheckForClimb ();
+	}
+	void Climbing_Enter()
+	{
+		GetComponent<CapsuleCollider> ().radius = (float)(capsuleRadius * 0.3);
+		animator.SetBool ("DoClimb", true);
+		GetComponent<Rigidbody> ().isKinematic = true;
+		GetComponent<Rigidbody> ().useGravity = false;
+		GetComponent<Rigidbody> ().velocity = new Vector3 ();
+		gameObject.layer = climbingLayer;
+	}
+	void Climbing_Exit()
+	{
+		GetComponent<CapsuleCollider> ().radius = capsuleRadius;
+	}
+
+	private void CheckForClimb()
+	{
+		RaycastHit hit = new RaycastHit ();
+		float deploymentHeight = 10;
+		Ray ray = new Ray (transform.position + transform.forward * 2.0f + transform.up * 2.5f, Vector3.down);
+		if (Physics.Raycast (ray, out hit, deploymentHeight, mask)) {
+			float distanceToGround = hit.distance;
+			Debug.Log (distanceToGround +":"+ Input.GetKey (KeyCode.Space));
+			if(distanceToGround>1.6 && distanceToGround < 2)
+			{
+				if (Input.GetKey (KeyCode.Space)) {
+					ChangeState (HeroStates.Climbing);
+				}
+			}
+		}
+	}
+
+	void Climbing_Update()
+	{
+		Debug.Log ("Climbing");
+		if (!this.animator.GetCurrentAnimatorStateInfo(0).IsName("Climbing"))
+		{
+			Debug.Log ("CHANGE AWAY FROM CLIMBING");
+			animator.SetBool ("DoClimb", false);
+			ChangeState(HeroStates.Normal);
+			// Avoid any reload.
+		}
+
+	}
+	void Normal_Enter()
+	{
+		gameObject.layer = normalLayer;
+		GetComponent<Rigidbody> ().useGravity = true;
+		GetComponent<Rigidbody> ().isKinematic = false;
 	}
 
 }

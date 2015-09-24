@@ -17,7 +17,8 @@ public class HeroMovementControls : StateBehaviour
 	public enum HeroStates
 	{
 		Normal, 
-		Climbing
+		Climbing, 
+		ClimbingDown
 	}
 
 	private float _x_move = 0;
@@ -193,19 +194,35 @@ public class HeroMovementControls : StateBehaviour
 		GetComponent<Rigidbody>().velocity =  newVel;
 		GetComponent<Rigidbody>().transform.rotation = Quaternion.AngleAxis(Mathf.Atan2(_bodyAngle.z, _bodyAngle.x)/(Mathf.PI/180)+180, Vector3.up);
 
-
 		CheckForClimb ();
 	}
 	void Climbing_Enter()
 	{
 		GetComponent<CapsuleCollider> ().radius = (float)(capsuleRadius * 0.3);
 		animator.SetBool ("DoClimb", true);
+		animator.Play ("Climbing");
 		GetComponent<Rigidbody> ().isKinematic = true;
 		GetComponent<Rigidbody> ().useGravity = false;
+		GetComponent<CapsuleCollider> ().enabled = false;
+		GetComponent<Rigidbody> ().velocity = new Vector3 ();
+		gameObject.layer = climbingLayer;
+	}
+	void ClimbingDown_Enter()
+	{
+		GetComponent<CapsuleCollider> ().radius = (float)(capsuleRadius * 0.3);
+		animator.SetBool ("DoClimbDown", true);
+		animator.Play ("ClimbDown");
+		GetComponent<Rigidbody> ().isKinematic = true;
+		GetComponent<Rigidbody> ().useGravity = false;
+		GetComponent<CapsuleCollider> ().enabled = false;
 		GetComponent<Rigidbody> ().velocity = new Vector3 ();
 		gameObject.layer = climbingLayer;
 	}
 	void Climbing_Exit()
+	{
+		GetComponent<CapsuleCollider> ().radius = capsuleRadius;
+	}
+	void ClimbingDown_Exit()
 	{
 		GetComponent<CapsuleCollider> ().radius = capsuleRadius;
 	}
@@ -214,14 +231,19 @@ public class HeroMovementControls : StateBehaviour
 	{
 		RaycastHit hit = new RaycastHit ();
 		float deploymentHeight = 10;
-		Ray ray = new Ray (transform.position + transform.forward * 2.0f + transform.up * 2.5f, Vector3.down);
+		Ray ray = new Ray (transform.position + transform.forward * .55f + transform.up * 2.5f, Vector3.down);
 		if (Physics.Raycast (ray, out hit, deploymentHeight, mask)) {
 			float distanceToGround = hit.distance;
-			Debug.Log (distanceToGround +":"+ Input.GetKey (KeyCode.Space));
-			if(distanceToGround>1.6 && distanceToGround < 2)
-			{
-				if (Input.GetKey (KeyCode.Space)) {
+			if (Input.GetKey (KeyCode.Space)) {
+				if(distanceToGround>1.6 && distanceToGround < 2)
+				{
+					//climb up
 					ChangeState (HeroStates.Climbing);
+				}
+				if(distanceToGround>5.0 && distanceToGround < 5.4)
+				{
+					//climb down
+					ChangeState (HeroStates.ClimbingDown);
 				}
 			}
 		}
@@ -229,21 +251,27 @@ public class HeroMovementControls : StateBehaviour
 
 	void Climbing_Update()
 	{
-		Debug.Log ("Climbing");
 		if (!this.animator.GetCurrentAnimatorStateInfo(0).IsName("Climbing"))
 		{
-			Debug.Log ("CHANGE AWAY FROM CLIMBING");
-			animator.SetBool ("DoClimb", false);
-			ChangeState(HeroStates.Normal);
+
+		//	animator.SetBool ("DoClimb", false);
+			//ChangeState(HeroStates.Normal);
 			// Avoid any reload.
 		}
 
+	}
+	void ClimbComplete()
+	{
+		animator.SetBool ("DoClimb", false);
+		animator.SetBool ("DoClimbDown", false);
+		ChangeState(HeroStates.Normal);
 	}
 	void Normal_Enter()
 	{
 		gameObject.layer = normalLayer;
 		GetComponent<Rigidbody> ().useGravity = true;
 		GetComponent<Rigidbody> ().isKinematic = false;
+		GetComponent<CapsuleCollider> ().enabled = true;
 	}
 
 }

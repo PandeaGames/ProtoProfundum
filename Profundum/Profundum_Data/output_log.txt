@@ -2,9 +2,9 @@ Mono path[0] = 'C:/Users/Colin/ProtoProfundum/Profundum/Profundum_Data/Managed'
 Mono path[1] = 'C:/Users/Colin/ProtoProfundum/Profundum/Profundum_Data/Mono'
 Mono config path = 'C:/Users/Colin/ProtoProfundum/Profundum/Profundum_Data/Mono/etc'
 PlayerConnection initialized from C:/Users/Colin/ProtoProfundum/Profundum/Profundum_Data (debug = 0)
-PlayerConnection initialized network socket : 0.0.0.0 55140
-Multi-casting "[IP] 10.129.236.100 [Port] 55140 [Flags] 2 [Guid] 1992502463 [EditorId] 2795452227 [Version] 1048832 [Id] WindowsPlayer(Colin-Surface) [Debug] 0" to [225.0.0.222:54997]...
-PlayerConnection already initialized - listening to [10.129.236.100:55140]
+PlayerConnection initialized network socket : 0.0.0.0 55265
+Multi-casting "[IP] 142.58.211.22 [Port] 55265 [Flags] 2 [Guid] 229524381 [EditorId] 2857117597 [Version] 1048832 [Id] WindowsPlayer(Colin-Surface) [Debug] 0" to [225.0.0.222:54997]...
+PlayerConnection already initialized - listening to [142.58.211.22:55265]
 Initialize engine version: 5.1.1f1 (2046fc06d4d8)
 GfxDevice: creating device client; threaded=1
 Direct3D:
@@ -27,7 +27,7 @@ Platform assembly: C:\Users\Colin\ProtoProfundum\Profundum\Profundum_Data\Manage
 Loading C:\Users\Colin\ProtoProfundum\Profundum\Profundum_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
 Platform assembly: C:\Users\Colin\ProtoProfundum\Profundum\Profundum_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
 Loading C:\Users\Colin\ProtoProfundum\Profundum\Profundum_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
-- Completed reload, in  0.075 seconds
+- Completed reload, in  0.450 seconds
 desktop: 2160x1440 59Hz; virtual: 2160x1440 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
@@ -49,7 +49,7 @@ AkInitializer:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\Wwise\D
  
 (Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/Wwise/Deployment/Components/AkInitializer.cs Line: 279)
 
-Method with name <Awake>m__8 could not resolve a matching state. Check method spelling
+Method with name <Awake>m__A could not resolve a matching state. Check method spelling
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:LogWarning(Object)
 MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
@@ -58,7 +58,79 @@ GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\s
  
 (Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
 
-Method with name <Awake>m__9 could not resolve a matching state. Check method spelling
+Method with name <Awake>m__B could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:52)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__C could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:52)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__D could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:52)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__E could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:52)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__F could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:52)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__10 could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:52)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__11 could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:52)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__12 could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:52)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__13 could not resolve a matching state. Check method spelling
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:LogWarning(Object)
 MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
@@ -139,7 +211,7 @@ GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\s
  
 (Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
 
-Method with name <Awake>m__8 could not resolve a matching state. Check method spelling
+Method with name <Awake>m__12 could not resolve a matching state. Check method spelling
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:LogWarning(Object)
 MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
@@ -148,97 +220,7 @@ GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\s
  
 (Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
 
-Method with name <Awake>m__9 could not resolve a matching state. Check method spelling
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:LogWarning(Object)
-MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
-MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
-GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:52)
- 
-(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
-
-Method with name <Awake>m__A could not resolve a matching state. Check method spelling
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:LogWarning(Object)
-MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
-MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
-GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:52)
- 
-(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
-
-Method with name <Awake>m__B could not resolve a matching state. Check method spelling
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:LogWarning(Object)
-MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
-MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
-GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:52)
- 
-(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
-
-Method with name <Awake>m__C could not resolve a matching state. Check method spelling
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:LogWarning(Object)
-MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
-MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
-GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:52)
- 
-(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
-
-Method with name <Awake>m__D could not resolve a matching state. Check method spelling
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:LogWarning(Object)
-MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
-MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
-GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:52)
- 
-(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
-
-Method with name <Awake>m__E could not resolve a matching state. Check method spelling
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:LogWarning(Object)
-MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
-MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
-GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:52)
- 
-(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
-
-Method with name <Awake>m__F could not resolve a matching state. Check method spelling
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:LogWarning(Object)
-MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
-MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
-GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:52)
- 
-(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
-
-Method with name <Awake>m__10 could not resolve a matching state. Check method spelling
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:LogWarning(Object)
-MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
-MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
-GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:52)
- 
-(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
-
-Method with name <Awake>m__11 could not resolve a matching state. Check method spelling
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:LogWarning(Object)
-MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
-MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
-GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:52)
- 
-(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
-
-Method with name <Awake>m__8 could not resolve a matching state. Check method spelling
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:LogWarning(Object)
-MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
-MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
-GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:52)
- 
-(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
-
-Method with name <Awake>m__9 could not resolve a matching state. Check method spelling
+Method with name <Awake>m__13 could not resolve a matching state. Check method spelling
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:LogWarning(Object)
 MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
@@ -319,7 +301,7 @@ GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\s
  
 (Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
 
-Method with name <Awake>m__8 could not resolve a matching state. Check method spelling
+Method with name <Awake>m__12 could not resolve a matching state. Check method spelling
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:LogWarning(Object)
 MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
@@ -328,7 +310,7 @@ GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\s
  
 (Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
 
-Method with name <Awake>m__9 could not resolve a matching state. Check method spelling
+Method with name <Awake>m__13 could not resolve a matching state. Check method spelling
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:LogWarning(Object)
 MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
@@ -408,223 +390,35 @@ MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoPro
 GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:52)
  
 (Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__12 could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:52)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Method with name <Awake>m__13 could not resolve a matching state. Check method spelling
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+MonsterLove.StateMachine.StateEngine:Initialize(StateBehaviour) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateEngine.cs:93)
+MonsterLove.StateMachine.StateBehaviour:Initialize() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\MonsterLove\StateMachine\StateBehaviour.cs:45)
+GrupperStateMachine:Awake() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\scripts\GrupperStateMachine.cs:52)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/MonsterLove/StateMachine/StateEngine.cs Line: 93)
+
+Wwise: Bank Profundum failed to load (AK_FileNotFound)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+AkBankHandle:LoadBank() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\Wwise\Deployment\Components\AkBankManager.cs:43)
+AkBankManager:LoadBank(String) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\Wwise\Deployment\Components\AkBankManager.cs:125)
+AkBank:HandleEvent(GameObject) (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\Wwise\Deployment\Components\AkBank.cs:55)
+AkUnityEventHandler:Start() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\Wwise\Deployment\Components\AkUnityEventHandler.cs:48)
+AkBank:Start() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\Wwise\Deployment\Components\AkBank.cs:43)
+ 
+(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/Wwise/Deployment/Components/AkBankManager.cs Line: 43)
 
 Setting up 1 worker threads for Enlighten.
-  Thread -> id: 1a2c -> priority: 1 
-Destreoyed
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-RoachAI:Update() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\RoachAI.cs:53)
- 
-(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/RoachAI.cs Line: 53)
-
-Destreoyed
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-RoachAI:Update() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\RoachAI.cs:53)
- 
-(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/RoachAI.cs Line: 53)
-
-Destreoyed
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-RoachAI:Update() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\RoachAI.cs:53)
- 
-(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/RoachAI.cs Line: 53)
-
-Destreoyed
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-RoachAI:Update() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\RoachAI.cs:53)
- 
-(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/RoachAI.cs Line: 53)
-
-Destreoyed
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-RoachAI:Update() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\RoachAI.cs:53)
- 
-(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/RoachAI.cs Line: 53)
-
-Destreoyed
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-RoachAI:Update() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\RoachAI.cs:53)
- 
-(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/RoachAI.cs Line: 53)
-
-Destreoyed
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-RoachAI:Update() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\RoachAI.cs:53)
- 
-(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/RoachAI.cs Line: 53)
-
-Destreoyed
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-RoachAI:Update() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\RoachAI.cs:53)
- 
-(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/RoachAI.cs Line: 53)
-
-Destreoyed
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-RoachAI:Update() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\RoachAI.cs:53)
- 
-(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/RoachAI.cs Line: 53)
-
-Destreoyed
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-RoachAI:Update() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\RoachAI.cs:53)
- 
-(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/RoachAI.cs Line: 53)
-
-Destreoyed
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-RoachAI:Update() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\RoachAI.cs:53)
- 
-(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/RoachAI.cs Line: 53)
-
-Destreoyed
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-RoachAI:Update() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\RoachAI.cs:53)
- 
-(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/RoachAI.cs Line: 53)
-
-Destreoyed
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-RoachAI:Update() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\RoachAI.cs:53)
- 
-(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/RoachAI.cs Line: 53)
-
-Destreoyed
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-RoachAI:Update() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\RoachAI.cs:53)
- 
-(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/RoachAI.cs Line: 53)
-
-Destreoyed
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-RoachAI:Update() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\RoachAI.cs:53)
- 
-(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/RoachAI.cs Line: 53)
-
-Destreoyed
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-RoachAI:Update() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\RoachAI.cs:53)
- 
-(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/RoachAI.cs Line: 53)
-
-Destreoyed
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-RoachAI:Update() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\RoachAI.cs:53)
- 
-(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/RoachAI.cs Line: 53)
-
-Destreoyed
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-RoachAI:Update() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\RoachAI.cs:53)
- 
-(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/RoachAI.cs Line: 53)
-
-Destreoyed
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-RoachAI:Update() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\RoachAI.cs:53)
- 
-(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/RoachAI.cs Line: 53)
-
-Destreoyed
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-RoachAI:Update() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\RoachAI.cs:53)
- 
-(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/RoachAI.cs Line: 53)
-
-Destreoyed
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-RoachAI:Update() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\RoachAI.cs:53)
- 
-(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/RoachAI.cs Line: 53)
-
-Destreoyed
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-RoachAI:Update() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\RoachAI.cs:53)
- 
-(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/RoachAI.cs Line: 53)
-
-Destreoyed
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-RoachAI:Update() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\RoachAI.cs:53)
- 
-(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/RoachAI.cs Line: 53)
-
-Destreoyed
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-RoachAI:Update() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\RoachAI.cs:53)
- 
-(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/RoachAI.cs Line: 53)
-
-Destreoyed
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-RoachAI:Update() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\RoachAI.cs:53)
- 
-(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/RoachAI.cs Line: 53)
-
-Destreoyed
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-RoachAI:Update() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\RoachAI.cs:53)
- 
-(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/RoachAI.cs Line: 53)
-
-Destreoyed
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-RoachAI:Update() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\RoachAI.cs:53)
- 
-(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/RoachAI.cs Line: 53)
-
-Destreoyed
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-RoachAI:Update() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\RoachAI.cs:53)
- 
-(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/RoachAI.cs Line: 53)
-
-Destreoyed
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-RoachAI:Update() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\RoachAI.cs:53)
- 
-(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/RoachAI.cs Line: 53)
-
-Destreoyed
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-RoachAI:Update() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\RoachAI.cs:53)
- 
-(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/RoachAI.cs Line: 53)
-
-Destreoyed
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-RoachAI:Update() (at C:\Users\Colin\ProtoProfundum\Profundum\Assets\RoachAI.cs:53)
- 
-(Filename: C:/Users/Colin/ProtoProfundum/Profundum/Assets/RoachAI.cs Line: 53)
-
+  Thread -> id: 162c -> priority: 1 

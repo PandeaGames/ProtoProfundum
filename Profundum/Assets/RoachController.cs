@@ -9,6 +9,7 @@ public class RoachController : MonoBehaviour {
 	public int spawnDensity = 1;
 	public int spawnResolution = 1;
 	public int spawnDistance = 50;
+	public int zoneResetTime = 5;
 
 	private int _x, _y, _z;
 	private int _worldX, _worldY, _worldZ;
@@ -65,6 +66,18 @@ public class RoachController : MonoBehaviour {
 	void Update () {
 		
 	}
+	public bool isLit(Vector3 point)
+	{
+		int x, y, z;
+
+		x = (int)((point.x  - _worldX) / resolution);
+		y = (int)((point.y - _worldY) / resolution);
+		z = (int)((point.z - _worldZ ) / resolution);
+
+		if(x< 0 || x > _x || y < 0 || y > _y || z < 0 || z > _z) return false;
+
+		return spawnMap [x, y, z] == double.MaxValue;
+	}
 	public void LightLaunched(GameObject light)
 	{
 		Vector3 pos = new Vector3 ();
@@ -80,18 +93,17 @@ public class RoachController : MonoBehaviour {
 
 			x = (int)((pos.x  - _worldX) / resolution);
 			y = (int)((pos.y - _worldY) / resolution);
-			 z = (int)((pos.z - _worldZ ) / resolution);
-
-
+			z = (int)((pos.z - _worldZ ) / resolution);
 
 			if(x< 0 || x > _x || y < 0 || y > _y || z < 0 || z > _z) continue;
 
-			if(spawnMap[x, y, z] != double.MaxValue)
+			if(spawnMap[x, y, z] != double.MaxValue && (spawnMap[x, y, z] < Time.time || spawnMap[x, y, z] == Time.time + zoneResetTime))
 			{
 				/*pos.x+=Random.value * 8;
 				pos.y+=Random.value * 8;
 				pos.z+=Random.value * 8;*/
-
+				spawnMap[x, y, z] = Time.time + zoneResetTime;
+				setAreaValues(new Vector3(x, y, z), spawnMap[x, y, z], 3);
 				Instantiate(roachPrefab, pos, light.transform.rotation);
 			}
 
@@ -120,5 +132,20 @@ public class RoachController : MonoBehaviour {
 			offset.x = offset.z * Mathf.Sin(theta_y) + offset.x * Mathf.Cos(theta_y);*/
 		}
 
+	}
+	private void setAreaValues(Vector3 point, double value, int radius)
+	{
+		for (int x = (int)point.x - radius; x< (int)point.x+radius; x++) 
+		{
+			for (int y = (int)point.y - radius; y< (int)point.y+radius; y++) 
+			{
+				for (int z = (int)point.z - radius; z< (int)point.z+radius; z++) 
+				{
+					if(x< 0 || x > _x || y < 0 || y > _y || z < 0 || z > _z) continue;
+					if(spawnMap[x, y, z] == double.MaxValue) return;
+					spawnMap[x, y, z] = value;
+				}
+			}
+		}
 	}
 }

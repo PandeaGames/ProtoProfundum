@@ -57,6 +57,8 @@
      <Compile Include="Assets\LightBubble.cs" />
      <Compile Include="Assets\MonsterLove\StateMachine\StateBehaviour.cs" />
      <Compile Include="Assets\MonsterLove\StateMachine\StateEngine.cs" />
+     <Compile Include="Assets\PathContainer.cs" />
+     <Compile Include="Assets\PathNode.cs" />
      <Compile Include="Assets\PlayerHealthController.cs" />
      <Compile Include="Assets\RoachAI.cs" />
      <Compile Include="Assets\RoachController.cs" />
@@ -159,6 +161,7 @@
      <Compile Include="Assets\Wwise\Deployment\Components\AkUtilities.cs" />
      <Compile Include="Assets\scripts\CameraAnchorControl.cs" />
      <Compile Include="Assets\scripts\GrupperStateMachine.cs" />
+     <Compile Include="Assets\scripts\GrupperV2StateMachine.cs" />
      <Compile Include="Assets\scripts\HeroAudioController.cs" />
      <Compile Include="Assets\scripts\HeroMovementControls.cs" />
      <Compile Include="Assets\scripts\HeroShooter.cs" />

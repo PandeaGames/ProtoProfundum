@@ -52,6 +52,7 @@
      <Compile Include="Assets\DomeCrystal.cs" />
      <Compile Include="Assets\GameSettings.cs" />
      <Compile Include="Assets\GrupperAudiController.cs" />
+     <Compile Include="Assets\GrupperAudioController.cs" />
      <Compile Include="Assets\GrupperStateTests.cs" />
      <Compile Include="Assets\Lava_Flowing_Shader\Scripts\ScrollingUVs_Layers.cs" />
      <Compile Include="Assets\LightBubble.cs" />

@@ -152,7 +152,7 @@ public class GrupperV2StateMachine : StateBehaviour {
 
 	void Attacking_Enter()
 	{
-
+		SendMessage ("DoAttack");
 	}
 
 	void Agro_Enter()

@@ -24,6 +24,9 @@ public class HeroAudioController : MonoBehaviour {
 	}
 	void RunStep()
 	{
-		AkSoundEngine.PostEvent("Footstep", gameObject);
+		AkSoundEngine.PostEvent("Play_Footstep", gameObject);
+	}
+	void Dead()
+	{
 	}
 }

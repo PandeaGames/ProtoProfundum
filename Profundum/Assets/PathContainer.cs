@@ -2,16 +2,24 @@
 using System.Collections;
 
 public class PathContainer : MonoBehaviour {
-	public bool loop = true;
+	public int loop = 1;
+	public bool closedLoop = true;
+	public GameObject[] objects;
 
 	private PathNode[] _nodes;
+	private PathNode _head;
+	private PathNode _tail;
+	private PathObject[] _pathObjects;
 	// Use this for initialization
 	void Awake () {
+		_pathObjects = new PathObject[objects.Length];
 		_nodes = GetComponentsInChildren<PathNode> ();
 
 		if (_nodes.Length > 1) {
+			_head = _nodes[0];
+			_tail = _nodes[_nodes.Length - 1];
 			for (int i=0; i<_nodes.Length; i++) {
-				if(loop)
+				if(closedLoop)
 				{
 					if(i+1 == _nodes.Length)
 					{
@@ -40,6 +48,15 @@ public class PathContainer : MonoBehaviour {
 					}
 				}
 			}
+		}
+
+		for(int i=0;i<objects.Length;i++)
+		{
+			if(!objects[i].GetComponent<PathObject>())
+			{
+				objects[i].AddComponent<PathObject>();
+			}
+			_pathObjects[i] = objects[i].GetComponent<PathObject>();
 		}
 	}
 	
@@ -85,5 +102,74 @@ public class PathContainer : MonoBehaviour {
 			return null;
 
 		return _nodes [0];
+	}
+	public void Seek(float position, float targetTime)
+	{
+		//targetTime = targetTime * loop;
+		//if (closedLoop) {
+		//	targetTime += Vector3.Distance(head.transform.position, tail.transform.position) / obj.speed;
+		//} else {
+		//}
+		PathNode node;
+		PathObject obj;
+		float time, tmpTime;
+		PathNode next;
+		bool looping = false;
+		bool reversing = false;
+		int nodeIterator;
+		int jStop;
+		Debug.Log (position);
+		for (int i =0; i<_pathObjects.Length; i++) 
+		{
+			time = 0;
+			obj = _pathObjects[i];
+			for(int k = 0; k < loop; k++)
+			{
+				nodeIterator = 1;
+				reversing = false;
+				jStop = 0;
+				for (int j =0; !closedLoop ? j>=jStop:j< _nodes.Length; j+=nodeIterator) 
+				{
+					if(!closedLoop && j == _nodes.Length - 1 && !reversing)
+					{
+						//if it is a closed loop, then we never want to reverse. ONly close the loop. 
+						//if it is NOT a closed loop, object neds to reverse through the path. 
+						reversing = true;
+						j = _nodes.Length;
+						nodeIterator = -1;
+						jStop = 1;
+						continue;
+					}
+					node = _nodes[j];
+					next = reversing ? node.prev:node.next;
+					time+=node.stopTime;
+					if(time>targetTime)
+					{
+						//stop object on path node. he needs to wait. 
+						obj.SetPosition(node.transform.position);
+						break;
+					}
+					tmpTime = Vector3.Distance(node.transform.position, next.transform.position) / obj.speed;
+					if(time + tmpTime>targetTime)
+					{
+						//position object between nodes
+						Vector3 delta =  next.transform.position - node.transform.position;
+						float seekPosition = (targetTime - time)/tmpTime;
+						Vector3 deltaScaled = delta * seekPosition;
+						Vector3 finalPos = node.transform.position + deltaScaled;
+						obj.SetPosition(finalPos);
+						time += tmpTime;
+						break;
+					}
+					time += tmpTime;
+
+				}
+				if(time > targetTime)
+				{
+					//this means we have found our place within this loop. break out and stop searching
+					break;
+				}
+			}
+		}
 	}
 }

@@ -221,7 +221,7 @@ public class GrupperV2StateMachine : StateBehaviour {
 
 		Vector3 force = transform.forward * 0.1f;
 		
-		GetComponent<Rigidbody> ().AddForce (force, ForceMode.Impulse);
+		//GetComponent<Rigidbody> ().AddForce (force, ForceMode.Impulse);
 
 		if (Vector3.Distance (transform.position, pathNode.transform.position) < .25) {
 			pathNode = pathNode.next;

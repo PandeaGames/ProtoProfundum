@@ -59,7 +59,9 @@
      <Compile Include="Assets\MonsterLove\StateMachine\StateBehaviour.cs" />
      <Compile Include="Assets\MonsterLove\StateMachine\StateEngine.cs" />
      <Compile Include="Assets\PathContainer.cs" />
+     <Compile Include="Assets\PathGroup.cs" />
      <Compile Include="Assets\PathNode.cs" />
+     <Compile Include="Assets\PathObject.cs" />
      <Compile Include="Assets\PlayerHealthController.cs" />
      <Compile Include="Assets\RoachAI.cs" />
      <Compile Include="Assets\RoachController.cs" />

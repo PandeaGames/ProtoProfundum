@@ -4,6 +4,7 @@ using System.Collections;
 public class PathNode : MonoBehaviour {
 	private PathNode _next;
 	private PathNode _prev;
+	public float stopTime = 0;
 	// Use this for initialization
 	void Start () {
 	

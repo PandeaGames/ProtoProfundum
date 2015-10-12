@@ -4,7 +4,8 @@ using System.Collections;
 public class PlayerHealthController : MonoBehaviour {
 	public float rebound = 0.25f;
 	public float health = 100;
-	private float _health;
+	protected float _health;
+	protected bool _death;
 	// Use this for initialization
 	void Start () {
 		_health = health;
@@ -13,7 +14,9 @@ public class PlayerHealthController : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (_health < health) {
-			_health+=rebound;
+			_health += rebound;
+		} else if (_health > health) {
+			_health = health;
 		}
 	}
 	public void doDamage(float damage)
@@ -30,4 +33,7 @@ public class PlayerHealthController : MonoBehaviour {
 	{
 		return _health / health;
  	}
+	public bool death{
+		get { return _death;}
+	}
 }

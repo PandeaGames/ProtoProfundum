@@ -1,14 +1,18 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\PathContainer.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\scripts\CameraAnchorControl.cs">
     <Files>
-      <File FileName="Assets\PathGroup.cs" Line="15" Column="3" />
-      <File FileName="Assets\PathNode.cs" Line="10" Column="2" />
-      <File FileName="Assets\PathContainer.cs" Line="130" Column="14" />
-      <File FileName="Assets\PathObject.cs" Line="17" Column="28" />
-      <File FileName="Assets\RoachAI.cs" Line="158" Column="4" />
-      <File FileName="Assets\scripts\GrupperV2StateMachine.cs" Line="221" Column="3" />
-      <File FileName="Assets\Wwise\Deployment\Components\AkGameObj.cs" Line="121" Column="15" />
+      <File FileName="Assets\scripts\PlayerHealthController.cs" Line="17" Column="23" />
+      <File FileName="Assets\scripts\GrupperV2StateMachine.cs" Line="1" Column="1" />
+      <File FileName="Assets\scripts\ProfundumPlayerHealth.cs" Line="16" Column="22" />
+      <File FileName="Assets\scripts\ProfundumDeathController.cs" Line="6" Column="1" />
+      <File FileName="Assets\scripts\GameDeathController.cs" Line="17" Column="32" />
+      <File FileName="Assets\scripts\BloodUI.cs" Line="17" Column="1" />
+      <File FileName="Assets\scripts\CameraAnchorControl.cs" Line="88" Column="50" />
+      <File FileName="Assets\scripts\HeroMovementControls.cs" Line="46" Column="2" />
+      <File FileName="Assets\scripts\GrupperStateMachine.cs" Line="212" Column="4" />
+      <File FileName="Assets\scripts\RoachDarkController.cs" Line="38" Column="23" />
+      <File FileName="Assets\scripts\MainCameraMovement.cs" Line="9" Column="25" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

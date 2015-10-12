@@ -118,7 +118,6 @@ public class PathContainer : MonoBehaviour {
 		bool reversing = false;
 		int nodeIterator;
 		int jStop;
-		Debug.Log (position);
 		for (int i =0; i<_pathObjects.Length; i++) 
 		{
 			time = 0;

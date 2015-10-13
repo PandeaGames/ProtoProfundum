@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="10" SoundbankVersion="113">
 	<RootPaths>
-		<ProjectRoot>C:\Users\Colin\ProtoProfundum\ProfundumWwise\</ProjectRoot>
-		<SourceFilesRoot>C:\Users\Colin\ProtoProfundum\ProfundumWwise\.cache\Windows\</SourceFilesRoot>
-		<SoundBanksRoot>C:\Users\Colin\ProtoProfundum\ProfundumWwise\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ProjectRoot>D:\Airemon Sound\Cove Games\Profundum\ProfundumWwise\</ProjectRoot>
+		<SourceFilesRoot>D:\Airemon Sound\Cove Games\Profundum\ProfundumWwise\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>D:\Airemon Sound\Cove Games\Profundum\ProfundumWwise\GeneratedSoundBanks\Windows\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>C:\Users\Colin\ProtoProfundum\ProfundumWwise\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>D:\Airemon Sound\Cove Games\Profundum\ProfundumWwise\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
@@ -21,6 +21,8 @@
 			<IncludedEvents>
 				<Event Id="3908818592" Name="Ambience_Start"/>
 				<Event Id="3166394572" Name="Ambience_Stop" MaxAttenuation="0.000000"/>
+				<Event Id="326116161" Name="Emitters_Start"/>
+				<Event Id="4253772027" Name="Emitters_Stop" MaxAttenuation="0.000000"/>
 				<Event Id="1519321238" Name="Play_Attack"/>
 				<Event Id="1602358412" Name="Play_Footstep"/>
 			</IncludedEvents>
@@ -81,10 +83,6 @@
 					<ShortName>Ambiences\Drones\Drone_Tension_02.wav</ShortName>
 					<Path>SFX\Ambiences\Drones\Drone_Tension_02_4B8CC0C5.wem</Path>
 				</File>
-				<File Id="340213303" Language="SFX">
-					<ShortName>Ambiences\Creatures\Creature_Human_Vocal_Chords_01.wav</ShortName>
-					<Path>SFX\Ambiences\Creatures\Creature_Human_Vocal_Chords_01_9E69E797.wem</Path>
-				</File>
 				<File Id="345252552" Language="SFX">
 					<ShortName>Ambiences\Creatures\Distant_Scream_05.wav</ShortName>
 					<Path>SFX\Ambiences\Creatures\Distant_Scream_05_9E69E797.wem</Path>
@@ -92,10 +90,6 @@
 				<File Id="346145100" Language="SFX">
 					<ShortName>Ambiences\Creatures\Distant_Scream_08.wav</ShortName>
 					<Path>SFX\Ambiences\Creatures\Distant_Scream_08_9E69E797.wem</Path>
-				</File>
-				<File Id="381944453" Language="SFX">
-					<ShortName>Ambiences\Creatures\Distant_Scream_02.wav</ShortName>
-					<Path>SFX\Ambiences\Creatures\Distant_Scream_02_9E69E797.wem</Path>
 				</File>
 				<File Id="390820383" Language="SFX">
 					<ShortName>Footsteps\Footsteps_03.wav</ShortName>
@@ -149,14 +143,6 @@
 					<ShortName>Enemies\Attack\Enemy_Attack_05.wav</ShortName>
 					<Path>SFX\Enemies\Attack\Enemy_Attack_05_9E69E797.wem</Path>
 				</File>
-				<File Id="644954399" Language="SFX">
-					<ShortName>Ambiences\Creatures\Creature_Human_Vocal_Chords_11.wav</ShortName>
-					<Path>SFX\Ambiences\Creatures\Creature_Human_Vocal_Chords_11_9E69E797.wem</Path>
-				</File>
-				<File Id="645809835" Language="SFX">
-					<ShortName>Ambiences\Creatures\Unknown_Creature_01.wav</ShortName>
-					<Path>SFX\Ambiences\Creatures\Unknown_Creature_01_9E69E797.wem</Path>
-				</File>
 				<File Id="740034832" Language="SFX">
 					<ShortName>Ambiences\Creatures\Unknown_Creature_04.wav</ShortName>
 					<Path>SFX\Ambiences\Creatures\Unknown_Creature_04_9E69E797.wem</Path>
@@ -197,10 +183,6 @@
 					<ShortName>Enemies\Attack\Bone_Breaks_02.wav</ShortName>
 					<Path>SFX\Enemies\Attack\Bone_Breaks_02_9E69E797.wem</Path>
 				</File>
-				<File Id="847725936" Language="SFX">
-					<ShortName>Ambiences\Creatures\Unknown_Creature_08.wav</ShortName>
-					<Path>SFX\Ambiences\Creatures\Unknown_Creature_08_9E69E797.wem</Path>
-				</File>
 				<File Id="857018469" Language="SFX">
 					<ShortName>Ambiences\Creatures\Distant_Scream_04.wav</ShortName>
 					<Path>SFX\Ambiences\Creatures\Distant_Scream_04_9E69E797.wem</Path>
@@ -220,10 +202,6 @@
 				<File Id="876603022" Language="SFX">
 					<ShortName>Ambiences\Creatures\Distant_Scream_03.wav</ShortName>
 					<Path>SFX\Ambiences\Creatures\Distant_Scream_03_9E69E797.wem</Path>
-				</File>
-				<File Id="904244225" Language="SFX">
-					<ShortName>Ambiences\Creatures\Creature_Human_Vocal_Chords_07.wav</ShortName>
-					<Path>SFX\Ambiences\Creatures\Creature_Human_Vocal_Chords_07_9E69E797.wem</Path>
 				</File>
 				<File Id="934930352" Language="SFX">
 					<ShortName>Ambiences\Creatures\Creature_Human_Vocal_Chords_05.wav</ShortName>
@@ -252,10 +230,6 @@
 				<File Id="976243043" Language="SFX">
 					<ShortName>Ambiences\Creatures\Unknown_Creature_06.wav</ShortName>
 					<Path>SFX\Ambiences\Creatures\Unknown_Creature_06_9E69E797.wem</Path>
-				</File>
-				<File Id="1018724183" Language="SFX">
-					<ShortName>Ambiences\Creatures\Distant_Scream_01.wav</ShortName>
-					<Path>SFX\Ambiences\Creatures\Distant_Scream_01_9E69E797.wem</Path>
 				</File>
 				<File Id="1048145576" Language="SFX">
 					<ShortName>Ambiences\Wind\Wind_Variation_07.wav</ShortName>

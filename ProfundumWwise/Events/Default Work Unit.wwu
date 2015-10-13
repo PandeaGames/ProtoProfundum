@@ -25,6 +25,28 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Emitters_Start" ID="{01B0C6AF-EAD2-40FC-93D7-D68F29DE0001}">
+					<ChildrenList>
+						<Action Name="Play" ID="{AA19234C-C3D3-45D3-A87C-C826D6CCA339}" ShortID="339887133" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{D2D56D35-B932-49D2-9247-690A539A1704}" Global="false">
+									<ObjectRef Name="Ambience Emitters" ID="{A1D469C9-2F1F-42AD-8EC1-4BE416B3335A}" WorkUnitID="{3D261178-FC48-466F-BA87-23654FECF63A}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Emitters_Stop" ID="{02A6A842-2BAD-437E-8963-28E042C4591E}">
+					<ChildrenList>
+						<Action Name="Stop" ID="{44C0C6D5-17BC-4035-A08D-E176A16D8BE9}" ShortID="731655805" Type="Stop" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{95F48A90-6952-4232-B3D2-C167C332E769}" Global="false">
+									<ObjectRef Name="Ambience Emitters" ID="{A1D469C9-2F1F-42AD-8EC1-4BE416B3335A}" WorkUnitID="{3D261178-FC48-466F-BA87-23654FECF63A}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

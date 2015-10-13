@@ -33,8 +33,8 @@ function Update () {
 	x_move = Input.GetAxis("JoystickLeftHorizontal"); 
 	y_move = Input.GetAxis("JoystickLeftVertical"); 
 	
-	var cam_delta_x:float = cam.transform.position.x - rigidbody.transform.position.x;
-	var cam_delta_z:float = cam.transform.position.z - rigidbody.transform.position.z;
+	var cam_delta_x:float = cam.transform.position.x - GetComponent.<Rigidbody>().transform.position.x;
+	var cam_delta_z:float = cam.transform.position.z - GetComponent.<Rigidbody>().transform.position.z;
 	
 	var cam_angle:float = Mathf.Atan2(cam_delta_x, cam_delta_z);
 
@@ -157,9 +157,9 @@ function Update () {
 	//rigidbody.transform.rotation = q;
 	anim.SetFloat("speed", speed);
 	var newVel:Vector3 = (transform.forward * (speed * 5));//override Z and X movement
-	newVel.y = rigidbody.velocity.y;//retain gravity values
-	rigidbody.velocity =  newVel;
-	rigidbody.transform.rotation = Quaternion.AngleAxis(Mathf.Atan2(bodyAngle.z, bodyAngle.x)/(Mathf.PI/180)+180, Vector3.up);
+	newVel.y = GetComponent.<Rigidbody>().velocity.y;//retain gravity values
+	GetComponent.<Rigidbody>().velocity =  newVel;
+	GetComponent.<Rigidbody>().transform.rotation = Quaternion.AngleAxis(Mathf.Atan2(bodyAngle.z, bodyAngle.x)/(Mathf.PI/180)+180, Vector3.up);
 	
 	if(running || walking)
 	{
@@ -174,8 +174,8 @@ public function Jump(strength:float)
 {
 	stateMachine.ChangeState(States.Jumping);
 	transform.position = transform.position + Vector3.up * 0.5;
-	rigidbody.velocity = Vector3.zero;
-	rigidbody.AddForce(Vector3.up * strength + transform.forward * strength, ForceMode.VelocityChange);
+	GetComponent.<Rigidbody>().velocity = Vector3.zero;
+	GetComponent.<Rigidbody>().AddForce(Vector3.up * strength + transform.forward * strength, ForceMode.VelocityChange);
 }
 function OnCollisionEnter(collision:Collision)
 {
@@ -188,11 +188,11 @@ function UpdateState(state:States)
 {
 	if(state == States.Jumping)
 	{
-		rigidbody.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ | RigidbodyConstraints.FreezeRotationY;
+		GetComponent.<Rigidbody>().constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ | RigidbodyConstraints.FreezeRotationY;
 	}
 	else
 	{
-		rigidbody.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ;
+		GetComponent.<Rigidbody>().constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ;
 	}
 	//rigidbody.freezeRotation = state == States.Jumping;
 }

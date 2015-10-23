@@ -26,6 +26,7 @@ public class GrupperV2StateMachine : StateBehaviour {
 	public LayerMask mask;
 	public float attackRecoverTime = 3;
 	public GameObject path;
+	public GameObject pathHead;
 
 	private PathNode pathNode;
 	private PathContainer pathContainer;
@@ -53,6 +54,7 @@ public class GrupperV2StateMachine : StateBehaviour {
 	private float attackTelegraphEnd;
 	private float attackTelegraphTime = 1;
 	private PlayerHealthController playerHealthController;
+
 
 	void Start()
 	{
@@ -218,6 +220,8 @@ public class GrupperV2StateMachine : StateBehaviour {
 				ChangeState(GrupperStates.Agro);
 		}
 		transform.LookAt(pathNode.transform.position);
+
+		transform.position = Vector3.MoveTowards(transform.position, pathHead.transform.position, 0.05f);
 
 		Vector3 force = transform.forward * 0.1f;
 		

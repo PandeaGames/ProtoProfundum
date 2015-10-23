@@ -10,6 +10,7 @@ public class PathContainer : MonoBehaviour {
 	private PathNode _head;
 	private PathNode _tail;
 	private PathObject[] _pathObjects;
+
 	// Use this for initialization
 	void Awake () {
 		_pathObjects = new PathObject[objects.Length];
@@ -103,8 +104,9 @@ public class PathContainer : MonoBehaviour {
 
 		return _nodes [0];
 	}
-	public void Seek(float position, float targetTime)
+	public void Seek(float pos, float targetTime)
 	{
+
 		//targetTime = targetTime * loop;
 		//if (closedLoop) {
 		//	targetTime += Vector3.Distance(head.transform.position, tail.transform.position) / obj.speed;
@@ -171,4 +173,5 @@ public class PathContainer : MonoBehaviour {
 			}
 		}
 	}
+
 }

@@ -17,15 +17,18 @@ public class CameraAnchorControl : MonoBehaviour {
 	private float _pitch;
 	private float _yaw;
 	private float _r;
+	private MainCameraMovement camMovement;
+	private Vector3 innerOffsetVector;
 	// Use this for initialization
 	void Start () {
+		camMovement = FindObjectOfType<MainCameraMovement> ();
+		innerOffsetVector = innerOffset.transform.position;
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		if (target == null)
 			return;
-
 		float pitchDelta =  Mathf.DeltaAngle(pitchFloor, _pitch / (Mathf.PI/180));
 		float pitchWindow =  Mathf.DeltaAngle(pitchFloor, pitchCeiling);
 		//_r = radius - ((radius * radiusWindow)) * (1 - pitchDelta / pitchWindow);
@@ -39,8 +42,6 @@ public class CameraAnchorControl : MonoBehaviour {
 			(float)(target.transform.position.y + .25 + _r * Mathf.Sin(p)),
 			(float)(target.transform.position.z+ _r *Mathf.Cos(p) * Mathf.Sin(_yaw)));
 
-		_r = checkRadius(pos);
-
 		pos = new Vector3(
 			(float)(target.transform.position.x + _r * Mathf.Cos(p) * Mathf.Cos(_yaw)), 
 			(float)(target.transform.position.y + .25 + _r * Mathf.Sin(p)),
@@ -48,7 +49,9 @@ public class CameraAnchorControl : MonoBehaviour {
 
 		transform.position = pos;
 		transform.LookAt (lookTarget.transform.position);
-		pos += applyOffset (offset);
+		Debug.Log (offset * camMovement.GetRayDepthPercent());
+
+		pos += applyOffset (offset * camMovement.GetRayDepthPercent());
 
 		transform.position = pos;
 		_pitch += (Input.GetAxis("JoystickRightVertical") / damp) - (Input.GetAxis("MouseVertical") / mouseDamp);
@@ -62,36 +65,6 @@ public class CameraAnchorControl : MonoBehaviour {
 		{
 			_pitch = pitchFloor *(Mathf.PI/180);
 		}
-	}
-	private float checkRadius(Vector3 pos)
-	{
-		/*RaycastHit hit = new RaycastHit ();
-		float deploymentHeight = 10;
-		Ray ray = new Ray (transform.position + transform.forward * .55f + transform.up * 2.5f, Vector3.down);
-		if (Physics.Raycast (ray, out hit, deploymentHeight, mask)) {
-			float distanceToGround = hit.distance;
-			if (Input.GetKey (KeyCode.Space)) {
-				if(distanceToGround>1.6 && distanceToGround < 2)
-				{
-					//climb up
-					ChangeState (HeroStates.Climbing);
-				}
-				if(distanceToGround>5.0 && distanceToGround < 5.4)
-				{
-					//climb down
-					ChangeState (HeroStates.ClimbingDown);
-				}
-			}
-		}*/
-		RaycastHit hit = new RaycastHit ();
-		Ray ray = new Ray (innerOffset.transform.position, target.transform.position - transform.position );
-		if (Physics.Raycast (ray, out hit, _r, mask)) {
-			Debug.Log (hit.distance);
-			Debug.DrawRay (ray.origin, ray.direction * _r, Color.red);
-			return hit.distance;
-		}
-		Debug.DrawRay (ray.origin, ray.direction * _r, Color.green);
-		return _r;
 	}
 
 	private Vector3 applyOffset(Vector3 pos)

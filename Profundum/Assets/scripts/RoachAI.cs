@@ -30,8 +30,10 @@ public class RoachAI : MonoBehaviour {
 	private Vector3 agroOffset;
 	private float agroOffsetRange = 1;
 	private PlayerHealthController playerHealthController;
+	private float _ran = Random.Range(1, 2);
 	void Awake()
 	{
+		transform.rotation = Quaternion.Euler (new Vector3 (Random.Range(0, 30), Random.Range (0, 360)));
 		playerHealthController = FindObjectOfType<PlayerHealthController> ();
 		State = RoachStates.Idle;
 		agroOffset = new Vector3 (
@@ -91,7 +93,8 @@ public class RoachAI : MonoBehaviour {
 
 		
 		lightAgroCollider = _lightRange.col;
-		transform.LookAt (lightAgroCollider.gameObject.transform.position);  
+		transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.LookRotation (lightAgroCollider.gameObject.transform.position, transform.position),0.2f);
+		//transform.rotation = Quaternion.Lerp (lightAgroCollider.gameObject.transform.position,);  
 		
 		if (Vector3.Distance (transform.position, lightAgroCollider.gameObject.transform.position) < _agroColliderRange.x) {  
 			Vector3 force = (transform.position - lightAgroCollider.gameObject.transform.position);  
@@ -105,7 +108,7 @@ public class RoachAI : MonoBehaviour {
 			if (force.y < 0) {  
 				force.y = force.y * -1;
 			}  
-			GetComponent<Rigidbody> ().AddForce (force, ForceMode.Impulse);
+			GetComponent<Rigidbody> ().AddForce (force * _ran, ForceMode.Impulse);
 		}
 	}
 	void Agro_Update ()
@@ -150,6 +153,7 @@ public class RoachAI : MonoBehaviour {
 		if (Time.time - spawnTime > lifeTime) {
 			Destroy (gameObject);
 		}
+		GetComponent<Rigidbody> ().AddForce (transform.forward * 2);
 	}
 	void OnCollisionEnter (Collision col)
 	{

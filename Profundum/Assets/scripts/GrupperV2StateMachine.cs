@@ -54,7 +54,8 @@ public class GrupperV2StateMachine : StateBehaviour {
 	private float attackTelegraphEnd;
 	private float attackTelegraphTime = 1;
 	private PlayerHealthController playerHealthController;
-
+	private Vector3 _oldPosition = new Vector3();
+	private Vector3 _deltaPosition = new Vector3();
 
 	void Start()
 	{
@@ -108,7 +109,6 @@ public class GrupperV2StateMachine : StateBehaviour {
 
 	void DoAttack()
 	{
-		Debug.Log ("DoAttack");
 	}
 
 	void AttackRecovering_Update()
@@ -141,6 +141,8 @@ public class GrupperV2StateMachine : StateBehaviour {
 	}
 
 	void AttackTelegraphing_Enter(){
+		SendMessage ("Audio_AttackTelegraphEnter");
+		transform.LookAt(agroRange.col.gameObject.transform.position);
 		GetComponent<Rigidbody> ().velocity = Vector3.zero;
 		_attackPosition = _player.transform.position;
 		attackTelegraphEnd = Time.time + attackTelegraphTime;
@@ -154,26 +156,35 @@ public class GrupperV2StateMachine : StateBehaviour {
 
 	void Attacking_Enter()
 	{
-		SendMessage ("DoAttack");
+		SendMessage ("Audio_DoAttack");
 	}
 
 	void Agro_Enter()
 	{
-		transform.LookAt(agroRange.col.gameObject.transform.position);
+		SendMessage ("Audio_AgroEnter");
+		//transform.LookAt(agroRange.col.gameObject.transform.position);
 	}
 
 	void Agro_Update()
 	{
-		transform.LookAt(_player.transform.position);
-		transform.rotation.Set (0, transform.rotation.y, 0, 0);
+		//transform.LookAt(_player.transform.position);
+		//transform.rotation.Set (0, transform.rotation.y, 0, 0);
+
+		RotateByMovement (0.5f);
+
+		float force = 4f;
 		
-		Vector3 force = transform.forward * 0.1f;
-		
-		GetComponent<Rigidbody> ().AddForce (force, ForceMode.Impulse);
+		//GetComponent<Rigidbody> ().AddForce (force, ForceMode.Impulse);
+
+		GetComponent<Rigidbody> ().AddForce ((_player.transform.position - transform.position).normalized * force * Time.smoothDeltaTime, ForceMode.Impulse);
 
 		if (canAttack) 
 		{
 			ChangeState(GrupperStates.AttackTelegraphing);
+		}
+		if (lightAgro == false)
+		{
+			ChangeState(GrupperStates.Searching);
 		}
 	}
 
@@ -210,32 +221,43 @@ public class GrupperV2StateMachine : StateBehaviour {
 			rb.AddForce(force, ForceMode.Impulse);
 		}
 	}
-
+	void Searching_Enter()
+	{
+		SendMessage ("Audio_SearchingEnter");
+	}
 	void Searching_Update()
 	{
-		if (lightAgro ==  true) 
+		if (lightAgro ==  true || lightClose == true) 
 		{
-			float dy = Mathf.Abs(pathNode.transform.position.y - _player.transform.position.y);
-			if(dy<0.2f)
+			float dy = Mathf.Abs(transform.position.y - _player.transform.position.y);
+
+			Vector3 dirFromAtoB = (transform.position - _player.transform.position).normalized;
+			float dotProd = Vector3.Dot(dirFromAtoB, transform.forward);
+
+			Debug.Log (dotProd+":"+dy);
+
+			if(dy<0.35f && dotProd < -0.8 && lightAgro || dy<0.35f && lightClose)
 				ChangeState(GrupperStates.Agro);
 		}
-		transform.LookAt(pathNode.transform.position);
 
 		transform.position = Vector3.MoveTowards(transform.position, pathHead.transform.position, 0.05f);
 
-		Vector3 force = transform.forward * 0.1f;
-		
-		//GetComponent<Rigidbody> ().AddForce (force, ForceMode.Impulse);
+		RotateByMovement ();
 
-		if (Vector3.Distance (transform.position, pathNode.transform.position) < .25) {
-			pathNode = pathNode.next;
-		}
+		Vector3 force = transform.forward * 0.1f;
 	}
 
 	void Feeding_Update()
 	{
 	}
-
+	void RotateByMovement(float speed = 0.05f)
+	{
+		if (_oldPosition != transform.position) {
+			Vector3 deltaPosition =  transform.position - _oldPosition;
+			transform.rotation = Quaternion.Lerp(transform.rotation,Quaternion.LookRotation (deltaPosition), speed);
+			_oldPosition = transform.position;
+		}
+	}
 	void OnCollisionEnter(Collision collision)
 	{
 		if (collision.gameObject.tag == "Player" && (GrupperStates)GetState () == GrupperStates.Attacking) 

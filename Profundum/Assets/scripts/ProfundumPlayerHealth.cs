@@ -13,6 +13,5 @@ public class ProfundumPlayerHealth : PlayerHealthController {
 			_t += Time.deltaTime;
 		}
 		_death = _t > deathTimer;
-		Debug.Log (_death);
 	}
 }

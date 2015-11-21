@@ -28,6 +28,7 @@ public class GrupperV2StateMachine : StateBehaviour {
 	public GameObject path;
 	public GameObject pathHead;
 
+
 	private PathNode pathNode;
 	private PathContainer pathContainer;
 	private SphereCollider _agroCollider;
@@ -234,8 +235,6 @@ public class GrupperV2StateMachine : StateBehaviour {
 			Vector3 dirFromAtoB = (transform.position - _player.transform.position).normalized;
 			float dotProd = Vector3.Dot(dirFromAtoB, transform.forward);
 
-			Debug.Log (dotProd+":"+dy);
-
 			if(dy<0.35f && dotProd < -0.8 && lightAgro || dy<0.35f && lightClose)
 				ChangeState(GrupperStates.Agro);
 		}
@@ -267,4 +266,11 @@ public class GrupperV2StateMachine : StateBehaviour {
 			ChangeState(GrupperStates.AttackRecovering);
 		}
 	}
+	public void ResetPathGroup(PathGroup pathGroup)
+	{
+		if (pathGroup == pathContainer.pathGroup) {
+			transform.position = pathHead.transform.position;
+		}
+	}
+
 }

@@ -49,7 +49,6 @@ public class CameraAnchorControl : MonoBehaviour {
 
 		transform.position = pos;
 		transform.LookAt (lookTarget.transform.position);
-		Debug.Log (offset * camMovement.GetRayDepthPercent());
 
 		pos += applyOffset (offset * camMovement.GetRayDepthPercent());
 

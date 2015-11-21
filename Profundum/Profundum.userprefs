@@ -1,10 +1,14 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\scripts\RoachAI.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\scripts\PathContainer.cs">
     <Files>
-      <File FileName="Assets\scripts\GrupperV2StateMachine.cs" Line="179" Column="38" />
-      <File FileName="Assets\scripts\GrupperAudioController.cs" Line="13" Column="17" />
-      <File FileName="Assets\scripts\RoachAI.cs" Line="33" Column="42" />
+      <File FileName="Assets\scripts\PathContainer.cs" Line="11" Column="25" />
+      <File FileName="Assets\scripts\RoachAI.cs" Line="158" Column="23" />
+      <File FileName="Assets\scripts\PathGroup.cs" Line="12" Column="53" />
+      <File FileName="Assets\scripts\ResetPathTrigger.cs" Line="21" Column="40" />
+      <File FileName="Assets\scripts\CameraAnchorControl.cs" Line="50" Column="28" />
+      <File FileName="Assets\scripts\ProfundumPlayerHealth.cs" Line="7" Column="2" />
+      <File FileName="Assets\scripts\PathObject.cs" Line="7" Column="17" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -10,6 +10,7 @@ public class PathContainer : MonoBehaviour {
 	private PathNode _head;
 	private PathNode _tail;
 	private PathObject[] _pathObjects;
+	private PathGroup _pathGroup;
 
 	// Use this for initialization
 	void Awake () {
@@ -173,5 +174,8 @@ public class PathContainer : MonoBehaviour {
 			}
 		}
 	}
-
+	public PathGroup pathGroup{
+		get {return _pathGroup;}
+		set { _pathGroup = value;}
+	}
 }

@@ -20,7 +20,7 @@ Platform assembly: C:\Users\Colin\ProtoProfundum\Profundum\Profundum_Data\Manage
 Loading C:\Users\Colin\ProtoProfundum\Profundum\Profundum_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
 Platform assembly: C:\Users\Colin\ProtoProfundum\Profundum\Profundum_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
 Loading C:\Users\Colin\ProtoProfundum\Profundum\Profundum_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
-- Completed reload, in  0.770 seconds
+- Completed reload, in  0.059 seconds
 desktop: 2160x1440 59Hz; virtual: 2160x1440 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
@@ -40,54 +40,14 @@ Wwise: Bank Profundum failed to load (AK_FileNotFound)
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
 
 Setting up 1 worker threads for Enlighten.
-  Thread -> id: 2748 -> priority: 1 
+  Thread -> id: 2200 -> priority: 1 
 Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 20.552448 ms
+UnloadTime: 4.792320 ms
 WwiseUnity: Initialize sound engine ...
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
 
 WwiseUnity: Failed to initialize the sound engine. Abort.
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
-
-Method with name <Awake>m__2 could not resolve a matching state. Check method spelling
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
-
-Method with name <Awake>m__3 could not resolve a matching state. Check method spelling
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
-
-Method with name <Awake>m__4 could not resolve a matching state. Check method spelling
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
-
-Method with name <Awake>m__5 could not resolve a matching state. Check method spelling
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
-
-Method with name <Awake>m__6 could not resolve a matching state. Check method spelling
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
-
-Method with name <Awake>m__7 could not resolve a matching state. Check method spelling
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
-
-Method with name <Awake>m__8 could not resolve a matching state. Check method spelling
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
-
-Method with name <Awake>m__9 could not resolve a matching state. Check method spelling
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
-
-Method with name <Awake>m__A could not resolve a matching state. Check method spelling
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
-
-Method with name <Awake>m__B could not resolve a matching state. Check method spelling
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
 
@@ -208,6 +168,46 @@ Method with name <Awake>m__18 could not resolve a matching state. Check method s
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
 
 Method with name <Awake>m__19 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Method with name <Awake>m__2 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Method with name <Awake>m__3 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Method with name <Awake>m__4 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Method with name <Awake>m__5 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Method with name <Awake>m__6 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Method with name <Awake>m__7 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Method with name <Awake>m__8 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Method with name <Awake>m__9 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Method with name <Awake>m__A could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Method with name <Awake>m__B could not resolve a matching state. Check method spelling
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
 
@@ -293,7 +293,7 @@ Method with name <Awake>m__B could not resolve a matching state. Check method sp
 
 
 Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 1123.
-Total: 1.349882 ms (FindLiveObjects: 0.130964 ms CreateObjectMapping: 0.123985 ms MarkObjects: 1.000505 ms  DeleteObjects: 0.091962 ms)
+Total: 0.991472 ms (FindLiveObjects: 0.084983 ms CreateObjectMapping: 0.091962 ms MarkObjects: 0.725847 ms  DeleteObjects: 0.087446 ms)
 
 Wwise: Bank Profundum failed to load (AK_FileNotFound)
  
@@ -304,7 +304,7 @@ Unloading bank
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
 
 Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 3.318871 ms
+UnloadTime: 6.808519 ms
 WwiseUnity: Initialize sound engine ...
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
@@ -315,7 +315,595 @@ WwiseUnity: Failed to initialize the sound engine. Abort.
 
 
 Unloading 60 unused Assets to reduce memory usage. Loaded Objects now: 606.
-Total: 1.442255 ms (FindLiveObjects: 0.066508 ms CreateObjectMapping: 0.086215 ms MarkObjects: 0.743092 ms  DeleteObjects: 0.545618 ms)
+Total: 0.689309 ms (FindLiveObjects: 0.052960 ms CreateObjectMapping: 0.052960 ms MarkObjects: 0.390020 ms  DeleteObjects: 0.191725 ms)
+
+Wwise: Bank Profundum failed to load (AK_FileNotFound)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Unloading bank
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.222610 ms
+WwiseUnity: Initialize sound engine ...
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+WwiseUnity: Failed to initialize the sound engine. Abort.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Method with name <Awake>m__2 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Method with name <Awake>m__3 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Method with name <Awake>m__4 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Method with name <Awake>m__5 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Method with name <Awake>m__6 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Method with name <Awake>m__7 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Method with name <Awake>m__8 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Method with name <Awake>m__9 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Method with name <Awake>m__A could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Method with name <Awake>m__B could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Method with name <Awake>m__2 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Method with name <Awake>m__3 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Method with name <Awake>m__4 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Method with name <Awake>m__5 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Method with name <Awake>m__6 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Method with name <Awake>m__7 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Method with name <Awake>m__8 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Method with name <Awake>m__9 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Method with name <Awake>m__A could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Method with name <Awake>m__B could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Method with name <Awake>m__10 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Method with name <Awake>m__11 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Method with name <Awake>m__12 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Method with name <Awake>m__13 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Method with name <Awake>m__14 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Method with name <Awake>m__15 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Method with name <Awake>m__16 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Method with name <Awake>m__17 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Method with name <Awake>m__18 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Method with name <Awake>m__19 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Method with name <Awake>m__2 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Method with name <Awake>m__3 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Method with name <Awake>m__4 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Method with name <Awake>m__5 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Method with name <Awake>m__6 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Method with name <Awake>m__7 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Method with name <Awake>m__8 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Method with name <Awake>m__9 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Method with name <Awake>m__A could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Method with name <Awake>m__B could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Method with name <Awake>m__10 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Method with name <Awake>m__11 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Method with name <Awake>m__12 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Method with name <Awake>m__13 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Method with name <Awake>m__14 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Method with name <Awake>m__15 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Method with name <Awake>m__16 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Method with name <Awake>m__17 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Method with name <Awake>m__18 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Method with name <Awake>m__19 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Method with name <Awake>m__2 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Method with name <Awake>m__3 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Method with name <Awake>m__4 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Method with name <Awake>m__5 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Method with name <Awake>m__6 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Method with name <Awake>m__7 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Method with name <Awake>m__8 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Method with name <Awake>m__9 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Method with name <Awake>m__A could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Method with name <Awake>m__B could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 1123.
+Total: 1.347827 ms (FindLiveObjects: 0.125627 ms CreateObjectMapping: 0.116595 ms MarkObjects: 1.014052 ms  DeleteObjects: 0.090320 ms)
+
+Wwise: Bank Profundum failed to load (AK_FileNotFound)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Unloading bank
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 12.127982 ms
+WwiseUnity: Initialize sound engine ...
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+WwiseUnity: Failed to initialize the sound engine. Abort.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+
+Unloading 60 unused Assets to reduce memory usage. Loaded Objects now: 606.
+Total: 1.441842 ms (FindLiveObjects: 0.095247 ms CreateObjectMapping: 0.105921 ms MarkObjects: 0.871181 ms  DeleteObjects: 0.368261 ms)
+
+Wwise: Bank Profundum failed to load (AK_FileNotFound)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Unloading bank
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 2.981395 ms
+WwiseUnity: Initialize sound engine ...
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+WwiseUnity: Failed to initialize the sound engine. Abort.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Method with name <Awake>m__10 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Method with name <Awake>m__11 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Method with name <Awake>m__12 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Method with name <Awake>m__13 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Method with name <Awake>m__14 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Method with name <Awake>m__15 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Method with name <Awake>m__16 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Method with name <Awake>m__17 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Method with name <Awake>m__18 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Method with name <Awake>m__19 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Method with name <Awake>m__10 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Method with name <Awake>m__11 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Method with name <Awake>m__12 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Method with name <Awake>m__13 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Method with name <Awake>m__14 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Method with name <Awake>m__15 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Method with name <Awake>m__16 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Method with name <Awake>m__17 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Method with name <Awake>m__18 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Method with name <Awake>m__19 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Method with name <Awake>m__10 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Method with name <Awake>m__11 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Method with name <Awake>m__12 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Method with name <Awake>m__13 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Method with name <Awake>m__14 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Method with name <Awake>m__15 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Method with name <Awake>m__16 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Method with name <Awake>m__17 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Method with name <Awake>m__18 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Method with name <Awake>m__19 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+
+Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 722.
+Total: 1.021031 ms (FindLiveObjects: 0.080877 ms CreateObjectMapping: 0.098941 ms MarkObjects: 0.756228 ms  DeleteObjects: 0.084162 ms)
+
+Wwise: Bank Profundum failed to load (AK_FileNotFound)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Unloading bank
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 2.147573 ms
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 606.
+Total: 1.029653 ms (FindLiveObjects: 0.122753 ms CreateObjectMapping: 0.084572 ms MarkObjects: 0.757049 ms  DeleteObjects: 0.063224 ms)
+
+Wwise: Bank Profundum failed to load (AK_FileNotFound)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Unloading bank
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.802303 ms
+Method with name <Awake>m__10 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Method with name <Awake>m__11 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Method with name <Awake>m__12 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Method with name <Awake>m__13 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Method with name <Awake>m__14 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Method with name <Awake>m__15 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Method with name <Awake>m__16 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Method with name <Awake>m__17 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Method with name <Awake>m__18 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Method with name <Awake>m__19 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Method with name <Awake>m__10 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Method with name <Awake>m__11 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Method with name <Awake>m__12 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Method with name <Awake>m__13 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Method with name <Awake>m__14 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Method with name <Awake>m__15 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Method with name <Awake>m__16 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Method with name <Awake>m__17 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Method with name <Awake>m__18 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Method with name <Awake>m__19 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Method with name <Awake>m__10 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Method with name <Awake>m__11 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Method with name <Awake>m__12 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Method with name <Awake>m__13 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Method with name <Awake>m__14 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Method with name <Awake>m__15 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Method with name <Awake>m__16 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Method with name <Awake>m__17 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Method with name <Awake>m__18 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Method with name <Awake>m__19 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+
+Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 818.
+Total: 1.215220 ms (FindLiveObjects: 0.119879 ms CreateObjectMapping: 0.105921 ms MarkObjects: 0.904846 ms  DeleteObjects: 0.082520 ms)
+
+Wwise: Bank Profundum failed to load (AK_FileNotFound)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Unloading bank
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 3.023271 ms
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 606.
+Total: 0.881445 ms (FindLiveObjects: 0.081288 ms CreateObjectMapping: 0.069382 ms MarkObjects: 0.659339 ms  DeleteObjects: 0.069793 ms)
 
 Wwise: Bank Profundum failed to load (AK_FileNotFound)
  

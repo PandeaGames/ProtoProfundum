@@ -28,7 +28,7 @@ public class GrupperV2StateMachine : StateBehaviour {
 	public GameObject path;
 	public GameObject pathHead;
 
-
+	private SightController _sc;
 	private PathNode pathNode;
 	private PathContainer pathContainer;
 	private SphereCollider _agroCollider;
@@ -57,6 +57,7 @@ public class GrupperV2StateMachine : StateBehaviour {
 	private PlayerHealthController playerHealthController;
 	private Vector3 _oldPosition = new Vector3();
 	private Vector3 _deltaPosition = new Vector3();
+	private SightEye _eye;
 
 	void Start()
 	{
@@ -64,9 +65,14 @@ public class GrupperV2StateMachine : StateBehaviour {
 
 		pathContainer = path.GetComponent<PathContainer> ();
 		pathNode = pathContainer.GetClosestPath (transform.position);
+
+		_sc = FindObjectOfType<SightController> ();
 	}
 	// Use this for initialization
+
 	void Awake () {
+		_eye = GetComponent<SightEye> ();
+
 		Initialize<GrupperStates>();
 
 		//Change to our first state
@@ -122,6 +128,7 @@ public class GrupperV2StateMachine : StateBehaviour {
 
 	void AttackRecovering_Exit()
 	{
+		_eye.SetCanSee (false);
 		transform.eulerAngles = new Vector3 (transform.eulerAngles.x, 0, transform.eulerAngles.z);
 	}
 
@@ -162,10 +169,14 @@ public class GrupperV2StateMachine : StateBehaviour {
 
 	void Agro_Enter()
 	{
+		_eye.SetCanSee (true);
 		SendMessage ("Audio_AgroEnter");
 		//transform.LookAt(agroRange.col.gameObject.transform.position);
 	}
-
+	void Agro_Exit()
+	{
+		//_eye.SetCanSee (false);
+	}
 	void Agro_Update()
 	{
 		//transform.LookAt(_player.transform.position);
@@ -224,10 +235,13 @@ public class GrupperV2StateMachine : StateBehaviour {
 	}
 	void Searching_Enter()
 	{
+		_eye.SetCanSee (false);
 		SendMessage ("Audio_SearchingEnter");
 	}
 	void Searching_Update()
 	{
+		_eye.fullAwareness = false;
+		_eye.SetCanSee (false);
 		if (lightAgro ==  true || lightClose == true) 
 		{
 			float dy = Mathf.Abs(transform.position.y - _player.transform.position.y);
@@ -235,8 +249,19 @@ public class GrupperV2StateMachine : StateBehaviour {
 			Vector3 dirFromAtoB = (transform.position - _player.transform.position).normalized;
 			float dotProd = Vector3.Dot(dirFromAtoB, transform.forward);
 
-			if(dy<0.35f && dotProd < -0.8 && lightAgro || dy<0.35f && lightClose)
-				ChangeState(GrupperStates.Agro);
+			if(lightClose)
+			{
+				_eye.fullAwareness = true;
+			}
+
+
+			if(dy<0.35f && dotProd < -0.8 && lightAgro || dy<0.35f && lightClose){
+				_eye.SetCanSee (true);
+				if(_sc.SightActive())
+				{
+					ChangeState(GrupperStates.Agro);
+				}
+			}
 		}
 
 		transform.position = Vector3.MoveTowards(transform.position, pathHead.transform.position, 0.05f);

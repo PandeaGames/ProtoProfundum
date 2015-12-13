@@ -50,6 +50,9 @@
      <Compile Include="Assets\LevelPortal.cs" />
      <Compile Include="Assets\MonsterLove\StateMachine\StateBehaviour.cs" />
      <Compile Include="Assets\MonsterLove\StateMachine\StateEngine.cs" />
+     <Compile Include="Assets\SightController.cs" />
+     <Compile Include="Assets\SightEye.cs" />
+     <Compile Include="Assets\SightUI.cs" />
      <Compile Include="Assets\Wwise\Deployment\API\Generated\Common\AKRESULT.cs" />
      <Compile Include="Assets\Wwise\Deployment\API\Generated\Common\AkActionOnEventType.cs" />
      <Compile Include="Assets\Wwise\Deployment\API\Generated\Common\AkAudioFormat.cs" />

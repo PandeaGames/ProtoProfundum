@@ -1,12 +1,14 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class LightBubble : MonoBehaviour {
+public class LightBubble : MonoBehaviour 
+{
 	public float startScale = 2;
 	public float endScale = 10;
 	public float animTime = 5;
 	public AnimationCurve expandCurve;
 
+	private bool _heroInside = false;
 	private float _spawnTime;
 	private float _delta;
 	private float _scale;
@@ -22,6 +24,20 @@ public class LightBubble : MonoBehaviour {
 			_scale = startScale + expandCurve.Evaluate(_delta/animTime) * (endScale - startScale);
 			transform.localScale = new Vector3 (_scale, _scale, _scale);
 		}
-
+	}
+	void OnTriggerEnter (Collider collider)
+	{
+		if (collider.tag == "Hero") {
+			_heroInside = true;
+		}
+	}
+	void OnTriggerExit (Collider collider)
+	{
+		if (collider.tag == "Hero") {
+			_heroInside = false;
+		}
+	}
+	public bool HeroInside{
+		get {return _heroInside;}
 	}
 }

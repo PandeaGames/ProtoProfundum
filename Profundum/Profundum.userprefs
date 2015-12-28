@@ -1,19 +1,19 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\SightController.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\scripts\LightBubble.cs">
     <Files>
-      <File FileName="Assets\SightUI.cs" Line="4" Column="39" />
-      <File FileName="Assets\scripts\PathContainer.cs" Line="1" Column="1" />
-      <File FileName="Assets\scripts\RoachAI.cs" Line="1" Column="1" />
-      <File FileName="Assets\scripts\PathGroup.cs" Line="13" Column="3" />
-      <File FileName="Assets\scripts\ResetPathTrigger.cs" Line="1" Column="1" />
-      <File FileName="Assets\scripts\CameraAnchorControl.cs" Line="1" Column="1" />
-      <File FileName="Assets\scripts\ProfundumPlayerHealth.cs" Line="1" Column="1" />
-      <File FileName="Assets\scripts\PathObject.cs" Line="1" Column="1" />
-      <File FileName="Assets\SightController.cs" Line="32" Column="12" />
-      <File FileName="Assets\SightEye.cs" Line="25" Column="27" />
-      <File FileName="Assets\scripts\GrupperV2StateMachine.cs" Line="254" Column="5" />
-      <File FileName="Assets\scripts\BloodUI.cs" Line="6" Column="31" />
+      <File FileName="Assets\AKCustom_ActorAudioController.cs" Line="19" Column="3" />
+      <File FileName="Assets\AKCustom_ActorAudioEmitter.cs" Line="8" Column="2" />
+      <File FileName="Assets\SightController.cs" Line="30" Column="6" />
+      <File FileName="Assets\scripts\GrupperAudioController.cs" Line="1" Column="1" />
+      <File FileName="Assets\scripts\GrupperV2StateMachine.cs" Line="1" Column="1" />
+      <File FileName="Assets\scripts\MainCameraMovement.cs" Line="1" Column="1" />
+      <File FileName="Assets\SightAudioController.cs" Line="27" Column="66" />
+      <File FileName="Assets\scripts\RoachController.cs" Line="15" Column="40" />
+      <File FileName="Assets\scripts\RoachDarkController.cs" Line="12" Column="6" />
+      <File FileName="Assets\EnvironmentAudioController.cs" Line="26" Column="23" />
+      <File FileName="Assets\scripts\DomeCrystal.cs" Line="26" Column="13" />
+      <File FileName="Assets\scripts\LightBubble.cs" Line="6" Column="30" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

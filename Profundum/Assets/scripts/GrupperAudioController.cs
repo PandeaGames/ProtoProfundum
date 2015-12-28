@@ -16,6 +16,7 @@ public class GrupperAudioController : MonoBehaviour {
 
 	void Audio_DoAttack()
 	{
+		//AkSoundEngine.Set
 		AkSoundEngine.PostEvent("Play_Attack", gameObject);
 	}
 	void Audio_AgroEnter()

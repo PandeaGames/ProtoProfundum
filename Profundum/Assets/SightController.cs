@@ -64,4 +64,8 @@ public class SightController : MonoBehaviour {
 		}
 		return false;
 	}
+	void ResetSceneData()
+	{
+		_eyes = FindObjectsOfType<SightEye> ();
+	}
 }

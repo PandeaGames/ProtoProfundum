@@ -12,7 +12,7 @@ public class PlayerHealthController : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	public virtual void Update () {
 		if (_health < health) {
 			_health += rebound;
 		} else if (_health > health) {

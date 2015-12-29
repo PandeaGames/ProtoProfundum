@@ -30,6 +30,9 @@ public class LightBubble : MonoBehaviour
 		if (collider.tag == "Hero") {
 			_heroInside = true;
 		}
+		if (collider.tag == "Roach") {
+			collider.gameObject.SendMessage("LightDome_Trigger", this.gameObject);
+		}
 	}
 	void OnTriggerExit (Collider collider)
 	{

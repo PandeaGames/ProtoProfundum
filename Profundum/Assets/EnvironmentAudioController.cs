@@ -5,6 +5,7 @@ public class EnvironmentAudioController : MonoBehaviour {
 	private RoachController _rc;
 	private HeroStateMachine _hero;
 	private DomeCrystal[] _crystals;
+	private DomeStateController _dsc;
 
 	private bool _isInsideBubble = false;
 	private bool _isNearCrystal = false;
@@ -14,6 +15,7 @@ public class EnvironmentAudioController : MonoBehaviour {
 		_rc = FindObjectOfType<RoachController> ();
 		_hero = FindObjectOfType<HeroStateMachine> ();
 		_crystals = FindObjectsOfType<DomeCrystal>();
+		_dsc = FindObjectOfType<DomeStateController> ();
 	}
 	
 	// Update is called once per frame
@@ -27,39 +29,21 @@ public class EnvironmentAudioController : MonoBehaviour {
 			AkSoundEngine.PostEvent("Environment_InDarkness_True", _hero.gameObject);
 		}
 
-		//Habndling the audio involved with light crystals and the Domes created when they are spawned. 
-		bool isInsideBubble = false;
-		bool isNearCrystal = false;
-		foreach (DomeCrystal crystal in _crystals) {
-			if(crystal.LightBubble)
-			{
-				if(crystal.LightBubble.HeroInside)
-				{
-					isInsideBubble = true;
-				}
-			}
-			else
-			{
-				if(crystal.HeroInside)
-				{
-					isNearCrystal = true;
-				}
-			}
-		}
-		if (_isInsideBubble && !isInsideBubble) {
+		if (_isInsideBubble && !_dsc.IsInsideDome) {
 			_isInsideBubble = false;
 			AkSoundEngine.PostEvent("Environment_IsInsideBubble_False", _hero.gameObject);
 		}
-		if (!_isInsideBubble && isInsideBubble) {
+		if (!_isInsideBubble && _dsc.IsInsideDome) {
 			_isInsideBubble = true;
 			AkSoundEngine.PostEvent("Environment_IsInsideBubble_True", _hero.gameObject);
 		}
-		if (_isNearCrystal && !isNearCrystal) {
+		if (_isNearCrystal && !_dsc.IsNearCrystal) {
 			_isNearCrystal = false;
-			AkSoundEngine.PostEvent("Environment_IsInsideBubble_False", _hero.gameObject);
+			AkSoundEngine.PostEvent("Environment_IsNearCrystal_False", _hero.gameObject);
 		}
-		if (!_isNearCrystal && isNearCrystal) {
+		if (!_isNearCrystal && _dsc.IsNearCrystal) {
 			_isNearCrystal = true;
+			AkSoundEngine.PostEvent("Environment_IsNearCrystal_True", _hero.gameObject);
 		}
 	}
 }

@@ -31,7 +31,18 @@ public class AKCustom_ActorAudioController : MonoBehaviour {
 				AkSoundEngine.SetObjectObstructionAndOcclusion(actor.gameObject, 0, 0f, 0f);
 				Debug.DrawRay (ray.origin, ray.direction * radius, Color.green);
 			}
-
 		}
+	}
+	void ResetSceneData()
+	{
+		Debug.Log ("ResetSceneData: "+_actors.Length);
+		_actors = FindObjectsOfType<AKCustom_ActorAudioEmitter>();
+		Debug.Log ("ResetSceneData The Second: "+_actors.Length);
+		_listener = FindObjectOfType<AkAudioListener> ();
+	}
+	void ClearSceneData()
+	{
+		Debug.Log ("ClearSceneData: "+_actors.Length);
+		_actors = new AKCustom_ActorAudioEmitter[0];
 	}
 }

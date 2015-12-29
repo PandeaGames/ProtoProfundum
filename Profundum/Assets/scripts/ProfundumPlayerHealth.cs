@@ -5,13 +5,10 @@ public class ProfundumPlayerHealth : PlayerHealthController {
 	public float deathTimer = 5;
 	private float _t;
 
-
 	// Update is called once per frame
-	void Update () 
+	public override void Update () 
 	{
-		if (getHealthRatio () != 1) {
-			_t += Time.deltaTime;
-		}
-		_death = _t > deathTimer;
+		_death = getHealthRatio () == 0;
+		base.Update ();
 	}
 }

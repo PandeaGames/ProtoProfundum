@@ -17,6 +17,7 @@ public class RoachDarkController  : StateBehaviour
 	public float spawnRate = 2;//seconds
 	public float spawnRadius = 5;
 
+	private DomeStateController _dsc;
 	private RoachController controller;
 	private double nextSpawn = 0;
 	private Vector3 spawnOffset = new Vector3(0, 3, 0);
@@ -24,6 +25,7 @@ public class RoachDarkController  : StateBehaviour
 	void Start () 
 	{
 		controller = GetComponent<RoachController>();
+		_dsc = FindObjectOfType<DomeStateController> ();
 	}
 
 	void Awake()
@@ -40,7 +42,7 @@ public class RoachDarkController  : StateBehaviour
 		if (controller.isLit (hero.transform.position)) {
 			ChangeState (RoachDarkStates.Lit);
 		} else {
-			if(Time.time > nextSpawn)
+			if(Time.time > nextSpawn && !_dsc.IsInsideDome)
 			{
 				nextSpawn = Time.time + spawnRate;
 				SpawnRoach();
@@ -62,6 +64,8 @@ public class RoachDarkController  : StateBehaviour
 			ChangeState (RoachDarkStates.Unlit);
 		}
 	}
+	void ClearSceneData()
+	{
 
-
+	}
 }

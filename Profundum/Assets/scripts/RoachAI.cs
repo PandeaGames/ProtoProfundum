@@ -11,12 +11,14 @@ public class RoachAI : MonoBehaviour {
 		Scared,
 		Agro, 
 		Attack, 
-		PostAttack
+		PostAttack, 
+		DomeScared
 	}
 
 	public GameObject agroRangeObj;
 	public float lifeTime = 5;
 
+	private bool hasBeenScared = false;
 	private CollisionDelegate _lightRange;
 	private CollisionDelegate _agroRange;
 	private bool lightClose;
@@ -31,6 +33,7 @@ public class RoachAI : MonoBehaviour {
 	private float agroOffsetRange = 1;
 	private PlayerHealthController playerHealthController;
 	private float _ran = Random.Range(1, 2);
+	private GameObject _dome;
 	void Awake()
 	{
 		transform.rotation = Quaternion.Euler (new Vector3 (Random.Range(0, 30), Random.Range (0, 360)));
@@ -80,17 +83,21 @@ public class RoachAI : MonoBehaviour {
 		case RoachStates.PostAttack:
 			PostAttack_Update();
 			break;
+		case RoachStates.DomeScared:
+			DomeScared_Update();
+			break;
 		}
 	}
 	void Scared_Update ()
 	{
+		hasBeenScared = true;
+
 		spawnTime = Time.time;
 		if (_lightRange.col != null && _lightRange.col.gameObject == null || _lightRange.col == null) {
 			State = RoachStates.Idle;
 			lightClose = false;
 			return;
 		}
-
 		
 		lightAgroCollider = _lightRange.col;
 		transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.LookRotation (lightAgroCollider.gameObject.transform.position, transform.position),0.2f);
@@ -111,6 +118,11 @@ public class RoachAI : MonoBehaviour {
 			GetComponent<Rigidbody> ().AddForce (force * _ran, ForceMode.Impulse);
 		}
 	}
+	void DomeScared_Update()
+	{
+		transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.LookRotation (_dome.transform.position, transform.position),0.5f);
+		GetComponent<Rigidbody> ().AddForce (new Vector3(1, 1, 1) * _ran, ForceMode.Impulse);
+	}
 	void Agro_Update ()
 	{
 		if (_agroRange.col == null) 
@@ -121,8 +133,6 @@ public class RoachAI : MonoBehaviour {
 		agroCollider = _agroRange.col;
 
 		transform.LookAt (agroCollider.transform.position + agroOffset);
-
-		//transform.rotation.SetLookRotation (agroCollider.transform.position);
 
 		Vector3 force = transform.forward * 0.25f;
 
@@ -147,10 +157,12 @@ public class RoachAI : MonoBehaviour {
 		{
 			State = RoachStates.Scared;
 		}
-		if (agroClose) {
+		if (agroClose) 
+		{
 			State = RoachStates.Agro;
 		}
-		if (Time.time - spawnTime > lifeTime) {
+		if (Time.time - spawnTime > lifeTime) 
+		{
 			Destroy (gameObject);
 		}
 		GetComponent<Rigidbody> ().AddForce (transform.forward * 2);
@@ -161,5 +173,15 @@ public class RoachAI : MonoBehaviour {
 		{
 			playerHealthController.doDamage(10);
 		}
+	}
+	void LightDome_Trigger(GameObject obj)
+	{
+
+		_dome = obj;
+		State = RoachStates.DomeScared;
+	}
+	void OnTriggerEnter(Collider col)
+	{
+
 	}
 }

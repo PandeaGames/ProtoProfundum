@@ -18,17 +18,20 @@ public class RoachController : MonoBehaviour {
 	// Use this for initialization
 	void Start () 
 	{
-
+		_setupDataField ();
+	}
+	private void _setupDataField()
+	{
 		_x = (int)(GetComponent<Collider> ().bounds.size.x / resolution);
 		_y = (int)(GetComponent<Collider> ().bounds.size.y / resolution);
 		_z = (int)(GetComponent<Collider> ().bounds.size.z / resolution);
-
+		
 		_worldX = (int)(GetComponent<Collider> ().bounds.center.x - GetComponent<Collider> ().bounds.extents.x);
 		_worldY = (int)(GetComponent<Collider> ().bounds.center.y - GetComponent<Collider> ().bounds.extents.y);
 		_worldZ = (int)(GetComponent<Collider> ().bounds.center.z - GetComponent<Collider> ().bounds.extents.z);
-
+		
 		spawnMap = new double[_x, _y, _z];
-
+		
 		lights = FindObjectsOfType<RoachLight> ();
 		Vector3 pos = new Vector3 ();
 		Quaternion rot = new Quaternion ();
@@ -147,5 +150,11 @@ public class RoachController : MonoBehaviour {
 				}
 			}
 		}
+	}
+	void ResetSceneData()
+	{
+		AreaCenter center = FindObjectOfType<AreaCenter> ();
+		transform.position = center.transform.position;
+		_setupDataField ();
 	}
 }

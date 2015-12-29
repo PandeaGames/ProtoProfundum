@@ -15,14 +15,20 @@ namespace AssemblyCSharp
 {
 	public class HeroShooter:Shooter
 	{
+		private ShootTargetting _targetting;
 		public GameObject anchor;
 		public HeroShooter ()
 		{
-		
+
+		}
+		void Start()
+		{
+			_targetting = FindObjectOfType<ShootTargetting> ();
 		}
 		protected override Quaternion getProtectileRotation()
 		{
-			return Camera.main.transform.rotation;
+			spawn.transform.LookAt (_targetting.transform.position);
+			return base.getProtectileRotation ();
 		}
 	}
 }

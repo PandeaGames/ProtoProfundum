@@ -3,12 +3,12 @@ using System.Collections;
 using UnityEngine.UI;
 
 public class BloodUI : MonoBehaviour {
-	private SpriteRenderer image;
+	private Image image;
 	private PlayerHealthController playerHealthController;
 	// Use this for initialization
 	void Start () {
 		playerHealthController = FindObjectOfType<PlayerHealthController> ();
-		image = GetComponent<SpriteRenderer>();
+		image = GetComponent<Image>();
 	}
 
 	// Update is called once per frame

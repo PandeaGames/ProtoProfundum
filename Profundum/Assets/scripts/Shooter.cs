@@ -6,10 +6,6 @@ public class Shooter : MonoBehaviour {
 	public GameObject spawn;
 
 	private bool _hasShot;
-	// Use this for initialization
-	void Start () {
-		
-	}
 	
 	// Update is called once per frame
 	void Update () {

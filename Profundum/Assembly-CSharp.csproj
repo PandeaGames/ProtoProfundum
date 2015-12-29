@@ -61,6 +61,7 @@
      <Compile Include="Assets\LoadLevelAnchorStart.cs" />
      <Compile Include="Assets\MonsterLove\StateMachine\StateBehaviour.cs" />
      <Compile Include="Assets\MonsterLove\StateMachine\StateEngine.cs" />
+     <Compile Include="Assets\ShootTargetting.cs" />
      <Compile Include="Assets\SightAudioController.cs" />
      <Compile Include="Assets\SightController.cs" />
      <Compile Include="Assets\SightEye.cs" />

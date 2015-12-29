@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class SightUI : MonoBehaviour {
 	public GameObject sightIcon;
@@ -17,8 +18,8 @@ public class SightUI : MonoBehaviour {
 
 		//sightIcon.GetComponent<SpriteRenderer>().enabled = _sc.IsInSight ();
 
-		Color c = sightIcon.GetComponent<SpriteRenderer>().color;
+		Color c = sightIcon.GetComponent<Image>().color;
 		c.a = _sc.IsInSight () ? 1:0.3f;
-		sightIcon.GetComponent<SpriteRenderer>().color = c;
+		sightIcon.GetComponent<Image>().color = c;
 	}
 }

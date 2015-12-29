@@ -47,6 +47,7 @@ public class HeroMovementControls : StateBehaviour
 	public LayerMask mask;
 	public int climbingLayer;
 	public int normalLayer;
+	public GameObject bloodPrefab;
 	public HeroMovementControls ()
 	{
 	}
@@ -285,6 +286,10 @@ public class HeroMovementControls : StateBehaviour
 		GetComponent<Rigidbody> ().freezeRotation = false;
 		animator.SetBool ("Death", true);
 		animator.applyRootMotion = false;
+
+		GameObject blood = Instantiate<GameObject> (bloodPrefab);
+		blood.transform.parent = transform.parent;
+		blood.transform.position = transform.position;
 	}
 }
 

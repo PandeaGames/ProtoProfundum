@@ -36,8 +36,9 @@ public class HeroMovementControls : StateBehaviour
 	private float _control_angle_delta;
 	private Animator animator;
 	private float capsuleRadius;
+	private CameraAnchorControl camAnchorControl;
 
-
+	public GameObject ragDoll;
 	public float maxRunSpeed = 5;
 	public float maxWalkSpeed = 2.5f;
 	public float friction = 1.20f;
@@ -48,6 +49,7 @@ public class HeroMovementControls : StateBehaviour
 	public int climbingLayer;
 	public int normalLayer;
 	public GameObject bloodPrefab;
+
 	public HeroMovementControls ()
 	{
 	}
@@ -62,6 +64,7 @@ public class HeroMovementControls : StateBehaviour
 
 	void Start()
 	{
+		camAnchorControl = FindObjectOfType<CameraAnchorControl> ();
 		climbingLayer = LayerMask.NameToLayer ("HeroAlt");
 		normalLayer = gameObject.layer;
 		animator = GetComponent<Animator>();
@@ -281,15 +284,28 @@ public class HeroMovementControls : StateBehaviour
 	}
 	public void Death()
 	{
+		camAnchorControl.target = (GameObject)Instantiate (ragDoll, transform.position, transform.rotation);
+		camAnchorControl.lookTarget = camAnchorControl.target;
+		//camAnchorControl.target.GetComponent<Rigidbody> ().AddForce (new Vector3 (1, 1, 1));
+		GetComponent<Collider> ().enabled = false;
+
 		ChangeState(HeroStates.Death);
-		GetComponent<Rigidbody> ().isKinematic = false;
-		GetComponent<Rigidbody> ().freezeRotation = false;
+		GetComponent<Rigidbody> ().isKinematic = true;
+		GetComponent<Rigidbody> ().freezeRotation = true;
+		GetComponent<Rigidbody> ().useGravity = false;
+
 		animator.SetBool ("Death", true);
-		animator.applyRootMotion = false;
 
 		GameObject blood = Instantiate<GameObject> (bloodPrefab);
 		blood.transform.parent = transform.parent;
 		blood.transform.position = transform.position;
+
+
+		SkinnedMeshRenderer[] renderers = GetComponentsInChildren<SkinnedMeshRenderer> ();
+		Debug.Log ("DEATH: "+renderers.Length);
+		foreach (SkinnedMeshRenderer renderer in renderers) {
+			renderer.enabled = false;
+		}
 	}
 }
 

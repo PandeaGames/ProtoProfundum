@@ -18,7 +18,8 @@ public class HeroMovementControls : StateBehaviour
 	{
 		Normal, 
 		Climbing, 
-		ClimbingDown
+		ClimbingDown, 
+		Death
 	}
 
 	private float _x_move = 0;
@@ -273,6 +274,17 @@ public class HeroMovementControls : StateBehaviour
 		GetComponent<Rigidbody> ().isKinematic = false;
 		GetComponent<CapsuleCollider> ().enabled = true;
 	}
+	void Death_Enter()
+	{
 
+	}
+	public void Death()
+	{
+		ChangeState(HeroStates.Death);
+		GetComponent<Rigidbody> ().isKinematic = false;
+		GetComponent<Rigidbody> ().freezeRotation = false;
+		animator.SetBool ("Death", true);
+		animator.applyRootMotion = false;
+	}
 }
 

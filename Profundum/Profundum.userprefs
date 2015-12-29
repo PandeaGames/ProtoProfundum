@@ -1,15 +1,13 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\AdditiveLevelLoad.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\scripts\HeroMovementControls.cs">
     <Files>
-      <File FileName="Assets\AdditiveLevelLoad.cs" Line="11" Column="29" />
-      <File FileName="Assets\LoadLevelAnchorEnd.cs" Line="16" Column="1" />
-      <File FileName="Assets\LevelPortal.cs" Line="6" Column="2" />
-      <File FileName="Assets\SightController.cs" Line="1" Column="1" />
-      <File FileName="Assets\AKCustom_ActorAudioController.cs" Line="1" Column="1" />
-      <File FileName="Assets\SightAudioController.cs" Line="1" Column="1" />
-      <File FileName="Assets\scripts\RoachController.cs" Line="138" Column="3" />
-      <File FileName="Assets\scripts\RoachDarkController.cs" Line="1" Column="1" />
+      <File FileName="Assets\scripts\ProfundumDeathController.cs" Line="9" Column="17" />
+      <File FileName="Assets\scripts\GrupperV2StateMachine.cs" Line="149" Column="4" />
+      <File FileName="Assets\scripts\ProfundumPlayerHealth.cs" Line="10" Column="3" />
+      <File FileName="Assets\scripts\HeroMovementControls.cs" Line="287" Column="36" />
+      <File FileName="Assets\scripts\PlayerHealthController.cs" Line="14" Column="36" />
+      <File FileName="Assets\scripts\GameDeathController.cs" Line="21" Column="16" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

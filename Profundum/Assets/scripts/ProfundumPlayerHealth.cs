@@ -8,7 +8,10 @@ public class ProfundumPlayerHealth : PlayerHealthController {
 	// Update is called once per frame
 	public override void Update () 
 	{
-		_death = getHealthRatio () == 0;
+		if (getHealthRatio () == 0) {
+			_death = true;
+		}
+		//_death = getHealthRatio () == 0;
 		base.Update ();
 	}
 }

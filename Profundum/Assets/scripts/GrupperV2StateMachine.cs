@@ -58,6 +58,7 @@ public class GrupperV2StateMachine : StateBehaviour {
 	private Vector3 _oldPosition = new Vector3();
 	private Vector3 _deltaPosition = new Vector3();
 	private SightEye _eye;
+	private bool _killAttack = false;
 
 	void Start()
 	{
@@ -158,7 +159,9 @@ public class GrupperV2StateMachine : StateBehaviour {
 
 	void AttackTelegraphing_Update(){
 		if (Time.time > attackTelegraphEnd) {
-			ChangeState(GrupperStates.Attacking);
+			ChangeState (GrupperStates.Attacking);
+		} else if (_killAttack) {
+			ChangeState (GrupperStates.Attacking);
 		}
 	}
 
@@ -242,6 +245,7 @@ public class GrupperV2StateMachine : StateBehaviour {
 	{
 		_eye.fullAwareness = false;
 		_eye.SetCanSee (false);
+		_killAttack = false;
 		if (lightAgro ==  true || lightClose == true) 
 		{
 			float dy = Mathf.Abs(transform.position.y - _player.transform.position.y);
@@ -251,6 +255,7 @@ public class GrupperV2StateMachine : StateBehaviour {
 
 			if(lightClose)
 			{
+				_killAttack = true;
 				_eye.fullAwareness = true;
 			}
 

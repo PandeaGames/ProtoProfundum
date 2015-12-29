@@ -93,6 +93,7 @@ ModelImporter:
     7400006: MyIdle
     7400008: Climb
     7400010: ClimbDown
+    7400012: Death
     9500000: //RootNode
     13700000: rdmobj00_001
     13700002: rdmobj01
@@ -113,53 +114,53 @@ ModelImporter:
     animationImportWarnings: "MuscleClip 'CharacterRig_03_New RIG' conversion warning:
       Bone length is different in avatar and animation\n\n     'LowerLeg_Left' : position
       error = 1473.283325 mm\n\n     'Foot_Left' : position error = 1721.284912 mm\n\n
-      \    'Head' : position error = 244.815140 mm\n\nMuscleClip 'CharacterRig_03_New
+      \    'Back' : position error = 2866.706055 mm\n\nMuscleClip 'CharacterRig_03_New
       RIG'conversion warning: 'group3/Hips/Back' has translation animation. It is
       not supported.\n\nMuscleClip 'CharacterRig_03_New RIG'conversion warning: 'group3/Hips/Back/Neck/Head'
       has translation animation. It is not supported.\n\n"
     animationRetargetingWarnings: 'MuscleClip ''CharacterRig_03_New RIG''conversion
-      warning: LeftLowerLeg average position error 1475.6 mm and maximum position
+      warning: LeftLowerLeg average position error 1415.4 mm and maximum position
       error 2217.4 mm at 37%
 
 
       MuscleClip ''CharacterRig_03_New RIG''conversion warning: LeftFoot average position
-      error 349.1 mm and maximum position error 1921.0 mm at 44%
+      error 1099.9 mm and maximum position error 1922.8 mm at 56%
 
 
       MuscleClip ''CharacterRig_03_New RIG''conversion warning: RightLowerLeg average
-      position error 565.3 mm and maximum position error 1065.5 mm at 49%
+      position error 24.0 mm and maximum position error 1065.5 mm at 44%
 
 
       MuscleClip ''CharacterRig_03_New RIG''conversion warning: RightFoot average
-      position error 996.6 mm and maximum position error 1001.3 mm at 48%
+      position error 992.2 mm and maximum position error 1001.3 mm at 48%
 
 
       MuscleClip ''CharacterRig_03_New RIG''conversion warning: LeftUpperArm average
-      position error 356.6 mm and maximum position error 6083.8 mm at 34%
+      position error 1726.7 mm and maximum position error 6083.8 mm at 34%
 
 
       MuscleClip ''CharacterRig_03_New RIG''conversion warning: LeftLowerArm average
-      position error 362.3 mm and maximum position error 6084.6 mm at 34%
+      position error 1726.8 mm and maximum position error 6084.6 mm at 34%
 
 
       MuscleClip ''CharacterRig_03_New RIG''conversion warning: LeftHand average position
-      error 361.0 mm and maximum position error 6087.3 mm at 34%
+      error 1727.2 mm and maximum position error 6087.3 mm at 34%
 
 
       MuscleClip ''CharacterRig_03_New RIG''conversion warning: RightUpperArm average
-      position error 356.8 mm and maximum position error 6083.8 mm at 34%
+      position error 1729.0 mm and maximum position error 6083.7 mm at 34%
 
 
       MuscleClip ''CharacterRig_03_New RIG''conversion warning: RightLowerArm average
-      position error 373.9 mm and maximum position error 6084.7 mm at 34%
+      position error 1736.4 mm and maximum position error 6084.7 mm at 34%
 
 
       MuscleClip ''CharacterRig_03_New RIG''conversion warning: RightHand average
-      position error 361.4 mm and maximum position error 6086.9 mm at 34%
+      position error 1729.4 mm and maximum position error 6086.9 mm at 34%
 
 
       MuscleClip ''CharacterRig_03_New RIG''conversion warning: Head average position
-      error 499.9 mm and maximum position error 6084.6 mm at 34%
+      error 1872.1 mm and maximum position error 6084.6 mm at 34%
 
 
       MuscleClip ''CharacterRig_03_New RIG'' conversion warning: RightFoot average
@@ -640,6 +641,102 @@ ModelImporter:
         floatParameter: 0
         intParameter: 0
         messageOptions: 0
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Feet
+        weight: 0
+      - path: Feet/ikHandle6
+        weight: 0
+      - path: Feet/ikHandle7
+        weight: 0
+      - path: group1
+        weight: 0
+      - path: group1/rdmobj00_001
+        weight: 0
+      - path: group1/rdmobj01
+        weight: 0
+      - path: group1/rdmobj02
+        weight: 0
+      - path: group1/rdmobj03
+        weight: 0
+      - path: group1/rdmobj04
+        weight: 0
+      - path: group1/rdmobj07_004
+        weight: 0
+      - path: group3
+        weight: 1
+      - path: group3/group4
+        weight: 0
+      - path: group3/group4/ikHandle4
+        weight: 0
+      - path: group3/group4/ikHandle5
+        weight: 0
+      - path: group3/Hips
+        weight: 1
+      - path: group3/Hips/Back
+        weight: 1
+      - path: group3/Hips/Back/Neck
+        weight: 1
+      - path: group3/Hips/Back/Neck/Head
+        weight: 1
+      - path: group3/Hips/Back/Neck/UpperArm_Left
+        weight: 1
+      - path: group3/Hips/Back/Neck/UpperArm_Left/LowerArm_Left
+        weight: 1
+      - path: group3/Hips/Back/Neck/UpperArm_Left/LowerArm_Left/Hand_Left
+        weight: 1
+      - path: group3/Hips/Back/Neck/UpperArm_Right
+        weight: 1
+      - path: group3/Hips/Back/Neck/UpperArm_Right/LowerArm_Right
+        weight: 1
+      - path: group3/Hips/Back/Neck/UpperArm_Right/LowerArm_Right/Hand_Right
+        weight: 1
+      - path: group3/Hips/UpperLeg_Left
+        weight: 1
+      - path: group3/Hips/UpperLeg_Left/LowerLeg_Left
+        weight: 1
+      - path: group3/Hips/UpperLeg_Left/LowerLeg_Left/Foot_Left
+        weight: 1
+      - path: group3/Hips/UpperLeg_Left/LowerLeg_Left/Foot_Left/joint8
+        weight: 1
+      - path: group3/Hips/UpperLeg_RIght
+        weight: 1
+      - path: group3/Hips/UpperLeg_RIght/LowerLeg_Right
+        weight: 1
+      - path: group3/Hips/UpperLeg_RIght/LowerLeg_Right/Foot_Right
+        weight: 1
+      - path: group3/Hips/UpperLeg_RIght/LowerLeg_Right/Foot_Right/joint4
+        weight: 1
+      - path: group3/nurbsCircle1
+        weight: 0
+      - path: nurbsCircle2
+        weight: 0
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Death
+      takeName: Take 001
+      firstFrame: 99
+      lastFrame: 113
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
       transformMask:
       - path: 
         weight: 1

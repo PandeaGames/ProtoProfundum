@@ -16,4 +16,8 @@ public class PathObject : MonoBehaviour {
 	{
 		transform.position = pos;
 	}
+	void OnPathComplete()
+	{
+
+	}
 }

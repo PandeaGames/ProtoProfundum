@@ -51,12 +51,16 @@
      <Compile Include="Assets\AKCustom_GrupperAudioController.cs" />
      <Compile Include="Assets\AdditiveLevelLoad.cs" />
      <Compile Include="Assets\AreaCenter.cs" />
+     <Compile Include="Assets\BodyKick.cs" />
+     <Compile Include="Assets\CinematicCamera.cs" />
+     <Compile Include="Assets\Cinematics.cs" />
      <Compile Include="Assets\DomeStateController.cs" />
      <Compile Include="Assets\EnvironmentAudioController.cs" />
      <Compile Include="Assets\Game.cs" />
      <Compile Include="Assets\Lava_Flowing_Shader\Scripts\ScrollingUVs_Layers.cs" />
      <Compile Include="Assets\LevelAdditive.cs" />
      <Compile Include="Assets\LevelPortal.cs" />
+     <Compile Include="Assets\LightCompleteAnimation.cs" />
      <Compile Include="Assets\LoadLevelAnchorEnd.cs" />
      <Compile Include="Assets\LoadLevelAnchorStart.cs" />
      <Compile Include="Assets\MonsterLove\StateMachine\StateBehaviour.cs" />

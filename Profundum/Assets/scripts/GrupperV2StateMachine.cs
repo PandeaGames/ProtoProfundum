@@ -298,7 +298,7 @@ public class GrupperV2StateMachine : StateBehaviour {
 	}
 	void ResetPathGroup(PathGroup pathGroup)
 	{
-		if (pathGroup == pathContainer.pathGroup) {
+		if (pathContainer && pathGroup == pathContainer.pathGroup) {
 			transform.position = pathHead.transform.position;
 		}
 	}

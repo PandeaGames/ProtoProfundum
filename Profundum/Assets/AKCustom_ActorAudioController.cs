@@ -35,14 +35,11 @@ public class AKCustom_ActorAudioController : MonoBehaviour {
 	}
 	void ResetSceneData()
 	{
-		Debug.Log ("ResetSceneData: "+_actors.Length);
 		_actors = FindObjectsOfType<AKCustom_ActorAudioEmitter>();
-		Debug.Log ("ResetSceneData The Second: "+_actors.Length);
 		_listener = FindObjectOfType<AkAudioListener> ();
 	}
 	void ClearSceneData()
 	{
-		Debug.Log ("ClearSceneData: "+_actors.Length);
 		_actors = new AKCustom_ActorAudioEmitter[0];
 	}
 }

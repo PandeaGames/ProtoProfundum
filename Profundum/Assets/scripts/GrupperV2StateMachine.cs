@@ -296,7 +296,7 @@ public class GrupperV2StateMachine : StateBehaviour {
 			ChangeState(GrupperStates.AttackRecovering);
 		}
 	}
-	public void ResetPathGroup(PathGroup pathGroup)
+	void ResetPathGroup(PathGroup pathGroup)
 	{
 		if (pathGroup == pathContainer.pathGroup) {
 			transform.position = pathHead.transform.position;

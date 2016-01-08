@@ -19,14 +19,19 @@ public class CameraAnchorControl : MonoBehaviour {
 	private float _r;
 	private MainCameraMovement camMovement;
 	private Vector3 innerOffsetVector;
+	private ProfundumPlayerHealth playerHealth;
 	// Use this for initialization
 	void Start () {
+		playerHealth = FindObjectOfType<ProfundumPlayerHealth> ();
 		camMovement = FindObjectOfType<MainCameraMovement> ();
 		innerOffsetVector = innerOffset.transform.position;
 	}
 	
 	// Update is called once per frame
 	void Update () {
+		if (playerHealth.death) {
+			radius+=0.1f;
+		}
 		if (target == null)
 			return;
 		float pitchDelta =  Mathf.DeltaAngle(pitchFloor, _pitch / (Mathf.PI/180));
@@ -53,8 +58,11 @@ public class CameraAnchorControl : MonoBehaviour {
 		pos += applyOffset (offset * camMovement.GetRayDepthPercent());
 
 		transform.position = pos;
-		_pitch += (Input.GetAxis("JoystickRightVertical") / damp) - (Input.GetAxis("MouseVertical") / mouseDamp);
-		_yaw -= (Input.GetAxis("JoystickRightHorizontal") / damp) + (Input.GetAxis("MouseHorizontal") / mouseDamp);
+		if (!playerHealth.death) {
+			_pitch += (Input.GetAxis("JoystickRightVertical") / damp) - (Input.GetAxis("MouseVertical") / mouseDamp);
+			_yaw -= (Input.GetAxis("JoystickRightHorizontal") / damp) + (Input.GetAxis("MouseHorizontal") / mouseDamp);
+		}
+
 
 		if(_pitch > pitchCeiling *(Mathf.PI/180))
 		{

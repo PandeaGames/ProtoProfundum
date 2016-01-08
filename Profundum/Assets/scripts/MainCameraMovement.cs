@@ -13,6 +13,7 @@ public class MainCameraMovement : MonoBehaviour {
 
 	private Vector3 pos;
 	private float rayPct = 1.0f;
+
 	// Use this for initialization
 	void Awake () {
 
@@ -20,6 +21,7 @@ public class MainCameraMovement : MonoBehaviour {
 
 	void Start () 
 	{
+		;
 		if (target) 
 		{
 			transform.position = target.transform.position;
@@ -31,6 +33,7 @@ public class MainCameraMovement : MonoBehaviour {
 	// Update is called once per frame
 	void Update () 
 	{
+
 		if (target) 
 		{
 			float step = Vector3.Distance(pos, target.transform.position) / damp;

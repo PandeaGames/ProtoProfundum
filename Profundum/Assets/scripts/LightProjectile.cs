@@ -15,7 +15,6 @@ namespace AssemblyCSharp
 {
 	public class LightProjectile : Projectile
 	{
-
 		public Light[] lights;
 		public AnimationCurve fadeCurve;
 		public float fadeTime = 1;
@@ -41,13 +40,17 @@ namespace AssemblyCSharp
 			base.Update ();
 			if (Time.time > _startTime + (lifeTime - fadeTime)) 
 			{
-				float scale = fadeCurve.Evaluate((Time.time - ((_startTime+ lifeTime) - fadeTime)) / fadeTime);
-				for(int i=0; i<lights.Length; i++)
+				float scale = fadeCurve.Evaluate ((Time.time - ((_startTime + lifeTime) - fadeTime)) / fadeTime);
+				for (int i=0; i<lights.Length; i++) 
 				{
-					transform.localScale = new Vector3(scale, scale, scale);
-					lights[i].intensity = _lightIntensities[i] * scale;
+					transform.localScale = new Vector3 (scale, scale, scale);
+					lights [i].intensity = _lightIntensities [i] * scale;
 				}
 			}
+		}
+		void OnCollisionEnter(Collision col)
+		{
+			Destroy (gameObject);
 		}
 	}
 }

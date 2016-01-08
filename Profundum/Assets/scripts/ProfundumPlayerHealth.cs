@@ -10,6 +10,7 @@ public class ProfundumPlayerHealth : PlayerHealthController {
 	{
 		if (getHealthRatio () == 0) {
 			_death = true;
+			AkSoundEngine.PostEvent("Player_Death", this.gameObject);
 		}
 		//_death = getHealthRatio () == 0;
 		base.Update ();

@@ -83,8 +83,10 @@ public class RoachController : MonoBehaviour {
 	}
 	public void LightLaunched(GameObject light)
 	{
+		int roachCount= 0;
 		Vector3 pos = new Vector3 ();
 		int x, y, z;
+		GameObject firstRoach = null;
 		for (int i = 0; i < spawnDistance; i+= spawnResolution) 
 		{
 			pos = light.transform.position + light.transform.forward * i;
@@ -105,9 +107,10 @@ public class RoachController : MonoBehaviour {
 				/*pos.x+=Random.value * 8;
 				pos.y+=Random.value * 8;
 				pos.z+=Random.value * 8;*/
+				roachCount+=1;
 				spawnMap[x, y, z] = Time.time + zoneResetTime;
 				setAreaValues(new Vector3(x, y, z), spawnMap[x, y, z], 3);
-				Instantiate(roachPrefab, pos, light.transform.rotation);
+				firstRoach = (GameObject)Instantiate(roachPrefab, pos, light.transform.rotation);
 			}
 
 			/*pos = new Vector3(
@@ -133,6 +136,15 @@ public class RoachController : MonoBehaviour {
 			//y axis rotation
 			offset.z = offset.z * Mathf.Cos (theta_y) - offset.x * Mathf.Sin(theta_y);
 			offset.x = offset.z * Mathf.Sin(theta_y) + offset.x * Mathf.Cos(theta_y);*/
+		}
+		if (firstRoach != null) {
+			if (roachCount < 20) {
+				AkSoundEngine.PostEvent("Roach_Swarm_Low", firstRoach);
+			} else if (roachCount < 40) {
+				AkSoundEngine.PostEvent("Roach_Swarm_Medium", firstRoach);
+			} else {
+				AkSoundEngine.PostEvent("Roach_Swarm_High", firstRoach);
+			}
 		}
 
 	}

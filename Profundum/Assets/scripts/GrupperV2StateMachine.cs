@@ -20,8 +20,6 @@ public class GrupperV2StateMachine : StateBehaviour {
 	public GameObject agroRangeObj;
 	public GameObject closeRangeObj;
 	public GameObject attackAreaObj;
-	public float attackHeight = 8;
-	public float searchHeight = 3;
 	public Vector3 searchRotation = new Vector3 (0, 1, 0);
 	public LayerMask mask;
 	public float attackRecoverTime = 3;

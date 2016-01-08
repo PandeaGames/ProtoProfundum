@@ -8,7 +8,7 @@ public class Shooter : MonoBehaviour {
 	private bool _hasShot;
 	
 	// Update is called once per frame
-	void Update () {
+	public virtual void Update () {
 		if (Input.GetMouseButton(0) && !_hasShot) {
 			Shoot();
 			_hasShot = true;
@@ -16,7 +16,7 @@ public class Shooter : MonoBehaviour {
 			_hasShot = false;
 		}
 	}
-	private void Shoot()
+	protected virtual void Shoot()
 	{
 		Instantiate (projectile, spawn.transform.position, getProtectileRotation());
 	}

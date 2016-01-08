@@ -63,6 +63,7 @@
      <Compile Include="Assets\LevelAdditive.cs" />
      <Compile Include="Assets\LevelPortal.cs" />
      <Compile Include="Assets\LightCompleteAnimation.cs" />
+     <Compile Include="Assets\LightTargetDisplay.cs" />
      <Compile Include="Assets\LoadLevelAnchorEnd.cs" />
      <Compile Include="Assets\LoadLevelAnchorStart.cs" />
      <Compile Include="Assets\MonsterLove\StateMachine\StateBehaviour.cs" />

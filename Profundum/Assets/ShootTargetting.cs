@@ -2,8 +2,9 @@
 using System.Collections;
 
 public class ShootTargetting : MonoBehaviour {
-	Camera cam;
+	private Camera cam = null;
 	public LayerMask mask;
+	private Vector3 hitTarget;
 	// Use this for initialization
 	void Start () {
 		cam = Camera.main;
@@ -15,17 +16,16 @@ public class ShootTargetting : MonoBehaviour {
 		
 		Ray ray = new Ray (cam.transform.position, cam.transform.forward );
 		float radius = 100;
-		if (Physics.Raycast (ray, out hit, radius, mask))
-		{
+		if (Physics.Raycast (ray, out hit, radius, mask)) {
 			Gizmos.color = Color.green;
 			transform.position = hit.point;
-		}
-		else
-		{
+		} else {
 			Gizmos.color = Color.red;
 			transform.position = ray.GetPoint (50);
 		}
+	}
+	void OnDrawGizmos()
+	{
 		Gizmos.DrawSphere (transform.position, 0.3f);
-		Gizmos.DrawLine (cam.transform.position, transform.position);
 	}
 }

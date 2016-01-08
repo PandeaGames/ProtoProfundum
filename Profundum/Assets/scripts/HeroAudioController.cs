@@ -15,12 +15,15 @@ public class HeroAudioController : MonoBehaviour {
 
 	void ClimbUpStart()
 	{
+		AkSoundEngine.PostEvent("Hero_ClimbUpStart", gameObject);
 	}
 	void ClimbComplete()
 	{
+		AkSoundEngine.PostEvent("Hero_ClimbComplete", gameObject);
 	}
 	void ClimbDownStart()
 	{
+		AkSoundEngine.PostEvent("Hero_ClimbDownStart", gameObject);
 	}
 	void RunStep()
 	{

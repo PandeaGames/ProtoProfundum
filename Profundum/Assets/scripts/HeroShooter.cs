@@ -10,26 +10,47 @@
 using System;
 using UnityEngine;
 
-
-namespace AssemblyCSharp
-{
 	public class HeroShooter:Shooter
 	{
 		private ShootTargetting _targetting;
 		public GameObject anchor;
+		public int recoverDelay = 5;
+		private bool _canShoot = false;
+		private float _timeStamp = 0;
 		public HeroShooter ()
 		{
-
 		}
 		void Start()
 		{
 			_targetting = FindObjectOfType<ShootTargetting> ();
+		}
+		public override void Update()
+		{
+			base.Update ();
+			_canShoot = Time.time > _timeStamp;
 		}
 		protected override Quaternion getProtectileRotation()
 		{
 			spawn.transform.LookAt (_targetting.transform.position);
 			return base.getProtectileRotation ();
 		}
-	}
+		protected override void Shoot()
+		{
+			if (_canShoot) {
+				base.Shoot ();
+				_timeStamp = Time.time + recoverDelay;
+			}
+		}
+		public bool CanShoot()
+		{
+			return _canShoot;
+		}
+		public float GetRecoveringProgress()
+		{
+			if (_canShoot)
+				return 1;
+		return 1 - (_timeStamp - Time.time) / recoverDelay;
+		}
 }
+
 

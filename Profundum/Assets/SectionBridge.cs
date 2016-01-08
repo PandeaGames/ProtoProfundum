@@ -10,6 +10,7 @@ public class SectionBridge : MonoBehaviour {
 	public GameObject triggerB;
 	public GameObject anchorA;
 	public GameObject anchorB;
+	public string respawnLevel = "";
 
 	private GameSection _currentGameSection;
 	private GameObject _sectionToDestroy;
@@ -55,6 +56,9 @@ public class SectionBridge : MonoBehaviour {
 
 			_hasLoadedLevel = false;
 			_doDeletion = false;
+
+			if(respawnLevel!="")
+				_game.respawnScene = respawnLevel;
 		}
 		if (_hasLoadedLevel) {
 			_doDeletion = true;

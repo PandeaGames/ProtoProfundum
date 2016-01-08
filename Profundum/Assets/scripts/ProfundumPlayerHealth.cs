@@ -9,8 +9,13 @@ public class ProfundumPlayerHealth : PlayerHealthController {
 	public override void Update () 
 	{
 		if (getHealthRatio () == 0) {
+			if(!_death)
+			{
+				AkSoundEngine.PostEvent("Player_Death", gameObject);
+			}
 			_death = true;
-			AkSoundEngine.PostEvent("Player_Death", this.gameObject);
+
+
 		}
 		//_death = getHealthRatio () == 0;
 		base.Update ();

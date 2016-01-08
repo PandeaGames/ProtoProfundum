@@ -1,6 +1,14 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\SectionBridge.cs">
+    <Files>
+      <File FileName="Assets\Game.cs" Line="24" Column="1" />
+      <File FileName="Assets\GameSection.cs" Line="14" Column="13" />
+      <File FileName="Assets\scripts\ProfundumDeathController.cs" Line="16" Column="17" />
+      <File FileName="Assets\scripts\ProfundumPlayerHealth.cs" Line="14" Column="45" />
+      <File FileName="Assets\SectionBridge.cs" Line="59" Column="4" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

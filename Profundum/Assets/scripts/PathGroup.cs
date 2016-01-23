@@ -61,4 +61,8 @@ public class PathGroup : MonoBehaviour {
 		}
 		currentTime = (Time.time - _baseTime) % totalTime;
 	}
+	public float GetPlayerHead()
+	{
+		return ((Time.time - _baseTime) % totalTime) / totalTime;
+	}
 }

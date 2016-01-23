@@ -20,11 +20,11 @@ public class SightAudioController : MonoBehaviour {
 			_isInSight = _sc.IsInSight();
 			if(_isInSight)
 			{
-				AkSoundEngine.PostEvent( "Sight_IsInSight_True", gameObject);
+				AkSoundEngine.SetState( "Sight_IsInSight", "IsInSight_True");
 			}
 			else
 			{
-				AkSoundEngine.PostEvent("Sight_IsInSight_False", gameObject);
+				AkSoundEngine.SetState( "Sight_IsInSight", "IsInSight_False");
 			}
 		}
 		if (_sightActive != _sc.SightActive ()) 
@@ -33,21 +33,21 @@ public class SightAudioController : MonoBehaviour {
 			_sightActive = _sc.SightActive ();
 			if(_sightActive)
 			{
-				AkSoundEngine.PostEvent("Sight_SightActive_True", gameObject);
+				AkSoundEngine.SetState( "Sight_SightActive", "SightActive_True");
 			}
 			else
 			{
-				AkSoundEngine.PostEvent("Sight_SightActive_False", gameObject);
+				AkSoundEngine.SetState( "Sight_SightActive", "SightActive_False");
 			}
 		}
 		if (_sightFull && _sc.GetSight () != 1) {
 			_sightFull = false;
-			AkSoundEngine.PostEvent("Sight_SightFull_False", gameObject);
+			AkSoundEngine.SetState( "Sight_SightFull", "SightFull_False");
 		}
 
 		if (!_sightFull && _sc.GetSight () == 1) {
 			_sightFull = true;
-			AkSoundEngine.PostEvent("Sight_SightFull_True", gameObject);
+			AkSoundEngine.SetState( "Sight_SightFull", "SightFull_True");
 		}
 	}
 }

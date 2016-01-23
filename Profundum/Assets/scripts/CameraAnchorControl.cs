@@ -20,16 +20,18 @@ public class CameraAnchorControl : MonoBehaviour {
 	private MainCameraMovement camMovement;
 	private Vector3 innerOffsetVector;
 	private ProfundumPlayerHealth playerHealth;
+	private MainCameraMovement _camMovement;
 	// Use this for initialization
 	void Start () {
 		playerHealth = FindObjectOfType<ProfundumPlayerHealth> ();
 		camMovement = FindObjectOfType<MainCameraMovement> ();
 		innerOffsetVector = innerOffset.transform.position;
+		_camMovement = FindObjectOfType<MainCameraMovement> ();
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		if (playerHealth.death) {
+		if (playerHealth.death && !_camMovement.GetIsHittingGeometry()) {
 			radius+=0.1f;
 		}
 		if (target == null)

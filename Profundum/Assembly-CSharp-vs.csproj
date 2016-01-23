@@ -46,6 +46,7 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\AKCustomInitializer.cs" />
      <Compile Include="Assets\AKCustom_ActorAudioController.cs" />
      <Compile Include="Assets\AKCustom_ActorAudioEmitter.cs" />
      <Compile Include="Assets\AKCustom_GrupperAudioController.cs" />
@@ -53,8 +54,10 @@
      <Compile Include="Assets\AreaCenter.cs" />
      <Compile Include="Assets\BodyKick.cs" />
      <Compile Include="Assets\BridgeTrigger.cs" />
+     <Compile Include="Assets\Checkpoint.cs" />
      <Compile Include="Assets\CinematicCamera.cs" />
      <Compile Include="Assets\Cinematics.cs" />
+     <Compile Include="Assets\ContinueWhenGroupIsDone.cs" />
      <Compile Include="Assets\DomeStateController.cs" />
      <Compile Include="Assets\EnvironmentAudioController.cs" />
      <Compile Include="Assets\Game.cs" />
@@ -69,11 +72,13 @@
      <Compile Include="Assets\MonsterLove\StateMachine\StateBehaviour.cs" />
      <Compile Include="Assets\MonsterLove\StateMachine\StateEngine.cs" />
      <Compile Include="Assets\SectionBridge.cs" />
+     <Compile Include="Assets\SectionStreamingController.cs" />
      <Compile Include="Assets\ShootTargetting.cs" />
      <Compile Include="Assets\SightAudioController.cs" />
      <Compile Include="Assets\SightController.cs" />
      <Compile Include="Assets\SightEye.cs" />
      <Compile Include="Assets\SightUI.cs" />
+     <Compile Include="Assets\StreamingSection.cs" />
      <Compile Include="Assets\Wwise\Deployment\API\Generated\Common\AKRESULT.cs" />
      <Compile Include="Assets\Wwise\Deployment\API\Generated\Common\AkActionOnEventType.cs" />
      <Compile Include="Assets\Wwise\Deployment\API\Generated\Common\AkAudioFormat.cs" />

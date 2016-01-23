@@ -302,7 +302,7 @@ public class HeroMovementControls : StateBehaviour
 
 
 		SkinnedMeshRenderer[] renderers = GetComponentsInChildren<SkinnedMeshRenderer> ();
-		Debug.Log ("DEATH: "+renderers.Length);
+
 		foreach (SkinnedMeshRenderer renderer in renderers) {
 			renderer.enabled = false;
 		}

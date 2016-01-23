@@ -9,8 +9,15 @@ public class Game : MonoBehaviour {
 
 	private PlayerHealthController playerHealth;
 	private float _timeStamp;
+	public float timeUntilFade = 5;
+	private float deathTime;
+	private Cinematics _cinematics;
+	private MainCameraMovement _camMovement;
 	void Start () {
 		playerHealth = FindObjectOfType<PlayerHealthController> ();
+		_camMovement = FindObjectOfType<MainCameraMovement> ();
+		_cinematics = FindObjectOfType<Cinematics> ();
+
 	}
 	
 	// Update is called once per frame
@@ -23,7 +30,15 @@ public class Game : MonoBehaviour {
 		}
 		if (_deathSequence && Time.time>_timeStamp) 
 		{
+			FindObjectOfType<AKCust
+			BroadcastMessage("ClearSceneData");
 			Application.LoadLevel(respawnScene);
+		}
+		if (_deathSequence) {
+			if(!_cinematics.faded && Time.time > _timeStamp - timeUntilFade)
+			{
+				_cinematics.FadeOut();
+			}
 		}
 	}
 }

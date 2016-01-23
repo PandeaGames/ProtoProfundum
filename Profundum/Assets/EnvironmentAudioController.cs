@@ -22,28 +22,28 @@ public class EnvironmentAudioController : MonoBehaviour {
 	void Update () {
 		if (_inDarkness && _rc.isLit(_hero.transform.position)) {
 			_inDarkness = false;
-			AkSoundEngine.PostEvent("Environment_InDarkness_False", _hero.gameObject);
+			AkSoundEngine.SetState("Environment_InDarkness", "InDarkness_False");
 		}
 		if (!_inDarkness && !_rc.isLit(_hero.transform.position)) {
 			_inDarkness = true;
-			AkSoundEngine.PostEvent("Environment_InDarkness_True", _hero.gameObject);
+			AkSoundEngine.SetState("Environment_InDarkness", "InDarkness_True");
 		}
 
 		if (_isInsideBubble && !_dsc.IsInsideDome) {
 			_isInsideBubble = false;
-			AkSoundEngine.PostEvent("Environment_IsInsideBubble_False", _hero.gameObject);
+			AkSoundEngine.SetState("Environment_IsInsideBubble", "IsInsideBubble_False");
 		}
 		if (!_isInsideBubble && _dsc.IsInsideDome) {
 			_isInsideBubble = true;
-			AkSoundEngine.PostEvent("Environment_IsInsideBubble_True", _hero.gameObject);
+			AkSoundEngine.SetState("Environment_IsInsideBubble", "IsInsideBubble_True");
 		}
 		if (_isNearCrystal && !_dsc.IsNearCrystal) {
 			_isNearCrystal = false;
-			AkSoundEngine.PostEvent("Environment_IsNearCrystal_False", _hero.gameObject);
+			AkSoundEngine.SetState("Environment_IsNearCrystal", "IsNearCrystal_False");
 		}
 		if (!_isNearCrystal && _dsc.IsNearCrystal) {
 			_isNearCrystal = true;
-			AkSoundEngine.PostEvent("Environment_IsNearCrystal_True", _hero.gameObject);
+			AkSoundEngine.SetState("Environment_IsNearCrystal", "IsNearCrystal_True");
 		}
 	}
 }

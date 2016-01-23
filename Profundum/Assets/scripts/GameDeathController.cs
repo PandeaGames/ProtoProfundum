@@ -4,7 +4,7 @@ using System.Collections;
 public class GameDeathController : MonoBehaviour 
 {
 	protected PlayerHealthController healthController;
-	private bool dead = false;
+	protected bool dead = false;
 	// Use this for initialization
 	public virtual void Start () 
 	{
@@ -12,7 +12,7 @@ public class GameDeathController : MonoBehaviour
 	}
 	
 	// Update is called once per frame
-	void Update () 
+	public virtual void Update () 
 	{
 		if (!healthController)
 			return;

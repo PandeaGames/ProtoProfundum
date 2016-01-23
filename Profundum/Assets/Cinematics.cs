@@ -5,7 +5,7 @@ using UnityEngine.UI;
 public class Cinematics : MonoBehaviour {
 	public GameObject darkFade;
 
-	private bool faded = true;
+	public bool faded = true;
 	// Use this for initialization
 	void Start () {
 		FadeIn ();
@@ -17,7 +17,7 @@ public class Cinematics : MonoBehaviour {
 		c.a += faded ? 0.003f:-0.01f;
 		darkFade.GetComponent<Image>().color = c;
 	}
-	void FadeIn()
+	public void FadeIn()
 	{
 		Color c = darkFade.GetComponent<Image>().color;
 		c.a += 1;
@@ -25,7 +25,7 @@ public class Cinematics : MonoBehaviour {
 
 		faded = false;
 	}
-	void FadeOut()
+	public void FadeOut()
 	{
 		Color c = darkFade.GetComponent<Image>().color;
 		c.a = 0;

@@ -4,6 +4,7 @@ using System.Collections;
 public class ProfundumDeathController : GameDeathController {
 	public string sceneToLoad = "";
 	private HeroMovementControls hero;
+
 	public override void Start()
 	{
 		base.Start ();
@@ -11,12 +12,20 @@ public class ProfundumDeathController : GameDeathController {
 	}
 	protected override void Death()
 	{
+		hero.Death();
 		if (sceneToLoad != "") 
 		{
-			hero.Death();
+
+
 			//Application.LoadLevel (sceneToLoad);
 			return;
 		}
 		Application.LoadLevel (Application.loadedLevelName);
+	}
+	public override void Update()
+	{
+		base.Update ();
+	
+
 	}
 }

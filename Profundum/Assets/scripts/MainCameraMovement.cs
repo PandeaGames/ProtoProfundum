@@ -13,7 +13,7 @@ public class MainCameraMovement : MonoBehaviour {
 
 	private Vector3 pos;
 	private float rayPct = 1.0f;
-
+	
 	// Use this for initialization
 	void Awake () {
 
@@ -86,5 +86,9 @@ public class MainCameraMovement : MonoBehaviour {
 	public float GetRayDepthPercent()
 	{
 		return rayPct;
+	}
+	public bool GetIsHittingGeometry()
+	{
+		return rayPct != 1.0f;
 	}
 }

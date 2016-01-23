@@ -30,7 +30,6 @@ public class Game : MonoBehaviour {
 		}
 		if (_deathSequence && Time.time>_timeStamp) 
 		{
-			FindObjectOfType<AKCust
 			BroadcastMessage("ClearSceneData");
 			Application.LoadLevel(respawnScene);
 		}

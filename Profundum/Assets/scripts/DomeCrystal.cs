@@ -21,6 +21,7 @@ public class DomeCrystal : MonoBehaviour {
 		if (collider.tag == "Hero") {
 			_heroInside = true;
 		}
+		Debug.Log ("COLLIDE: "+collider.tag);
 		if (collider.tag == "light") {
 			collider.gameObject.SendMessage("Contact", gameObject);
 			Break ();

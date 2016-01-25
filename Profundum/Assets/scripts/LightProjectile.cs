@@ -30,7 +30,7 @@ namespace AssemblyCSharp
 			_lightIntensities =  new float[lights.Length];
 
 			FindObjectOfType<RoachController> ().LightLaunched (gameObject);
-
+			gameObject.tag = "light";
 			for(int i=0; i<lights.Length; i++)
 			{
 				_lightIntensities[i] = lights[i].intensity;

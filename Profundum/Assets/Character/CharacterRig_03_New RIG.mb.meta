@@ -3,7 +3,7 @@ guid: a7b22b54d4ae31243997cd4733138a78
 timeCreated: 1442642010
 licenseType: Free
 ModelImporter:
-  serializedVersion: 18
+  serializedVersion: 19
   fileIDToRecycleName:
     100000: Back
     100002: //RootNode
@@ -108,6 +108,7 @@ ModelImporter:
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 1
+    resampleRotations: 1
     optimizeGameObjects: 0
     motionNodeName: group3/Hips
     animationImportErrors: 
@@ -170,9 +171,9 @@ ModelImporter:
 '
     animationDoRetargetingWarnings: 1
     animationCompression: 0
-    animationRotationError: .5
-    animationPositionError: .5
-    animationScaleError: .5
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
     clipAnimations:
@@ -186,6 +187,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 1
@@ -199,14 +201,14 @@ ModelImporter:
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
       events:
-      - time: .349162042
+      - time: 0.34916204
         functionName: RunStep
         data: 
         objectReferenceParameter: {instanceID: 0}
         floatParameter: 0
         intParameter: 0
         messageOptions: 0
-      - time: .868715167
+      - time: 0.86871517
         functionName: RunStep
         data: 
         objectReferenceParameter: {instanceID: 0}
@@ -286,6 +288,7 @@ ModelImporter:
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: StartRun
       takeName: Take 001
@@ -296,6 +299,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
@@ -382,6 +386,7 @@ ModelImporter:
         weight: 0
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: MyIdle
       takeName: Take 001
@@ -392,6 +397,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 1
       loopBlend: 1
       loopBlendOrientation: 0
@@ -420,6 +426,7 @@ ModelImporter:
             tangentMode: 0
           preInfinity: 2
           postInfinity: 2
+          rotationOrder: 4
       events: []
       transformMask:
       - path: 
@@ -494,6 +501,7 @@ ModelImporter:
         weight: 0
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: Climb
       takeName: Take 001
@@ -504,6 +512,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
@@ -517,15 +526,43 @@ ModelImporter:
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
       events:
-      - time: .926380396
+      - time: 0.0018248175
+        functionName: ClimbUpStart
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      - time: 0.9263804
         functionName: ClimbComplete
         data: 
         objectReferenceParameter: {instanceID: 0}
         floatParameter: 0
         intParameter: 0
         messageOptions: 0
-      - time: 0
-        functionName: ClimbUpStart
+      - time: 0.17586204
+        functionName: Jump
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      - time: 0.40172422
+        functionName: HandPlant
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      - time: 0.5689656
+        functionName: KneePlant
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      - time: 0.76034474
+        functionName: StepUp
         data: 
         objectReferenceParameter: {instanceID: 0}
         floatParameter: 0
@@ -604,6 +641,7 @@ ModelImporter:
         weight: 0
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
     - serializedVersion: 16
       name: ClimbDown
       takeName: Take 001
@@ -614,6 +652,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
@@ -634,7 +673,7 @@ ModelImporter:
         floatParameter: 0
         intParameter: 0
         messageOptions: 0
-      - time: .607623339
+      - time: 0.60762334
         functionName: ClimbComplete
         data: 
         objectReferenceParameter: {instanceID: 0}
@@ -714,6 +753,7 @@ ModelImporter:
         weight: 0
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: Death
       takeName: Take 001
@@ -724,6 +764,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
@@ -810,6 +851,7 @@ ModelImporter:
         weight: 0
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     isReadable: 1
   meshes:
     lODScreenPercentages: []
@@ -830,9 +872,8 @@ ModelImporter:
     useFileScale: 1
   tangentSpace:
     normalSmoothAngle: 60
-    splitTangentsAcrossUV: 1
     normalImportMode: 0
-    tangentImportMode: 1
+    tangentImportMode: 4
   importAnimation: 1
   copyAvatar: 0
   humanDescription:
@@ -983,190 +1024,192 @@ ModelImporter:
         modified: 0
     skeleton:
     - name: CharacterRig_03_New RIG(Clone)
-      position: {x: 0, y: 0, z: .99000001}
+      position: {x: 0, y: 0, z: 0.99}
       rotation: {x: 0, y: 0, z: 0, w: 1}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: Feet
-      position: {x: 0, y: -.0729649439, z: 3.07256937}
+      position: {x: 0, y: -0.072964944, z: 3.0725694}
       rotation: {x: 0, y: 0, z: 0, w: 1}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: ikHandle6
-      position: {x: .107992277, y: .229841873, z: -.268283993}
-      rotation: {x: .298783779, y: -.0489524007, z: .00582804997, w: .953046679}
+      position: {x: 0.10799228, y: 0.22984187, z: -0.268284}
+      rotation: {x: 0.29878378, y: -0.0489524, z: 0.00582805, w: 0.9530467}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: ikHandle7
-      position: {x: -.125231683, y: .0550304949, z: .00849798694}
-      rotation: {x: -.029400643, y: -.014402329, z: .00405324111, w: .99945575}
+      position: {x: -0.12523168, y: 0.055030495, z: 0.008497987}
+      rotation: {x: -0.029400643, y: -0.014402329, z: 0.004053241, w: 0.99945575}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: group1
       position: {x: 0, y: 0, z: 0}
       rotation: {x: 0, y: 0, z: 0, w: 1}
-      scale: {x: 10.9027157, y: 10.9027157, z: 10.9027157}
+      scale: {x: 10.902716, y: 10.902716, z: 10.902716}
       transformModified: 1
     - name: rdmobj00_001
       position: {x: 0, y: 0, z: 0}
       rotation: {x: 0, y: 0, z: 0, w: 1}
-      scale: {x: .0291692205, y: .0291692205, z: .0291692205}
+      scale: {x: 0.02916922, y: 0.02916922, z: 0.02916922}
       transformModified: 1
     - name: rdmobj01
       position: {x: 0, y: 0, z: 0}
       rotation: {x: 0, y: 0, z: 0, w: 1}
-      scale: {x: .0291692205, y: .0291692205, z: .0291692205}
+      scale: {x: 0.02916922, y: 0.02916922, z: 0.02916922}
       transformModified: 1
     - name: rdmobj02
       position: {x: 0, y: 0, z: 0}
       rotation: {x: 0, y: 0, z: 0, w: 1}
-      scale: {x: .0291692205, y: .0291692205, z: .0291692205}
+      scale: {x: 0.02916922, y: 0.02916922, z: 0.02916922}
       transformModified: 1
     - name: rdmobj03
       position: {x: 0, y: 0, z: 0}
       rotation: {x: 0, y: 0, z: 0, w: 1}
-      scale: {x: .0291692205, y: .0291692205, z: .0291692205}
+      scale: {x: 0.02916922, y: 0.02916922, z: 0.02916922}
       transformModified: 1
     - name: rdmobj04
       position: {x: 0, y: 0, z: 0}
       rotation: {x: 0, y: 0, z: 0, w: 1}
-      scale: {x: .0291692205, y: .0291692205, z: .0291692205}
+      scale: {x: 0.02916922, y: 0.02916922, z: 0.02916922}
       transformModified: 1
     - name: rdmobj07_004
       position: {x: 0, y: 0, z: 0}
       rotation: {x: 0, y: 0, z: 0, w: 1}
-      scale: {x: .0291692205, y: .0291692205, z: .0291692205}
+      scale: {x: 0.02916922, y: 0.02916922, z: 0.02916922}
       transformModified: 1
     - name: group3
-      position: {x: 0, y: -.0729649439, z: 3.07256937}
+      position: {x: 0, y: -0.072964944, z: 3.0725694}
       rotation: {x: 0, y: 0, z: 0, w: 1}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: group4
-      position: {x: -.00959497597, y: 1.02999842, z: .0206845477}
-      rotation: {x: .114552259, y: -.0516339615, z: .00152001646, w: .992073298}
+      position: {x: -0.009594976, y: 1.0299984, z: 0.020684548}
+      rotation: {x: 0.11455226, y: -0.05163396, z: 0.0015200165, w: 0.9920733}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: ikHandle4
-      position: {x: .599654436, y: 1.01083314, z: -.0227320846}
+      position: {x: 0.59965444, y: 1.0108331, z: -0.022732085}
       rotation: {x: 0, y: 0, z: 0, w: 1}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: ikHandle5
-      position: {x: -.619358778, y: .978084922, z: -.0158501156}
+      position: {x: -0.6193588, y: 0.9780849, z: -0.015850116}
       rotation: {x: 0, y: 0, z: 0, w: 1}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: Hips
-      position: {x: -0, y: 0, z: -2.30999994}
-      rotation: {x: 1.71057508e-11, y: 1.79115811e-09, z: -1.14512455e-10, w: 1}
+      position: {x: -0, y: 0, z: -2.31}
+      rotation: {x: 1.710575e-11, y: 0.0000000017911581, z: -1.14512455e-10, w: 1}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: Back
-      position: {x: -.00113391713, y: .258130461, z: -.148597643}
+      position: {x: -0.0011339171, y: 0.25813046, z: -0.14859764}
       rotation: {x: 0, y: 0, z: 0, w: 1}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: Neck
-      position: {x: .00756301684, y: .415066212, z: .105558783}
+      position: {x: 0.007563017, y: 0.4150662, z: 0.10555878}
       rotation: {x: 0, y: 0, z: 0, w: 1}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: Head
-      position: {x: -.00812336989, y: .174640983, z: .0816129595}
+      position: {x: -0.00812337, y: 0.17464098, z: 0.08161296}
       rotation: {x: 0, y: 0, z: 0, w: 1}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: UpperArm_Left
-      position: {x: -.272729099, y: -.122623116, z: -.0275834296}
-      rotation: {x: -.0146116279, y: .0753566623, z: -.450899214, w: .8892681}
+      position: {x: -0.2727291, y: -0.122623116, z: -0.02758343}
+      rotation: {x: -0.014611628, y: 0.07535666, z: -0.4508992, w: 0.8892681}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: LowerArm_Left
-      position: {x: -.201314479, y: -.298952132, z: -.0434387513}
-      rotation: {x: .121679477, y: -.0806172416, z: -.0571168587, w: .987639964}
+      position: {x: -0.20131448, y: -0.29895213, z: -0.04343875}
+      rotation: {x: 0.12167948, y: -0.08061724, z: -0.05711686, w: 0.98763996}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: Hand_Left
-      position: {x: -.151744336, y: -.285190225, z: .0792598724}
+      position: {x: -0.15174434, y: -0.28519022, z: 0.07925987}
       rotation: {x: 0, y: 0, z: 0, w: 1}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: UpperArm_Right
-      position: {x: .24532038, y: -.113118619, z: -.0385869108}
-      rotation: {x: .0145849772, y: -.0606609471, z: .450076848, w: .890807688}
+      position: {x: 0.24532038, y: -0.11311862, z: -0.03858691}
+      rotation: {x: 0.014584977, y: -0.060660947, z: 0.45007685, w: 0.8908077}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: LowerArm_Right
-      position: {x: .184897467, y: -.276050329, z: -.0431975126}
-      rotation: {x: .128393486, y: .0863554776, z: .0441318154, w: .986970246}
+      position: {x: 0.18489747, y: -0.27605033, z: -0.043197513}
+      rotation: {x: 0.12839349, y: 0.08635548, z: 0.044131815, w: 0.98697025}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: Hand_Right
-      position: {x: .163007468, y: -.284848303, z: .0831401497}
+      position: {x: 0.16300747, y: -0.2848483, z: 0.08314015}
       rotation: {x: 0, y: 0, z: 0, w: 1}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: UpperLeg_Left
-      position: {x: -.188435033, y: -.216875657, z: .0239741225}
-      rotation: {x: .020417776, y: -.00105830608, z: -.023434747, w: .999516308}
+      position: {x: -0.18843503, y: -0.21687566, z: 0.023974122}
+      rotation: {x: 0.020417776, y: -0.0010583061, z: -0.023434747, w: 0.9995163}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: LowerLeg_Left
-      position: {x: .0536646694, y: -.285237581, z: .0596371405}
+      position: {x: 0.05366467, y: -0.28523758, z: 0.05963714}
       rotation: {x: 0, y: 0, z: 0, w: 1}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: Foot_Left
-      position: {x: .00205463846, y: -.464562982, z: -.18350096}
-      rotation: {x: -.020417776, y: .00105830433, z: .023434747, w: .999516308}
+      position: {x: 0.0020546385, y: -0.46456298, z: -0.18350096}
+      rotation: {x: -0.020417776, y: 0.0010583043, z: 0.023434747, w: 0.9995163}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: joint8
-      position: {x: -.0115363607, y: -.0169188641, z: .2483491}
+      position: {x: -0.011536361, y: -0.016918864, z: 0.2483491}
       rotation: {x: 0, y: 0, z: 0, w: 1}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: UpperLeg_RIght
-      position: {x: .208663836, y: -.210627183, z: .00666919164}
-      rotation: {x: -1.59641148e-10, y: -1.76905757e-09, z: -2.58075922e-10, w: 1}
+      position: {x: 0.20866384, y: -0.21062718, z: 0.0066691916}
+      rotation: {x: -1.5964115e-10, y: -0.0000000017690576, z: -2.5807592e-10, w: 1}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: LowerLeg_Right
-      position: {x: -.0461631082, y: -.293312192, z: .0368006527}
+      position: {x: -0.04616311, y: -0.2933122, z: 0.036800653}
       rotation: {x: 0, y: 0, z: 0, w: 1}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: Foot_Right
-      position: {x: -.0226636343, y: -.469388843, z: -.148065984}
+      position: {x: -0.022663634, y: -0.46938884, z: -0.14806598}
       rotation: {x: 0, y: 0, z: 0, w: 1}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: joint4
-      position: {x: .0148512283, y: -6.66133815e-16, z: .26502797}
+      position: {x: 0.014851228, y: -6.661338e-16, z: 0.26502797}
       rotation: {x: 0, y: 0, z: 0, w: 1}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: nurbsCircle1
-      position: {x: .0214386042, y: 1.23849368, z: .0526750423}
-      rotation: {x: .114552259, y: -.0516339615, z: .00152001646, w: .992073298}
+      position: {x: 0.021438604, y: 1.2384937, z: 0.052675042}
+      rotation: {x: 0.11455226, y: -0.05163396, z: 0.0015200165, w: 0.9920733}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: nurbsCircle2
-      position: {x: .0297838449, y: -.0729649439, z: 3.10145903}
+      position: {x: 0.029783845, y: -0.072964944, z: 3.101459}
       rotation: {x: 0, y: 0, z: 0, w: 1}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
-    armTwist: .0399999991
-    foreArmTwist: .5
-    upperLegTwist: .5
-    legTwist: .5
-    armStretch: .0500000007
-    legStretch: .0500000007
+    armTwist: 0.04
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
     feetSpacing: 0
     rootMotionBoneName: 
+    hasTranslationDoF: 0
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   animationType: 3
+  humanoidOversampling: 1
   additionalBone: 0
   userData: 
   assetBundleName: 

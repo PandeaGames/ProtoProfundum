@@ -32,4 +32,20 @@ public class HeroAudioController : MonoBehaviour {
 	void Dead()
 	{
 	}
+    void Jump()
+    {
+        AkSoundEngine.PostEvent("Play_Jump", gameObject);
+    }
+    void HandPlan()
+    {
+        AkSoundEngine.PostEvent("Play_HandPlant", gameObject);
+    }
+    void KneePlant()
+    {
+        AkSoundEngine.PostEvent("Play_KneePlant", gameObject);
+    }
+    void StepUp()
+    {
+        AkSoundEngine.PostEvent("Play_StepUp", gameObject);
+    }
 }

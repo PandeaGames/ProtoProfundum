@@ -533,36 +533,36 @@ ModelImporter:
         floatParameter: 0
         intParameter: 0
         messageOptions: 0
-      - time: 0.9263804
-        functionName: ClimbComplete
-        data: 
-        objectReferenceParameter: {instanceID: 0}
-        floatParameter: 0
-        intParameter: 0
-        messageOptions: 0
-      - time: 0.17586204
+      - time: 0.16082443
         functionName: Jump
         data: 
         objectReferenceParameter: {instanceID: 0}
         floatParameter: 0
         intParameter: 0
         messageOptions: 0
-      - time: 0.40172422
+      - time: 0.41864154
         functionName: HandPlant
         data: 
         objectReferenceParameter: {instanceID: 0}
         floatParameter: 0
         intParameter: 0
         messageOptions: 0
-      - time: 0.5689656
+      - time: 0.5670859
         functionName: KneePlant
         data: 
         objectReferenceParameter: {instanceID: 0}
         floatParameter: 0
         intParameter: 0
         messageOptions: 0
-      - time: 0.76034474
+      - time: 0.7678635
         functionName: StepUp
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      - time: 0.9263804
+        functionName: ClimbComplete
         data: 
         objectReferenceParameter: {instanceID: 0}
         floatParameter: 0
@@ -673,8 +673,29 @@ ModelImporter:
         floatParameter: 0
         intParameter: 0
         messageOptions: 0
-      - time: 0.60762334
-        functionName: ClimbComplete
+      - time: 0.106383026
+        functionName: HandPlant
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      - time: 0.45390075
+        functionName: SlideOff
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      - time: 0.69326246
+        functionName: ImpactLeft
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      - time: 0.746454
+        functionName: ImpactRight
         data: 
         objectReferenceParameter: {instanceID: 0}
         floatParameter: 0
@@ -753,7 +774,7 @@ ModelImporter:
         weight: 0
       maskType: 0
       maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
+      additiveReferencePoseFrame: 1
     - serializedVersion: 16
       name: Death
       takeName: Take 001

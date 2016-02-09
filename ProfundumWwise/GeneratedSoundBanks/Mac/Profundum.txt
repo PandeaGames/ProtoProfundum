@@ -1,73 +1,93 @@
 Event	ID	Name			Wwise Object Path	Notes
+	326116161	Emitters_Start			\Default Work Unit\Emitters_Start	
+	1519321238	Play_Attack			\Enemies\Play_Attack	
+	1602358412	Play_Footstep			\Character\Play_Footstep	
+	1867872254	Play_KneePlant			\Character\Play_KneePlant	
+	1942027616	Play_HandPlant			\Character\Play_HandPlant	
 	3166394572	Ambience_Stop			\Default Work Unit\Ambience_Stop	
+	3523609203	Play_StepUp			\Character\Play_StepUp	
+	3689126666	Play_Jump			\Character\Play_Jump	
 	3908818592	Ambience_Start			\Default Work Unit\Ambience_Start	
+	4253772027	Emitters_Stop			\Default Work Unit\Emitters_Stop	
+
+Switch Group	ID	Name			Wwise Object Path	Notes
+	1117085073	Character_Type			\Footsteps\Character_Type	
+	2817994306	Step_Type			\Footsteps\Step_Type	
+	4064446173	Surface_Type			\Footsteps\Surface_Type	
+
+Switch	ID	Name	Switch Group			Notes
+	3196610217	Hero	Character_Type			
+	2108779966	Walk	Step_Type			
+	1789562033	Icky	Surface_Type			
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	1571361561	Tension			\Tension Level\Tension	
 
 Modulator Envelope	ID	Name			Wwise Object Path	Notes
 	504415227	Modulator Envelope (Custom)				
+	621557165	Modulator Envelope (Custom)				
 
 Effect plug-ins	ID	Name	Type				Notes
+	48620415	Have_U_Ever_Been_Outside	Wwise RoomVerb			
 	1169110113	New_Wwise_Compressor	Wwise Compressor			
+	1431265797	Monsterize	Wwise Pitch Shifter			
 
 Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
+	14562563	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Mountain Ambience\Wind Blend\Wind Variation\Gap\Wwise Silence	
 	27272652	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Wind Blend\Wind Variation\Silence\Wwise Silence	
+	99948017	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Mountain Ambience\Wind Blend\Wind Variation\Silence2\Wwise Silence	
+	160623429	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Ambience Emitters\Creatures\Screams\Silence 2\Wwise Silence	
 	569488079	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Wind Blend\Wind Variation\Gap\Wwise Silence	
-	651300401	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Creatures\Small Creatures\Silence\Wwise Silence	
-	711037352	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Creatures\Large Creatures\Silence\Wwise Silence	
-	716597018	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Creatures\Large Creatures\Silence 2\Wwise Silence	
+	651300401	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Ambience Emitters\Creatures\Small Creatures\Silence\Wwise Silence	
+	711037352	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Ambience Emitters\Creatures\Large Creatures\Silence\Wwise Silence	
+	716597018	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Ambience Emitters\Creatures\Large Creatures\Silence 2\Wwise Silence	
+	719824698	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Mountain Ambience\Wind Blend\Wind Variation\Silence\Wwise Silence	
 	956657728	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Wind Blend\Wind Variation\Silence2\Wwise Silence	
-	1051332223	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Creatures\Screams\Silence\Wwise Silence	
+	960905707	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Ambience Emitters\Creatures\Small Creatures\Silence 2\Wwise Silence	
+	1051332223	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Ambience Emitters\Creatures\Screams\Silence\Wwise Silence	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	7400365	Wind_Variation_12	D:\Airemon Sound\Cove Games\Profundum\ProfundumWwise\.cache\Mac\SFX\Ambiences\Wind\Wind_Variation_12_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Wind Blend\Wind Variation\Wind_Variation_12		1008704
-	17121569	Creature_Human_Vocal_Chords_13	D:\Airemon Sound\Cove Games\Profundum\ProfundumWwise\.cache\Mac\SFX\Ambiences\Creatures\Creature_Human_Vocal_Chords_13_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Creatures\Small Creatures\Creature_Human_Vocal_Chords_13		694856
-	24697835	Wind_Variation_08	D:\Airemon Sound\Cove Games\Profundum\ProfundumWwise\.cache\Mac\SFX\Ambiences\Wind\Wind_Variation_08_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Wind Blend\Wind Variation\Wind_Variation_08		1602340
-	25605373	Wind_Base_01	D:\Airemon Sound\Cove Games\Profundum\ProfundumWwise\.cache\Mac\SFX\Ambiences\Wind\Wind_Base_01_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Wind Blend\Wind Base\Wind_Base_01		7552064
-	31585862	Unknown_Creature_07	D:\Airemon Sound\Cove Games\Profundum\ProfundumWwise\.cache\Mac\SFX\Ambiences\Creatures\Unknown_Creature_07_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Creatures\Large Creatures\Unknown_Creature_07		1019184
-	67279148	Drone_Tension_02	D:\Airemon Sound\Cove Games\Profundum\ProfundumWwise\.cache\Mac\SFX\Ambiences\Drones\Drone_Tension_02_4B8CC0C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Drone Blend\Drone Tension2\Drone_Tension_02		4668000
-	151276655	Wind_Variation_01	D:\Airemon Sound\Cove Games\Profundum\ProfundumWwise\.cache\Mac\SFX\Ambiences\Wind\Wind_Variation_01_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Wind Blend\Wind Variation\Wind_Variation_01		1071168
-	163731274	Drone_Thunder	D:\Airemon Sound\Cove Games\Profundum\ProfundumWwise\.cache\Mac\SFX\Ambiences\Drones\Drone_Thunder_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Drone Blend\Drone Base\Drone_Thunder		1844256
-	165450884	Unknown_Creature_02	D:\Airemon Sound\Cove Games\Profundum\ProfundumWwise\.cache\Mac\SFX\Ambiences\Creatures\Unknown_Creature_02_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Creatures\Large Creatures\Unknown_Creature_02		1092624
-	175663883	Drone_Base	D:\Airemon Sound\Cove Games\Profundum\ProfundumWwise\.cache\Mac\SFX\Ambiences\Drones\Drone_Base_4B8CC0C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Drone Blend\Drone Base\Drone_Base		4865024
-	235086266	Creature_Human_Vocal_Chords_02	D:\Airemon Sound\Cove Games\Profundum\ProfundumWwise\.cache\Mac\SFX\Ambiences\Creatures\Creature_Human_Vocal_Chords_02_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Creatures\Small Creatures\Creature_Human_Vocal_Chords_02		957616
-	263944968	Drone_Tension_01	D:\Airemon Sound\Cove Games\Profundum\ProfundumWwise\.cache\Mac\SFX\Ambiences\Drones\Drone_Tension_01_4B8CC0C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Drone Blend\Drone Tension1\Drone_Tension_01		4472704
-	340213303	Creature_Human_Vocal_Chords_01	D:\Airemon Sound\Cove Games\Profundum\ProfundumWwise\.cache\Mac\SFX\Ambiences\Creatures\Creature_Human_Vocal_Chords_01_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Creatures\Small Creatures\Creature_Human_Vocal_Chords_01		1019376
-	345252552	Distant_Scream_05	D:\Airemon Sound\Cove Games\Profundum\ProfundumWwise\.cache\Mac\SFX\Ambiences\Creatures\Distant_Scream_05_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Creatures\Screams\Distant_Scream_05		712768
-	346145100	Distant_Scream_08	D:\Airemon Sound\Cove Games\Profundum\ProfundumWwise\.cache\Mac\SFX\Ambiences\Creatures\Distant_Scream_08_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Creatures\Screams\Distant_Scream_08		654248
-	381944453	Distant_Scream_02	D:\Airemon Sound\Cove Games\Profundum\ProfundumWwise\.cache\Mac\SFX\Ambiences\Creatures\Distant_Scream_02_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Creatures\Screams\Distant_Scream_02		1048080
-	406496110	Distant_Scream_06	D:\Airemon Sound\Cove Games\Profundum\ProfundumWwise\.cache\Mac\SFX\Ambiences\Creatures\Distant_Scream_06_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Creatures\Screams\Distant_Scream_06		569432
-	445032196	Wind_Variation_02	D:\Airemon Sound\Cove Games\Profundum\ProfundumWwise\.cache\Mac\SFX\Ambiences\Wind\Wind_Variation_02_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Wind Blend\Wind Variation\Wind_Variation_02		760752
-	447864091	Wind_Variation_09	D:\Airemon Sound\Cove Games\Profundum\ProfundumWwise\.cache\Mac\SFX\Ambiences\Wind\Wind_Variation_09_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Wind Blend\Wind Variation\Wind_Variation_09		770420
-	458171556	Wind_Base_04	D:\Airemon Sound\Cove Games\Profundum\ProfundumWwise\.cache\Mac\SFX\Ambiences\Wind\Wind_Base_04_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Wind Blend\Wind Base\Wind_Base_04		8564064
-	491644843	Distant_Scream_07	D:\Airemon Sound\Cove Games\Profundum\ProfundumWwise\.cache\Mac\SFX\Ambiences\Creatures\Distant_Scream_07_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Creatures\Screams\Distant_Scream_07		526808
-	506209338	Wind_Variation_06	D:\Airemon Sound\Cove Games\Profundum\ProfundumWwise\.cache\Mac\SFX\Ambiences\Wind\Wind_Variation_06_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Wind Blend\Wind Variation\Wind_Variation_06		864320
-	512970112	Creature_Human_Vocal_Chords_03	D:\Airemon Sound\Cove Games\Profundum\ProfundumWwise\.cache\Mac\SFX\Ambiences\Creatures\Creature_Human_Vocal_Chords_03_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Creatures\Small Creatures\Creature_Human_Vocal_Chords_03		864192
-	570487326	Creature_Human_Vocal_Chords_06	D:\Airemon Sound\Cove Games\Profundum\ProfundumWwise\.cache\Mac\SFX\Ambiences\Creatures\Creature_Human_Vocal_Chords_06_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Creatures\Small Creatures\Creature_Human_Vocal_Chords_06		854080
-	572368207	Creature_Human_Vocal_Chords_10	D:\Airemon Sound\Cove Games\Profundum\ProfundumWwise\.cache\Mac\SFX\Ambiences\Creatures\Creature_Human_Vocal_Chords_10_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Creatures\Small Creatures\Creature_Human_Vocal_Chords_10		540384
-	623934891	Wind_Variation_04	D:\Airemon Sound\Cove Games\Profundum\ProfundumWwise\.cache\Mac\SFX\Ambiences\Wind\Wind_Variation_04_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Wind Blend\Wind Variation\Wind_Variation_04		1075040
-	644954399	Creature_Human_Vocal_Chords_11	D:\Airemon Sound\Cove Games\Profundum\ProfundumWwise\.cache\Mac\SFX\Ambiences\Creatures\Creature_Human_Vocal_Chords_11_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Creatures\Small Creatures\Creature_Human_Vocal_Chords_11		697616
-	645809835	Unknown_Creature_01	D:\Airemon Sound\Cove Games\Profundum\ProfundumWwise\.cache\Mac\SFX\Ambiences\Creatures\Unknown_Creature_01_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Creatures\Large Creatures\Unknown_Creature_01		377968
-	740034832	Unknown_Creature_04	D:\Airemon Sound\Cove Games\Profundum\ProfundumWwise\.cache\Mac\SFX\Ambiences\Creatures\Unknown_Creature_04_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Creatures\Large Creatures\Unknown_Creature_04		1151040
-	773880054	Creature_Human_Vocal_Chords_04	D:\Airemon Sound\Cove Games\Profundum\ProfundumWwise\.cache\Mac\SFX\Ambiences\Creatures\Creature_Human_Vocal_Chords_04_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Creatures\Small Creatures\Creature_Human_Vocal_Chords_04		959008
-	792136837	Creature_Human_Vocal_Chords_09	D:\Airemon Sound\Cove Games\Profundum\ProfundumWwise\.cache\Mac\SFX\Ambiences\Creatures\Creature_Human_Vocal_Chords_09_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Creatures\Small Creatures\Creature_Human_Vocal_Chords_09		756616
-	799698791	Unknown_Creature_05	D:\Airemon Sound\Cove Games\Profundum\ProfundumWwise\.cache\Mac\SFX\Ambiences\Creatures\Unknown_Creature_05_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Creatures\Large Creatures\Unknown_Creature_05		1425400
-	801956605	Creature_Human_Vocal_Chords_12	D:\Airemon Sound\Cove Games\Profundum\ProfundumWwise\.cache\Mac\SFX\Ambiences\Creatures\Creature_Human_Vocal_Chords_12_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Creatures\Small Creatures\Creature_Human_Vocal_Chords_12		681952
-	809794084	Wind_Variation_03	D:\Airemon Sound\Cove Games\Profundum\ProfundumWwise\.cache\Mac\SFX\Ambiences\Wind\Wind_Variation_03_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Wind Blend\Wind Variation\Wind_Variation_03		994272
-	847725936	Unknown_Creature_08	D:\Airemon Sound\Cove Games\Profundum\ProfundumWwise\.cache\Mac\SFX\Ambiences\Creatures\Unknown_Creature_08_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Creatures\Large Creatures\Unknown_Creature_08		1029336
-	857018469	Distant_Scream_04	D:\Airemon Sound\Cove Games\Profundum\ProfundumWwise\.cache\Mac\SFX\Ambiences\Creatures\Distant_Scream_04_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Creatures\Screams\Distant_Scream_04		883584
-	867711750	Unknown_Creature_03	D:\Airemon Sound\Cove Games\Profundum\ProfundumWwise\.cache\Mac\SFX\Ambiences\Creatures\Unknown_Creature_03_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Creatures\Large Creatures\Unknown_Creature_03		1179712
-	868946917	Wind_Variation_05	D:\Airemon Sound\Cove Games\Profundum\ProfundumWwise\.cache\Mac\SFX\Ambiences\Wind\Wind_Variation_05_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Wind Blend\Wind Variation\Wind_Variation_05		968628
-	875979451	Wind_Variation_11	D:\Airemon Sound\Cove Games\Profundum\ProfundumWwise\.cache\Mac\SFX\Ambiences\Wind\Wind_Variation_11_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Wind Blend\Wind Variation\Wind_Variation_11		1514560
-	876603022	Distant_Scream_03	D:\Airemon Sound\Cove Games\Profundum\ProfundumWwise\.cache\Mac\SFX\Ambiences\Creatures\Distant_Scream_03_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Creatures\Screams\Distant_Scream_03		703848
-	904244225	Creature_Human_Vocal_Chords_07	D:\Airemon Sound\Cove Games\Profundum\ProfundumWwise\.cache\Mac\SFX\Ambiences\Creatures\Creature_Human_Vocal_Chords_07_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Creatures\Small Creatures\Creature_Human_Vocal_Chords_07		758568
-	934930352	Creature_Human_Vocal_Chords_05	D:\Airemon Sound\Cove Games\Profundum\ProfundumWwise\.cache\Mac\SFX\Ambiences\Creatures\Creature_Human_Vocal_Chords_05_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Creatures\Small Creatures\Creature_Human_Vocal_Chords_05		1143776
-	936149789	Wind_Base_02	D:\Airemon Sound\Cove Games\Profundum\ProfundumWwise\.cache\Mac\SFX\Ambiences\Wind\Wind_Base_02_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Wind Blend\Wind Base\Wind_Base_02		9900064
-	963620898	Creature_Human_Vocal_Chords_08	D:\Airemon Sound\Cove Games\Profundum\ProfundumWwise\.cache\Mac\SFX\Ambiences\Creatures\Creature_Human_Vocal_Chords_08_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Creatures\Small Creatures\Creature_Human_Vocal_Chords_08		997224
-	976243043	Unknown_Creature_06	D:\Airemon Sound\Cove Games\Profundum\ProfundumWwise\.cache\Mac\SFX\Ambiences\Creatures\Unknown_Creature_06_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Creatures\Large Creatures\Unknown_Creature_06		1257216
-	1018724183	Distant_Scream_01	D:\Airemon Sound\Cove Games\Profundum\ProfundumWwise\.cache\Mac\SFX\Ambiences\Creatures\Distant_Scream_01_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Creatures\Screams\Distant_Scream_01		902208
-	1048145576	Wind_Variation_07	D:\Airemon Sound\Cove Games\Profundum\ProfundumWwise\.cache\Mac\SFX\Ambiences\Wind\Wind_Variation_07_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Wind Blend\Wind Variation\Wind_Variation_07		1368868
-	1061251256	Wind_Base_03	D:\Airemon Sound\Cove Games\Profundum\ProfundumWwise\.cache\Mac\SFX\Ambiences\Wind\Wind_Base_03_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Wind Blend\Wind Base\Wind_Base_03		8156064
-	1061458473	Wind_Variation_10	D:\Airemon Sound\Cove Games\Profundum\ProfundumWwise\.cache\Mac\SFX\Ambiences\Wind\Wind_Variation_10_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Wind Blend\Wind Variation\Wind_Variation_10		1014976
+	7400365	Wind_Variation_12	D:\Unity Prototyping\Profundum\ProfundumWwise\.cache\Mac\SFX\Ambiences\Wind\Wind_Variation_12_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Wind Blend\Wind Variation\Wind_Variation_12		1008704
+	22568951	Bone_Breaks_04	D:\Unity Prototyping\Profundum\ProfundumWwise\.cache\Mac\SFX\Enemies\Attack\Bone_Breaks_04_9E69E797.wem		\Actor-Mixer Hierarchy\Enemies\Enemy_Attack\Enemy_Attack_Bones\Bone_Breaks_04		84064
+	24697835	Wind_Variation_08	D:\Unity Prototyping\Profundum\ProfundumWwise\.cache\Mac\SFX\Ambiences\Wind\Wind_Variation_08_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mountain Ambience\Wind Blend\Wind Variation\Wind_Variation_08		1602340
+	25605373	Wind_Base_01	D:\Unity Prototyping\Profundum\ProfundumWwise\.cache\Mac\SFX\Ambiences\Wind\Wind_Base_01_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Wind Blend\Wind Base\Wind_Base_01		7552064
+	26989304	Enemy_Attack_02	D:\Unity Prototyping\Profundum\ProfundumWwise\.cache\Mac\SFX\Enemies\Attack\Enemy_Attack_02_9E69E797.wem		\Actor-Mixer Hierarchy\Enemies\Enemy_Attack\Enemy_Attack_Whoosh\Enemy_Attack_02		164064
+	112400608	Enemy_Attack_04	D:\Unity Prototyping\Profundum\ProfundumWwise\.cache\Mac\SFX\Enemies\Attack\Enemy_Attack_04_9E69E797.wem		\Actor-Mixer Hierarchy\Enemies\Enemy_Attack\Enemy_Attack_Whoosh\Enemy_Attack_04		180064
+	125467534	Footsteps_04	D:\Unity Prototyping\Profundum\ProfundumWwise\.cache\Mac\SFX\Footsteps\Footsteps_04_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\StepUp_Character_Type\StepUp_Surface_Type\StepUp_Hero_Icky\Footsteps_04		52064
+	151276655	Wind_Variation_01	D:\Unity Prototyping\Profundum\ProfundumWwise\.cache\Mac\SFX\Ambiences\Wind\Wind_Variation_01_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Wind Blend\Wind Variation\Wind_Variation_01		1071168
+	165450884	Unknown_Creature_02	D:\Unity Prototyping\Profundum\ProfundumWwise\.cache\Mac\SFX\Ambiences\Creatures\Unknown_Creature_02_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience Emitters\Creatures\Large Creatures\Unknown_Creature_02		1092624
+	235086266	Creature_Human_Vocal_Chords_02	D:\Unity Prototyping\Profundum\ProfundumWwise\.cache\Mac\SFX\Ambiences\Creatures\Creature_Human_Vocal_Chords_02_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience Emitters\Creatures\Small Creatures\Creature_Human_Vocal_Chords_02		957616
+	246327504	Enemy_Attack_03	D:\Unity Prototyping\Profundum\ProfundumWwise\.cache\Mac\SFX\Enemies\Attack\Enemy_Attack_03_9E69E797.wem		\Actor-Mixer Hierarchy\Enemies\Enemy_Attack\Enemy_Attack_Whoosh\Enemy_Attack_03		112064
+	303063129	Drone_Tension_02	D:\Unity Prototyping\Profundum\ProfundumWwise\.cache\Mac\SFX\Ambiences\Drones\Drone_Tension_02_4B8CC0C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Drone Blend\Drone Tension2\Drone_Tension_02		5759040
+	345252552	Distant_Scream_05	D:\Unity Prototyping\Profundum\ProfundumWwise\.cache\Mac\SFX\Ambiences\Creatures\Distant_Scream_05_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience Emitters\Creatures\Screams\Distant_Scream_05		712768
+	390820383	Footsteps_03	D:\Unity Prototyping\Profundum\ProfundumWwise\.cache\Mac\SFX\Footsteps\Footsteps_03_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Jump_Character_Type\Jump_Surface_Type\Jump_Hero_Icky\Footsteps_03		52064
+	445032196	Wind_Variation_02	D:\Unity Prototyping\Profundum\ProfundumWwise\.cache\Mac\SFX\Ambiences\Wind\Wind_Variation_02_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Wind Blend\Wind Variation\Wind_Variation_02		760752
+	447864091	Wind_Variation_09	D:\Unity Prototyping\Profundum\ProfundumWwise\.cache\Mac\SFX\Ambiences\Wind\Wind_Variation_09_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Wind Blend\Wind Variation\Wind_Variation_09		770420
+	458171556	Wind_Base_04	D:\Unity Prototyping\Profundum\ProfundumWwise\.cache\Mac\SFX\Ambiences\Wind\Wind_Base_04_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Wind Blend\Wind Base\Wind_Base_04		8564064
+	493925102	Drone_Base	D:\Unity Prototyping\Profundum\ProfundumWwise\.cache\Mac\SFX\Ambiences\Drones\Drone_Base_4B8CC0C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Drone Blend\Drone Base\Drone_Base		6766656
+	506209338	Wind_Variation_06	D:\Unity Prototyping\Profundum\ProfundumWwise\.cache\Mac\SFX\Ambiences\Wind\Wind_Variation_06_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mountain Ambience\Wind Blend\Wind Variation\Wind_Variation_06		864320
+	570487326	Creature_Human_Vocal_Chords_06	D:\Unity Prototyping\Profundum\ProfundumWwise\.cache\Mac\SFX\Ambiences\Creatures\Creature_Human_Vocal_Chords_06_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience Emitters\Creatures\Small Creatures\Creature_Human_Vocal_Chords_06		854080
+	623934891	Wind_Variation_04	D:\Unity Prototyping\Profundum\ProfundumWwise\.cache\Mac\SFX\Ambiences\Wind\Wind_Variation_04_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Wind Blend\Wind Variation\Wind_Variation_04		1075040
+	634898397	Enemy_Attack_05	D:\Unity Prototyping\Profundum\ProfundumWwise\.cache\Mac\SFX\Enemies\Attack\Enemy_Attack_05_9E69E797.wem		\Actor-Mixer Hierarchy\Enemies\Enemy_Attack\Enemy_Attack_Whoosh\Enemy_Attack_05		224064
+	742169601	Bone_Breaks_01	D:\Unity Prototyping\Profundum\ProfundumWwise\.cache\Mac\SFX\Enemies\Attack\Bone_Breaks_01_9E69E797.wem		\Actor-Mixer Hierarchy\Enemies\Enemy_Attack\Enemy_Attack_Bones\Bone_Breaks_01		48932
+	760149351	Bone_Breaks_03	D:\Unity Prototyping\Profundum\ProfundumWwise\.cache\Mac\SFX\Enemies\Attack\Bone_Breaks_03_9E69E797.wem		\Actor-Mixer Hierarchy\Enemies\Enemy_Attack\Enemy_Attack_Bones\Bone_Breaks_03		60348
+	792136837	Creature_Human_Vocal_Chords_09	D:\Unity Prototyping\Profundum\ProfundumWwise\.cache\Mac\SFX\Ambiences\Creatures\Creature_Human_Vocal_Chords_09_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience Emitters\Creatures\Small Creatures\Creature_Human_Vocal_Chords_09		756616
+	799698791	Unknown_Creature_05	D:\Unity Prototyping\Profundum\ProfundumWwise\.cache\Mac\SFX\Ambiences\Creatures\Unknown_Creature_05_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience Emitters\Creatures\Large Creatures\Unknown_Creature_05		1425400
+	801956605	Creature_Human_Vocal_Chords_12	D:\Unity Prototyping\Profundum\ProfundumWwise\.cache\Mac\SFX\Ambiences\Creatures\Creature_Human_Vocal_Chords_12_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience Emitters\Creatures\Small Creatures\Creature_Human_Vocal_Chords_12		681952
+	809794084	Wind_Variation_03	D:\Unity Prototyping\Profundum\ProfundumWwise\.cache\Mac\SFX\Ambiences\Wind\Wind_Variation_03_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Wind Blend\Wind Variation\Wind_Variation_03		994272
+	838272838	Bone_Breaks_05	D:\Unity Prototyping\Profundum\ProfundumWwise\.cache\Mac\SFX\Enemies\Attack\Bone_Breaks_05_9E69E797.wem		\Actor-Mixer Hierarchy\Enemies\Enemy_Attack\Enemy_Attack_Bones\Bone_Breaks_05		51844
+	842428540	Bone_Breaks_02	D:\Unity Prototyping\Profundum\ProfundumWwise\.cache\Mac\SFX\Enemies\Attack\Bone_Breaks_02_9E69E797.wem		\Actor-Mixer Hierarchy\Enemies\Enemy_Attack\Enemy_Attack_Bones\Bone_Breaks_02		68064
+	857018469	Distant_Scream_04	D:\Unity Prototyping\Profundum\ProfundumWwise\.cache\Mac\SFX\Ambiences\Creatures\Distant_Scream_04_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience Emitters\Creatures\Screams\Distant_Scream_04		883584
+	867711750	Unknown_Creature_03	D:\Unity Prototyping\Profundum\ProfundumWwise\.cache\Mac\SFX\Ambiences\Creatures\Unknown_Creature_03_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience Emitters\Creatures\Large Creatures\Unknown_Creature_03		1179712
+	868946917	Wind_Variation_05	D:\Unity Prototyping\Profundum\ProfundumWwise\.cache\Mac\SFX\Ambiences\Wind\Wind_Variation_05_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mountain Ambience\Wind Blend\Wind Variation\Wind_Variation_05		968628
+	875979451	Wind_Variation_11	D:\Unity Prototyping\Profundum\ProfundumWwise\.cache\Mac\SFX\Ambiences\Wind\Wind_Variation_11_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Wind Blend\Wind Variation\Wind_Variation_11		1514560
+	876603022	Distant_Scream_03	D:\Unity Prototyping\Profundum\ProfundumWwise\.cache\Mac\SFX\Ambiences\Creatures\Distant_Scream_03_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience Emitters\Creatures\Screams\Distant_Scream_03		703848
+	936149789	Wind_Base_02	D:\Unity Prototyping\Profundum\ProfundumWwise\.cache\Mac\SFX\Ambiences\Wind\Wind_Base_02_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Wind Blend\Wind Base\Wind_Base_02		9900064
+	959299850	Enemy_Attack_01	D:\Unity Prototyping\Profundum\ProfundumWwise\.cache\Mac\SFX\Enemies\Attack\Enemy_Attack_01_9E69E797.wem		\Actor-Mixer Hierarchy\Enemies\Enemy_Attack\Enemy_Attack_Whoosh\Enemy_Attack_01		152064
+	959313562	Drone_Tension_01	D:\Unity Prototyping\Profundum\ProfundumWwise\.cache\Mac\SFX\Ambiences\Drones\Drone_Tension_01_4B8CC0C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Drone Blend\Drone Tension1\Drone_Tension_01		5864576
+	975723891	Footsteps_02	D:\Unity Prototyping\Profundum\ProfundumWwise\.cache\Mac\SFX\Footsteps\Footsteps_02_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\StepUp_Character_Type\StepUp_Surface_Type\StepUp_Hero_Icky\Footsteps_02		40064
+	1048145576	Wind_Variation_07	D:\Unity Prototyping\Profundum\ProfundumWwise\.cache\Mac\SFX\Ambiences\Wind\Wind_Variation_07_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mountain Ambience\Wind Blend\Wind Variation\Wind_Variation_07		1368868
+	1059626769	Drone_Thunder	D:\Unity Prototyping\Profundum\ProfundumWwise\.cache\Mac\SFX\Ambiences\Drones\Drone_Thunder_4B8CC0C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Drone Blend\Drone Base\Drone_Thunder		2530912
+	1061251256	Wind_Base_03	D:\Unity Prototyping\Profundum\ProfundumWwise\.cache\Mac\SFX\Ambiences\Wind\Wind_Base_03_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Wind Blend\Wind Base\Wind_Base_03		8156064
+	1061458473	Wind_Variation_10	D:\Unity Prototyping\Profundum\ProfundumWwise\.cache\Mac\SFX\Ambiences\Wind\Wind_Variation_10_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Wind Blend\Wind Variation\Wind_Variation_10		1014976
 

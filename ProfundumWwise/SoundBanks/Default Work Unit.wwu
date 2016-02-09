@@ -5,12 +5,19 @@
 			<ChildrenList>
 				<SoundBank Name="Profundum" ID="{C6A5BB2D-430C-46C3-9AE9-6C751C331C3D}">
 					<ObjectInclusionList>
+						<ObjectRef Name="Play_StepUp" ID="{A0DBAE03-B0E1-44BE-AFDF-878A78468905}" WorkUnitID="{8939A912-52C7-4F12-8D17-F230525F3357}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Footstep" ID="{30807A06-B6EA-44FF-8373-6631F3D70818}" WorkUnitID="{8939A912-52C7-4F12-8D17-F230525F3357}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_KneePlant" ID="{9AE6E419-A614-4864-8455-BD61A1C4FD24}" WorkUnitID="{8939A912-52C7-4F12-8D17-F230525F3357}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_ImpactRight" ID="{7933803D-FD24-403D-BEC1-F88B7AAA3400}" WorkUnitID="{8939A912-52C7-4F12-8D17-F230525F3357}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Ambience_Stop" ID="{19F19B45-1474-4620-9578-53B65485DDB5}" WorkUnitID="{0243A6C9-E699-426D-B01C-6D18D3B15BB2}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_ImpactLeft" ID="{F4115560-0F19-44B7-A2E9-D4B986BE9056}" WorkUnitID="{8939A912-52C7-4F12-8D17-F230525F3357}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Enemies" ID="{56D59066-BB3C-4FFF-9E0F-FED2CC2262D3}" WorkUnitID="{56D59066-BB3C-4FFF-9E0F-FED2CC2262D3}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Default Work Unit" ID="{3D261178-FC48-466F-BA87-23654FECF63A}" WorkUnitID="{3D261178-FC48-466F-BA87-23654FECF63A}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Ambience_Start" ID="{CDEC75A1-A485-4985-9936-02CAB4C7EC56}" WorkUnitID="{0243A6C9-E699-426D-B01C-6D18D3B15BB2}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_SlideOff" ID="{B60655B7-932B-4DB7-912E-AE33C9EC9D70}" WorkUnitID="{8939A912-52C7-4F12-8D17-F230525F3357}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Jump" ID="{C226D9BF-75C7-4A5A-AB31-D58C8A0CD713}" WorkUnitID="{8939A912-52C7-4F12-8D17-F230525F3357}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Attack" ID="{8CD082C6-9F81-4F0B-B66E-7A8EAE073B04}" WorkUnitID="{CF6C1DC8-7AD3-4694-AB69-8670CB0395A5}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_HandPlant" ID="{AD505DF2-4CE7-4B12-8641-3A3D256E8FD1}" WorkUnitID="{8939A912-52C7-4F12-8D17-F230525F3357}" Filter="7" Origin="Manual"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

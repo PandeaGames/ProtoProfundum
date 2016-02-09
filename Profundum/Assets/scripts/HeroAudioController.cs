@@ -36,7 +36,7 @@ public class HeroAudioController : MonoBehaviour {
     {
         AkSoundEngine.PostEvent("Play_Jump", gameObject);
     }
-    void HandPlan()
+    void HandPlant()
     {
         AkSoundEngine.PostEvent("Play_HandPlant", gameObject);
     }
@@ -48,4 +48,16 @@ public class HeroAudioController : MonoBehaviour {
     {
         AkSoundEngine.PostEvent("Play_StepUp", gameObject);
     }
+	void SlideOff()
+	{
+		AkSoundEngine.PostEvent("Play_SlideOff", gameObject);
+	}
+	void ImpactLeft()
+	{
+		AkSoundEngine.PostEvent("Play_ImpactLeft", gameObject);
+	}
+	void ImpactRight()
+	{
+		AkSoundEngine.PostEvent("Play_ImpactRight", gameObject);
+	}
 }

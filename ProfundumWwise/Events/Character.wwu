@@ -14,6 +14,95 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_Jump" ID="{C226D9BF-75C7-4A5A-AB31-D58C8A0CD713}">
+					<ChildrenList>
+						<Action Name="Play" ID="{B3CEA68B-1C55-4C3F-92B9-14A06C238E08}" ShortID="327269332" Type="Play" Scope="One" Global="false">
+							<PropertyList>
+								<Property Name="FadeCurve" Type="int16" Value="7"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+							</PropertyList>
+							<ElementList>
+								<Element ID="{10FB0583-E5A0-4393-A846-398255D4DD3F}" Global="false">
+									<ObjectRef Name="Jump_Character_Type" ID="{5EB4FDD1-9452-4D24-B311-53617A875024}" WorkUnitID="{3D261178-FC48-466F-BA87-23654FECF63A}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_HandPlant" ID="{AD505DF2-4CE7-4B12-8641-3A3D256E8FD1}">
+					<ChildrenList>
+						<Action Name="Play" ID="{49D982AF-F047-48DE-ABBC-A358C6570080}" ShortID="562936073" Type="Play" Scope="One" Global="false">
+							<PropertyList>
+								<Property Name="FadeCurve" Type="int16" Value="7"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+							</PropertyList>
+							<ElementList>
+								<Element ID="{2BCC2F3E-C561-4CE1-941B-0DF6E154B33B}" Global="false">
+									<ObjectRef Name="HandPlant_Character_Type" ID="{399CA118-F159-45E9-AB81-9FDB89E620E3}" WorkUnitID="{3D261178-FC48-466F-BA87-23654FECF63A}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_KneePlant" ID="{9AE6E419-A614-4864-8455-BD61A1C4FD24}">
+					<ChildrenList>
+						<Action Name="Play" ID="{CFB8427B-D5A1-4265-8F50-188DDC46019E}" ShortID="23904437" Type="Play" Scope="One" Global="false">
+							<PropertyList>
+								<Property Name="FadeCurve" Type="int16" Value="7"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.35"/>
+							</PropertyList>
+							<ElementList>
+								<Element ID="{CAACADEF-870E-4531-BAD2-5856088C27C9}" Global="false">
+									<ObjectRef Name="KneePlant_Character_Type" ID="{18B7CDB3-1EEC-4062-8878-62980A9448A6}" WorkUnitID="{3D261178-FC48-466F-BA87-23654FECF63A}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_StepUp" ID="{A0DBAE03-B0E1-44BE-AFDF-878A78468905}">
+					<ChildrenList>
+						<Action Name="Play" ID="{BF5F8792-FA55-4992-82FF-8BB0B27A76E3}" ShortID="750807438" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{F3E57D0D-637A-4A5F-B8C5-6EC02DC06DE9}" Global="false">
+									<ObjectRef Name="StepUp_Character_Type" ID="{A106571D-0E56-44E3-865D-C2F4314923F3}" WorkUnitID="{3D261178-FC48-466F-BA87-23654FECF63A}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_SlideOff" ID="{B60655B7-932B-4DB7-912E-AE33C9EC9D70}">
+					<ChildrenList>
+						<Action Name="Play" ID="{54866331-EDCE-43A1-A77A-889F277E0D8C}" ShortID="349862704" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{B197E37F-186A-4E5A-AF09-6FC22734C58C}" Global="false">
+									<ObjectRef Name="SlideOff_Character_Type" ID="{83610397-58A0-4133-A8CB-E9638DC88CBA}" WorkUnitID="{3D261178-FC48-466F-BA87-23654FECF63A}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_ImpactLeft" ID="{F4115560-0F19-44B7-A2E9-D4B986BE9056}">
+					<ChildrenList>
+						<Action Name="Play" ID="{1E0F8331-A20F-4A9E-B711-A31ACCD79E44}" ShortID="918659099" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{360FFF5B-379B-4525-AEEA-32ADB498FF20}" Global="false">
+									<ObjectRef Name="ImpactLeft_Character_Type" ID="{7A7CB44A-47FA-4C55-8E04-3908587585A7}" WorkUnitID="{3D261178-FC48-466F-BA87-23654FECF63A}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_ImpactRight" ID="{7933803D-FD24-403D-BEC1-F88B7AAA3400}">
+					<ChildrenList>
+						<Action Name="Play" ID="{208D9AB6-E0B5-470A-9183-344A93827FF8}" ShortID="51980603" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{85E823AD-D35C-4C61-BD05-FBCD7F2BE8A5}" Global="false">
+									<ObjectRef Name="ImpactRight_Character_Type" ID="{A17127BE-9DD2-41CE-B120-6DA6E96D5D55}" WorkUnitID="{3D261178-FC48-466F-BA87-23654FECF63A}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

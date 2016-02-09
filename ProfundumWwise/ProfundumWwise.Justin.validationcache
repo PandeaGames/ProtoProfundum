@@ -44,4 +44,48 @@
 	<ValidationCacheItem File="D:\Airemon Sound\Cove Games\Profundum\ProfundumWwise\Switches\Default Work Unit.wwu" DateLow="944670083" DateHigh="30457914"/>
 	<ValidationCacheItem File="D:\Airemon Sound\Cove Games\Profundum\ProfundumWwise\Switches\Footsteps.wwu" DateLow="3396096411" DateHigh="30471625"/>
 	<ValidationCacheItem File="D:\Airemon Sound\Cove Games\Profundum\ProfundumWwise\Triggers\Default Work Unit.wwu" DateLow="944560077" DateHigh="30457914"/>
+	<ValidationCacheItem File="D:\Unity Prototyping\Profundum\ProfundumWwise\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="2553587815" DateHigh="30499551"/>
+	<ValidationCacheItem File="D:\Unity Prototyping\Profundum\ProfundumWwise\Actor-Mixer Hierarchy\Enemies.wwu" DateLow="2692748221" DateHigh="30499518"/>
+	<ValidationCacheItem File="D:\Unity Prototyping\Profundum\ProfundumWwise\Actor-Mixer Hierarchy\Factory Crankcase REV.wwu" DateLow="2692768222" DateHigh="30499518"/>
+	<ValidationCacheItem File="D:\Unity Prototyping\Profundum\ProfundumWwise\Actor-Mixer Hierarchy\Factory SoundSeed Air Objects.wwu" DateLow="2692818225" DateHigh="30499518"/>
+	<ValidationCacheItem File="D:\Unity Prototyping\Profundum\ProfundumWwise\Actor-Mixer Hierarchy\Factory Synth One.wwu" DateLow="2692898229" DateHigh="30499518"/>
+	<ValidationCacheItem File="D:\Unity Prototyping\Profundum\ProfundumWwise\Attenuations\Default Work Unit.wwu" DateLow="2692908230" DateHigh="30499518"/>
+	<ValidationCacheItem File="D:\Unity Prototyping\Profundum\ProfundumWwise\Control Surface Sessions\Default Work Unit.wwu" DateLow="2692918230" DateHigh="30499518"/>
+	<ValidationCacheItem File="D:\Unity Prototyping\Profundum\ProfundumWwise\Conversion Settings\Default Work Unit.wwu" DateLow="2692918230" DateHigh="30499518"/>
+	<ValidationCacheItem File="D:\Unity Prototyping\Profundum\ProfundumWwise\Conversion Settings\Factory Conversion Settings.wwu" DateLow="2692938231" DateHigh="30499518"/>
+	<ValidationCacheItem File="D:\Unity Prototyping\Profundum\ProfundumWwise\Dynamic Dialogue\Default Work Unit.wwu" DateLow="2692938231" DateHigh="30499518"/>
+	<ValidationCacheItem File="D:\Unity Prototyping\Profundum\ProfundumWwise\Effects\Default Work Unit.wwu" DateLow="2692948232" DateHigh="30499518"/>
+	<ValidationCacheItem File="D:\Unity Prototyping\Profundum\ProfundumWwise\Effects\Factory Altiverb - Outdoor and More.wwu" DateLow="2692968233" DateHigh="30499518"/>
+	<ValidationCacheItem File="D:\Unity Prototyping\Profundum\ProfundumWwise\Effects\Factory Auro Headphone.wwu" DateLow="2692988234" DateHigh="30499518"/>
+	<ValidationCacheItem File="D:\Unity Prototyping\Profundum\ProfundumWwise\Effects\Factory Convolution Reverb Effects.wwu" DateLow="2693018236" DateHigh="30499518"/>
+	<ValidationCacheItem File="D:\Unity Prototyping\Profundum\ProfundumWwise\Effects\Factory Effects.wwu" DateLow="2693038237" DateHigh="30499518"/>
+	<ValidationCacheItem File="D:\Unity Prototyping\Profundum\ProfundumWwise\Effects\Factory iZotope Box Modeler.wwu" DateLow="2693068239" DateHigh="30499518"/>
+	<ValidationCacheItem File="D:\Unity Prototyping\Profundum\ProfundumWwise\Effects\Factory iZotope Delay.wwu" DateLow="2693078239" DateHigh="30499518"/>
+	<ValidationCacheItem File="D:\Unity Prototyping\Profundum\ProfundumWwise\Effects\Factory iZotope Dynamics.wwu" DateLow="2693088240" DateHigh="30499518"/>
+	<ValidationCacheItem File="D:\Unity Prototyping\Profundum\ProfundumWwise\Effects\Factory iZotope Filters.wwu" DateLow="2693098241" DateHigh="30499518"/>
+	<ValidationCacheItem File="D:\Unity Prototyping\Profundum\ProfundumWwise\Effects\Factory iZotope Hybrid Reverb Effects.wwu" DateLow="2693098241" DateHigh="30499518"/>
+	<ValidationCacheItem File="D:\Unity Prototyping\Profundum\ProfundumWwise\Effects\Factory iZotope Multiband Distortion.wwu" DateLow="2693108241" DateHigh="30499518"/>
+	<ValidationCacheItem File="D:\Unity Prototyping\Profundum\ProfundumWwise\Effects\Factory iZotope Singleband Distortion.wwu" DateLow="2693118242" DateHigh="30499518"/>
+	<ValidationCacheItem File="D:\Unity Prototyping\Profundum\ProfundumWwise\Effects\Factory McDSP Effects.wwu" DateLow="2693068239" DateHigh="30499518"/>
+	<ValidationCacheItem File="D:\Unity Prototyping\Profundum\ProfundumWwise\Events\Character.wwu" DateLow="3083248109" DateHigh="30499551"/>
+	<ValidationCacheItem File="D:\Unity Prototyping\Profundum\ProfundumWwise\Events\Default Work Unit.wwu" DateLow="2693128242" DateHigh="30499518"/>
+	<ValidationCacheItem File="D:\Unity Prototyping\Profundum\ProfundumWwise\Events\Enemies.wwu" DateLow="2693128242" DateHigh="30499518"/>
+	<ValidationCacheItem File="D:\Unity Prototyping\Profundum\ProfundumWwise\Game Parameters\Default Work Unit.wwu" DateLow="2693138243" DateHigh="30499518"/>
+	<ValidationCacheItem File="D:\Unity Prototyping\Profundum\ProfundumWwise\Game Parameters\Factory SoundSeed Air Game Syncs.wwu" DateLow="2693148243" DateHigh="30499518"/>
+	<ValidationCacheItem File="D:\Unity Prototyping\Profundum\ProfundumWwise\Game Parameters\Tension Level.wwu" DateLow="2693158244" DateHigh="30499518"/>
+	<ValidationCacheItem File="D:\Unity Prototyping\Profundum\ProfundumWwise\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="2957623371" DateHigh="30499518"/>
+	<ValidationCacheItem File="D:\Unity Prototyping\Profundum\ProfundumWwise\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="2957633371" DateHigh="30499518"/>
+	<ValidationCacheItem File="D:\Unity Prototyping\Profundum\ProfundumWwise\Mixing Sessions\Default Work Unit.wwu" DateLow="2957633371" DateHigh="30499518"/>
+	<ValidationCacheItem File="D:\Unity Prototyping\Profundum\ProfundumWwise\Modulators\Default Work Unit.wwu" DateLow="2957643372" DateHigh="30499518"/>
+	<ValidationCacheItem File="D:\Unity Prototyping\Profundum\ProfundumWwise\Presets\Default Work Unit.wwu" DateLow="3900337291" DateHigh="30499518"/>
+	<ValidationCacheItem File="D:\Unity Prototyping\Profundum\ProfundumWwise\ProfundumWwise.Justin.wsettings" DateLow="3174253315" DateHigh="30499551"/>
+	<ValidationCacheItem File="D:\Unity Prototyping\Profundum\ProfundumWwise\ProfundumWwise.wproj" DateLow="3900407295" DateHigh="30499518"/>
+	<ValidationCacheItem File="D:\Unity Prototyping\Profundum\ProfundumWwise\Queries\Default Work Unit.wwu" DateLow="3900417295" DateHigh="30499518"/>
+	<ValidationCacheItem File="D:\Unity Prototyping\Profundum\ProfundumWwise\Queries\Factory Queries.wwu" DateLow="3900427296" DateHigh="30499518"/>
+	<ValidationCacheItem File="D:\Unity Prototyping\Profundum\ProfundumWwise\SoundBanks\Default Work Unit.wwu" DateLow="743020808" DateHigh="30499547"/>
+	<ValidationCacheItem File="D:\Unity Prototyping\Profundum\ProfundumWwise\Soundcaster Sessions\Default Work Unit.wwu" DateLow="3900447297" DateHigh="30499518"/>
+	<ValidationCacheItem File="D:\Unity Prototyping\Profundum\ProfundumWwise\States\Default Work Unit.wwu" DateLow="3900457298" DateHigh="30499518"/>
+	<ValidationCacheItem File="D:\Unity Prototyping\Profundum\ProfundumWwise\Switches\Default Work Unit.wwu" DateLow="3900457298" DateHigh="30499518"/>
+	<ValidationCacheItem File="D:\Unity Prototyping\Profundum\ProfundumWwise\Switches\Footsteps.wwu" DateLow="3900467298" DateHigh="30499518"/>
+	<ValidationCacheItem File="D:\Unity Prototyping\Profundum\ProfundumWwise\Triggers\Default Work Unit.wwu" DateLow="3900477299" DateHigh="30499518"/>
 </ValidationCache>

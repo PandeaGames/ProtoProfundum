@@ -3,5 +3,7 @@
 	<Plugins>
 		<Plugin Name="Wwise Silence" ID="6619138"/>
 		<Plugin Name="Wwise Compressor" ID="7077891"/>
+		<Plugin Name="Wwise RoomVerb" ID="7733251"/>
+		<Plugin Name="Wwise Pitch Shifter" ID="8912899"/>
 	</Plugins>
 </PluginInfo>

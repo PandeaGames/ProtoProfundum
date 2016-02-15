@@ -1,16 +1,23 @@
 Event	ID	Name			Wwise Object Path	Notes
+	6482866	Stop_Breathing			\Character\Stop_Breathing	
+	267570722	Play_Spot			\Gruppers\Play_Spot	
+	310934034	Play_LightAttack			\Character\Play_LightAttack	
 	326116161	Emitters_Start			\Default Work Unit\Emitters_Start	
 	760353983	Play_ImpactLeft			\Character\Play_ImpactLeft	
-	1519321238	Play_Attack			\Enemies\Play_Attack	
+	901669596	Play_LightReturn			\Character\Play_LightReturn	
+	1519321238	Play_Attack			\Gruppers\Play_Attack	
 	1602358412	Play_Footstep			\Character\Play_Footstep	
 	1867872254	Play_KneePlant			\Character\Play_KneePlant	
 	1942027616	Play_HandPlant			\Character\Play_HandPlant	
 	3130131672	Play_SlideOff			\Character\Play_SlideOff	
 	3166394572	Ambience_Stop			\Default Work Unit\Ambience_Stop	
+	3194988474	Grupper_Idle_Start			\Gruppers\Grupper_Idle_Start	
 	3285560386	Play_ImpactRight			\Character\Play_ImpactRight	
 	3523609203	Play_StepUp			\Character\Play_StepUp	
+	3686092498	Grupper_Idle_Stop			\Gruppers\Grupper_Idle_Stop	
 	3689126666	Play_Jump			\Character\Play_Jump	
 	3908818592	Ambience_Start			\Default Work Unit\Ambience_Start	
+	4093367312	Play_Breathing			\Character\Play_Breathing	
 	4253772027	Emitters_Stop			\Default Work Unit\Emitters_Stop	
 
 Switch Group	ID	Name			Wwise Object Path	Notes
@@ -32,14 +39,20 @@ Modulator Envelope	ID	Name			Wwise Object Path	Notes
 
 Effect plug-ins	ID	Name	Type				Notes
 	48620415	Have_U_Ever_Been_Outside	Wwise RoomVerb			
+	857611043	Wwise Time Stretch (Custom)	Wwise Time Stretch			
 	1169110113	New_Wwise_Compressor	Wwise Compressor			
 	1431265797	Monsterize	Wwise Pitch Shifter			
 
 Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
 	14562563	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Mountain Ambience\Wind Blend\Wind Variation\Gap\Wwise Silence	
 	27272652	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Wind Blend\Wind Variation\Silence\Wwise Silence	
+	85840482	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Mountain Ambience Emitters\Creatures\Small Creatures\Silence 2\Wwise Silence	
 	99948017	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Mountain Ambience\Wind Blend\Wind Variation\Silence2\Wwise Silence	
 	160623429	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Ambience Emitters\Creatures\Screams\Silence 2\Wwise Silence	
+	299975048	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Mountain Ambience Emitters\Creatures\Screams\Silence 2\Wwise Silence	
+	331909169	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Mountain Ambience Emitters\Creatures\Small Creatures\Silence\Wwise Silence	
+	339445385	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Mountain Ambience Emitters\Creatures\Screams\Silence\Wwise Silence	
+	445807745	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Enemies\Grupper\Grupper_Idle\Silence\Wwise Silence	
 	569488079	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Wind Blend\Wind Variation\Gap\Wwise Silence	
 	651300401	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Ambience Emitters\Creatures\Small Creatures\Silence\Wwise Silence	
 	711037352	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Ambience Emitters\Creatures\Large Creatures\Silence\Wwise Silence	
@@ -47,48 +60,65 @@ Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
 	719824698	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Mountain Ambience\Wind Blend\Wind Variation\Silence\Wwise Silence	
 	956657728	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Wind Blend\Wind Variation\Silence2\Wwise Silence	
 	960905707	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Ambience Emitters\Creatures\Small Creatures\Silence 2\Wwise Silence	
+	1004569515	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Mountain Ambience Emitters\Creatures\Large Creatures\Silence 2\Wwise Silence	
 	1051332223	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Ambience Emitters\Creatures\Screams\Silence\Wwise Silence	
+	1060239766	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Mountain Ambience Emitters\Creatures\Large Creatures\Silence\Wwise Silence	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	7400365	Wind_Variation_12	D:\Unity Prototyping\Profundum\ProfundumWwise\.cache\Windows\SFX\Ambiences\Wind\Wind_Variation_12_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Wind Blend\Wind Variation\Wind_Variation_12		1008704
-	22568951	Bone_Breaks_04	D:\Unity Prototyping\Profundum\ProfundumWwise\.cache\Windows\SFX\Enemies\Attack\Bone_Breaks_04_9E69E797.wem		\Actor-Mixer Hierarchy\Enemies\Enemy_Attack\Enemy_Attack_Bones\Bone_Breaks_04		84064
+	22568951	Bone_Breaks_04	D:\Unity Prototyping\Profundum\ProfundumWwise\.cache\Windows\SFX\Enemies\Attack\Bone_Breaks_04_9E69E797.wem		\Actor-Mixer Hierarchy\Enemies\Grupper\Grupper_Attack\Enemy_Attack_Bones\Bone_Breaks_04		84064
 	24697835	Wind_Variation_08	D:\Unity Prototyping\Profundum\ProfundumWwise\.cache\Windows\SFX\Ambiences\Wind\Wind_Variation_08_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mountain Ambience\Wind Blend\Wind Variation\Wind_Variation_08		1602340
 	25605373	Wind_Base_01	D:\Unity Prototyping\Profundum\ProfundumWwise\.cache\Windows\SFX\Ambiences\Wind\Wind_Base_01_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Wind Blend\Wind Base\Wind_Base_01		7552064
-	26989304	Enemy_Attack_02	D:\Unity Prototyping\Profundum\ProfundumWwise\.cache\Windows\SFX\Enemies\Attack\Enemy_Attack_02_9E69E797.wem		\Actor-Mixer Hierarchy\Enemies\Enemy_Attack\Enemy_Attack_Whoosh\Enemy_Attack_02		164064
-	112400608	Enemy_Attack_04	D:\Unity Prototyping\Profundum\ProfundumWwise\.cache\Windows\SFX\Enemies\Attack\Enemy_Attack_04_9E69E797.wem		\Actor-Mixer Hierarchy\Enemies\Enemy_Attack\Enemy_Attack_Whoosh\Enemy_Attack_04		180064
-	125467534	Footsteps_04	D:\Unity Prototyping\Profundum\ProfundumWwise\.cache\Windows\SFX\Footsteps\Footsteps_04_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\StepUp_Character_Type\StepUp_Surface_Type\StepUp_Hero_Icky\Footsteps_04		52064
+	26989304	Enemy_Attack_02	D:\Unity Prototyping\Profundum\ProfundumWwise\.cache\Windows\SFX\Enemies\Attack\Enemy_Attack_02_9E69E797.wem		\Actor-Mixer Hierarchy\Enemies\Grupper\Grupper_Attack\Enemy_Attack_Whoosh\Enemy_Attack_02		164064
+	47501503	Grubber_Growl_04	D:\Unity Prototyping\Profundum\ProfundumWwise\.cache\Windows\SFX\Enemies\Idle\Grubber_Growl_04_9E69E797.wem		\Actor-Mixer Hierarchy\Enemies\Grupper\Grupper_Idle\Grubber_Growl_04		300064
+	82216709	Light_Return_02	D:\Unity Prototyping\Profundum\ProfundumWwise\.cache\Windows\SFX\Hero\Light_Return_02_9E69E797.wem		\Actor-Mixer Hierarchy\Hero\Hero_Light_Return\Light_Return_02		384064
+	112400608	Enemy_Attack_04	D:\Unity Prototyping\Profundum\ProfundumWwise\.cache\Windows\SFX\Enemies\Attack\Enemy_Attack_04_9E69E797.wem		\Actor-Mixer Hierarchy\Enemies\Grupper\Grupper_Attack\Enemy_Attack_Whoosh\Enemy_Attack_04		180064
+	125467534	Footsteps_04	D:\Unity Prototyping\Profundum\ProfundumWwise\.cache\Windows\SFX\Footsteps\Footsteps_04_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps_Character_Type\FS_Hero_Surface_Type\FS_Hero_Icky_Step_Type\FS_Hero_Icky_Walk\Footsteps_04		52064
 	151276655	Wind_Variation_01	D:\Unity Prototyping\Profundum\ProfundumWwise\.cache\Windows\SFX\Ambiences\Wind\Wind_Variation_01_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Wind Blend\Wind Variation\Wind_Variation_01		1071168
 	165450884	Unknown_Creature_02	D:\Unity Prototyping\Profundum\ProfundumWwise\.cache\Windows\SFX\Ambiences\Creatures\Unknown_Creature_02_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience Emitters\Creatures\Large Creatures\Unknown_Creature_02		1092624
+	195515007	Light_Attack_01	D:\Unity Prototyping\Profundum\ProfundumWwise\.cache\Windows\SFX\Hero\Light_Attack_01_9E69E797.wem		\Actor-Mixer Hierarchy\Hero\Hero_Light_Attack\Light_Attack_01		385792
 	235086266	Creature_Human_Vocal_Chords_02	D:\Unity Prototyping\Profundum\ProfundumWwise\.cache\Windows\SFX\Ambiences\Creatures\Creature_Human_Vocal_Chords_02_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience Emitters\Creatures\Small Creatures\Creature_Human_Vocal_Chords_02		957616
-	246327504	Enemy_Attack_03	D:\Unity Prototyping\Profundum\ProfundumWwise\.cache\Windows\SFX\Enemies\Attack\Enemy_Attack_03_9E69E797.wem		\Actor-Mixer Hierarchy\Enemies\Enemy_Attack\Enemy_Attack_Whoosh\Enemy_Attack_03		112064
+	246327504	Enemy_Attack_03	D:\Unity Prototyping\Profundum\ProfundumWwise\.cache\Windows\SFX\Enemies\Attack\Enemy_Attack_03_9E69E797.wem		\Actor-Mixer Hierarchy\Enemies\Grupper\Grupper_Attack\Enemy_Attack_Whoosh\Enemy_Attack_03		112064
 	303063129	Drone_Tension_02	D:\Unity Prototyping\Profundum\ProfundumWwise\.cache\Windows\SFX\Ambiences\Drones\Drone_Tension_02_4B8CC0C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Drone Blend\Drone Tension2\Drone_Tension_02		5759040
 	345252552	Distant_Scream_05	D:\Unity Prototyping\Profundum\ProfundumWwise\.cache\Windows\SFX\Ambiences\Creatures\Distant_Scream_05_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience Emitters\Creatures\Screams\Distant_Scream_05		712768
+	382900947	Grubber_Growl_03	D:\Unity Prototyping\Profundum\ProfundumWwise\.cache\Windows\SFX\Enemies\Idle\Grubber_Growl_03_9E69E797.wem		\Actor-Mixer Hierarchy\Enemies\Grupper\Grupper_Idle\Grubber_Growl_03		316064
 	390820383	Footsteps_03	D:\Unity Prototyping\Profundum\ProfundumWwise\.cache\Windows\SFX\Footsteps\Footsteps_03_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Jump_Character_Type\Jump_Surface_Type\Jump_Hero_Icky\Footsteps_03		52064
+	395545024	Slide_01	D:\Unity Prototyping\Profundum\ProfundumWwise\.cache\Windows\SFX\Footsteps\Slide_01_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\SlideOff_Character_Type\SlideOff_Surface_Type\SlideOff_Hero_Icky\Slide_01		76064
+	425162689	Grubber_Spot_03	D:\Unity Prototyping\Profundum\ProfundumWwise\.cache\Windows\SFX\Enemies\Spot\Grubber_Spot_03_9E69E797.wem		\Actor-Mixer Hierarchy\Enemies\Grupper\Grupper_Spot\Grubber_Spot_03		228064
 	445032196	Wind_Variation_02	D:\Unity Prototyping\Profundum\ProfundumWwise\.cache\Windows\SFX\Ambiences\Wind\Wind_Variation_02_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Wind Blend\Wind Variation\Wind_Variation_02		760752
 	447864091	Wind_Variation_09	D:\Unity Prototyping\Profundum\ProfundumWwise\.cache\Windows\SFX\Ambiences\Wind\Wind_Variation_09_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Wind Blend\Wind Variation\Wind_Variation_09		770420
 	493925102	Drone_Base	D:\Unity Prototyping\Profundum\ProfundumWwise\.cache\Windows\SFX\Ambiences\Drones\Drone_Base_4B8CC0C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Drone Blend\Drone Base\Drone_Base		6766656
 	506209338	Wind_Variation_06	D:\Unity Prototyping\Profundum\ProfundumWwise\.cache\Windows\SFX\Ambiences\Wind\Wind_Variation_06_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mountain Ambience\Wind Blend\Wind Variation\Wind_Variation_06		864320
 	570487326	Creature_Human_Vocal_Chords_06	D:\Unity Prototyping\Profundum\ProfundumWwise\.cache\Windows\SFX\Ambiences\Creatures\Creature_Human_Vocal_Chords_06_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience Emitters\Creatures\Small Creatures\Creature_Human_Vocal_Chords_06		854080
 	623934891	Wind_Variation_04	D:\Unity Prototyping\Profundum\ProfundumWwise\.cache\Windows\SFX\Ambiences\Wind\Wind_Variation_04_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Wind Blend\Wind Variation\Wind_Variation_04		1075040
-	634898397	Enemy_Attack_05	D:\Unity Prototyping\Profundum\ProfundumWwise\.cache\Windows\SFX\Enemies\Attack\Enemy_Attack_05_9E69E797.wem		\Actor-Mixer Hierarchy\Enemies\Enemy_Attack\Enemy_Attack_Whoosh\Enemy_Attack_05		224064
-	742169601	Bone_Breaks_01	D:\Unity Prototyping\Profundum\ProfundumWwise\.cache\Windows\SFX\Enemies\Attack\Bone_Breaks_01_9E69E797.wem		\Actor-Mixer Hierarchy\Enemies\Enemy_Attack\Enemy_Attack_Bones\Bone_Breaks_01		48932
-	760149351	Bone_Breaks_03	D:\Unity Prototyping\Profundum\ProfundumWwise\.cache\Windows\SFX\Enemies\Attack\Bone_Breaks_03_9E69E797.wem		\Actor-Mixer Hierarchy\Enemies\Enemy_Attack\Enemy_Attack_Bones\Bone_Breaks_03		60348
+	629818467	Light_Return_03	D:\Unity Prototyping\Profundum\ProfundumWwise\.cache\Windows\SFX\Hero\Light_Return_03_9E69E797.wem		\Actor-Mixer Hierarchy\Hero\Hero_Light_Return\Light_Return_03		384064
+	634898397	Enemy_Attack_05	D:\Unity Prototyping\Profundum\ProfundumWwise\.cache\Windows\SFX\Enemies\Attack\Enemy_Attack_05_9E69E797.wem		\Actor-Mixer Hierarchy\Enemies\Grupper\Grupper_Attack\Enemy_Attack_Whoosh\Enemy_Attack_05		224064
+	693941305	Choppy_Breathing_01	D:\Unity Prototyping\Profundum\ProfundumWwise\.cache\Windows\SFX\Hero\Choppy_Breathing_01_9E69E797.wem		\Actor-Mixer Hierarchy\Hero\Hero_Heavy_Breathing\Choppy_Breathing_01		224064
+	742169601	Bone_Breaks_01	D:\Unity Prototyping\Profundum\ProfundumWwise\.cache\Windows\SFX\Enemies\Attack\Bone_Breaks_01_9E69E797.wem		\Actor-Mixer Hierarchy\Enemies\Grupper\Grupper_Attack\Enemy_Attack_Bones\Bone_Breaks_01		48932
+	755297260	Choppy_Breathing_02	D:\Unity Prototyping\Profundum\ProfundumWwise\.cache\Windows\SFX\Hero\Choppy_Breathing_02_9E69E797.wem		\Actor-Mixer Hierarchy\Hero\Hero_Heavy_Breathing\Choppy_Breathing_02		276064
+	760149351	Bone_Breaks_03	D:\Unity Prototyping\Profundum\ProfundumWwise\.cache\Windows\SFX\Enemies\Attack\Bone_Breaks_03_9E69E797.wem		\Actor-Mixer Hierarchy\Enemies\Grupper\Grupper_Attack\Enemy_Attack_Bones\Bone_Breaks_03		60348
 	792136837	Creature_Human_Vocal_Chords_09	D:\Unity Prototyping\Profundum\ProfundumWwise\.cache\Windows\SFX\Ambiences\Creatures\Creature_Human_Vocal_Chords_09_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience Emitters\Creatures\Small Creatures\Creature_Human_Vocal_Chords_09		756616
 	799698791	Unknown_Creature_05	D:\Unity Prototyping\Profundum\ProfundumWwise\.cache\Windows\SFX\Ambiences\Creatures\Unknown_Creature_05_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience Emitters\Creatures\Large Creatures\Unknown_Creature_05		1425400
 	801956605	Creature_Human_Vocal_Chords_12	D:\Unity Prototyping\Profundum\ProfundumWwise\.cache\Windows\SFX\Ambiences\Creatures\Creature_Human_Vocal_Chords_12_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience Emitters\Creatures\Small Creatures\Creature_Human_Vocal_Chords_12		681952
 	809794084	Wind_Variation_03	D:\Unity Prototyping\Profundum\ProfundumWwise\.cache\Windows\SFX\Ambiences\Wind\Wind_Variation_03_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Wind Blend\Wind Variation\Wind_Variation_03		994272
-	838272838	Bone_Breaks_05	D:\Unity Prototyping\Profundum\ProfundumWwise\.cache\Windows\SFX\Enemies\Attack\Bone_Breaks_05_9E69E797.wem		\Actor-Mixer Hierarchy\Enemies\Enemy_Attack\Enemy_Attack_Bones\Bone_Breaks_05		51844
-	842428540	Bone_Breaks_02	D:\Unity Prototyping\Profundum\ProfundumWwise\.cache\Windows\SFX\Enemies\Attack\Bone_Breaks_02_9E69E797.wem		\Actor-Mixer Hierarchy\Enemies\Enemy_Attack\Enemy_Attack_Bones\Bone_Breaks_02		68064
+	838272838	Bone_Breaks_05	D:\Unity Prototyping\Profundum\ProfundumWwise\.cache\Windows\SFX\Enemies\Attack\Bone_Breaks_05_9E69E797.wem		\Actor-Mixer Hierarchy\Enemies\Grupper\Grupper_Attack\Enemy_Attack_Bones\Bone_Breaks_05		51844
+	842428540	Bone_Breaks_02	D:\Unity Prototyping\Profundum\ProfundumWwise\.cache\Windows\SFX\Enemies\Attack\Bone_Breaks_02_9E69E797.wem		\Actor-Mixer Hierarchy\Enemies\Grupper\Grupper_Attack\Enemy_Attack_Bones\Bone_Breaks_02		68064
 	857018469	Distant_Scream_04	D:\Unity Prototyping\Profundum\ProfundumWwise\.cache\Windows\SFX\Ambiences\Creatures\Distant_Scream_04_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience Emitters\Creatures\Screams\Distant_Scream_04		883584
 	867711750	Unknown_Creature_03	D:\Unity Prototyping\Profundum\ProfundumWwise\.cache\Windows\SFX\Ambiences\Creatures\Unknown_Creature_03_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience Emitters\Creatures\Large Creatures\Unknown_Creature_03		1179712
 	868946917	Wind_Variation_05	D:\Unity Prototyping\Profundum\ProfundumWwise\.cache\Windows\SFX\Ambiences\Wind\Wind_Variation_05_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mountain Ambience\Wind Blend\Wind Variation\Wind_Variation_05		968628
 	875979451	Wind_Variation_11	D:\Unity Prototyping\Profundum\ProfundumWwise\.cache\Windows\SFX\Ambiences\Wind\Wind_Variation_11_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Wind Blend\Wind Variation\Wind_Variation_11		1514560
+	876126955	Grubber_Growl_01	D:\Unity Prototyping\Profundum\ProfundumWwise\.cache\Windows\SFX\Enemies\Idle\Grubber_Growl_01_9E69E797.wem		\Actor-Mixer Hierarchy\Enemies\Grupper\Grupper_Idle\Grubber_Growl_01		540064
 	876603022	Distant_Scream_03	D:\Unity Prototyping\Profundum\ProfundumWwise\.cache\Windows\SFX\Ambiences\Creatures\Distant_Scream_03_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience Emitters\Creatures\Screams\Distant_Scream_03		703848
 	936149789	Wind_Base_02	D:\Unity Prototyping\Profundum\ProfundumWwise\.cache\Windows\SFX\Ambiences\Wind\Wind_Base_02_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Wind Blend\Wind Base\Wind_Base_02		9900064
-	959299850	Enemy_Attack_01	D:\Unity Prototyping\Profundum\ProfundumWwise\.cache\Windows\SFX\Enemies\Attack\Enemy_Attack_01_9E69E797.wem		\Actor-Mixer Hierarchy\Enemies\Enemy_Attack\Enemy_Attack_Whoosh\Enemy_Attack_01		152064
+	959299850	Enemy_Attack_01	D:\Unity Prototyping\Profundum\ProfundumWwise\.cache\Windows\SFX\Enemies\Attack\Enemy_Attack_01_9E69E797.wem		\Actor-Mixer Hierarchy\Enemies\Grupper\Grupper_Attack\Enemy_Attack_Whoosh\Enemy_Attack_01		152064
 	959313562	Drone_Tension_01	D:\Unity Prototyping\Profundum\ProfundumWwise\.cache\Windows\SFX\Ambiences\Drones\Drone_Tension_01_4B8CC0C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Drone Blend\Drone Tension1\Drone_Tension_01		5864576
-	975723891	Footsteps_02	D:\Unity Prototyping\Profundum\ProfundumWwise\.cache\Windows\SFX\Footsteps\Footsteps_02_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\StepUp_Character_Type\StepUp_Surface_Type\StepUp_Hero_Icky\Footsteps_02		40064
+	960834650	Grubber_Spot_01	D:\Unity Prototyping\Profundum\ProfundumWwise\.cache\Windows\SFX\Enemies\Spot\Grubber_Spot_01_9E69E797.wem		\Actor-Mixer Hierarchy\Enemies\Grupper\Grupper_Spot\Grubber_Spot_01		204064
+	975723891	Footsteps_02	D:\Unity Prototyping\Profundum\ProfundumWwise\.cache\Windows\SFX\Footsteps\Footsteps_02_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps_Character_Type\FS_Hero_Surface_Type\FS_Hero_Icky_Step_Type\FS_Hero_Icky_Walk\Footsteps_02		40064
+	983776726	Grubber_Spot_02	D:\Unity Prototyping\Profundum\ProfundumWwise\.cache\Windows\SFX\Enemies\Spot\Grubber_Spot_02_9E69E797.wem		\Actor-Mixer Hierarchy\Enemies\Grupper\Grupper_Spot\Grubber_Spot_02		208064
+	994633801	Grubber_Growl_02	D:\Unity Prototyping\Profundum\ProfundumWwise\.cache\Windows\SFX\Enemies\Idle\Grubber_Growl_02_9E69E797.wem		\Actor-Mixer Hierarchy\Enemies\Grupper\Grupper_Idle\Grubber_Growl_02		440064
 	1048145576	Wind_Variation_07	D:\Unity Prototyping\Profundum\ProfundumWwise\.cache\Windows\SFX\Ambiences\Wind\Wind_Variation_07_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mountain Ambience\Wind Blend\Wind Variation\Wind_Variation_07		1368868
+	1049160231	Choppy_Breathing_03	D:\Unity Prototyping\Profundum\ProfundumWwise\.cache\Windows\SFX\Hero\Choppy_Breathing_03_9E69E797.wem		\Actor-Mixer Hierarchy\Hero\Hero_Heavy_Breathing\Choppy_Breathing_03		260064
 	1059626769	Drone_Thunder	D:\Unity Prototyping\Profundum\ProfundumWwise\.cache\Windows\SFX\Ambiences\Drones\Drone_Thunder_4B8CC0C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Drone Blend\Drone Base\Drone_Thunder		2530912
 	1061458473	Wind_Variation_10	D:\Unity Prototyping\Profundum\ProfundumWwise\.cache\Windows\SFX\Ambiences\Wind\Wind_Variation_10_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Wind Blend\Wind Variation\Wind_Variation_10		1014976
+	1062826117	Light_Return_01	D:\Unity Prototyping\Profundum\ProfundumWwise\.cache\Windows\SFX\Hero\Light_Return_01_9E69E797.wem		\Actor-Mixer Hierarchy\Hero\Hero_Light_Return\Light_Return_01		384064
 

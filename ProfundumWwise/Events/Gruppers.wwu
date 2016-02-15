@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{CF6C1DC8-7AD3-4694-AB69-8670CB0395A5}" SchemaVersion="70">
+	<Events>
+		<WorkUnit Name="Gruppers" ID="{CF6C1DC8-7AD3-4694-AB69-8670CB0395A5}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Play_Attack" ID="{8CD082C6-9F81-4F0B-B66E-7A8EAE073B04}">
+					<ChildrenList>
+						<Action Name="Play" ID="{AEAB1D57-DE71-4C9F-8F3A-E55B590A2565}" ShortID="69423738" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{7928A9B0-2000-4A00-A3FA-EEAEF45E38F8}" Global="false">
+									<ObjectRef Name="Grupper_Attack" ID="{6A6BEC41-4D49-4EE8-9FB0-12EF24738B85}" WorkUnitID="{3069270D-C1C8-41F2-8831-B25883D2B8B3}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Spot" ID="{357B2D14-7940-47FB-AD63-F5B325B9618F}">
+					<ChildrenList>
+						<Action Name="Play" ID="{246FFA28-D16B-4D3E-A501-17FB28786F0A}" ShortID="745711308" Type="Play" Scope="One" Global="false">
+							<PropertyList>
+								<Property Name="FadeTime" Type="Real64" Value="0.1"/>
+							</PropertyList>
+							<ElementList>
+								<Element ID="{2F04B578-00C4-4638-B680-8414195A5130}" Global="false">
+									<ObjectRef Name="Grupper_Spot" ID="{3D272B13-84C4-4DF0-BF0A-6FFB14711512}" WorkUnitID="{3069270D-C1C8-41F2-8831-B25883D2B8B3}"/>
+								</Element>
+							</ElementList>
+						</Action>
+						<Action Name="Stop" ID="{D97B5A27-39E1-4697-8226-CE6C16E94A31}" ShortID="618353125" Type="Stop" Scope="One" Global="false">
+							<PropertyList>
+								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+							</PropertyList>
+							<ElementList>
+								<Element ID="{7F5581D1-E1CB-460F-9AB2-A754D6148E41}" Global="false">
+									<ObjectRef Name="Grupper_Idle" ID="{428407EC-E5F3-4416-B494-D70DF330C939}" WorkUnitID="{3069270D-C1C8-41F2-8831-B25883D2B8B3}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Grupper_Idle_Start" ID="{8C1CE6BD-70BC-4DE6-9630-B3357DDDBD80}">
+					<ChildrenList>
+						<Action Name="Play" ID="{55EA28A7-D35C-42FC-B198-F077583406E6}" ShortID="63895331" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{8543363D-DA9C-4874-8C81-457DCFAB6593}" Global="false">
+									<ObjectRef Name="Grupper_Idle" ID="{428407EC-E5F3-4416-B494-D70DF330C939}" WorkUnitID="{3069270D-C1C8-41F2-8831-B25883D2B8B3}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Grupper_Idle_Stop" ID="{38B8D931-701A-4D06-B637-037A7BCB5955}">
+					<ChildrenList>
+						<Action Name="Stop" ID="{13472A49-F911-44A8-A073-795A34787434}" ShortID="677125891" Type="Stop" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{32469390-65C3-4B93-B9E4-91E958C09EDD}" Global="false">
+									<ObjectRef Name="Grupper_Idle" ID="{428407EC-E5F3-4416-B494-D70DF330C939}" WorkUnitID="{3069270D-C1C8-41F2-8831-B25883D2B8B3}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

@@ -103,6 +103,50 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_Breathing" ID="{6F53142B-546C-4833-99F9-37D772DE1D07}">
+					<ChildrenList>
+						<Action Name="Play" ID="{8C24F5B2-CED0-49D8-B3D5-079BC96ADCBF}" ShortID="62142748" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{07CCE1A2-C8A5-4EAD-8FC7-B1672E60CF7B}" Global="false">
+									<ObjectRef Name="Hero_Heavy_Breathing" ID="{39F3E58C-896B-402B-8F5F-1D071AAE9302}" WorkUnitID="{DC5166A8-C8B5-437D-8B1A-E34B69E413DB}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_Breathing" ID="{9C3E27CA-DC16-4B91-AE00-2306C00C084F}">
+					<ChildrenList>
+						<Action Name="Stop" ID="{339EE3D3-A9A2-43F9-A7B9-A53313517CD8}" ShortID="630297739" Type="Stop" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{86A2728A-AA1A-4CDB-A9F1-B1C449AD7C5E}" Global="false">
+									<ObjectRef Name="Hero_Heavy_Breathing" ID="{39F3E58C-896B-402B-8F5F-1D071AAE9302}" WorkUnitID="{DC5166A8-C8B5-437D-8B1A-E34B69E413DB}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_LightAttack" ID="{505AC88A-7B65-4628-836F-08AA56F93E06}">
+					<ChildrenList>
+						<Action Name="Play" ID="{75F54682-C38D-47F5-8BA9-D60FA9FEFCBD}" ShortID="880356015" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{64FE8C48-9923-4B6C-AB1B-EC5034C42DBF}" Global="false">
+									<ObjectRef Name="Hero_Light_Attack" ID="{A4691667-836C-4512-B418-AD870A54CD12}" WorkUnitID="{DC5166A8-C8B5-437D-8B1A-E34B69E413DB}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_LightReturn" ID="{123DA2A5-E5DD-4EA1-8FF2-02791A19C9DF}">
+					<ChildrenList>
+						<Action Name="Play" ID="{3209EF9E-AF7A-4A16-9EB8-8222AA3B3F4E}" ShortID="18256543" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{D248D859-06DF-403B-A90C-3DF7113D378C}" Global="false">
+									<ObjectRef Name="Hero_Light_Return" ID="{E0BA0A87-1321-4554-9594-92E9F53DC7AD}" WorkUnitID="{DC5166A8-C8B5-437D-8B1A-E34B69E413DB}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

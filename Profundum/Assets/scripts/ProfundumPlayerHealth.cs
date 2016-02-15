@@ -14,7 +14,7 @@ public class ProfundumPlayerHealth : PlayerHealthController {
 				AkSoundEngine.PostEvent("Player_Death", gameObject);
 			}
 			_death = true;
-
+			AkSoundEngine.PostEvent("Stop_Breathing", gameObject);
 
 		}
 		//_death = getHealthRatio () == 0;

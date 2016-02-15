@@ -305,6 +305,8 @@ public class HeroMovementControls : StateBehaviour
 
 		foreach (SkinnedMeshRenderer renderer in renderers) {
 			renderer.enabled = false;
+			
+		SendMessage ("Dead");
 		}
 	}
 }

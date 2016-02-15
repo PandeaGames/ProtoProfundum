@@ -21,11 +21,14 @@ public class GrupperAudioController : MonoBehaviour {
 	}
 	void Audio_AgroEnter()
 	{
+		AkSoundEngine.PostEvent("Play_Spot", gameObject);
 	}
 	void Audio_AttackTelegraphEnter()
 	{
+		AkSoundEngine.PostEvent("Play_Spot", gameObject);
 	}
 	void Audio_SearchingEnter()
 	{
+		AkSoundEngine.PostEvent("Grupper_Idle_Start", gameObject);
 	}
 }

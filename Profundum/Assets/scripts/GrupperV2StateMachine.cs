@@ -66,6 +66,8 @@ public class GrupperV2StateMachine : StateBehaviour {
 		pathNode = pathContainer.GetClosestPath (transform.position);
 
 		_sc = FindObjectOfType<SightController> ();
+		
+		SendMessage ("Audio_SearchingEnter");
 	}
 	// Use this for initialization
 
@@ -105,7 +107,7 @@ public class GrupperV2StateMachine : StateBehaviour {
 		rb = GetComponent<Rigidbody>();
 
 		_player = FindObjectOfType<HeroStateMachine> ().gameObject;
-
+		
 	}
 	void Update()
 	{

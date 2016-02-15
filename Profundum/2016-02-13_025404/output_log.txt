@@ -1,0 +1,424 @@
+Initialize engine version: 5.3.2f1 (e87ab445ead0)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GTX 770 (ID=0x1184)
+    Vendor:   NVIDIA
+    VRAM:     1989 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Colin\ProtoProfundum\Profundum\Profundum_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Colin\ProtoProfundum\Profundum\Profundum_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Colin\ProtoProfundum\Profundum\Profundum_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading C:\Users\Colin\ProtoProfundum\Profundum\Profundum_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: C:\Users\Colin\ProtoProfundum\Profundum\Profundum_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Colin\ProtoProfundum\Profundum\Profundum_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Colin\ProtoProfundum\Profundum\Profundum_Data\Managed\Assembly-UnityScript.dll (this message is harmless)
+Loading C:\Users\Colin\ProtoProfundum\Profundum\Profundum_Data\Managed\Assembly-UnityScript.dll into Unity Child Domain
+Platform assembly: C:\Users\Colin\ProtoProfundum\Profundum\Profundum_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Colin\ProtoProfundum\Profundum\Profundum_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\Colin\ProtoProfundum\Profundum\Profundum_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\Colin\ProtoProfundum\Profundum\Profundum_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\Colin\ProtoProfundum\Profundum\Profundum_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\Colin\ProtoProfundum\Profundum\Profundum_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\Colin\ProtoProfundum\Profundum\Profundum_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Colin\ProtoProfundum\Profundum\Profundum_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+- Completed reload, in  0.096 seconds
+Platform assembly: C:\Users\Colin\ProtoProfundum\Profundum\Profundum_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\Colin\ProtoProfundum\Profundum\Profundum_Data\Managed\System.dll (this message is harmless)
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 1.082649 ms
+WwiseUnity: Initialize sound engine ...
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+WwiseUnity: Could not locate the SoundBanks. Did you make sure to copy them to the StreamingAssets folder?
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Method with name <Awake>m__10 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Method with name <Awake>m__11 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Method with name <Awake>m__12 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Method with name <Awake>m__13 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Method with name <Awake>m__14 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Method with name <Awake>m__15 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Method with name <Awake>m__16 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Method with name <Awake>m__17 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Method with name <Awake>m__18 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Method with name <Awake>m__19 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Method with name <Awake>m__10 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Method with name <Awake>m__11 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Method with name <Awake>m__12 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Method with name <Awake>m__13 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Method with name <Awake>m__14 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Method with name <Awake>m__15 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Method with name <Awake>m__16 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Method with name <Awake>m__17 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Method with name <Awake>m__18 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Method with name <Awake>m__19 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Method with name <Awake>m__10 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Method with name <Awake>m__11 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Method with name <Awake>m__12 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Method with name <Awake>m__13 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Method with name <Awake>m__14 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Method with name <Awake>m__15 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Method with name <Awake>m__16 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Method with name <Awake>m__17 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Method with name <Awake>m__18 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Method with name <Awake>m__19 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+DontDestroyOnLoad only work for root GameObjects or components on root GameObjects.
+ 
+(Filename:  Line: 367)
+
+Wwise: Bank Profundum failed to load (AK_FileNotFound)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: 12fc -> priority: 1 
+  Thread -> id: 152c -> priority: 1 
+Method with name <Awake>m__10 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Method with name <Awake>m__11 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Method with name <Awake>m__12 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Method with name <Awake>m__13 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Method with name <Awake>m__14 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Method with name <Awake>m__15 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Method with name <Awake>m__16 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Method with name <Awake>m__17 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Method with name <Awake>m__18 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Method with name <Awake>m__19 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Method with name <Awake>m__10 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Method with name <Awake>m__11 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Method with name <Awake>m__12 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Method with name <Awake>m__13 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Method with name <Awake>m__14 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Method with name <Awake>m__15 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Method with name <Awake>m__16 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Method with name <Awake>m__17 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Method with name <Awake>m__18 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Method with name <Awake>m__19 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Method with name <Awake>m__10 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Method with name <Awake>m__11 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Method with name <Awake>m__12 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Method with name <Awake>m__13 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Method with name <Awake>m__14 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Method with name <Awake>m__15 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Method with name <Awake>m__16 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Method with name <Awake>m__17 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Method with name <Awake>m__18 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Method with name <Awake>m__19 could not resolve a matching state. Check method spelling
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+ClearSceneData!!!!!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Crash!!!
+SymInit: Symbol-SearchPath: '.;C:\Users\Colin\ProtoProfundum\Profundum;C:\Users\Colin\ProtoProfundum\Profundum;C:\Windows;C:\Windows\system32;SRV*C:\websymbols*http://msdl.microsoft.com/download/symbols;', symOptions: 530, UserName: 'Colin'
+OS-Version: 6.1.7601 (Service Pack 1) 0x100-0x1
+C:\Users\Colin\ProtoProfundum\Profundum\Profundum.exe:Profundum.exe (01360000), size: 17833984 (result: 0), SymType: '-exported-', PDB: 'C:\Users\Colin\ProtoProfundum\Profundum\Profundum.exe', fileVersion: 5.3.2.31412
+C:\Windows\SysWOW64\ntdll.dll:ntdll.dll (77440000), size: 1572864 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\SysWOW64\ntdll.dll', fileVersion: 6.1.7601.19135
+C:\Windows\syswow64\kernel32.dll:kernel32.dll (765E0000), size: 1114112 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\syswow64\kernel32.dll', fileVersion: 6.1.7601.19135
+C:\Windows\syswow64\KERNELBASE.dll:KERNELBASE.dll (768F0000), size: 290816 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\syswow64\KERNELBASE.dll', fileVersion: 6.1.7601.19135
+C:\Windows\system32\HID.DLL:HID.DLL (73080000), size: 36864 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\HID.DLL', fileVersion: 6.1.7600.16385
+C:\Windows\syswow64\msvcrt.dll:msvcrt.dll (75D20000), size: 704512 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\syswow64\msvcrt.dll', fileVersion: 7.0.7601.17744
+C:\Windows\syswow64\GDI32.dll:GDI32.dll (764F0000), size: 589824 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\syswow64\GDI32.dll', fileVersion: 6.1.7601.19091
+C:\Windows\syswow64\USER32.dll:USER32.dll (76EE0000), size: 1048576 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\syswow64\USER32.dll', fileVersion: 6.1.7601.19061
+C:\Windows\syswow64\ADVAPI32.dll:ADVAPI32.dll (76B50000), size: 659456 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\syswow64\ADVAPI32.dll', fileVersion: 6.1.7601.19135
+C:\Windows\SysWOW64\sechost.dll:sechost.dll (76E20000), size: 102400 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\SysWOW64\sechost.dll', fileVersion: 6.1.7601.18869
+C:\Windows\syswow64\RPCRT4.dll:RPCRT4.dll (766F0000), size: 983040 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\syswow64\RPCRT4.dll', fileVersion: 6.1.7601.19135
+C:\Windows\syswow64\SspiCli.dll:SspiCli.dll (74D90000), size: 393216 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\syswow64\SspiCli.dll', fileVersion: 6.1.7601.19135
+C:\Windows\syswow64\CRYPTBASE.dll:CRYPTBASE.dll (74D80000), size: 49152 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\syswow64\CRYPTBASE.dll', fileVersion: 6.1.7601.19135
+C:\Windows\syswow64\LPK.dll:LPK.dll (764D0000), size: 40960 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\syswow64\LPK.dll', fileVersion: 6.1.7601.18985
+C:\Windows\syswow64\USP10.dll:USP10.dll (763B0000), size: 643072 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\syswow64\USP10.dll', fileVersion: 1.626.7601.19054
+C:\Windows\syswow64\WS2_32.dll:WS2_32.dll (74E50000), size: 217088 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\syswow64\WS2_32.dll', fileVersion: 6.1.7601.17514
+C:\Windows\syswow64\NSI.dll:NSI.dll (76850000), size: 24576 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\syswow64\NSI.dll', fileVersion: 6.1.7600.16385
+C:\Windows\system32\VERSION.dll:VERSION.dll (74CB0000), size: 36864 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\VERSION.dll', fileVersion: 6.1.7600.16385
+C:\Windows\syswow64\ole32.dll:ole32.dll (75F80000), size: 1425408 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\syswow64\ole32.dll', fileVersion: 6.1.7601.19131
+C:\Windows\syswow64\SHLWAPI.dll:SHLWAPI.dll (76580000), size: 356352 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\syswow64\SHLWAPI.dll', fileVersion: 6.1.7601.17514
+C:\Windows\syswow64\SHELL32.dll:SHELL32.dll (74E90000), size: 12890112 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\syswow64\SHELL32.dll', fileVersion: 6.1.7601.19135
+C:\Windows\system32\OPENGL32.dll:OPENGL32.dll (62180000), size: 819200 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\OPENGL32.dll', fileVersion: 6.1.7600.16385
+C:\Windows\system32\GLU32.dll:GLU32.dll (65E80000), size: 139264 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\GLU32.dll', fileVersion: 6.1.7600.16385
+C:\Windows\system32\DDRAW.dll:DDRAW.dll (62090000), size: 946176 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\DDRAW.dll', fileVersion: 6.1.7600.16385
+C:\Windows\system32\DCIMAN32.dll:DCIMAN32.dll (72AB0000), size: 24576 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\DCIMAN32.dll', fileVersion: 6.1.7601.18985
+C:\Windows\syswow64\SETUPAPI.dll:SETUPAPI.dll (75DD0000), size: 1691648 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\syswow64\SETUPAPI.dll', fileVersion: 6.1.7601.17514
+C:\Windows\syswow64\CFGMGR32.dll:CFGMGR32.dll (76DF0000), size: 159744 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\syswow64\CFGMGR32.dll', fileVersion: 6.1.7601.17621
+C:\Windows\syswow64\OLEAUT32.dll:OLEAUT32.dll (76D00000), size: 585728 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\syswow64\OLEAUT32.dll', fileVersion: 6.1.7601.18679
+C:\Windows\syswow64\DEVOBJ.dll:DEVOBJ.dll (767E0000), size: 73728 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\syswow64\DEVOBJ.dll', fileVersion: 6.1.7601.17621
+C:\Windows\system32\dwmapi.dll:dwmapi.dll (6F150000), size: 77824 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\dwmapi.dll', fileVersion: 6.1.7601.18917
+C:\Windows\system32\WINMM.dll:WINMM.dll (71520000), size: 204800 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\WINMM.dll', fileVersion: 6.1.7601.17514
+C:\Windows\system32\MSACM32.dll:MSACM32.dll (5FE30000), size: 81920 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\MSACM32.dll', fileVersion: 6.1.7600.16385
+C:\Windows\syswow64\IMM32.dll:IMM32.dll (76D90000), size: 393216 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\syswow64\IMM32.dll', fileVersion: 6.1.7601.17514
+C:\Windows\syswow64\MSCTF.dll:MSCTF.dll (76C30000), size: 835584 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\syswow64\MSCTF.dll', fileVersion: 6.1.7601.18731
+C:\Windows\system32\DNSAPI.dll:DNSAPI.dll (6EC90000), size: 278528 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\DNSAPI.dll', fileVersion: 6.1.7601.17570
+C:\Windows\system32\IPHLPAPI.DLL:IPHLPAPI.DLL (6F2E0000), size: 114688 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\IPHLPAPI.DLL', fileVersion: 6.1.7601.17514
+C:\Windows\system32\WINNSI.DLL:WINNSI.DLL (6F2D0000), size: 28672 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\WINNSI.DLL', fileVersion: 6.1.7600.16385
+C:\Windows\system32\WINHTTP.dll:WINHTTP.dll (71380000), size: 360448 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\WINHTTP.dll', fileVersion: 6.1.7601.17514
+C:\Windows\system32\webio.dll:webio.dll (71330000), size: 323584 (result: 0), SymType: '-nosymbols-', PDB: 'C:\Windows\system32\webio.dll', fileVersion: 6.1.7601.17725
+C:\Users\Colin\ProtoProfundum\Profundum\Profundum_Data\Mono\mono.dll:mono.dll (10000000), size: 2293760 (result: 0), SymType: '-exported-', PDB: 'C:\Users\Colin\ProtoProfundum\Profundum\Profundum_Data\Mono\mono.dll', fileVersion: 1.0.0.1
+C:\Windows\syswow64\PSAPI.DLL:PSAPI.DLL (75F70000), size: 20480 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\syswow64\PSAPI.DLL', fileVersion: 6.1.7600.16385
+C:\Windows\system32\MSWSOCK.dll:MSWSOCK.dll (6F290000), size: 245760 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\MSWSOCK.dll', fileVersion: 6.1.7601.18254
+C:\Windows\system32\uxtheme.dll:uxtheme.dll (6F170000), size: 524288 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\uxtheme.dll', fileVersion: 6.1.7600.16385
+C:\Windows\system32\d3d11.dll:d3d11.dll (65220000), size: 1527808 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\d3d11.dll', fileVersion: 6.2.9200.16570
+C:\Windows\system32\dxgi.dll:dxgi.dll (65EB0000), size: 311296 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\dxgi.dll', fileVersion: 6.2.9200.16492
+C:\Windows\system32\DXGIDebug.dll:DXGIDebug.dll (5FE10000), size: 118784 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\DXGIDebug.dll', fileVersion: 9.30.9600.17336
+C:\Windows\syswow64\WINTRUST.dll:WINTRUST.dll (76C00000), size: 192512 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\syswow64\WINTRUST.dll', fileVersion: 6.1.7601.18839
+C:\Windows\syswow64\CRYPT32.dll:CRYPT32.dll (76280000), size: 1183744 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\syswow64\CRYPT32.dll', fileVersion: 6.1.7601.18839
+C:\Windows\syswow64\MSASN1.dll:MSASN1.dll (77030000), size: 49152 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\syswow64\MSASN1.dll', fileVersion: 6.1.7601.17514
+C:\Windows\system32\nvwgf2um.dll:nvwgf2um.dll (5B070000), size: 14974976 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\nvwgf2um.dll', fileVersion: 10.18.13.5850
+C:\Windows\system32\bcrypt.dll:bcrypt.dll (72DF0000), size: 94208 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\bcrypt.dll', fileVersion: 6.1.7600.16385
+C:\Windows\SysWOW64\bcryptprimitives.dll:bcryptprimitives.dll (72DB0000), size: 249856 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\SysWOW64\bcryptprimitives.dll', fileVersion: 6.1.7601.19012
+C:\Windows\system32\MMDevAPI.DLL:MMDevAPI.DLL (685D0000), size: 233472 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\MMDevAPI.DLL', fileVersion: 6.1.7601.17514
+C:\Windows\system32\PROPSYS.dll:PROPSYS.dll (684D0000), size: 1003520 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\PROPSYS.dll', fileVersion: 7.0.7601.17514
+C:\Windows\system32\wdmaud.drv:wdmaud.drv (604D0000), size: 196608 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\wdmaud.drv', fileVersion: 6.1.7601.17514
+C:\Windows\system32\ksuser.dll:ksuser.dll (5FEE0000), size: 16384 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\ksuser.dll', fileVersion: 6.1.7601.19091
+C:\Windows\system32\AVRT.dll:AVRT.dll (63C70000), size: 28672 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\AVRT.dll', fileVersion: 6.1.7600.16385
+C:\Windows\system32\AUDIOSES.DLL:AUDIOSES.DLL (69B70000), size: 221184 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\AUDIOSES.DLL', fileVersion: 6.1.7601.18741
+C:\Windows\system32\msacm32.drv:msacm32.drv (5FED0000), size: 32768 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\msacm32.drv', fileVersion: 6.1.7600.16385
+C:\Windows\system32\midimap.dll:midimap.dll (5FEC0000), size: 28672 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\midimap.dll', fileVersion: 6.1.7600.16385
+C:\Windows\system32\dsound.dll:dsound.dll (5DFB0000), size: 466944 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\dsound.dll', fileVersion: 6.1.7600.16385
+C:\Windows\system32\POWRPROF.dll:POWRPROF.dll (6EC60000), size: 151552 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\POWRPROF.dll', fileVersion: 6.1.7600.16385
+C:\Windows\syswow64\CLBCatQ.DLL:CLBCatQ.DLL (76860000), size: 536576 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\syswow64\CLBCatQ.DLL', fileVersion: 2001.12.8530.16385
+C:\Windows\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_6.0.7601.18837_none_41e855142bd5705d\comctl32.dll:comctl32.dll (69C00000), size: 1695744 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_6.0.7601.18837_none_41e855142bd5705d\comctl32.dll', fileVersion: 6.10.7601.18837
+C:\Windows\system32\xinput1_3.dll:xinput1_3.dll (07D50000), size: 90112 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\xinput1_3.dll', fileVersion: 9.18.944.0
+C:\Users\Colin\ProtoProfundum\Profundum\Profundum_Data\Plugins\AkSoundEngine.dll:AkSoundEngine.dll (5CB00000), size: 1310720 (result: 0), SymType: '-exported-', PDB: 'C:\Users\Colin\ProtoProfundum\Profundum\Profundum_Data\Plugins\AkSoundEngine.dll'
+C:\Windows\system32\MSVCR100.dll:MSVCR100.dll (57A80000), size: 782336 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\MSVCR100.dll', fileVersion: 10.0.40219.325
+C:\Windows\SysWow64\XAudio2_7.dll:XAudio2_7.dll (579F0000), size: 581632 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\SysWow64\XAudio2_7.dll', fileVersion: 9.29.1962.0
+C:\Windows\System32\wshtcpip.dll:wshtcpip.dll (6F280000), size: 20480 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\System32\wshtcpip.dll', fileVersion: 6.1.7600.16385
+C:\Windows\system32\dbghelp.dll:dbghelp.dll (6E730000), size: 962560 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\dbghelp.dll', fileVersion: 6.1.7601.17514
+
+========== OUTPUTING STACK TRACE ==================
+
+0x765F1369 (kernel32) GetConsoleMode
+0x5CB0C33C (AkSoundEngine) AK::SoundEngine::RegisterGameObj
+  ERROR: SymGetSymFromAddr64, GetLastError: 'Attempt to access invalid address.' (Address: 5CB02327)
+0x5CB02327 (AkSoundEngine) 
+0x5CB090C4 (AkSoundEngine) CSharp_RegisterGameObjInternal_WithName_WithMask
+0x04FFBE9A (Mono JIT Code) (wrapper managed-to-native) AkSoundEnginePINVOKE:CSharp_RegisterGameObjInternal_WithName_WithMask (int,string,uint)
+0x04FFBE4F (Mono JIT Code) AkSoundEngine:RegisterGameObjInternal_WithName_WithMask (int,string,uint)
+0x04FFBE22 (Mono JIT Code) AkSoundEngine:RegisterGameObj (UnityEngine.GameObject,string,uint)
+0x04FFBBE4 (Mono JIT Code) AkGameObj:Awake ()
+0x04FEE571 (Mono JIT Code) (wrapper runtime-invoke) object:runtime_invoke_void__this__ (object,intptr,intptr,intptr)
+0x100F080B (mono) mono_set_defaults
+0x1005D91C (mono) mono_runtime_invoke
+0x0151CEDE (Profundum) scripting_gchandle_get_target
+0x015A16B9 (Profundum) ScriptingArguments::AddString
+0x0150C01E (Profundum) mono_array_length_safe_wrapper
+0x015A183C (Profundum) ScriptingArguments::AddString
+0x0150CD62 (Profundum) ReportScriptingObjectsTransfer::ReportScriptingObject
+0x0150CF69 (Profundum) ReportScriptingObjectsTransfer::ReportScriptingObject
+0x0150F2D8 (Profundum) GetMonoBehaviourInConstructor
+0x0150D3FC (Profundum) ReportScriptingObjectsTransfer::ReportScriptingObject
+0x015B93FB (Profundum) RegisterAllowNameConversionInDerivedTypes
+0x015B9513 (Profundum) RegisterAllowNameConversionInDerivedTypes
+0x01402C88 (Profundum) Behaviour::InitializeClass
+0x014034B2 (Profundum) Behaviour::InitializeClass
+0x016430C7 (Profundum) Mesh::GetRuntimeMemorySize
+0x0501FAD0 (Mono JIT Code) (wrapper managed-to-native) UnityEngine.Object:Internal_CloneSingle (UnityEngine.Object)
+0x0501FA6F (Mono JIT Code) UnityEngine.Object:Instantiate<object> (object)
+0x0501FA42 (Mono JIT Code) StreamingSection:CreateSection ()
+0x0501F399 (Mono JIT Code) SectionStreamingController:Trigger (uint,UnityEngine.GameObject)
+0x0501F2AE (Mono JIT Code) SectionBridge:OnTrigger (BridgeTrigger)
+0x0500CC7E (Mono JIT Code) BridgeTrigger:OnTriggerEnter (UnityEngine.Collider)
+0x05008D0F (Mono JIT Code) (wrapper runtime-invoke) <Module>:runtime_invoke_void__this___object (object,intptr,intptr,intptr)
+0x100F080B (mono) mono_set_defaults
+0x1005D91C (mono) mono_runtime_invoke
+0x0151CEDE (Profundum) scripting_gchandle_get_target
+0x015A16B9 (Profundum) ScriptingArguments::AddString
+0x0150E35E (Profundum) GetMonoBehaviourInConstructor
+0x0138D99D (Profundum) GetManagerPtrFromContext
+0x01389ADE (Profundum) Unity::GameObject::SendMessageAny
+0x016E6E8B (Profundum) Texture::GetMipMapBias
+0x016E9E73 (Profundum) Texture::GetMipMapBias
+0x016ECC45 (Profundum) Texture::GetMipMapBias
+0x01567825 (Profundum) RectT<int>::Contains
+0x016093E7 (Profundum) PlayerMainWndProc
+0x0160AFCC (Profundum) PlayerWinMain
+0x019B6EA8 (Profundum) RectT<int>::GetYMax
+0x019E626E (Profundum) RectT<int>::GetYMax
+0x765F338A (kernel32) BaseThreadInitThunk
+0x77479A02 (ntdll) RtlInitializeExceptionChain
+
+========== END OF STACKTRACE ===========
+
+**** Crash! ****

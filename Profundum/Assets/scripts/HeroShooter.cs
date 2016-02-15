@@ -27,7 +27,12 @@ using UnityEngine;
 		public override void Update()
 		{
 			base.Update ();
+            bool tmpCanShoot = _canShoot;
 			_canShoot = Time.time > _timeStamp;
+            if(_canShoot && !tmpCanShoot)
+            {
+                SendMessage("Audio_Shoot_Return");
+            }
 		}
 		protected override Quaternion getProtectileRotation()
 		{
@@ -37,9 +42,14 @@ using UnityEngine;
 		protected override void Shoot()
 		{
 			if (_canShoot) {
+                SendMessage("Audio_Shoot");
 				base.Shoot ();
 				_timeStamp = Time.time + recoverDelay;
-			}
+            }
+            else
+            {
+                SendMessage("Audio_Shoot_Fail");
+            }
 		}
 		public bool CanShoot()
 		{

@@ -147,6 +147,28 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_LightHum" ID="{CB7577BF-3B7E-4CAC-91C8-438AC4F3E320}">
+					<ChildrenList>
+						<Action Name="Play" ID="{CC8A85FE-C9E9-4C91-ADD9-131F1690E5D6}" ShortID="510278202" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{9ADF8B6E-AC59-403D-BBEF-433E19BC9FED}" Global="false">
+									<ObjectRef Name="Hero_Light_Hum" ID="{0DA009B1-C306-45FC-8744-97F98511E776}" WorkUnitID="{DC5166A8-C8B5-437D-8B1A-E34B69E413DB}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_LightHum" ID="{7671A08D-51E5-4699-AF38-769CC1CB33F1}">
+					<ChildrenList>
+						<Action Name="Stop" ID="{F50F3D9E-3DEF-43FE-9587-F282BA2AF9C1}" ShortID="113963757" Type="Stop" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{2CD185DF-C860-4AEE-A873-E13E55768D7C}" Global="false">
+									<ObjectRef Name="Hero_Light_Hum" ID="{0DA009B1-C306-45FC-8744-97F98511E776}" WorkUnitID="{DC5166A8-C8B5-437D-8B1A-E34B69E413DB}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

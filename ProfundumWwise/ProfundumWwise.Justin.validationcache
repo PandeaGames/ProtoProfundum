@@ -50,7 +50,7 @@
 	<ValidationCacheItem File="D:\Unity Prototyping\Profundum\ProfundumWwise\Actor-Mixer Hierarchy\Factory SoundSeed Air Objects.wwu" DateLow="2692818225" DateHigh="30499518"/>
 	<ValidationCacheItem File="D:\Unity Prototyping\Profundum\ProfundumWwise\Actor-Mixer Hierarchy\Factory Synth One.wwu" DateLow="2692898229" DateHigh="30499518"/>
 	<ValidationCacheItem File="D:\Unity Prototyping\Profundum\ProfundumWwise\Actor-Mixer Hierarchy\Grupper.wwu" DateLow="387817710" DateHigh="30500726"/>
-	<ValidationCacheItem File="D:\Unity Prototyping\Profundum\ProfundumWwise\Actor-Mixer Hierarchy\Hero.wwu" DateLow="860496627" DateHigh="30500764"/>
+	<ValidationCacheItem File="D:\Unity Prototyping\Profundum\ProfundumWwise\Actor-Mixer Hierarchy\Hero.wwu" DateLow="1364259791" DateHigh="30501603"/>
 	<ValidationCacheItem File="D:\Unity Prototyping\Profundum\ProfundumWwise\Attenuations\Default Work Unit.wwu" DateLow="2692908230" DateHigh="30499518"/>
 	<ValidationCacheItem File="D:\Unity Prototyping\Profundum\ProfundumWwise\Control Surface Sessions\Default Work Unit.wwu" DateLow="2692918230" DateHigh="30499518"/>
 	<ValidationCacheItem File="D:\Unity Prototyping\Profundum\ProfundumWwise\Conversion Settings\Default Work Unit.wwu" DateLow="2692918230" DateHigh="30499518"/>
@@ -69,19 +69,20 @@
 	<ValidationCacheItem File="D:\Unity Prototyping\Profundum\ProfundumWwise\Effects\Factory iZotope Multiband Distortion.wwu" DateLow="2693108241" DateHigh="30499518"/>
 	<ValidationCacheItem File="D:\Unity Prototyping\Profundum\ProfundumWwise\Effects\Factory iZotope Singleband Distortion.wwu" DateLow="2693118242" DateHigh="30499518"/>
 	<ValidationCacheItem File="D:\Unity Prototyping\Profundum\ProfundumWwise\Effects\Factory McDSP Effects.wwu" DateLow="2693068239" DateHigh="30499518"/>
-	<ValidationCacheItem File="D:\Unity Prototyping\Profundum\ProfundumWwise\Events\Character.wwu" DateLow="1310492020" DateHigh="30500752"/>
+	<ValidationCacheItem File="D:\Unity Prototyping\Profundum\ProfundumWwise\Events\Character.wwu" DateLow="2816281566" DateHigh="30501599"/>
 	<ValidationCacheItem File="D:\Unity Prototyping\Profundum\ProfundumWwise\Events\Default Work Unit.wwu" DateLow="3925273215" DateHigh="30500751"/>
 	<ValidationCacheItem File="D:\Unity Prototyping\Profundum\ProfundumWwise\Events\Enemies.wwu" DateLow="374948267" DateHigh="30500713"/>
 	<ValidationCacheItem File="D:\Unity Prototyping\Profundum\ProfundumWwise\Events\Gruppers.wwu" DateLow="2110232951" DateHigh="30500728"/>
 	<ValidationCacheItem File="D:\Unity Prototyping\Profundum\ProfundumWwise\Game Parameters\Default Work Unit.wwu" DateLow="2693138243" DateHigh="30499518"/>
 	<ValidationCacheItem File="D:\Unity Prototyping\Profundum\ProfundumWwise\Game Parameters\Factory SoundSeed Air Game Syncs.wwu" DateLow="2693148243" DateHigh="30499518"/>
+	<ValidationCacheItem File="D:\Unity Prototyping\Profundum\ProfundumWwise\Game Parameters\Movement.wwu" DateLow="4126313220" DateHigh="30501601"/>
 	<ValidationCacheItem File="D:\Unity Prototyping\Profundum\ProfundumWwise\Game Parameters\Tension Level.wwu" DateLow="88627392" DateHigh="30500761"/>
 	<ValidationCacheItem File="D:\Unity Prototyping\Profundum\ProfundumWwise\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="2957623371" DateHigh="30499518"/>
 	<ValidationCacheItem File="D:\Unity Prototyping\Profundum\ProfundumWwise\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="2957633371" DateHigh="30499518"/>
 	<ValidationCacheItem File="D:\Unity Prototyping\Profundum\ProfundumWwise\Mixing Sessions\Default Work Unit.wwu" DateLow="2957633371" DateHigh="30499518"/>
 	<ValidationCacheItem File="D:\Unity Prototyping\Profundum\ProfundumWwise\Modulators\Default Work Unit.wwu" DateLow="2957643372" DateHigh="30499518"/>
 	<ValidationCacheItem File="D:\Unity Prototyping\Profundum\ProfundumWwise\Presets\Default Work Unit.wwu" DateLow="3900337291" DateHigh="30499518"/>
-	<ValidationCacheItem File="D:\Unity Prototyping\Profundum\ProfundumWwise\ProfundumWwise.Justin.wsettings" DateLow="893248500" DateHigh="30500764"/>
+	<ValidationCacheItem File="D:\Unity Prototyping\Profundum\ProfundumWwise\ProfundumWwise.Justin.wsettings" DateLow="1434263795" DateHigh="30501603"/>
 	<ValidationCacheItem File="D:\Unity Prototyping\Profundum\ProfundumWwise\ProfundumWwise.wproj" DateLow="1998701141" DateHigh="30500713"/>
 	<ValidationCacheItem File="D:\Unity Prototyping\Profundum\ProfundumWwise\Queries\Default Work Unit.wwu" DateLow="3900417295" DateHigh="30499518"/>
 	<ValidationCacheItem File="D:\Unity Prototyping\Profundum\ProfundumWwise\Queries\Factory Queries.wwu" DateLow="3900427296" DateHigh="30499518"/>

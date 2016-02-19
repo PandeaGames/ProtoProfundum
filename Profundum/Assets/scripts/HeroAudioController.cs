@@ -80,4 +80,12 @@ public class HeroAudioController : MonoBehaviour {
     {
         AkSoundEngine.PostEvent("Play_LightFail", gameObject);
     }
+	void Audio_LightHum()
+	{
+		AkSoundEngine.PostEvent("Play_LightHum", gameObject);
+	}
+	void Audio_StopHum()
+	{
+		AkSoundEngine.PostEvent("Play_StopHum", gameObject);
+	}
 }

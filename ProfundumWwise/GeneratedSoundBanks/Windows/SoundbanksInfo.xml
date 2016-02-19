@@ -34,11 +34,13 @@
 				<Event Id="3689126666" Name="Play_Jump"/>
 				<Event Id="1867872254" Name="Play_KneePlant"/>
 				<Event Id="310934034" Name="Play_LightAttack"/>
+				<Event Id="444602164" Name="Play_LightHum" MaxAttenuation="40.000000"/>
 				<Event Id="901669596" Name="Play_LightReturn"/>
 				<Event Id="3130131672" Name="Play_SlideOff"/>
 				<Event Id="267570722" Name="Play_Spot"/>
 				<Event Id="3523609203" Name="Play_StepUp"/>
 				<Event Id="6482866" Name="Stop_Breathing" MaxAttenuation="0.000000"/>
+				<Event Id="4097122886" Name="Stop_LightHum" MaxAttenuation="0.000000"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="7400365" Language="SFX">
@@ -84,10 +86,6 @@
 				<File Id="165450884" Language="SFX">
 					<ShortName>Ambiences\Creatures\Unknown_Creature_02.wav</ShortName>
 					<Path>SFX\Ambiences\Creatures\Unknown_Creature_02_9E69E797.wem</Path>
-				</File>
-				<File Id="195515007" Language="SFX">
-					<ShortName>Hero\Light_Attack_01.wav</ShortName>
-					<Path>SFX\Hero\Light_Attack_01_9E69E797.wem</Path>
 				</File>
 				<File Id="235086266" Language="SFX">
 					<ShortName>Ambiences\Creatures\Creature_Human_Vocal_Chords_02.wav</ShortName>
@@ -140,6 +138,10 @@
 				<File Id="570487326" Language="SFX">
 					<ShortName>Ambiences\Creatures\Creature_Human_Vocal_Chords_06.wav</ShortName>
 					<Path>SFX\Ambiences\Creatures\Creature_Human_Vocal_Chords_06_9E69E797.wem</Path>
+				</File>
+				<File Id="620569732" Language="SFX">
+					<ShortName>Hero\Light_Attack_01.wav</ShortName>
+					<Path>SFX\Hero\Light_Attack_01_9E69E797.wem</Path>
 				</File>
 				<File Id="623934891" Language="SFX">
 					<ShortName>Ambiences\Wind\Wind_Variation_04.wav</ShortName>
@@ -244,6 +246,14 @@
 				<File Id="994633801" Language="SFX">
 					<ShortName>Enemies\Idle\Grubber_Growl_02.wav</ShortName>
 					<Path>SFX\Enemies\Idle\Grubber_Growl_02_9E69E797.wem</Path>
+				</File>
+				<File Id="1009797297" Language="SFX">
+					<ShortName>Hero\Light_Attack_02.wav</ShortName>
+					<Path>SFX\Hero\Light_Attack_02_9E69E797.wem</Path>
+				</File>
+				<File Id="1016210430" Language="SFX">
+					<ShortName>Hero\Light_Hum.wav</ShortName>
+					<Path>SFX\Hero\Light_Hum_9E69E797.wem</Path>
 				</File>
 				<File Id="1048145576" Language="SFX">
 					<ShortName>Ambiences\Wind\Wind_Variation_07.wav</ShortName>

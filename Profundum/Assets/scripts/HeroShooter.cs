@@ -23,6 +23,7 @@ using UnityEngine;
 		void Start()
 		{
 			_targetting = FindObjectOfType<ShootTargetting> ();
+			SendMessage("Audio_LightHum");
 		}
 		public override void Update()
 		{

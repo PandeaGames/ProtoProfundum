@@ -3,6 +3,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	267570722	Play_Spot			\Gruppers\Play_Spot	
 	310934034	Play_LightAttack			\Character\Play_LightAttack	
 	326116161	Emitters_Start			\Default Work Unit\Emitters_Start	
+	444602164	Play_LightHum			\Character\Play_LightHum	
 	760353983	Play_ImpactLeft			\Character\Play_ImpactLeft	
 	901669596	Play_LightReturn			\Character\Play_LightReturn	
 	1519321238	Play_Attack			\Gruppers\Play_Attack	
@@ -18,6 +19,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	3689126666	Play_Jump			\Character\Play_Jump	
 	3908818592	Ambience_Start			\Default Work Unit\Ambience_Start	
 	4093367312	Play_Breathing			\Character\Play_Breathing	
+	4097122886	Stop_LightHum			\Character\Stop_LightHum	
 	4253772027	Emitters_Stop			\Default Work Unit\Emitters_Stop	
 
 Switch Group	ID	Name			Wwise Object Path	Notes
@@ -31,6 +33,7 @@ Switch	ID	Name	Switch Group			Notes
 	1789562033	Icky	Surface_Type			
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
+	640949982	Speed			\Movement\Speed	
 	1571361561	Tension			\Tension Level\Tension	
 
 Modulator Envelope	ID	Name			Wwise Object Path	Notes
@@ -76,7 +79,6 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	125467534	Footsteps_04	D:\Unity Prototyping\Profundum\ProfundumWwise\.cache\Windows\SFX\Footsteps\Footsteps_04_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps_Character_Type\FS_Hero_Surface_Type\FS_Hero_Icky_Step_Type\FS_Hero_Icky_Walk\Footsteps_04		52064
 	151276655	Wind_Variation_01	D:\Unity Prototyping\Profundum\ProfundumWwise\.cache\Windows\SFX\Ambiences\Wind\Wind_Variation_01_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Wind Blend\Wind Variation\Wind_Variation_01		1071168
 	165450884	Unknown_Creature_02	D:\Unity Prototyping\Profundum\ProfundumWwise\.cache\Windows\SFX\Ambiences\Creatures\Unknown_Creature_02_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience Emitters\Creatures\Large Creatures\Unknown_Creature_02		1092624
-	195515007	Light_Attack_01	D:\Unity Prototyping\Profundum\ProfundumWwise\.cache\Windows\SFX\Hero\Light_Attack_01_9E69E797.wem		\Actor-Mixer Hierarchy\Hero\Hero_Light_Attack\Light_Attack_01		385792
 	235086266	Creature_Human_Vocal_Chords_02	D:\Unity Prototyping\Profundum\ProfundumWwise\.cache\Windows\SFX\Ambiences\Creatures\Creature_Human_Vocal_Chords_02_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience Emitters\Creatures\Small Creatures\Creature_Human_Vocal_Chords_02		957616
 	246327504	Enemy_Attack_03	D:\Unity Prototyping\Profundum\ProfundumWwise\.cache\Windows\SFX\Enemies\Attack\Enemy_Attack_03_9E69E797.wem		\Actor-Mixer Hierarchy\Enemies\Grupper\Grupper_Attack\Enemy_Attack_Whoosh\Enemy_Attack_03		112064
 	303063129	Drone_Tension_02	D:\Unity Prototyping\Profundum\ProfundumWwise\.cache\Windows\SFX\Ambiences\Drones\Drone_Tension_02_4B8CC0C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Drone Blend\Drone Tension2\Drone_Tension_02		5759040
@@ -90,6 +92,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	493925102	Drone_Base	D:\Unity Prototyping\Profundum\ProfundumWwise\.cache\Windows\SFX\Ambiences\Drones\Drone_Base_4B8CC0C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Drone Blend\Drone Base\Drone_Base		6766656
 	506209338	Wind_Variation_06	D:\Unity Prototyping\Profundum\ProfundumWwise\.cache\Windows\SFX\Ambiences\Wind\Wind_Variation_06_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mountain Ambience\Wind Blend\Wind Variation\Wind_Variation_06		864320
 	570487326	Creature_Human_Vocal_Chords_06	D:\Unity Prototyping\Profundum\ProfundumWwise\.cache\Windows\SFX\Ambiences\Creatures\Creature_Human_Vocal_Chords_06_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience Emitters\Creatures\Small Creatures\Creature_Human_Vocal_Chords_06		854080
+	620569732	Light_Attack_01	D:\Unity Prototyping\Profundum\ProfundumWwise\.cache\Windows\SFX\Hero\Light_Attack_01_9E69E797.wem		\Actor-Mixer Hierarchy\Hero\Hero_Light_Attack\Light_Attack_01		108064
 	623934891	Wind_Variation_04	D:\Unity Prototyping\Profundum\ProfundumWwise\.cache\Windows\SFX\Ambiences\Wind\Wind_Variation_04_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Wind Blend\Wind Variation\Wind_Variation_04		1075040
 	629818467	Light_Return_03	D:\Unity Prototyping\Profundum\ProfundumWwise\.cache\Windows\SFX\Hero\Light_Return_03_9E69E797.wem		\Actor-Mixer Hierarchy\Hero\Hero_Light_Return\Light_Return_03		384064
 	634898397	Enemy_Attack_05	D:\Unity Prototyping\Profundum\ProfundumWwise\.cache\Windows\SFX\Enemies\Attack\Enemy_Attack_05_9E69E797.wem		\Actor-Mixer Hierarchy\Enemies\Grupper\Grupper_Attack\Enemy_Attack_Whoosh\Enemy_Attack_05		224064
@@ -116,6 +119,8 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	975723891	Footsteps_02	D:\Unity Prototyping\Profundum\ProfundumWwise\.cache\Windows\SFX\Footsteps\Footsteps_02_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps_Character_Type\FS_Hero_Surface_Type\FS_Hero_Icky_Step_Type\FS_Hero_Icky_Walk\Footsteps_02		40064
 	983776726	Grubber_Spot_02	D:\Unity Prototyping\Profundum\ProfundumWwise\.cache\Windows\SFX\Enemies\Spot\Grubber_Spot_02_9E69E797.wem		\Actor-Mixer Hierarchy\Enemies\Grupper\Grupper_Spot\Grubber_Spot_02		208064
 	994633801	Grubber_Growl_02	D:\Unity Prototyping\Profundum\ProfundumWwise\.cache\Windows\SFX\Enemies\Idle\Grubber_Growl_02_9E69E797.wem		\Actor-Mixer Hierarchy\Enemies\Grupper\Grupper_Idle\Grubber_Growl_02		440064
+	1009797297	Light_Attack_02	D:\Unity Prototyping\Profundum\ProfundumWwise\.cache\Windows\SFX\Hero\Light_Attack_02_9E69E797.wem		\Actor-Mixer Hierarchy\Hero\Hero_Light_Attack\Light_Attack_02		108064
+	1016210430	Light_Hum	D:\Unity Prototyping\Profundum\ProfundumWwise\.cache\Windows\SFX\Hero\Light_Hum_9E69E797.wem		\Actor-Mixer Hierarchy\Hero\Hero_Light_Hum\Light_Hum		960064
 	1048145576	Wind_Variation_07	D:\Unity Prototyping\Profundum\ProfundumWwise\.cache\Windows\SFX\Ambiences\Wind\Wind_Variation_07_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mountain Ambience\Wind Blend\Wind Variation\Wind_Variation_07		1368868
 	1049160231	Choppy_Breathing_03	D:\Unity Prototyping\Profundum\ProfundumWwise\.cache\Windows\SFX\Hero\Choppy_Breathing_03_9E69E797.wem		\Actor-Mixer Hierarchy\Hero\Hero_Heavy_Breathing\Choppy_Breathing_03		260064
 	1059626769	Drone_Thunder	D:\Unity Prototyping\Profundum\ProfundumWwise\.cache\Windows\SFX\Ambiences\Drones\Drone_Thunder_4B8CC0C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Drone Blend\Drone Base\Drone_Thunder		2530912

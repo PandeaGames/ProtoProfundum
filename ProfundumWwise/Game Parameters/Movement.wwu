@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{29C144A1-FF1B-430F-87FC-537B9361FE02}" SchemaVersion="70">
+	<GameParameters>
+		<WorkUnit Name="Movement" ID="{29C144A1-FF1B-430F-87FC-537B9361FE02}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="Speed" ID="{CDE7A3AD-3F02-4EA2-B1A2-767CD2C5C036}">
+					<PropertyList>
+						<Property Name="BindToBuiltInParam" Type="int16" Value="1"/>
+						<Property Name="FilterTimeDown" Type="Real64" Value="0.1"/>
+						<Property Name="FilterTimeUp" Type="Real64" Value="0.1"/>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="RTPCRamping" Type="int16" Value="2"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
+	</GameParameters>
+</WwiseDocument>

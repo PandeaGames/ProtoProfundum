@@ -38,16 +38,17 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="UnityEngine">
-      <HintPath>D:/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor">
-      <HintPath>D:/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\AKCustomInitializer.cs" />
      <Compile Include="Assets\AKCustom_ActorAudioController.cs" />
      <Compile Include="Assets\AKCustom_ActorAudioEmitter.cs" />
+     <Compile Include="Assets\AKCustom_ActorDistanceController.cs" />
      <Compile Include="Assets\AKCustom_GrupperAudioController.cs" />
      <Compile Include="Assets\AdditiveLevelLoad.cs" />
      <Compile Include="Assets\AreaCenter.cs" />
@@ -65,11 +66,13 @@
      <Compile Include="Assets\LevelAdditive.cs" />
      <Compile Include="Assets\LevelPortal.cs" />
      <Compile Include="Assets\LightCompleteAnimation.cs" />
+     <Compile Include="Assets\LightShotAudioController.cs" />
      <Compile Include="Assets\LightTargetDisplay.cs" />
      <Compile Include="Assets\LoadLevelAnchorEnd.cs" />
      <Compile Include="Assets\LoadLevelAnchorStart.cs" />
      <Compile Include="Assets\MonsterLove\StateMachine\StateBehaviour.cs" />
      <Compile Include="Assets\MonsterLove\StateMachine\StateEngine.cs" />
+     <Compile Include="Assets\Raycast.cs" />
      <Compile Include="Assets\SectionBridge.cs" />
      <Compile Include="Assets\SectionStreamingController.cs" />
      <Compile Include="Assets\ShootTargetting.cs" />
@@ -295,10 +298,10 @@
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BlurAndFlares.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BlendForBloom.shader" />
  <Reference Include="UnityEngine.UI">
- <HintPath>D:/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Networking">
- <HintPath>D:/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>

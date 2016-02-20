@@ -12,7 +12,9 @@ public class GrupperAudioController : MonoBehaviour {
 	// Update is called once per frame
 	void Update () 
 	{
-	}
+        //Tension_Grupper
+
+    }
 
 	void Audio_DoAttack()
 	{

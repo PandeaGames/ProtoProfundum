@@ -31,6 +31,7 @@ public class AKCustom_ActorAudioController : MonoBehaviour {
 				AkSoundEngine.SetObjectObstructionAndOcclusion(actor.gameObject, 0, 0f, 0f);
 				Debug.DrawRay (ray.origin, ray.direction * radius, Color.green);
 			}
+           // AkSoundEngine.SetRTPCValue("Actor_Distance", radius, actor.gameObject);
 		}
 	}
 	void ResetSceneData()

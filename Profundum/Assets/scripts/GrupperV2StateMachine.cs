@@ -25,6 +25,7 @@ public class GrupperV2StateMachine : StateBehaviour {
 	public float attackRecoverTime = 3;
 	public GameObject path;
 	public GameObject pathHead;
+    public Raycast heroRaycaster;
 
 	private SightController _sc;
 	private PathNode pathNode;
@@ -68,7 +69,10 @@ public class GrupperV2StateMachine : StateBehaviour {
 		_sc = FindObjectOfType<SightController> ();
 		
 		SendMessage ("Audio_SearchingEnter");
-	}
+
+        
+
+    }
 	// Use this for initialization
 
 	void Awake () {
@@ -107,8 +111,10 @@ public class GrupperV2StateMachine : StateBehaviour {
 		rb = GetComponent<Rigidbody>();
 
 		_player = FindObjectOfType<HeroStateMachine> ().gameObject;
-		
-	}
+
+        heroRaycaster.target = _player;
+        heroRaycaster.mask = mask;
+    }
 	void Update()
 	{
 	}
@@ -258,23 +264,9 @@ public class GrupperV2StateMachine : StateBehaviour {
 				_killAttack = true;
 				_eye.fullAwareness = true;
 			}
-			bool IsObstructed = false;
-			RaycastHit hit = new RaycastHit ();
-			
-			Ray ray = new Ray (transform.position, _player.transform.position - transform.position );
-			float radius = Vector3.Distance(_player.transform.position, transform.position);
-			if (Physics.Raycast (ray, out hit, radius, mask))
-			{
-				Debug.DrawRay (ray.origin, ray.direction * radius, Color.red);
-				IsObstructed = true;
-			}else
-			{
-				IsObstructed = false;
-				Debug.DrawRay (ray.origin, ray.direction * radius, Color.green);
-			}
 
-
-			if((dy<0.60f && dotProd < -0.8 && lightAgro || dy<0.35f && lightClose) && !IsObstructed){
+			if((dy<0.60f && dotProd < -0.8 && lightAgro || dy<0.35f && lightClose) && !heroRaycaster.IsObstructed)
+            {
 				_eye.SetCanSee (true);
 				if(_sc.SightActive())
 				{

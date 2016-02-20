@@ -14,6 +14,8 @@ public class SightAudioController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        AkSoundEngine.SetRTPCValue("Tension_Vision", _sc.GetSight()*100);
+
 		if (_isInSight != _sc.IsInSight ()) 
 		{
 			//there has been a change in sight value. Post event. 

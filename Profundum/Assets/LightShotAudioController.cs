@@ -7,7 +7,7 @@ public class LightShotAudioController : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         _startPos = this.transform.position;
- 
+		AkSoundEngine.PostEvent ("Play_LightHumAttack", gameObject);
     }
 	
 	// Update is called once per frame

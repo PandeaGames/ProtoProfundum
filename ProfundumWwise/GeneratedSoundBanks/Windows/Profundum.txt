@@ -21,6 +21,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	4093367312	Play_Breathing			\Character\Play_Breathing	
 	4097122886	Stop_LightHum			\Character\Stop_LightHum	
 	4253772027	Emitters_Stop			\Default Work Unit\Emitters_Stop	
+	4275956424	Play_LightHumAttack			\Character\Play_LightHumAttack	
 
 Switch Group	ID	Name			Wwise Object Path	Notes
 	1117085073	Character_Type			\Footsteps\Character_Type	
@@ -33,8 +34,8 @@ Switch	ID	Name	Switch Group			Notes
 	1789562033	Icky	Surface_Type			
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
-	640949982	Speed			\Movement\Speed	
-	1571361561	Tension			\Tension Level\Tension	
+	1588780195	LightShot_Distance			\Movement\LightShot_Distance	
+	2174713698	Actor_Distance			\Tension Level\Actor_Distance	
 
 Modulator Envelope	ID	Name			Wwise Object Path	Notes
 	504415227	Modulator Envelope (Custom)				

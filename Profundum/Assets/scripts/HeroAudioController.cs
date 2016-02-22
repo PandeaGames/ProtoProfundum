@@ -13,79 +13,68 @@ public class HeroAudioController : MonoBehaviour {
 	
 	}
 
-	void ClimbUpStart()
+	void ClimbUpStart ()
 	{
 		AkSoundEngine.PostEvent("Hero_ClimbUpStart", gameObject);
 	}
-	void ClimbComplete()
+	void ClimbComplete ()
 	{
 		AkSoundEngine.PostEvent("Hero_ClimbComplete", gameObject);
 	}
-	void ClimbDownStart()
+	void ClimbDownStart ()
 	{
 		AkSoundEngine.PostEvent("Hero_ClimbDownStart", gameObject);
 	}
-	void RunStep()
+	void RunStep ()
 	{
 		AkSoundEngine.PostEvent("Play_Footstep", gameObject);
 	}
-	void Dead()
+	void Dead ()
 	{
 	}
-    void Jump()
+    void Jump ()
     {
         AkSoundEngine.PostEvent("Play_Jump", gameObject);
     }
-    void HandPlant()
+    void HandPlant ()
     {
         AkSoundEngine.PostEvent("Play_HandPlant", gameObject);
     }
-    void KneePlant()
+    void KneePlant ()
     {
         AkSoundEngine.PostEvent("Play_KneePlant", gameObject);
     }
-    void StepUp()
+    void StepUp ()
     {
         AkSoundEngine.PostEvent("Play_StepUp", gameObject);
     }
-	void SlideOff()
+	void SlideOff ()
 	{
 		AkSoundEngine.PostEvent("Play_SlideOff", gameObject);
 	}
-	void ImpactLeft()
+	void ImpactLeft ()
 	{
 		AkSoundEngine.PostEvent("Play_ImpactLeft", gameObject);
 	}
-	void ImpactRight()
+	void ImpactRight ()
 	{
 		AkSoundEngine.PostEvent("Play_ImpactRight", gameObject);
 	}
-	void Audio_LightReturn()
-	{
-		AkSoundEngine.PostEvent("Play_LightReturn", gameObject);
-	}
-	void Audio_LightAttack()
-	{
-		AkSoundEngine.PostEvent("Play_LightAttack", gameObject);
-	}
-    void Audio_Shoot()
+    void Audio_Shoot ()
     {
-        AkSoundEngine.PostEvent("Play_LightAttack", gameObject);
+        //AkSoundEngine.PostEvent("Play_LightAttack", gameObject);
+		AkSoundEngine.PostEvent("Play_LightReturn", gameObject);
     }
-    void Audio_Shoot_Return()
+    /*void Audio_Shoot_Return ()
     {
         AkSoundEngine.PostEvent("Play_LightReturn", gameObject);
     }
-    void Audio_Shoot_Fail()
+    void Audio_Shoot_Fail ()
     {
         AkSoundEngine.PostEvent("Play_LightFail", gameObject);
-    }
-	void Audio_LightHum()
+    }*/
+	/*void Audio_LightHum ()
 	{
 		AkSoundEngine.PostEvent("Play_LightHum", gameObject);
-	}
-	void Audio_StopHum()
-	{
-		AkSoundEngine.PostEvent("Play_StopHum", gameObject);
-	}
+	}*/
 }

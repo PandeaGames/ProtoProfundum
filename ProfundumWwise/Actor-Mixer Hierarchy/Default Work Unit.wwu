@@ -572,7 +572,7 @@
 												<RTPC Name="" ID="{09DCD75E-FEB2-4451-A566-9F1D6D4D7C45}" ShortID="315203295">
 													<ReferenceList>
 														<Reference Name="ControlInput">
-															<ObjectRef Name="Tension" ID="{E4C10DC4-103A-4020-A835-A252D4A9174F}" WorkUnitID="{4AC9DFF9-F593-4971-AD00-DAAEAB75CBA5}"/>
+															<ObjectRef Name="Actor_Distance" ID="{E4C10DC4-103A-4020-A835-A252D4A9174F}" WorkUnitID="{4AC9DFF9-F593-4971-AD00-DAAEAB75CBA5}"/>
 														</Reference>
 													</ReferenceList>
 													<Curve Name="" ID="{6D3B88B7-D6CE-4E51-A3C9-6D98FAB7D1A8}">
@@ -645,7 +645,7 @@
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="LayerCrossFadeControlInput">
-													<ObjectRef Name="Tension" ID="{E4C10DC4-103A-4020-A835-A252D4A9174F}" WorkUnitID="{4AC9DFF9-F593-4971-AD00-DAAEAB75CBA5}"/>
+													<ObjectRef Name="Actor_Distance" ID="{E4C10DC4-103A-4020-A835-A252D4A9174F}" WorkUnitID="{4AC9DFF9-F593-4971-AD00-DAAEAB75CBA5}"/>
 												</Reference>
 											</ReferenceList>
 											<BlendTrackAssocList>
@@ -672,7 +672,7 @@
 												<RTPC Name="" ID="{211387AB-6B64-49E2-8E2A-529E45EF84DA}" ShortID="280815506">
 													<ReferenceList>
 														<Reference Name="ControlInput">
-															<ObjectRef Name="Tension" ID="{E4C10DC4-103A-4020-A835-A252D4A9174F}" WorkUnitID="{4AC9DFF9-F593-4971-AD00-DAAEAB75CBA5}"/>
+															<ObjectRef Name="Actor_Distance" ID="{E4C10DC4-103A-4020-A835-A252D4A9174F}" WorkUnitID="{4AC9DFF9-F593-4971-AD00-DAAEAB75CBA5}"/>
 														</Reference>
 													</ReferenceList>
 													<Curve Name="" ID="{BC072E22-D7B9-4D0F-9E8A-DDEA9CB2B6C7}">
@@ -745,7 +745,7 @@
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="LayerCrossFadeControlInput">
-													<ObjectRef Name="Tension" ID="{E4C10DC4-103A-4020-A835-A252D4A9174F}" WorkUnitID="{4AC9DFF9-F593-4971-AD00-DAAEAB75CBA5}"/>
+													<ObjectRef Name="Actor_Distance" ID="{E4C10DC4-103A-4020-A835-A252D4A9174F}" WorkUnitID="{4AC9DFF9-F593-4971-AD00-DAAEAB75CBA5}"/>
 												</Reference>
 											</ReferenceList>
 											<BlendTrackAssocList>
@@ -769,7 +769,7 @@
 												<RTPC Name="" ID="{2D712E4A-9B24-4401-B6E5-7E03DCEB517B}" ShortID="376528019">
 													<ReferenceList>
 														<Reference Name="ControlInput">
-															<ObjectRef Name="Tension" ID="{E4C10DC4-103A-4020-A835-A252D4A9174F}" WorkUnitID="{4AC9DFF9-F593-4971-AD00-DAAEAB75CBA5}"/>
+															<ObjectRef Name="Actor_Distance" ID="{E4C10DC4-103A-4020-A835-A252D4A9174F}" WorkUnitID="{4AC9DFF9-F593-4971-AD00-DAAEAB75CBA5}"/>
 														</Reference>
 													</ReferenceList>
 													<Curve Name="" ID="{D6D2D59D-B86F-48EA-BD73-CAFF687F939B}">
@@ -856,7 +856,7 @@
 										<BlendTrack Name="Tension Level" ID="{AB602834-1A6D-4574-AB36-CF039A2402F7}" ShortID="285454125">
 											<ReferenceList>
 												<Reference Name="LayerCrossFadeControlInput">
-													<ObjectRef Name="Tension" ID="{E4C10DC4-103A-4020-A835-A252D4A9174F}" WorkUnitID="{4AC9DFF9-F593-4971-AD00-DAAEAB75CBA5}"/>
+													<ObjectRef Name="Actor_Distance" ID="{E4C10DC4-103A-4020-A835-A252D4A9174F}" WorkUnitID="{4AC9DFF9-F593-4971-AD00-DAAEAB75CBA5}"/>
 												</Reference>
 											</ReferenceList>
 											<BlendTrackAssocList>
@@ -892,7 +892,7 @@
 												<RTPC Name="" ID="{D28E4140-5227-4823-826D-E5951BE5236E}" ShortID="867945690">
 													<ReferenceList>
 														<Reference Name="ControlInput">
-															<ObjectRef Name="Tension" ID="{E4C10DC4-103A-4020-A835-A252D4A9174F}" WorkUnitID="{4AC9DFF9-F593-4971-AD00-DAAEAB75CBA5}"/>
+															<ObjectRef Name="Actor_Distance" ID="{E4C10DC4-103A-4020-A835-A252D4A9174F}" WorkUnitID="{4AC9DFF9-F593-4971-AD00-DAAEAB75CBA5}"/>
 														</Reference>
 													</ReferenceList>
 													<Curve Name="" ID="{C4C17742-18EA-46BF-962B-1290C19DE2EC}">
@@ -918,7 +918,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="LayerCrossFadeControlInput">
-											<ObjectRef Name="Tension" ID="{E4C10DC4-103A-4020-A835-A252D4A9174F}" WorkUnitID="{4AC9DFF9-F593-4971-AD00-DAAEAB75CBA5}"/>
+											<ObjectRef Name="Actor_Distance" ID="{E4C10DC4-103A-4020-A835-A252D4A9174F}" WorkUnitID="{4AC9DFF9-F593-4971-AD00-DAAEAB75CBA5}"/>
 										</Reference>
 									</ReferenceList>
 								</BlendTrack>
@@ -932,7 +932,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="LayerCrossFadeControlInput">
-									<ObjectRef Name="Tension" ID="{E4C10DC4-103A-4020-A835-A252D4A9174F}" WorkUnitID="{4AC9DFF9-F593-4971-AD00-DAAEAB75CBA5}"/>
+									<ObjectRef Name="Actor_Distance" ID="{E4C10DC4-103A-4020-A835-A252D4A9174F}" WorkUnitID="{4AC9DFF9-F593-4971-AD00-DAAEAB75CBA5}"/>
 								</Reference>
 							</ReferenceList>
 						</BlendTrack>
@@ -2683,7 +2683,7 @@
 														<RTPC Name="" ID="{C27CFC03-A751-428F-A9F8-868ADF23F49E}" ShortID="965588473">
 															<ReferenceList>
 																<Reference Name="ControlInput">
-																	<ObjectRef Name="Tension" ID="{E4C10DC4-103A-4020-A835-A252D4A9174F}" WorkUnitID="{4AC9DFF9-F593-4971-AD00-DAAEAB75CBA5}"/>
+																	<ObjectRef Name="Actor_Distance" ID="{E4C10DC4-103A-4020-A835-A252D4A9174F}" WorkUnitID="{4AC9DFF9-F593-4971-AD00-DAAEAB75CBA5}"/>
 																</Reference>
 															</ReferenceList>
 															<Curve Name="" ID="{1669C86F-67A6-463B-BA2E-61732730C758}">
@@ -2724,7 +2724,7 @@
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="LayerCrossFadeControlInput">
-													<ObjectRef Name="Tension" ID="{E4C10DC4-103A-4020-A835-A252D4A9174F}" WorkUnitID="{4AC9DFF9-F593-4971-AD00-DAAEAB75CBA5}"/>
+													<ObjectRef Name="Actor_Distance" ID="{E4C10DC4-103A-4020-A835-A252D4A9174F}" WorkUnitID="{4AC9DFF9-F593-4971-AD00-DAAEAB75CBA5}"/>
 												</Reference>
 											</ReferenceList>
 											<BlendTrackAssocList>
@@ -2793,7 +2793,7 @@
 														<RTPC Name="" ID="{E4F63E8F-A59C-427F-8576-EC555D93313D}" ShortID="863887986">
 															<ReferenceList>
 																<Reference Name="ControlInput">
-																	<ObjectRef Name="Tension" ID="{E4C10DC4-103A-4020-A835-A252D4A9174F}" WorkUnitID="{4AC9DFF9-F593-4971-AD00-DAAEAB75CBA5}"/>
+																	<ObjectRef Name="Actor_Distance" ID="{E4C10DC4-103A-4020-A835-A252D4A9174F}" WorkUnitID="{4AC9DFF9-F593-4971-AD00-DAAEAB75CBA5}"/>
 																</Reference>
 															</ReferenceList>
 															<Curve Name="" ID="{A539A464-92F8-4BEC-B8CD-611839423F29}">
@@ -2834,7 +2834,7 @@
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="LayerCrossFadeControlInput">
-													<ObjectRef Name="Tension" ID="{E4C10DC4-103A-4020-A835-A252D4A9174F}" WorkUnitID="{4AC9DFF9-F593-4971-AD00-DAAEAB75CBA5}"/>
+													<ObjectRef Name="Actor_Distance" ID="{E4C10DC4-103A-4020-A835-A252D4A9174F}" WorkUnitID="{4AC9DFF9-F593-4971-AD00-DAAEAB75CBA5}"/>
 												</Reference>
 											</ReferenceList>
 											<BlendTrackAssocList>
@@ -2920,7 +2920,7 @@
 														<RTPC Name="" ID="{93F15AC9-10BB-4259-800C-CCD1F0C6D34E}" ShortID="1023656419">
 															<ReferenceList>
 																<Reference Name="ControlInput">
-																	<ObjectRef Name="Tension" ID="{E4C10DC4-103A-4020-A835-A252D4A9174F}" WorkUnitID="{4AC9DFF9-F593-4971-AD00-DAAEAB75CBA5}"/>
+																	<ObjectRef Name="Actor_Distance" ID="{E4C10DC4-103A-4020-A835-A252D4A9174F}" WorkUnitID="{4AC9DFF9-F593-4971-AD00-DAAEAB75CBA5}"/>
 																</Reference>
 															</ReferenceList>
 															<Curve Name="" ID="{4188716A-C8F3-4C1B-AA59-131A7C7FB23D}">
@@ -2951,7 +2951,7 @@
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="LayerCrossFadeControlInput">
-													<ObjectRef Name="Tension" ID="{E4C10DC4-103A-4020-A835-A252D4A9174F}" WorkUnitID="{4AC9DFF9-F593-4971-AD00-DAAEAB75CBA5}"/>
+													<ObjectRef Name="Actor_Distance" ID="{E4C10DC4-103A-4020-A835-A252D4A9174F}" WorkUnitID="{4AC9DFF9-F593-4971-AD00-DAAEAB75CBA5}"/>
 												</Reference>
 											</ReferenceList>
 											<BlendTrackAssocList>
@@ -2987,7 +2987,7 @@
 												<RTPC Name="" ID="{34BB8B61-A786-4E64-A0E3-E461B245AF78}" ShortID="955504298">
 													<ReferenceList>
 														<Reference Name="ControlInput">
-															<ObjectRef Name="Tension" ID="{E4C10DC4-103A-4020-A835-A252D4A9174F}" WorkUnitID="{4AC9DFF9-F593-4971-AD00-DAAEAB75CBA5}"/>
+															<ObjectRef Name="Actor_Distance" ID="{E4C10DC4-103A-4020-A835-A252D4A9174F}" WorkUnitID="{4AC9DFF9-F593-4971-AD00-DAAEAB75CBA5}"/>
 														</Reference>
 													</ReferenceList>
 													<Curve Name="" ID="{23BD49FA-ACF5-40C1-A855-AA2EAE47E1CA}">
@@ -3013,7 +3013,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="LayerCrossFadeControlInput">
-											<ObjectRef Name="Tension" ID="{E4C10DC4-103A-4020-A835-A252D4A9174F}" WorkUnitID="{4AC9DFF9-F593-4971-AD00-DAAEAB75CBA5}"/>
+											<ObjectRef Name="Actor_Distance" ID="{E4C10DC4-103A-4020-A835-A252D4A9174F}" WorkUnitID="{4AC9DFF9-F593-4971-AD00-DAAEAB75CBA5}"/>
 										</Reference>
 									</ReferenceList>
 								</BlendTrack>

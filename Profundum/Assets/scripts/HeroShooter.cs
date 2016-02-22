@@ -49,6 +49,11 @@ using UnityEngine;
             }
             else
             {
+                LightTargetDisplay display = FindObjectOfType<LightTargetDisplay>();
+                if (display)
+                {
+                    display.SendMessage("Audio_Shoot_Fail");
+                }
                 SendMessage("Audio_Shoot_Fail");
             }
 		}

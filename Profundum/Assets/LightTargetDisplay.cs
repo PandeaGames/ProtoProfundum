@@ -8,8 +8,7 @@ public class LightTargetDisplay : StateBehaviour {
 	{
 		ShootReady, 
 		ShootRecovery, 
-		Leaving, 
-		Recovering
+		Leaving
 	}
 	public AnimationCurve recoveryCurve;
 	public GameObject sphere;
@@ -72,7 +71,16 @@ public class LightTargetDisplay : StateBehaviour {
 			ChangeState(LightStates.ShootRecovery);
 		}
 	}
-	void ShootRecovery_Update()
+    void ShootReady_Enter()
+    {
+        SendMessage("Audio_LightReturn");
+    }
+    void ShootRecovery_Enter()
+    {
+        SendMessage("Audio_LightAttack");
+    }
+
+    void ShootRecovery_Update()
 	{
 		transform.position = target.transform.position;
 		_flare.brightness = _flareBrightness * recoveryCurve.Evaluate (shooter.GetRecoveringProgress ());

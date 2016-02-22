@@ -6,15 +6,18 @@ public class AKCustom_ActorDistanceController : MonoBehaviour {
     public LayerMask mask;
 
     private AKCustom_ActorAudioEmitter[] _actors;
+    private AkAudioListener _listener;
     // Use this for initialization
     void Start () {
         _actors = FindObjectsOfType<AKCustom_ActorAudioEmitter>();
         _player = FindObjectOfType<HeroStateMachine>().gameObject;
+        _listener = FindObjectOfType<AkAudioListener>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        float closestDist = float.MaxValue;
         foreach (AKCustom_ActorAudioEmitter actor in _actors)
         {
             RaycastHit hit = new RaycastHit();
@@ -27,11 +30,12 @@ public class AKCustom_ActorDistanceController : MonoBehaviour {
             }
             else
             {
+                if (radius < closestDist) closestDist = radius;
                 Debug.DrawRay(ray.origin, ray.direction * radius, Color.green);
             }
-            Debug.Log("Actor_Distance"+radius);
             AkSoundEngine.SetRTPCValue("Actor_Distance", radius, actor.gameObject);
         }
+        AkSoundEngine.SetRTPCValue("Grupper_Distance", closestDist, _listener.gameObject);
     }
     void ResetSceneData()
     {

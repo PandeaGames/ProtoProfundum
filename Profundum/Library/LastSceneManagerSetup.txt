@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/scenes/Challenge_02.unity
+- path: Assets/scenes/GameStart.unity
   isLoaded: 1
   isActive: 1

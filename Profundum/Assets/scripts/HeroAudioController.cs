@@ -63,18 +63,18 @@ public class HeroAudioController : MonoBehaviour {
     void Audio_Shoot ()
     {
         //AkSoundEngine.PostEvent("Play_LightAttack", gameObject);
-		AkSoundEngine.PostEvent("Play_LightReturn", gameObject);
+		//AkSoundEngine.PostEvent("Play_LightReturn", gameObject);
     }
-    /*void Audio_Shoot_Return ()
+    void Audio_Shoot_Return ()
     {
-        AkSoundEngine.PostEvent("Play_LightReturn", gameObject);
+        //AkSoundEngine.PostEvent("Play_LightReturn", gameObject);
     }
     void Audio_Shoot_Fail ()
     {
-        AkSoundEngine.PostEvent("Play_LightFail", gameObject);
-    }*/
-	/*void Audio_LightHum ()
+        //AkSoundEngine.PostEvent("Play_LightFail", gameObject);
+    }
+	void Audio_LightHum ()
 	{
-		AkSoundEngine.PostEvent("Play_LightHum", gameObject);
-	}*/
+		//AkSoundEngine.PostEvent("Play_LightHum", gameObject);
+	}
 }

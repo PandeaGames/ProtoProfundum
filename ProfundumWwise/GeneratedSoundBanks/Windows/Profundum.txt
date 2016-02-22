@@ -35,7 +35,7 @@ Switch	ID	Name	Switch Group			Notes
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	1588780195	LightShot_Distance			\Movement\LightShot_Distance	
-	2174713698	Actor_Distance			\Tension Level\Actor_Distance	
+	3493105408	Grupper_Distance			\Tension Level\Grupper_Distance	
 
 Modulator Envelope	ID	Name			Wwise Object Path	Notes
 	504415227	Modulator Envelope (Custom)				

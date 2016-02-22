@@ -14,4 +14,7 @@ public class LightShotAudioController : MonoBehaviour {
 	void Update () {
         AkSoundEngine.SetRTPCValue("LightShot_Distance", Vector3.Distance(_startPos, transform.position), gameObject);
 	}
+	void Audio_StopHum (){
+		AkSoundEngine.PostEvent ("Stop_LightHum", gameObject);
+	}
 }

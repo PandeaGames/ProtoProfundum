@@ -18,7 +18,7 @@ public class LightOrbAudioController : MonoBehaviour {
 	}
     void Audio_LightReturn()
     {
-        AkSoundEngine.PostEvent("Play_LightReturn", gameObject);
+        //AkSoundEngine.PostEvent("Play_LightReturn", gameObject);
     }
     void Audio_LightAttack()
     {

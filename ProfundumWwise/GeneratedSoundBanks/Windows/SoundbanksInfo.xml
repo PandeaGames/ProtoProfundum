@@ -23,7 +23,7 @@
 				<Event Id="3166394572" Name="Ambience_Stop" MaxAttenuation="0.000000"/>
 				<Event Id="326116161" Name="Emitters_Start"/>
 				<Event Id="4253772027" Name="Emitters_Stop" MaxAttenuation="0.000000"/>
-				<Event Id="3194988474" Name="Grupper_Idle_Start" MaxAttenuation="20.000000"/>
+				<Event Id="3194988474" Name="Grupper_Idle_Start" MaxAttenuation="30.000000"/>
 				<Event Id="3686092498" Name="Grupper_Idle_Stop" MaxAttenuation="0.000000"/>
 				<Event Id="1519321238" Name="Play_Attack"/>
 				<Event Id="4093367312" Name="Play_Breathing"/>

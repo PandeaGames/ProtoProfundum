@@ -3,12 +3,12 @@
 	<GameParameters>
 		<WorkUnit Name="Tension Level" ID="{4AC9DFF9-F593-4971-AD00-DAAEAB75CBA5}" PersistMode="Standalone">
 			<ChildrenList>
-				<GameParameter Name="Actor_Distance" ID="{E4C10DC4-103A-4020-A835-A252D4A9174F}">
+				<GameParameter Name="Grupper_Distance" ID="{E4C10DC4-103A-4020-A835-A252D4A9174F}">
 					<PropertyList>
 						<Property Name="FilterTimeDown" Type="Real64" Value="0.8"/>
 						<Property Name="FilterTimeUp" Type="Real64" Value="0.3"/>
 						<Property Name="InitialValue" Type="Real64" Value="0"/>
-						<Property Name="Max" Type="Real64" Value="40"/>
+						<Property Name="Max" Type="Real64" Value="500"/>
 						<Property Name="RTPCRamping" Type="int16" Value="2"/>
 					</PropertyList>
 				</GameParameter>

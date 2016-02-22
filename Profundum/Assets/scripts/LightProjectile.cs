@@ -51,6 +51,7 @@ namespace AssemblyCSharp
 		void OnCollisionEnter(Collision col)
 		{
 			Destroy (gameObject);
+			SendMessage ("Audio_StopHum");
 		}
 	}
 }

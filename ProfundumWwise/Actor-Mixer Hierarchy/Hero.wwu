@@ -22,7 +22,7 @@
 								<RTPC Name="" ID="{5C11FAAA-8933-4F71-8646-5037DB889ECF}" ShortID="869082007">
 									<ReferenceList>
 										<Reference Name="ControlInput">
-											<ObjectRef Name="Actor_Distance" ID="{E4C10DC4-103A-4020-A835-A252D4A9174F}" WorkUnitID="{4AC9DFF9-F593-4971-AD00-DAAEAB75CBA5}"/>
+											<ObjectRef Name="Grupper_Distance" ID="{E4C10DC4-103A-4020-A835-A252D4A9174F}" WorkUnitID="{4AC9DFF9-F593-4971-AD00-DAAEAB75CBA5}"/>
 										</Reference>
 									</ReferenceList>
 									<Curve Name="" ID="{D90D947C-4BE0-41F5-8CE8-CC61212AC756}">
@@ -41,13 +41,18 @@
 												<Flags>0</Flags>
 											</Point>
 											<Point>
-												<XPos>24.99215</XPos>
+												<XPos>30</XPos>
 												<YPos>-20</YPos>
 												<Flags>0</Flags>
 											</Point>
 											<Point>
 												<XPos>40</XPos>
-												<YPos>-200</YPos>
+												<YPos>-40</YPos>
+												<Flags>0</Flags>
+											</Point>
+											<Point>
+												<XPos>500</XPos>
+												<YPos>-40</YPos>
 												<Flags>37</Flags>
 											</Point>
 										</PointList>
@@ -69,7 +74,7 @@
 												<RTPC Name="" ID="{0AB43A0D-1A95-449B-A27C-77BA4AD07D90}" ShortID="114185485">
 													<ReferenceList>
 														<Reference Name="ControlInput">
-															<ObjectRef Name="Actor_Distance" ID="{E4C10DC4-103A-4020-A835-A252D4A9174F}" WorkUnitID="{4AC9DFF9-F593-4971-AD00-DAAEAB75CBA5}"/>
+															<ObjectRef Name="Grupper_Distance" ID="{E4C10DC4-103A-4020-A835-A252D4A9174F}" WorkUnitID="{4AC9DFF9-F593-4971-AD00-DAAEAB75CBA5}"/>
 														</Reference>
 													</ReferenceList>
 													<Curve Name="" ID="{26962E27-5D62-4886-9D3C-13DA4CDC66B6}">
@@ -88,7 +93,7 @@
 																<Flags>0</Flags>
 															</Point>
 															<Point>
-																<XPos>40</XPos>
+																<XPos>500</XPos>
 																<YPos>75</YPos>
 																<Flags>37</Flags>
 															</Point>
@@ -391,7 +396,7 @@
 					<PropertyList>
 						<Property Name="InitialDelay" Type="Real64">
 							<ValueList>
-								<Value>3</Value>
+								<Value>3.5</Value>
 							</ValueList>
 						</Property>
 						<Property Name="Pitch" Type="int32">
@@ -429,7 +434,7 @@
 						<Property Name="RandomAvoidRepeating" Type="bool" Value="False"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-1</Value>
+								<Value>-21</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -573,7 +578,7 @@
 						<Property Name="RandomAvoidRepeating" Type="bool" Value="False"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-1</Value>
+								<Value>-13</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>

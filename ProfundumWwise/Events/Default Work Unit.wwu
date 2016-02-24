@@ -47,6 +47,34 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Stop_SightDrone" ID="{ACF3EF8A-6499-4DA4-8E74-EA9B44B9C232}">
+					<ChildrenList>
+						<Action Name="Stop" ID="{BCC2869D-9C87-4053-A55F-B462F96DBC65}" ShortID="190015679" Type="Stop" Scope="One" Global="true">
+							<PropertyList>
+								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+							</PropertyList>
+							<ElementList>
+								<Element ID="{2DD32F9F-08A5-4059-92E6-824C233DE9AC}" Global="true">
+									<ObjectRef Name="Sight_Drone" ID="{7A684BB7-E952-4073-B56F-9030902E8EEE}" WorkUnitID="{3069270D-C1C8-41F2-8831-B25883D2B8B3}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_SightDrone" ID="{DD92BB4F-E3CC-499E-A007-77CE0564F0D2}">
+					<ChildrenList>
+						<Action Name="Play" ID="{8123C6B9-9D37-4B51-91F9-B9AA607F397B}" ShortID="369263485" Type="Play" Scope="One" Global="false">
+							<PropertyList>
+								<Property Name="FadeTime" Type="Real64" Value="0.1"/>
+							</PropertyList>
+							<ElementList>
+								<Element ID="{E24A219A-C8BA-49E7-AADE-6908C29896CB}" Global="false">
+									<ObjectRef Name="Sight_Drone" ID="{7A684BB7-E952-4073-B56F-9030902E8EEE}" WorkUnitID="{3069270D-C1C8-41F2-8831-B25883D2B8B3}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

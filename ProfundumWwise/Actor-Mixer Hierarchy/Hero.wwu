@@ -32,21 +32,21 @@
 										<PointList>
 											<Point>
 												<XPos>0</XPos>
-												<YPos>0</YPos>
+												<YPos>2.5</YPos>
 												<Flags>5</Flags>
 											</Point>
 											<Point>
-												<XPos>5.05495</XPos>
-												<YPos>0</YPos>
-												<Flags>0</Flags>
-											</Point>
-											<Point>
-												<XPos>30</XPos>
-												<YPos>-20</YPos>
+												<XPos>10</XPos>
+												<YPos>2.5</YPos>
 												<Flags>0</Flags>
 											</Point>
 											<Point>
 												<XPos>40</XPos>
+												<YPos>-20</YPos>
+												<Flags>0</Flags>
+											</Point>
+											<Point>
+												<XPos>50</XPos>
 												<YPos>-40</YPos>
 												<Flags>0</Flags>
 											</Point>
@@ -174,13 +174,37 @@
 					<PropertyList>
 						<Property Name="InitialDelay" Type="Real64">
 							<ValueList>
-								<Value>2.8</Value>
+								<Value>3</Value>
 							</ValueList>
+						</Property>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{B34A6302-404C-44AD-8192-AF09262F519E}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="10"/>
+											<Property Name="Min" Type="Real64" Value="-10"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
 						</Property>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-20</Value>
+								<Value>-12</Value>
 							</ValueList>
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{3A67CA08-8C94-4C1B-A7F6-BEED26D8F66B}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="1"/>
+											<Property Name="Min" Type="Real64" Value="-1"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
 						</Property>
 					</PropertyList>
 					<ReferenceList>
@@ -337,10 +361,34 @@
 				</RandomSequenceContainer>
 				<RandomSequenceContainer Name="Hero_Light_Attack" ID="{A4691667-836C-4512-B418-AD870A54CD12}" ShortID="234801808">
 					<PropertyList>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{BCF8EAD8-F62D-47C9-8F90-3867D22B1D1B}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="50"/>
+											<Property Name="Min" Type="Real64" Value="-50"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
 								<Value>-20</Value>
 							</ValueList>
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{AFB55A54-5102-4E82-8664-079004D06312}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="1"/>
+											<Property Name="Min" Type="Real64" Value="-1"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
 						</Property>
 					</PropertyList>
 					<ReferenceList>
@@ -352,7 +400,7 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<Sound Name="Light_Attack_01" ID="{F2AED2FA-E2DC-457E-926C-493726C6B5A0}" ShortID="596642515" Type="SoundFX">
+						<Sound Name="Light_Attack_01" ID="{69BE9E24-CE34-4211-8644-2DA039E3A32C}" ShortID="344044025" Type="SoundFX">
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1EFA288D-0518-4F50-B90A-8BC7193B5126}"/>
@@ -362,16 +410,16 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="Light_Attack_01" ID="{B84ED7F0-B14E-40B0-B83B-3529B41AF533}" ShortID="620569732">
+								<AudioFileSource Name="Light_Attack_01" ID="{7E286D18-3CC9-4244-8169-364B6467B980}" ShortID="937263278">
 									<Language>SFX</Language>
 									<AudioFile>Hero\Light_Attack_01.wav</AudioFile>
 								</AudioFileSource>
 							</ChildrenList>
 							<ActiveSourceList>
-								<ActiveSource Name="Light_Attack_01" ID="{B84ED7F0-B14E-40B0-B83B-3529B41AF533}" Platform="Linked"/>
+								<ActiveSource Name="Light_Attack_01" ID="{7E286D18-3CC9-4244-8169-364B6467B980}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
-						<Sound Name="Light_Attack_02" ID="{83F55885-8536-43F0-93E0-E74FBD9F5747}" ShortID="945581951" Type="SoundFX">
+						<Sound Name="Light_Attack_02" ID="{05AC17C8-7A0D-4082-8883-E6D02AAF03E1}" ShortID="802629409" Type="SoundFX">
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1EFA288D-0518-4F50-B90A-8BC7193B5126}"/>
@@ -381,13 +429,13 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="Light_Attack_02" ID="{283B5016-9072-4177-8B7C-EB5B479AD970}" ShortID="1009797297">
+								<AudioFileSource Name="Light_Attack_02" ID="{D8F2D8E7-E1CD-41F1-943F-74287E1794E1}" ShortID="307836863">
 									<Language>SFX</Language>
 									<AudioFile>Hero\Light_Attack_02.wav</AudioFile>
 								</AudioFileSource>
 							</ChildrenList>
 							<ActiveSourceList>
-								<ActiveSource Name="Light_Attack_02" ID="{283B5016-9072-4177-8B7C-EB5B479AD970}" Platform="Linked"/>
+								<ActiveSource Name="Light_Attack_02" ID="{D8F2D8E7-E1CD-41F1-943F-74287E1794E1}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>
@@ -434,7 +482,7 @@
 						<Property Name="RandomAvoidRepeating" Type="bool" Value="False"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-21</Value>
+								<Value>-22</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -587,7 +635,7 @@
 							<Custom>
 								<Attenuation Name="Attenuation (Custom)" ID="{95062621-9084-4BEC-99EC-C08D88DB90D0}" ShortID="15780618">
 									<PropertyList>
-										<Property Name="RadiusMax" Type="Real64" Value="60"/>
+										<Property Name="RadiusMax" Type="Real64" Value="80"/>
 									</PropertyList>
 									<CurveUsageInfoList>
 										<VolumeDryUsage>
@@ -603,7 +651,7 @@
 															<Flags>5</Flags>
 														</Point>
 														<Point>
-															<XPos>60</XPos>
+															<XPos>80</XPos>
 															<YPos>-200</YPos>
 															<Flags>37</Flags>
 														</Point>
@@ -630,12 +678,12 @@
 															<Flags>5</Flags>
 														</Point>
 														<Point>
-															<XPos>34.96357</XPos>
+															<XPos>46.6180933333334</XPos>
 															<YPos>50</YPos>
 															<Flags>0</Flags>
 														</Point>
 														<Point>
-															<XPos>60</XPos>
+															<XPos>80</XPos>
 															<YPos>81</YPos>
 															<Flags>37</Flags>
 														</Point>
@@ -684,6 +732,107 @@
 							</ChildrenList>
 							<ActiveSourceList>
 								<ActiveSource Name="Light_Hum" ID="{AD477ED1-AC95-41D8-BFCD-99F2050CD2B3}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
+				<RandomSequenceContainer Name="Hero_Clothing_Rustle" ID="{00C32277-0598-4E26-A957-A576CD7DD08B}" ShortID="675907800">
+					<PropertyList>
+						<Property Name="Lowpass" Type="int16">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{E4E5EC4D-8FBD-4725-BF4A-365885446F1C}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="40"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{0445A654-B520-48AA-A011-23377E98050E}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="200"/>
+											<Property Name="Min" Type="Real64" Value="-200"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-15</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1EFA288D-0518-4F50-B90A-8BC7193B5126}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{185B6E85-FBD8-4A07-BC62-BFCB74843E75}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Clothing_Rustle_01" ID="{0C9DEE9E-3EA7-4448-AACE-76BE110A09D0}" ShortID="236943058" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1EFA288D-0518-4F50-B90A-8BC7193B5126}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{185B6E85-FBD8-4A07-BC62-BFCB74843E75}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Clothing_Rustle_01" ID="{9C37AB5B-9FF6-4F71-9284-109F86A91758}" ShortID="281090189">
+									<Language>SFX</Language>
+									<AudioFile>Hero\Clothing_Rustle_01.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Clothing_Rustle_01" ID="{9C37AB5B-9FF6-4F71-9284-109F86A91758}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Clothing_Rustle_02" ID="{1FE745C6-08A0-46D7-9604-A498AD939062}" ShortID="553905102" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1EFA288D-0518-4F50-B90A-8BC7193B5126}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{185B6E85-FBD8-4A07-BC62-BFCB74843E75}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Clothing_Rustle_02" ID="{FD35ABE3-10F9-4B1C-A04B-F18F02658ACA}" ShortID="387579479">
+									<Language>SFX</Language>
+									<AudioFile>Hero\Clothing_Rustle_02.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Clothing_Rustle_02" ID="{FD35ABE3-10F9-4B1C-A04B-F18F02658ACA}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Clothing_Rustle_03" ID="{A447969D-8EBE-4455-9996-B056289A7829}" ShortID="560074675" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1EFA288D-0518-4F50-B90A-8BC7193B5126}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{185B6E85-FBD8-4A07-BC62-BFCB74843E75}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Clothing_Rustle_03" ID="{9467F70E-9CD7-487D-9A90-6D5C8F4DBA1B}" ShortID="932177639">
+									<Language>SFX</Language>
+									<AudioFile>Hero\Clothing_Rustle_03.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Clothing_Rustle_03" ID="{9467F70E-9CD7-487D-9A90-6D5C8F4DBA1B}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>

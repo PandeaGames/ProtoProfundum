@@ -207,6 +207,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_ClothingRustle" ID="{A6FBC6B7-85A4-4A4D-9777-498E21970063}">
+					<ChildrenList>
+						<Action Name="Play" ID="{56D9049C-92B4-4AD9-85ED-7BE7FB76E142}" ShortID="227840451" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{42093EA9-22EA-4FE2-B968-442354C772C8}" Global="false">
+									<ObjectRef Name="Hero_Clothing_Rustle" ID="{00C32277-0598-4E26-A957-A576CD7DD08B}" WorkUnitID="{DC5166A8-C8B5-437D-8B1A-E34B69E413DB}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

@@ -185,6 +185,7 @@ public class GrupperV2StateMachine : StateBehaviour {
 	void Agro_Exit()
 	{
 		//_eye.SetCanSee (false);
+		SendMessage("Audio_AgroExit");
 	}
 	void Agro_Update()
 	{

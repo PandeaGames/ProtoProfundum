@@ -7,7 +7,7 @@
 					<PropertyList>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-5</Value>
+								<Value>-10</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -340,7 +340,7 @@
 						<Property Name="PositioningType" Type="int16" Value="1"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-6</Value>
+								<Value>-10</Value>
 							</ValueList>
 							<ModifierList>
 								<ModifierInfo>
@@ -597,7 +597,7 @@
 						</Property>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-3</Value>
+								<Value>-4</Value>
 							</ValueList>
 							<ModifierList>
 								<ModifierInfo>
@@ -676,6 +676,75 @@
 							</ChildrenList>
 							<ActiveSourceList>
 								<ActiveSource Name="Grubber_Spot_03" ID="{89F50B3A-186D-4CF5-B972-C5E52ACE5D96}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
+				<RandomSequenceContainer Name="Sight_Drone" ID="{7A684BB7-E952-4073-B56F-9030902E8EEE}" ShortID="735812305">
+					<PropertyList>
+						<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+						<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+						<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.1"/>
+						<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+						<Property Name="RandomAvoidRepeating" Type="bool" Value="False"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-12</Value>
+							</ValueList>
+							<RTPCList>
+								<RTPC Name="" ID="{C1250B26-FBB8-4795-9CCF-886BB2C7B6B0}" ShortID="278822012">
+									<ReferenceList>
+										<Reference Name="ControlInput">
+											<ObjectRef Name="Tension_Vision" ID="{6D4C0FB7-3C37-43F9-A2DF-208BB54BF728}" WorkUnitID="{4AC9DFF9-F593-4971-AD00-DAAEAB75CBA5}"/>
+										</Reference>
+									</ReferenceList>
+									<Curve Name="" ID="{17BD3356-9545-445D-B693-04D968F4505A}">
+										<PropertyList>
+											<Property Name="Flags" Type="int32" Value="3"/>
+										</PropertyList>
+										<PointList>
+											<Point>
+												<XPos>0</XPos>
+												<YPos>-20</YPos>
+												<Flags>5</Flags>
+											</Point>
+											<Point>
+												<XPos>100</XPos>
+												<YPos>0</YPos>
+												<Flags>37</Flags>
+											</Point>
+										</PointList>
+									</Curve>
+								</RTPC>
+							</RTPCList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1EFA288D-0518-4F50-B90A-8BC7193B5126}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{185B6E85-FBD8-4A07-BC62-BFCB74843E75}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Sight_Drone_01" ID="{2882A28D-6D32-461A-82A5-149E309001E6}" ShortID="333060373" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1EFA288D-0518-4F50-B90A-8BC7193B5126}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{185B6E85-FBD8-4A07-BC62-BFCB74843E75}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Sight_Drone_01" ID="{34549AF7-979B-4E28-BE2B-5309E51A5FFB}" ShortID="983763222">
+									<Language>SFX</Language>
+									<AudioFile>Enemies\Spot\Sight_Drone_01.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Sight_Drone_01" ID="{34549AF7-979B-4E28-BE2B-5309E51A5FFB}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>

@@ -27,6 +27,7 @@
 				<Event Id="3686092498" Name="Grupper_Idle_Stop" MaxAttenuation="0.000000"/>
 				<Event Id="1519321238" Name="Play_Attack"/>
 				<Event Id="4093367312" Name="Play_Breathing"/>
+				<Event Id="654089857" Name="Play_ClothingRustle"/>
 				<Event Id="1602358412" Name="Play_Footstep"/>
 				<Event Id="1942027616" Name="Play_HandPlant"/>
 				<Event Id="760353983" Name="Play_ImpactLeft"/>
@@ -35,13 +36,15 @@
 				<Event Id="1867872254" Name="Play_KneePlant"/>
 				<Event Id="310934034" Name="Play_LightAttack"/>
 				<Event Id="444602164" Name="Play_LightHum" MaxAttenuation="60.000000"/>
-				<Event Id="4275956424" Name="Play_LightHumAttack" MaxAttenuation="60.000000"/>
+				<Event Id="4275956424" Name="Play_LightHumAttack" MaxAttenuation="80.000000"/>
 				<Event Id="901669596" Name="Play_LightReturn"/>
+				<Event Id="3682354133" Name="Play_SightDrone"/>
 				<Event Id="3130131672" Name="Play_SlideOff"/>
 				<Event Id="267570722" Name="Play_Spot"/>
 				<Event Id="3523609203" Name="Play_StepUp"/>
 				<Event Id="6482866" Name="Stop_Breathing" MaxAttenuation="0.000000"/>
 				<Event Id="4097122886" Name="Stop_LightHum" MaxAttenuation="0.000000"/>
+				<Event Id="1714447911" Name="Stop_SightDrone" MaxAttenuation="0.000000"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="7400365" Language="SFX">
@@ -88,6 +91,10 @@
 					<ShortName>Ambiences\Creatures\Unknown_Creature_02.wav</ShortName>
 					<Path>SFX\Ambiences\Creatures\Unknown_Creature_02_9E69E797.wem</Path>
 				</File>
+				<File Id="202741048" Language="SFX">
+					<ShortName>Footsteps\Foot_Impact_01.wav</ShortName>
+					<Path>SFX\Footsteps\Foot_Impact_01_9E69E797.wem</Path>
+				</File>
 				<File Id="235086266" Language="SFX">
 					<ShortName>Ambiences\Creatures\Creature_Human_Vocal_Chords_02.wav</ShortName>
 					<Path>SFX\Ambiences\Creatures\Creature_Human_Vocal_Chords_02_9E69E797.wem</Path>
@@ -96,9 +103,17 @@
 					<ShortName>Enemies\Attack\Enemy_Attack_03.wav</ShortName>
 					<Path>SFX\Enemies\Attack\Enemy_Attack_03_9E69E797.wem</Path>
 				</File>
+				<File Id="281090189" Language="SFX">
+					<ShortName>Hero\Clothing_Rustle_01.wav</ShortName>
+					<Path>SFX\Hero\Clothing_Rustle_01_9E69E797.wem</Path>
+				</File>
 				<File Id="303063129" Language="SFX">
 					<ShortName>Ambiences\Drones\Drone_Tension_02.wav</ShortName>
 					<Path>SFX\Ambiences\Drones\Drone_Tension_02_4B8CC0C5.wem</Path>
+				</File>
+				<File Id="307836863" Language="SFX">
+					<ShortName>Hero\Light_Attack_02.wav</ShortName>
+					<Path>SFX\Hero\Light_Attack_02_9E69E797.wem</Path>
 				</File>
 				<File Id="345252552" Language="SFX">
 					<ShortName>Ambiences\Creatures\Distant_Scream_05.wav</ShortName>
@@ -107,6 +122,10 @@
 				<File Id="382900947" Language="SFX">
 					<ShortName>Enemies\Idle\Grubber_Growl_03.wav</ShortName>
 					<Path>SFX\Enemies\Idle\Grubber_Growl_03_9E69E797.wem</Path>
+				</File>
+				<File Id="387579479" Language="SFX">
+					<ShortName>Hero\Clothing_Rustle_02.wav</ShortName>
+					<Path>SFX\Hero\Clothing_Rustle_02_9E69E797.wem</Path>
 				</File>
 				<File Id="390820383" Language="SFX">
 					<ShortName>Footsteps\Footsteps_03.wav</ShortName>
@@ -136,13 +155,13 @@
 					<ShortName>Ambiences\Wind\Wind_Variation_06.wav</ShortName>
 					<Path>SFX\Ambiences\Wind\Wind_Variation_06_9E69E797.wem</Path>
 				</File>
+				<File Id="507243633" Language="SFX">
+					<ShortName>Footsteps\Foot_Impact_02.wav</ShortName>
+					<Path>SFX\Footsteps\Foot_Impact_02_9E69E797.wem</Path>
+				</File>
 				<File Id="570487326" Language="SFX">
 					<ShortName>Ambiences\Creatures\Creature_Human_Vocal_Chords_06.wav</ShortName>
 					<Path>SFX\Ambiences\Creatures\Creature_Human_Vocal_Chords_06_9E69E797.wem</Path>
-				</File>
-				<File Id="620569732" Language="SFX">
-					<ShortName>Hero\Light_Attack_01.wav</ShortName>
-					<Path>SFX\Hero\Light_Attack_01_9E69E797.wem</Path>
 				</File>
 				<File Id="623934891" Language="SFX">
 					<ShortName>Ambiences\Wind\Wind_Variation_04.wav</ShortName>
@@ -220,9 +239,21 @@
 					<ShortName>Ambiences\Creatures\Distant_Scream_03.wav</ShortName>
 					<Path>SFX\Ambiences\Creatures\Distant_Scream_03_9E69E797.wem</Path>
 				</File>
+				<File Id="932177639" Language="SFX">
+					<ShortName>Hero\Clothing_Rustle_03.wav</ShortName>
+					<Path>SFX\Hero\Clothing_Rustle_03_9E69E797.wem</Path>
+				</File>
 				<File Id="936149789" Language="SFX">
 					<ShortName>Ambiences\Wind\Wind_Base_02.wav</ShortName>
 					<Path>SFX\Ambiences\Wind\Wind_Base_02_9E69E797.wem</Path>
+				</File>
+				<File Id="937263278" Language="SFX">
+					<ShortName>Hero\Light_Attack_01.wav</ShortName>
+					<Path>SFX\Hero\Light_Attack_01_9E69E797.wem</Path>
+				</File>
+				<File Id="955669887" Language="SFX">
+					<ShortName>Footsteps\Footsteps_01.wav</ShortName>
+					<Path>SFX\Footsteps\Footsteps_01_9E69E797.wem</Path>
 				</File>
 				<File Id="959299850" Language="SFX">
 					<ShortName>Enemies\Attack\Enemy_Attack_01.wav</ShortName>
@@ -240,6 +271,10 @@
 					<ShortName>Footsteps\Footsteps_02.wav</ShortName>
 					<Path>SFX\Footsteps\Footsteps_02_9E69E797.wem</Path>
 				</File>
+				<File Id="983763222" Language="SFX">
+					<ShortName>Enemies\Spot\Sight_Drone_01.wav</ShortName>
+					<Path>SFX\Enemies\Spot\Sight_Drone_01_9E69E797.wem</Path>
+				</File>
 				<File Id="983776726" Language="SFX">
 					<ShortName>Enemies\Spot\Grubber_Spot_02.wav</ShortName>
 					<Path>SFX\Enemies\Spot\Grubber_Spot_02_9E69E797.wem</Path>
@@ -247,10 +282,6 @@
 				<File Id="994633801" Language="SFX">
 					<ShortName>Enemies\Idle\Grubber_Growl_02.wav</ShortName>
 					<Path>SFX\Enemies\Idle\Grubber_Growl_02_9E69E797.wem</Path>
-				</File>
-				<File Id="1009797297" Language="SFX">
-					<ShortName>Hero\Light_Attack_02.wav</ShortName>
-					<Path>SFX\Hero\Light_Attack_02_9E69E797.wem</Path>
 				</File>
 				<File Id="1016210430" Language="SFX">
 					<ShortName>Hero\Light_Hum.wav</ShortName>

@@ -23,15 +23,13 @@ public class SightController : MonoBehaviour {
 		velocity -= speed;
 		foreach(SightEye eye in _eyes)
 		{
-			if(eye.GetCanSee())
-			{
-				velocity+= eye.power;
-				if(eye.fullAwareness)
-				{
+			if (eye.GetCanSee ()) {
+				velocity += eye.power;
+				if (eye.fullAwareness) {
 					_sightValue = 0;
 					break;
 				}
-			}
+			} 
 		}
 
 		_sightValue = _sightValue - velocity;

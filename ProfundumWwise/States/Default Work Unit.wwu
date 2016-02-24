@@ -1,6 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{CE8B8E48-5E9B-43EB-93BD-745FBB0F3C0F}" SchemaVersion="70">
 	<States>
-		<WorkUnit Name="Default Work Unit" ID="{CE8B8E48-5E9B-43EB-93BD-745FBB0F3C0F}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{CE8B8E48-5E9B-43EB-93BD-745FBB0F3C0F}" PersistMode="Standalone">
+			<ChildrenList>
+				<StateGroup Name="Sight_SightActive" ID="{FAA9B7F4-2E05-4652-8B58-9F2648B35621}">
+					<PropertyList>
+						<Property Name="DefaultTransitionTime" Type="Real64" Value="0.1"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{5DB08DEB-9BD1-41FE-B70D-ADCA57AAD9FF}"/>
+						<State Name="SightActive_True" ID="{06E1C152-70A0-471C-A6B9-DCD4E99F03E0}"/>
+						<State Name="SightActive_False" ID="{A1B7589D-EFEA-48C2-A7CC-7D0D299F188E}"/>
+					</ChildrenList>
+					<TransitionList>
+						<Transition>
+							<StartState Name="SightActive_False" ID="{A1B7589D-EFEA-48C2-A7CC-7D0D299F188E}"/>
+							<EndState Name="SightActive_True" ID="{06E1C152-70A0-471C-A6B9-DCD4E99F03E0}"/>
+							<Time>0.1</Time>
+							<IsShared>true</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="None" ID="{5DB08DEB-9BD1-41FE-B70D-ADCA57AAD9FF}"/>
+							<EndState Name="SightActive_True" ID="{06E1C152-70A0-471C-A6B9-DCD4E99F03E0}"/>
+							<Time>0.1</Time>
+							<IsShared>true</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="None" ID="{5DB08DEB-9BD1-41FE-B70D-ADCA57AAD9FF}"/>
+							<EndState Name="SightActive_False" ID="{A1B7589D-EFEA-48C2-A7CC-7D0D299F188E}"/>
+							<Time>0.1</Time>
+							<IsShared>true</IsShared>
+						</Transition>
+					</TransitionList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
 	</States>
 </WwiseDocument>

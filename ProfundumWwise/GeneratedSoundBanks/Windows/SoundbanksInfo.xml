@@ -37,7 +37,6 @@
 				<Event Id="310934034" Name="Play_LightAttack"/>
 				<Event Id="444602164" Name="Play_LightHum" MaxAttenuation="60.000000"/>
 				<Event Id="4275956424" Name="Play_LightHumAttack" MaxAttenuation="80.000000"/>
-				<Event Id="901669596" Name="Play_LightReturn"/>
 				<Event Id="3682354133" Name="Play_SightDrone"/>
 				<Event Id="3130131672" Name="Play_SlideOff"/>
 				<Event Id="267570722" Name="Play_Spot"/>

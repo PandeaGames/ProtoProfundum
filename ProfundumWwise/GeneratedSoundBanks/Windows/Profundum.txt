@@ -6,7 +6,6 @@ Event	ID	Name			Wwise Object Path	Notes
 	444602164	Play_LightHum			\Character\Play_LightHum	
 	654089857	Play_ClothingRustle			\Character\Play_ClothingRustle	
 	760353983	Play_ImpactLeft			\Character\Play_ImpactLeft	
-	901669596	Play_LightReturn			\Character\Play_LightReturn	
 	1519321238	Play_Attack			\Gruppers\Play_Attack	
 	1602358412	Play_Footstep			\Character\Play_Footstep	
 	1714447911	Stop_SightDrone			\Default Work Unit\Stop_SightDrone	

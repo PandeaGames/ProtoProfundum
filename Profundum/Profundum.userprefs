@@ -1,8 +1,9 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\scripts\HeroAudioController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\scripts\LightOrbAudioController.cs">
     <Files>
-      <File FileName="Assets\scripts\LightOrbAudioController.cs" Line="1" Column="1" />
+      <File FileName="Assets\scripts\Projectile.cs" Line="1" Column="1" />
+      <File FileName="Assets\scripts\LightOrbAudioController.cs" Line="18" Column="3" />
       <File FileName="Assets\AKCustom_ActorDistanceController.cs" Line="1" Column="1" />
       <File FileName="Assets\scripts\DomeCrystal.cs" Line="1" Column="1" />
       <File FileName="Assets\scripts\GrupperV2StateMachine.cs" Line="1" Column="1" />
@@ -10,12 +11,12 @@
       <File FileName="Assets\AKCustom_ActorAudioController.cs" Line="1" Column="1" />
       <File FileName="Assets\scripts\LightProjectile.cs" Line="1" Column="1" />
       <File FileName="Assets\AKCustom_ActorAudioEmitter.cs" Line="1" Column="1" />
-      <File FileName="Assets\LightShotAudioController.cs" Line="1" Column="1" />
-      <File FileName="Assets\scripts\HeroAudioController.cs" Line="35" Column="3" />
-      <File FileName="Assets\scripts\HeroShooter.cs" Line="1" Column="1" />
+      <File FileName="Assets\LightShotAudioController.cs" Line="16" Column="3" />
+      <File FileName="Assets\scripts\HeroAudioController.cs" Line="1" Column="1" />
+      <File FileName="Assets\scripts\HeroShooter.cs" Line="24" Column="4" />
       <File FileName="Assets\scripts\GrupperAudioController.cs" Line="1" Column="1" />
-      <File FileName="Assets\SightController.cs" Line="46" Column="25" />
-      <File FileName="Assets\SightAudioController.cs" Line="30" Column="5" />
+      <File FileName="Assets\SightController.cs" Line="1" Column="1" />
+      <File FileName="Assets\SightAudioController.cs" Line="32" Column="5" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

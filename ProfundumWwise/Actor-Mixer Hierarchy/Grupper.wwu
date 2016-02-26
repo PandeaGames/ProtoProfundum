@@ -340,7 +340,7 @@
 						<Property Name="PositioningType" Type="int16" Value="1"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-10</Value>
+								<Value>-12</Value>
 							</ValueList>
 							<ModifierList>
 								<ModifierInfo>
@@ -597,7 +597,7 @@
 						</Property>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-4</Value>
+								<Value>-6</Value>
 							</ValueList>
 							<ModifierList>
 								<ModifierInfo>
@@ -710,7 +710,7 @@
 											</Point>
 											<Point>
 												<XPos>100</XPos>
-												<YPos>0</YPos>
+												<YPos>-5</YPos>
 												<Flags>37</Flags>
 											</Point>
 										</PointList>

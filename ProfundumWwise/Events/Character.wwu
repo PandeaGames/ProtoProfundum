@@ -160,17 +160,6 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Play_LightReturn" ID="{123DA2A5-E5DD-4EA1-8FF2-02791A19C9DF}">
-					<ChildrenList>
-						<Action Name="Play" ID="{3209EF9E-AF7A-4A16-9EB8-8222AA3B3F4E}" ShortID="18256543" Type="Play" Scope="One" Global="false">
-							<ElementList>
-								<Element ID="{D248D859-06DF-403B-A90C-3DF7113D378C}" Global="false">
-									<ObjectRef Name="Hero_Light_Return" ID="{E0BA0A87-1321-4554-9594-92E9F53DC7AD}" WorkUnitID="{DC5166A8-C8B5-437D-8B1A-E34B69E413DB}"/>
-								</Element>
-							</ElementList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<Event Name="Play_LightHum" ID="{CB7577BF-3B7E-4CAC-91C8-438AC4F3E320}">
 					<ChildrenList>
 						<Action Name="Play" ID="{CC8A85FE-C9E9-4C91-ADD9-131F1690E5D6}" ShortID="510278202" Type="Play" Scope="One" Global="false">

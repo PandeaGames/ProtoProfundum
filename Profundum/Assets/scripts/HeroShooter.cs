@@ -67,6 +67,22 @@ using UnityEngine;
 				return 1;
 		return 1 - (_timeStamp - Time.time) / recoverDelay;
 		}
+    public void Audio_Shoot_Fail()
+    {
+
+    }
+    public void Audio_Shoot()
+    {
+
+    }
+    public void Audio_Shoot_Return()
+    {
+
+    }
+    public void Audio_LightHum()
+    {
+
+    }
 }
 
 

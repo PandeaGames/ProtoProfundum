@@ -7,8 +7,6 @@ Project("{7C18B494-9D97-03FF-0150-485824279CBC}") = "Profundum", "Assembly-CShar
 EndProject
 Project("{7C18B494-9D97-03FF-0150-485824279CBC}") = "Profundum", "Assembly-CSharp-Editor.csproj", "{0372DA92-A93C-C9A8-3D9C-F86BE714A014}"
 EndProject
-Project("{7C18B494-9D97-03FF-0150-485824279CBC}") = "Profundum", "Assembly-UnityScript.unityproj", "{6883945E-1443-558D-D9A0-C517A4B8A162}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,10 +25,6 @@ Global
 		{0372DA92-A93C-C9A8-3D9C-F86BE714A014}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0372DA92-A93C-C9A8-3D9C-F86BE714A014}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0372DA92-A93C-C9A8-3D9C-F86BE714A014}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6883945E-1443-558D-D9A0-C517A4B8A162}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6883945E-1443-558D-D9A0-C517A4B8A162}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6883945E-1443-558D-D9A0-C517A4B8A162}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6883945E-1443-558D-D9A0-C517A4B8A162}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

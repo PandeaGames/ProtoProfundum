@@ -58,6 +58,7 @@ public class GrupperV2StateMachine : StateBehaviour {
 	private Vector3 _deltaPosition = new Vector3();
 	private SightEye _eye;
 	private bool _killAttack = false;
+    private NavMeshAgent _agent;
 
 	void Start()
 	{
@@ -114,6 +115,12 @@ public class GrupperV2StateMachine : StateBehaviour {
 
         heroRaycaster.target = _player;
         heroRaycaster.mask = mask;
+
+        _agent = GetComponent<NavMeshAgent>();
+        _agent.destination = _player.transform.position;
+        _agent.Stop();
+
+        _agent.speed = 2.0;
     }
 	void Update()
 	{
@@ -180,26 +187,30 @@ public class GrupperV2StateMachine : StateBehaviour {
 	{
 		_eye.SetCanSee (true);
 		SendMessage ("Audio_AgroEnter");
-		//transform.LookAt(agroRange.col.gameObject.transform.position);
-	}
+        //transform.LookAt(agroRange.col.gameObject.transform.position);
+        _agent.Resume();
+    }
 	void Agro_Exit()
 	{
-		//_eye.SetCanSee (false);
-		SendMessage("Audio_AgroExit");
+        _agent.Stop();
+        //_eye.SetCanSee (false);
+        SendMessage("Audio_AgroExit");
 	}
 	void Agro_Update()
 	{
-		//transform.LookAt(_player.transform.position);
-		//transform.rotation.Set (0, transform.rotation.y, 0, 0);
+        //transform.LookAt(_player.transform.position);
+        //transform.rotation.Set (0, transform.rotation.y, 0, 0);
 
-		RotateByMovement (0.5f);
+        //RotateByMovement (0.5f);
 
-		float force = 4f;
+        /*float force = 4f;
 		
 		//GetComponent<Rigidbody> ().AddForce (force, ForceMode.Impulse);
 
 		GetComponent<Rigidbody> ().AddForce ((_player.transform.position - transform.position).normalized * force * Time.smoothDeltaTime, ForceMode.Impulse);
+*/
 
+        _agent.destination = _player.transform.position;
 		if (canAttack) 
 		{
 			ChangeState(GrupperStates.AttackTelegraphing);

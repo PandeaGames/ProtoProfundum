@@ -120,7 +120,7 @@ public class GrupperV2StateMachine : StateBehaviour {
         _agent.destination = _player.transform.position;
         _agent.Stop();
 
-        _agent.speed = 2.0f;
+        _agent.speed = 2.0;
     }
 	void Update()
 	{

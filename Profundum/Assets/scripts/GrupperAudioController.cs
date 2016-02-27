@@ -33,4 +33,8 @@ public class GrupperAudioController : MonoBehaviour {
 	{
 		AkSoundEngine.PostEvent("Grupper_Idle_Start", gameObject);
 	}
+    void Audio_AgroExit()
+    {
+
+    }
 }

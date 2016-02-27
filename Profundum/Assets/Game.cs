@@ -30,7 +30,8 @@ public class Game : MonoBehaviour {
 		}
 		if (_deathSequence && Time.time>_timeStamp) 
 		{
-			BroadcastMessage("ClearSceneData");
+            BroadcastMessage("SceneReset");
+            BroadcastMessage("ClearSceneData");
 			Application.LoadLevel(respawnScene);
 		}
 		if (_deathSequence) {

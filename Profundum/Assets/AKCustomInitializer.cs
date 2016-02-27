@@ -17,10 +17,8 @@ public class AKCustomInitializer : MonoBehaviour {
 	void Update () {
 	
 	}
-	void ClearSceneData()
+	void SceneReset()
 	{
-		Debug.Log ("ClearSceneData!!!!!");
 		SendMessage ("Terminate");
-		//AkSoundEngine.UnregisterAllGameObj ();
 	}
 }

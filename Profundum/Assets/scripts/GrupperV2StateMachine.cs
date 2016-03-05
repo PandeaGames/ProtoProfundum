@@ -12,7 +12,8 @@ public class GrupperV2StateMachine : StateBehaviour {
 		Feeding, 
 		Idle, 
 		Scared,
-		Searching, 
+        HitRecover,
+        Searching, 
 		AttackRecovering,
 		AttackTelegraphing
 	}
@@ -41,7 +42,9 @@ public class GrupperV2StateMachine : StateBehaviour {
 	private bool canAttack = false;
 	private float _acc = 0.01f;
 	private float _speed = 0f;
-	private Rigidbody rb;
+    private float _hitRecoverTime = 5;
+    private float _hitRecoverTimeComplete = 0;
+    private Rigidbody rb;
 	private Vector3 _impulseSpeed = new Vector3 (0.1f, 0.03f, 0.1f);
 	private Vector3 _riseSpeed = new Vector3 (0.1f, 0.4f, 0.1f);
 	private Vector3 _searchRotation = new Vector3 (0, 1, 0);
@@ -52,7 +55,7 @@ public class GrupperV2StateMachine : StateBehaviour {
 	private CollisionDelegate lightAgroRange, lightCloseRange, closeRange, agroRange, attackRange;
 	private int pathNodeIndex = 0;
 	private float attackTelegraphEnd;
-	private float attackTelegraphTime = 1;
+	private float attackTelegraphTime = 0.02f;
 	private PlayerHealthController playerHealthController;
 	private Vector3 _oldPosition = new Vector3();
 	private Vector3 _deltaPosition = new Vector3();
@@ -176,8 +179,18 @@ public class GrupperV2StateMachine : StateBehaviour {
         _attackStartTime = Time.time;
         SendMessage ("Audio_DoAttack");
 	}
-
-	void Agro_Enter()
+    void HitRecover_Update()
+    {
+        if(Time.time > _hitRecoverTimeComplete)
+        {
+            ChangeState(GrupperStates.Searching);
+        }
+    }
+    void HitRecover_Enter()
+    {
+        _eye.SetCanSee(false);
+    }
+    void Agro_Enter()
 	{
 		_eye.SetCanSee (true);
 		SendMessage ("Audio_AgroEnter");
@@ -196,12 +209,13 @@ public class GrupperV2StateMachine : StateBehaviour {
 		RotateByMovement (0.5f);
 
 		float force = 4f;
-		
-		//GetComponent<Rigidbody> ().AddForce (force, ForceMode.Impulse);
 
-		GetComponent<Rigidbody> ().AddForce ((_player.transform.position - transform.position).normalized * force * Time.smoothDeltaTime, ForceMode.Impulse);
+        //GetComponent<Rigidbody> ().AddForce (force, ForceMode.Impulse);
+        //GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeRotationX;
+        transform.position = Vector3.MoveTowards(transform.position, _player.transform.position, 0.5f);
+        // GetComponent<Rigidbody> ().AddForce ((_player.transform.position - transform.position).normalized * force * Time.smoothDeltaTime, ForceMode.Impulse);
 
-		if (canAttack) 
+        if (canAttack) 
 		{
 			ChangeState(GrupperStates.AttackTelegraphing);
 		}
@@ -270,7 +284,9 @@ public class GrupperV2StateMachine : StateBehaviour {
 			if((dy<0.60f && dotProd < -0.8 && lightAgro || dy<0.35f && lightClose) && !heroRaycaster.IsObstructed)
             {
 				_eye.SetCanSee (true);
-				if(_sc.SightActive())
+                _eye.power =(_agroCollider.radius -  Vector3.Distance(gameObject.transform.position, _player.transform.position))/10;
+
+                if (_sc.SightActive())
 				{
 					ChangeState(GrupperStates.Agro);
 				}
@@ -302,13 +318,20 @@ public class GrupperV2StateMachine : StateBehaviour {
 			playerHealthController.doDamage(100);
 			GetComponent<Rigidbody> ().velocity = Vector3.zero;
 			ChangeState(GrupperStates.AttackRecovering);
-		}
-	}
+		}else if (collision.gameObject.tag == "light")
+        {
+            DoHit();
+        }
+    }
 	void ResetPathGroup(PathGroup pathGroup)
 	{
 		if (pathContainer && pathGroup == pathContainer.pathGroup) {
 			transform.position = pathHead.transform.position;
 		}
 	}
-
+    private void DoHit()
+    {
+        _hitRecoverTimeComplete = Time.time + _hitRecoverTime;
+        ChangeState(GrupperStates.HitRecover);
+    }
 }

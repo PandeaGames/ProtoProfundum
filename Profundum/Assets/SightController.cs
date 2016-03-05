@@ -3,7 +3,7 @@ using System.Collections;
 
 public class SightController : MonoBehaviour {
 	public float totalSight = 100;
-	public float speed = 0.05f;
+	public float speed = 5f;
 
 	private float _sight;
 	private SightEye[] _eyes;
@@ -20,21 +20,23 @@ public class SightController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		velocity -= speed;
+		velocity -= 1;
 		foreach(SightEye eye in _eyes)
 		{
 			if (eye.GetCanSee ()) {
 				velocity += eye.power;
-				if (eye.fullAwareness) {
+                _sightValue -= eye.power;
+
+                if (eye.fullAwareness) {
 					_sightValue = 0;
 					break;
 				}
 			} 
 		}
+        _sightValue += 0.2f;
+        //_sightValue = _sightValue - velocity;
 
-		_sightValue = _sightValue - velocity;
-
-		if (_sightValue > totalSight) {
+        if (_sightValue > totalSight) {
 			velocity = 0;
 			_sightValue = totalSight;
 		} else if (_sightValue < 0) {

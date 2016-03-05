@@ -52,6 +52,10 @@ namespace AssemblyCSharp
 		{
 			Destroy (gameObject);
 			SendMessage ("Audio_StopHum");
+            if(col.other.tag == "enemy")
+            {
+                Destroy(gameObject);
+            }
 		}
 	}
 }

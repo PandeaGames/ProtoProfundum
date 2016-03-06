@@ -107,25 +107,23 @@ public class PathContainer : MonoBehaviour {
 	}
 	public void Seek(float pos, float targetTime)
 	{
-
-		//targetTime = targetTime * loop;
-		//if (closedLoop) {
-		//	targetTime += Vector3.Distance(head.transform.position, tail.transform.position) / obj.speed;
-		//} else {
-		//}
 		PathNode node;
 		PathObject obj;
 		float time, tmpTime;
 		PathNode next;
 		bool looping = false;
 		bool reversing = false;
+        float localTargetTime = 0f;
 		int nodeIterator;
 		int jStop;
 		for (int i =0; i<_pathObjects.Length; i++) 
 		{
-			time = 0;
+			
 			obj = _pathObjects[i];
-			for(int k = 0; k < loop; k++)
+            time = 0;
+            localTargetTime = targetTime + obj.timeOffset;
+
+            for (int k = 0; k < loop; k++)
 			{
 				nodeIterator = 1;
 				reversing = false;
@@ -145,18 +143,22 @@ public class PathContainer : MonoBehaviour {
 					node = _nodes[j];
 					next = reversing ? node.prev:node.next;
 					time+=node.stopTime;
-					if(time>targetTime)
+					if(time> localTargetTime)
 					{
 						//stop object on path node. he needs to wait. 
 						obj.SetPosition(node.transform.position);
 						break;
 					}
+                    if(next == null)
+                    {
+                        Debug.Log(node);
+                    }
 					tmpTime = Vector3.Distance(node.transform.position, next.transform.position) / obj.speed;
-					if(time + tmpTime>targetTime)
+					if(time + tmpTime> localTargetTime)
 					{
 						//position object between nodes
 						Vector3 delta =  next.transform.position - node.transform.position;
-						float seekPosition = (targetTime - time)/tmpTime;
+						float seekPosition = (localTargetTime - time)/tmpTime;
 						Vector3 deltaScaled = delta * seekPosition;
 						Vector3 finalPos = node.transform.position + deltaScaled;
 						obj.SetPosition(finalPos);
@@ -166,7 +168,7 @@ public class PathContainer : MonoBehaviour {
 					time += tmpTime;
 
 				}
-				if(time > targetTime)
+				if(time > localTargetTime)
 				{
 					//this means we have found our place within this loop. break out and stop searching
 					break;

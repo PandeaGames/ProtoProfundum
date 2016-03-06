@@ -3,6 +3,7 @@ using System.Collections;
 
 public class PathObject : MonoBehaviour {
 	public float speed = 0.3f;//speed in units/second
+    public float timeOffset = 0f;
 	// Use this for initialization
 	void Start () {
 	

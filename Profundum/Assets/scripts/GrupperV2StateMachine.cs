@@ -74,8 +74,8 @@ public class GrupperV2StateMachine : StateBehaviour {
 		
 		SendMessage ("Audio_SearchingEnter");
 
-        
 
+        transform.position = pathHead.transform.position;
     }
 	// Use this for initialization
 

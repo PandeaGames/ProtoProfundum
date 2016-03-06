@@ -2,17 +2,17 @@
 using System.Collections;
 
 public class PathGroup : MonoBehaviour {
-	public float totalTime;
+	public float totalTime = 0;
 	public bool pause = false;
-	public float currentTime;
+	public float currentTime = 0;
 
 	private float _baseTime;
 	private PathContainer[] paths;
 
 	[Range(0.0f, 1.0f)]
-	public float head;
+	public float head = 0;
 	// Use this for initialization
-	void Start () {
+	void Awake () {
 		paths = GetComponentsInChildren<PathContainer> ();
 
 		foreach (PathContainer pathContainer in paths)

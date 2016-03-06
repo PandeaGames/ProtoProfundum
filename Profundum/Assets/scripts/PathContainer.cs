@@ -149,10 +149,6 @@ public class PathContainer : MonoBehaviour {
 						obj.SetPosition(node.transform.position);
 						break;
 					}
-                    if(next == null)
-                    {
-                        Debug.Log(node);
-                    }
 					tmpTime = Vector3.Distance(node.transform.position, next.transform.position) / obj.speed;
 					if(time + tmpTime> localTargetTime)
 					{

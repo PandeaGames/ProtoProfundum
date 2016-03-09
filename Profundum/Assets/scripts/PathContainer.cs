@@ -76,7 +76,12 @@ public class PathContainer : MonoBehaviour {
 		{
 			Gizmos.DrawSphere (_nodes[i].transform.position, 0.3f);
 		}
-	}
+        Gizmos.color = Color.blue;
+        for (int i = 0; i < _pathObjects.Length; i++)
+        {
+            Gizmos.DrawSphere(_pathObjects[i].transform.position, 0.5f);
+        }
+    }
 	public PathNode[] nodes{
 		get {return _nodes;}
 	}

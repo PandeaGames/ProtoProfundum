@@ -278,16 +278,17 @@ public class GrupperV2StateMachine : StateBehaviour {
 			if(lightClose)
 			{
 				_killAttack = true;
-				_eye.fullAwareness = true;
-			}
+                _eye.fullAwareness = true;
+                ChangeState(GrupperStates.Agro);
+            }
 
 			if((dy<0.60f && dotProd < -0.8 && lightAgro || dy<0.35f && lightClose) && !heroRaycaster.IsObstructed)
             {
 				_eye.SetCanSee (true);
                 _eye.power =(_agroCollider.radius -  Vector3.Distance(gameObject.transform.position, _player.transform.position))/10;
-
                 if (_sc.SightActive())
 				{
+
 					ChangeState(GrupperStates.Agro);
 				}
 			}

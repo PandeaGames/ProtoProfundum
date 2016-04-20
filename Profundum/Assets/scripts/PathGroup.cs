@@ -12,7 +12,7 @@ public class PathGroup : MonoBehaviour {
 	[Range(0.0f, 1.0f)]
 	public float head = 0;
 	// Use this for initialization
-	void Awake () {
+	void Start () {
 		paths = GetComponentsInChildren<PathContainer> ();
 
 		foreach (PathContainer pathContainer in paths)

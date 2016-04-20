@@ -72,7 +72,7 @@ public class MainCameraMovement : MonoBehaviour {
 		}*/
 		RaycastHit hit = new RaycastHit ();
 		//Ray ray = new Ray (pos, transform.forward );
-		Ray ray = new Ray (pos + transform.forward * radius, transform.forward * -1 );
+		Ray ray = new Ray ((pos + transform.forward * (radius)), transform.forward * -1 );
 		if (Physics.Raycast (ray, out hit, radius, mask))
 		{
 			Debug.DrawRay (ray.origin, ray.direction * radius, Color.red);

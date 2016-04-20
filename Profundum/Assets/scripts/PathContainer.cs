@@ -121,6 +121,12 @@ public class PathContainer : MonoBehaviour {
         float localTargetTime = 0f;
 		int nodeIterator;
 		int jStop;
+
+		if (_pathObjects == null)
+		{
+			return;
+		}
+
 		for (int i =0; i<_pathObjects.Length; i++) 
 		{
 			

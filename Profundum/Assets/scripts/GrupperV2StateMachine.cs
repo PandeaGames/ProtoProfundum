@@ -80,6 +80,7 @@ public class GrupperV2StateMachine : StateBehaviour {
 	// Use this for initialization
 
 	void Awake () {
+
 		_eye = GetComponent<SightEye> ();
 
 		Initialize<GrupperStates>();
@@ -326,7 +327,12 @@ public class GrupperV2StateMachine : StateBehaviour {
     }
 	void ResetPathGroup(PathGroup pathGroup)
 	{
+		if (path)
+		{
+			pathContainer = path.GetComponent<PathContainer> ();
+		}
 		if (pathContainer && pathGroup == pathContainer.pathGroup) {
+			//Debug.Log ("ResetPathGroup: "+pathHead);
 			transform.position = pathHead.transform.position;
 		}
 	}

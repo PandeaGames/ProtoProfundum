@@ -18,6 +18,12 @@ public class RoachController : MonoBehaviour {
 	// Use this for initialization
 	void Start () 
 	{
+		AreaCenter center = FindObjectOfType<AreaCenter> ();
+
+		if (center) {
+			transform.position = center.transform.position;
+		}
+
 		_setupDataField ();
 	}
 	private void _setupDataField()

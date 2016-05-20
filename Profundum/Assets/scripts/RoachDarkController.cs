@@ -21,9 +21,12 @@ public class RoachDarkController  : StateBehaviour
 	private RoachController controller;
 	private double nextSpawn = 0;
 	private Vector3 spawnOffset = new Vector3(0, 3, 0);
+
+	private Game _game;
 	// Use this for initialization
 	void Start () 
 	{
+		_game = FindObjectOfType<Game> ();
 		controller = GetComponent<RoachController>();
 		_dsc = FindObjectOfType<DomeStateController> ();
 	}
@@ -55,7 +58,8 @@ public class RoachDarkController  : StateBehaviour
 			hero.transform.position.x + (Random.Range(0, spawnRadius) - Random.Range (0, spawnRadius)) + spawnOffset.x, 
 			hero.transform.position.y + (Random.Range(0, spawnRadius) - Random.Range (0, spawnRadius)) + spawnOffset.y, 
 			hero.transform.position.z + (Random.Range(0, spawnRadius) - Random.Range (0, spawnRadius)) + spawnOffset.z);
-		Instantiate(roachPrefab, pos, roachPrefab.transform.rotation);
+		GameObject roach = (GameObject)Instantiate(roachPrefab, pos, roachPrefab.transform.rotation);
+		roach.gameObject.transform.parent = _game.gameObject.transform;
 	}
 	// Update is called once per frame
 	void Lit_Update () 

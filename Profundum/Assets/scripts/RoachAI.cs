@@ -18,6 +18,7 @@ public class RoachAI : MonoBehaviour {
 	public GameObject agroRangeObj;
 	public float lifeTime = 5;
 
+	public bool lightSpawned = false;
 	private bool hasBeenScared = false;
 	private CollisionDelegate _lightRange;
 	private CollisionDelegate _agroRange;
@@ -118,6 +119,10 @@ public class RoachAI : MonoBehaviour {
 			GetComponent<Rigidbody> ().AddForce (force * _ran, ForceMode.Impulse);
 		}
 	}
+	void Scared_Enter ()
+	{
+		lightSpawned = true;
+	}
 	void DomeScared_Update()
 	{
 		transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.LookRotation (_dome.transform.position, transform.position),0.5f);
@@ -157,7 +162,7 @@ public class RoachAI : MonoBehaviour {
 		{
 			State = RoachStates.Scared;
 		}
-		if (agroClose) 
+		if (agroClose && !lightSpawned) 
 		{
 			State = RoachStates.Agro;
 		}
@@ -183,5 +188,10 @@ public class RoachAI : MonoBehaviour {
 	void OnTriggerEnter(Collider col)
 	{
 
+	}
+
+	void ClearSceneData()
+	{
+		Destroy (this.gameObject);
 	}
 }

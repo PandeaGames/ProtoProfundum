@@ -89,6 +89,9 @@ public class SectionStreamingController : MonoBehaviour {
 			Destroy (bridgeB);
 			bridgeB = bridgeA;
 			bridgeA = _newBridge;
+			currentSection.transform.Rotate (currentSection.GetComponent<GameSection>().anchorB.transform.rotation.eulerAngles - bridgeB.GetComponent<SectionBridge>().anchorA.transform.rotation.eulerAngles);
+			//bridgeA.transform.Rotate (bridgeA.GetComponent<SectionBridge>().anchorB.transform.rotation.eulerAngles - currentSection.GetComponent<GameSection>().anchorA.transform.rotation.eulerAngles);
+			bridgeA.transform.Rotate (currentSection.GetComponent<GameSection>().anchorA.transform.rotation.eulerAngles - bridgeA.GetComponent<SectionBridge>().anchorB.transform.rotation.eulerAngles);
 			offset = bridgeB.GetComponent<SectionBridge>().anchorA.transform.position - currentSection.GetComponent<GameSection>().anchorB.transform.position;
 			bridgeOffset = offset + (currentSection.GetComponent<GameSection>().anchorA.transform.position - bridgeA.GetComponent<SectionBridge>().anchorB.transform.position);
 		} 

@@ -117,6 +117,8 @@ public class RoachAI : MonoBehaviour {
 				force.y = force.y * -1;
 			}  
 			GetComponent<Rigidbody> ().AddForce (force * _ran, ForceMode.Impulse);
+		} else {
+			GetComponent<Rigidbody> ().AddForce (new Vector3(0, 0.05f), ForceMode.Impulse);
 		}
 	}
 	void Scared_Enter ()
@@ -125,8 +127,9 @@ public class RoachAI : MonoBehaviour {
 	}
 	void DomeScared_Update()
 	{
-		transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.LookRotation (_dome.transform.position, transform.position),0.5f);
-		GetComponent<Rigidbody> ().AddForce (new Vector3(1, 1, 1) * _ran, ForceMode.Impulse);
+		transform.rotation = Quaternion.LookRotation (transform.position- _dome.transform.position);
+		GetComponent<Rigidbody> ().AddForce (transform.forward * 1, ForceMode.Impulse);
+		GetComponent<Rigidbody> ().AddForce (new Vector3(0, 0.05f), ForceMode.Impulse);
 	}
 	void Agro_Update ()
 	{

@@ -18,10 +18,9 @@ public class DomeCrystal : MonoBehaviour {
 	}
 	void OnTriggerEnter (Collider collider)
 	{
-		if (collider.tag == "Hero") {
+		if (collider.tag == "Player") {
 			_heroInside = true;
 		}
-		Debug.Log ("COLLIDE: "+collider.tag);
 		if (collider.tag == "light") {
 			collider.gameObject.SendMessage("Contact", gameObject);
 			Break ();
@@ -40,7 +39,7 @@ public class DomeCrystal : MonoBehaviour {
 	}
 	void OnTriggerExit (Collider collider)
 	{
-		if (collider.tag == "Hero") {
+		if (collider.tag == "Player") {
 			_heroInside = false;
 		}
 	}

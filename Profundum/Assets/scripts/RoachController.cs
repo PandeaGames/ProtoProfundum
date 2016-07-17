@@ -75,7 +75,29 @@ public class RoachController : MonoBehaviour {
 						{
 							spawnMap[i, j, k] = double.MaxValue;
 							break;
-						}
+						} 
+					}
+				}
+			}
+		}
+	}
+	void OnDrawGizmos() {
+		if (spawnMap == null)
+			return;
+		Gizmos.color = Color.green;
+		for (int i = 0; i < _x; i++) {
+			for (int j = 0; j < _y; j++) {
+				for (int k = 0; k < _z; k++) {
+					if (litMap [i, j, k] != 0) {
+						Gizmos.color = Color.red;
+						/*Gizmos.DrawSphere (
+							new Vector3 (
+								i * resolution + (GetComponent<Collider> ().bounds.center.x - GetComponent<Collider> ().bounds.size.x / 2), 
+								j * resolution + (GetComponent<Collider> ().bounds.center.y - GetComponent<Collider> ().bounds.size.y / 2), 
+								k * resolution + (GetComponent<Collider> ().bounds.center.z - GetComponent<Collider> ().bounds.size.z / 2))
+							, 0.3f);*/
+					} else {
+						
 					}
 				}
 			}
@@ -135,7 +157,9 @@ public class RoachController : MonoBehaviour {
 				spawnMap[x, y, z] = Time.time + zoneResetTime;
 				setAreaValues(new Vector3(x, y, z), spawnMap[x, y, z], 3);
 				firstRoach = (GameObject)Instantiate(roachPrefab, pos, light.transform.rotation);
-				firstRoach.gameObject.transform.parent = _game.gameObject.transform;
+				if (_game != null) {
+					firstRoach.gameObject.transform.parent = _game.gameObject.transform;
+				}
 				firstRoach.GetComponent<RoachAI> ().lightSpawned = true;
 			}
 		}

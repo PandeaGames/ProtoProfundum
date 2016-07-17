@@ -35,6 +35,8 @@ public class RoachAI : MonoBehaviour {
 	private PlayerHealthController playerHealthController;
 	private float _ran = Random.Range(1, 2);
 	private GameObject _dome;
+	private float _hitStamp = 0;
+	private float _hitDelay = 200;
 	void Awake()
 	{
 		transform.rotation = Quaternion.Euler (new Vector3 (Random.Range(0, 30), Random.Range (0, 360)));
@@ -121,10 +123,6 @@ public class RoachAI : MonoBehaviour {
 			GetComponent<Rigidbody> ().AddForce (new Vector3(0, 0.05f), ForceMode.Impulse);
 		}
 	}
-	void Scared_Enter ()
-	{
-		lightSpawned = true;
-	}
 	void DomeScared_Update()
 	{
 		transform.rotation = Quaternion.LookRotation (transform.position- _dome.transform.position);
@@ -149,6 +147,7 @@ public class RoachAI : MonoBehaviour {
 		if (lightClose) 
 		{
 			State = RoachStates.Scared;
+			lightSpawned = true;
 		}
 
 	}
@@ -164,6 +163,7 @@ public class RoachAI : MonoBehaviour {
 		if (lightClose) 
 		{
 			State = RoachStates.Scared;
+			lightSpawned = true;
 		}
 		if (agroClose && !lightSpawned) 
 		{
@@ -177,14 +177,15 @@ public class RoachAI : MonoBehaviour {
 	}
 	void OnCollisionEnter (Collision col)
 	{
-		if(col.gameObject.tag == "Player")
+		if(col.gameObject.tag == "Player" && _hitStamp + _hitDelay > Time.time)
 		{
+			_hitStamp = Time.time;
 			playerHealthController.doDamage(10);
 		}
 	}
 	void LightDome_Trigger(GameObject obj)
 	{
-
+		Debug.Log ("SCARED");
 		_dome = obj;
 		State = RoachStates.DomeScared;
 	}

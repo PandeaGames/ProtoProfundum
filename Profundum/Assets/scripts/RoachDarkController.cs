@@ -59,13 +59,17 @@ public class RoachDarkController  : StateBehaviour
 			hero.transform.position.y + (Random.Range(0, spawnRadius) - Random.Range (0, spawnRadius)) + spawnOffset.y, 
 			hero.transform.position.z + (Random.Range(0, spawnRadius) - Random.Range (0, spawnRadius)) + spawnOffset.z);
 		GameObject roach = (GameObject)Instantiate(roachPrefab, pos, roachPrefab.transform.rotation);
-		roach.gameObject.transform.parent = _game.gameObject.transform;
+		if (_game != null) {
+			roach.gameObject.transform.parent = _game.gameObject.transform;
+		}
+
 	}
 	// Update is called once per frame
 	void Lit_Update () 
 	{
 		if (!controller.isLit (hero.transform.position)) {
 			ChangeState (RoachDarkStates.Unlit);
+			Debug.Log ("UNLIT");
 		}
 	}
 	void ClearSceneData()

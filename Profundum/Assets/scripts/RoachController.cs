@@ -45,16 +45,14 @@ public class RoachController : MonoBehaviour {
 		litMap = new double[_x, _y, _z];
 		
 		lights = FindObjectsOfType<RoachLight> ();
-		Vector3 pos = new Vector3 ();
-		Quaternion rot = new Quaternion ();
 		for (int i =0; i<_x; i++) 
 		{
 			for (int j =0; j<_y; j++) 
 			{
 				for (int k =0; k<_z; k++) 
 				{
-					spawnMap[i, j, k] = 0;
-					litMap[i, j, k] = 0;
+                    spawnMap[i, j, k] = 0;
+                    litMap[i, j, k] = 0;
 					for(int l = 0; l<lights.Length; l++)
 					{
 						if(Mathf.Sqrt(

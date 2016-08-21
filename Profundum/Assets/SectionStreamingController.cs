@@ -86,7 +86,7 @@ public class SectionStreamingController : MonoBehaviour {
 			_newStreamingSection = _streamingSections[IndexOf(currentStreamingSection)+1];
 			currentSection = _newStreamingSection.CreateSection();
 			_newBridge = Instantiate(_newStreamingSection.bridgeA);
-			Destroy (bridgeB);
+            Destroy (bridgeB);
 			bridgeB = bridgeA;
 			bridgeA = _newBridge;
 			currentSection.transform.Rotate (currentSection.GetComponent<GameSection>().anchorB.transform.rotation.eulerAngles - bridgeB.GetComponent<SectionBridge>().anchorA.transform.rotation.eulerAngles);
@@ -112,11 +112,14 @@ public class SectionStreamingController : MonoBehaviour {
 
 		_hasLoadedLevel = true;
 
-		currentSection.transform.parent = _game.transform;
+        _newBridge.transform.parent = _game.transform;
+
+        currentSection.transform.parent = _game.transform;
 		currentStreamingSection = _newStreamingSection;
 
 		_currentGameSection = currentSection.GetComponent<GameSection>();
-		
+
+        _game.respawnScene = currentStreamingSection.respawnScene;
 		_game.BroadcastMessage("ClearSceneData");
 	}
 }

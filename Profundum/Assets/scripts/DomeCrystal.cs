@@ -29,7 +29,9 @@ public class DomeCrystal : MonoBehaviour {
 	public void Break()
 	{
 		GameObject bubble = (GameObject)Instantiate (dome, transform.position, transform.rotation);
-		_lightBubble = bubble.GetComponent<LightBubble> ();
+       // bubble.transform.parent = gameObject.transform.parent;
+       // bubble.transform.position = transform.position;
+        _lightBubble = bubble.GetComponent<LightBubble> ();
 		_lightBubble.animTime = 3;
 		_heroInside = false;
 		GetComponent<Collider> ().enabled = false;

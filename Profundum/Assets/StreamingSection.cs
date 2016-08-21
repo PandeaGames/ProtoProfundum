@@ -6,6 +6,7 @@ public class StreamingSection : MonoBehaviour
 	public GameObject bridgeA;
 	public GameObject bridgeB;
 	public GameObject section;
+    public string respawnScene;
 
 	// Use this for initialization
 	void Start () {

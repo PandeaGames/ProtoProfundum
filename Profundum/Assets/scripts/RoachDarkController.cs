@@ -15,12 +15,12 @@ public class RoachDarkController  : StateBehaviour
 	public GameObject hero;
 	public GameObject roachPrefab;
 	public float spawnRate = 2;//seconds
-	public float spawnRadius = 5;
+	public float spawnRadius = 2;
 
 	private DomeStateController _dsc;
 	private RoachController controller;
 	private double nextSpawn = 0;
-	private Vector3 spawnOffset = new Vector3(0, 3, 0);
+	private Vector3 spawnOffset = new Vector3(0, 6, 0);
 
 	private Game _game;
 	// Use this for initialization
